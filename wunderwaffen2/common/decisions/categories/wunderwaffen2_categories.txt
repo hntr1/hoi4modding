@@ -1,0 +1,27 @@
+fliegerfaust_development = {
+	icon = GFX_decision_category_generic
+
+	priority = 6
+
+	allowed = {
+		original_tag = GER
+	}
+
+	visible = {
+		has_country_flag = fliegerfaust_designed
+	}
+}
+
+fg42_development = {
+	icon = GFX_decision_category_generic
+
+	priority = 6
+
+	allowed = {
+		original_tag = GER
+	}
+
+	visible = {
+		has_country_flag = fg42_designed
+	}
+}

@@ -1,0 +1,40 @@
+equipments = {
+	infantry_anti_air_equipment = {
+
+		is_archetype = yes
+		picture = "gfx/interface/technologies/fliegerfaust.dds"
+		is_buildable = no
+		type = {
+			infantry
+			anti_air
+			motorized
+			mechanized
+			support
+		}
+		group_by = archetype
+
+		interface_category = interface_category_land
+
+		#Misc Abilities
+		reliability = 0.7
+
+		#Offensive Abilities
+		air_attack = 2
+		soft_attack = 0.5
+		hard_attack = 0.2
+
+		lend_lease_cost = 1
+
+		build_cost_ic = 1
+		resources = {
+			steel = 2
+		}
+	}
+
+	infantry_anti_air_equipment_1 = {
+		archetype = infantry_anti_air_equipment
+		active = no
+		priority = 1
+		visual_level = 1
+	}
+}

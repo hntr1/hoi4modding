@@ -1,0 +1,59 @@
+﻿l_english:
+
+# Decision Categories
+ fliegerfaust_development: "Fleigerfaust Deployment"
+ fliegerfaust_development_desc: "Chose to selectively deploy the Fliegerfaust to certain branches of the Wehrmacht. We currently have [?num_equipment@infantry_anti_air_equipment|=0+] in stockpile."
+ fg42_development: "FG-42 Deployment"
+ fg42_development_desc: "Chose to selectively deploy the FG-42 to certain branches of the Wehrmacht. We currently have [?num_equipment@paratrooper_rifle_equipment|=0+] in stockpile."
+ 
+# Decisions 
+ 
+# Fliegerfaust
+ deploy_ff_flak: "Deploy units to the Flakkorps"
+ deploy_ff_flak_desc: "Equip all anti-air battalions and companies with the Fliegerfaust"
+ ff_flak_tt: "We will be left with [?GER.ff_aa_need|=0+] Fliegerfauste in stockpile."
+
+ deploy_ff_mountain: "Deploy units to the Gebirgskorps"
+ deploy_ff_mountain_desc: "Equip all mountaineer battalions with the Fliegerfaust"
+ ff_mount_tt: "We will be left with [?GER.ff_mnt_need|=0+] Fliegerfauste in stockpile."
+
+ deploy_ff_para: "Deploy units to the Fallschirmjägerkorps"
+ deploy_ff_para_desc: "Equip all paratrooper battalions with the Fliegerfaust"
+ ff_para_tt: "We will be left with [?GER.ff_para_need|=0+] Fliegerfauste in stockpile."
+
+ deploy_ff_marines: "Deploy units to the Kriegsmarine"
+ deploy_ff_marines_desc: "Equip all marine battalions with the Fliegerfaust"
+ ff_marine_tt: "We will be left with [?GER.ff_mar_need|=0+] Fliegerfauste in stockpile."
+
+ deploy_ff_panzergren: "Deploy units to the Panzergrenadiers"
+ deploy_ff_panzergren_desc: "Equip all motorized and mechanized battalions with the Fliegerfaust"
+ ff_mot_tt: "We will be left with [?GER.ff_mech_need|=0+] Fliegerfauste in stockpile."
+
+ deploy_ff_inf: "Push into full service"
+ deploy_ff_inf_desc: "Equip all infantry battalions with the Fliegerfaust"
+ ff_inf_tt: "We will be left with [?GER.ff_inf_need|=0+] Fliegerfauste in stockpile."
+
+ deploy_ff_eng: "Deploy units to the Pioneerkorps"
+ deploy_ff_eng_desc: "Equip all engineer companies with the Fliegerfaust"
+ ff_eng_tt: "We will be left with [?GER.ff_eng_need|=0+] Fliegerfauste in stockpile."
+
+ deploy_ff_rec: "Deploy units to the Aufklärungskorps"
+ deploy_ff_rec_desc: "Equip all reconnaisance companies with the Fliegerfaust"
+ ff_rec_tt: "We will be left with [?GER.ff_rec_need|=0+] Fliegerfauste in stockpile."
+
+ deploy_ff_sturm: "Deploy units to the Sturmtruppen"
+ deploy_ff_sturm_desc: "Equip all Sturmtruppen companies with the Fliegerfaust."
+ ff_sturm_tt: "We will be left with [?GER.ff_sturm_need|=0+] Fliegerfauste in stockpile"
+
+# FG-42
+ deploy_fg42_para: "Deploy rifles to the Fallschirmjägerkorps"
+ deploy_fg42_para_desc: "Equip all paratrooper battalions with the FG-42"
+ fg42_para_tt: "We will be left with [?GER.fg42_para_need|=0+] FG-42 Rifles in stockpile"
+
+ deploy_fg42_rec: "Deploy rifles to the Aufklärungskorps"
+ deploy_fg42_rec_desc: "Equip all reconnaisance companies with the FG-42"
+ fg42_rec_tt: "We will be left with [?GER.fg42_rec_need|=0+] FG-42 Rifles in stockpile"
+
+# Flags
+
+  pzf_developed: "Panzerfaust Developed"

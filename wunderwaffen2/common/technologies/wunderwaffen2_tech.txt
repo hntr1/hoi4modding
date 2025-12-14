@@ -1,0 +1,164 @@
+technologies = {
+
+	ff_flak_tech = {
+		allow = {
+			always = no
+		}
+
+		anti_air_brigade = {
+				need = {
+					infantry_anti_air_equipment_1 = 5
+				}
+			}
+
+		anti_air = {
+			need = {
+				infantry_anti_air_equipment_1 = 5
+			}
+		}
+	}
+
+	ff_mount_tech = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			need = {
+				infantry_anti_air_equipment_1 = 5
+			}
+		}	
+	}
+
+	ff_para_tech = {
+		allow = {
+			always = no
+		}
+		paratrooper = {
+			need = {
+				infantry_anti_air_equipment_1 = 5
+			}
+		}
+	}
+
+	ff_marine_tech = {
+		allow = {
+			always = no
+		}
+		marine = {
+			need = {
+				infantry_anti_air_equipment_1 = 5
+			}
+		}
+	}
+
+	ff_mot_tech = {
+		allow = {
+			always = no
+		}
+		motorized = {
+				need = {
+					infantry_anti_air_equipment_1 = 5
+				}
+			}
+		mechanized = {
+			need = {
+				infantry_anti_air_equipment_1 = 5
+			}
+		}
+	}
+
+	ff_inf_tech = {
+		allow = {
+			always = no
+		}
+		category_light_infantry = {
+			need = {
+				infantry_anti_air_equipment_1 = 5
+			}
+		}
+	}
+
+	ff_eng_tech = {
+		allow = {
+			always = no
+		}
+		engineer = {
+			need = {
+				infantry_anti_air_equipment_1 = 2
+			}
+		}
+		pioneer_support = {
+			need = {
+				infantry_anti_air_equipment_1 = 2
+			}
+		}
+	}
+
+	ff_rec_tech = {
+		allow = {
+			always = no
+		}
+		recon = {
+			need = {
+				infantry_anti_air_equipment_1 = 2
+			}
+		}
+
+		mot_recon = {
+			need = {
+				infantry_anti_air_equipment_1 = 2
+			}
+		}
+
+		rangers_support = {
+			need = {
+				infantry_anti_air_equipment_1 = 2
+			}
+		}
+	}
+
+	ff_sturm_tech = {
+		allow = {
+			always = no
+		}
+		sturmtruppe_battalion = {
+			need = {
+				infantry_anti_air_equipment_1 = 5
+			}
+		}
+	}
+
+	fg42_rec_tech = {
+		allow = {
+			always = no
+		}
+		recon = {
+			need = {
+				paratrooper_rifle_equipment_1 = 4
+			}
+		}
+
+		mot_recon = {
+			need = {
+				paratrooper_rifle_equipment_1 = 4
+			}
+		}
+
+		rangers_support = {
+			need = {
+				paratrooper_rifle_equipment_1 = 4
+			}
+		}
+	}
+
+	fg42_para_tech = {
+		allow = {
+			always = no
+		}
+		paratrooper = {
+			need = {
+				paratrooper_rifle_equipment_1 = 10
+			}
+		}
+	}
+}

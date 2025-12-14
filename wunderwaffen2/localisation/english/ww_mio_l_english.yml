@@ -1,0 +1,17 @@
+﻿l_english:
+
+# MIO Names
+  hasag_mio_name: "Hugo Schneider AG"
+
+# Traits
+  mio_hasag_initial_trait: "Man-Portable Weapon Manufacturer"
+  hasag_mio_trait_military_contracts: "Military Contracts"
+  hasag_mio_trait_mass_production: "Mass Production"
+  hasag_mio_trait_stabilizer_fins: "Stabilizer Fins"
+  hasag_mio_trait_disposable_air: "Disposable Launchers"
+  hasag_mio_trait_reusable_air: "Reusable Launchers"
+  hasag_mio_trait_delayed_firing_sequence: "Time-Delayed Firing Sequence"
+  hasag_mio_trait_shaped_charge_warhead: "Shaped Charge Warheads"
+  hasag_mio_trait_improved_range: "Range Improvements"
+  hasag_mio_trait_increased_propellant: "Increased Propellant"
+  hasag_mio_trait_increased_warhead_size: "Larger Warheads"

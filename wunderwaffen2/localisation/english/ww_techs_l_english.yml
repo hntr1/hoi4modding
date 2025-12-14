@@ -1,0 +1,22 @@
+﻿l_english:
+
+# Equipment
+
+  infantry_anti_air_equipment: "Infantry Anti-Air"
+  infantry_anti_air_equipment_desc: "Man-portable anti-aircraft weapons"
+  GER_infantry_anti_air_equipment_1: "Fliegerfaust"
+  infantry_anti_air_equipment_1: "Infantry Anti-Air"
+  infantry_anti_air_equipment_1_desc: "A man-portable, multi-barreled, unguided rocket launcher designed to destroy aircraft"
+ 
+  paratrooper_rifle_equipment: "Paratrooper Rifle"
+  paratrooper_rifle_equipment_desc: "Specialized rifles designed for airborne soldiers"
+  GER_paratrooper_rifle_equipment_1: "FG-42"
+  paratrooper_rifle_equipment_1: "Paratrooper Rifle 1"
+  paratrooper_rifle_equipment_1_desc: "Specialized rifles designed for airborne soldiers"
+
+# Special Projects
+
+  sp_land_fliegerfaust: "Infantry Anti-Air"
+  fliegerfaust_designed: "Fliegerfaust Developed"
+
+  sp_land_fg42: "Paratrooper Rifle"

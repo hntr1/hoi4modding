@@ -1,0 +1,221 @@
+on_actions = {
+	on_daily_GER = {
+		effect = {
+			if = {
+				limit = { 
+					AND = {
+						has_country_flag = fliegerfaust_designed
+						NOT = { has_country_flag = ff_aa_deployed }
+					}
+				}
+
+				set_variable = { GER.ff_aa_requested = num_battalions_with_type@anti_air }
+
+				multiply_variable = { GER.ff_aa_requested = 5 }
+
+				set_variable = { GER.ff_aa_need = num_equipment@infantry_anti_air_equipment}
+
+				subtract_from_variable = { GER.ff_aa_need = GER.ff_aa_requested }
+
+			}
+		}
+
+		effect = {
+			if = {
+				limit = { 
+					AND = {
+						has_country_flag = fliegerfaust_designed
+						NOT = { has_country_flag = ff_mnt_deployed }
+					}
+				}
+
+				set_variable = { GER.ff_mnt_requested = num_battalions_with_type@mountaineers }
+
+				multiply_variable = { GER.ff_mnt_requested = 5 }
+
+				set_variable = { GER.ff_mnt_need = num_equipment@infantry_anti_air_equipment}
+
+				subtract_from_variable = { GER.ff_mnt_need = GER.ff_mnt_requested }
+
+			}
+		}
+
+		effect = {
+			if = {
+				limit = { 
+					AND = {
+						has_country_flag = fliegerfaust_designed
+						NOT = { has_country_flag = ff_para_deployed }
+					}
+				}
+
+				set_variable = { GER.ff_para_requested = num_battalions_with_type@paratrooper }
+
+				multiply_variable = { GER.ff_para_requested = 5 }
+
+				set_variable = { GER.ff_para_need = num_equipment@infantry_anti_air_equipment}
+
+				subtract_from_variable = { GER.ff_para_need = GER.ff_para_requested }
+
+			}
+		}
+
+		effect = {
+			if = {
+				limit = { 
+					AND = {
+						has_country_flag = fliegerfaust_designed
+						NOT = { has_country_flag = ff_mar_deployed }
+					}
+				}
+
+				set_variable = { GER.ff_mar_requested = num_battalions_with_type@marine }
+
+				multiply_variable = { GER.ff_mar_requested = 5 }
+
+				set_variable = { GER.ff_mar_need = num_equipment@infantry_anti_air_equipment}
+
+				subtract_from_variable = { GER.ff_mar_need = GER.ff_mar_requested }
+
+			}
+		}
+
+		effect = {
+			if = {
+				limit = { 
+					AND = {
+						has_country_flag = fliegerfaust_designed
+						NOT = { has_country_flag = ff_mech_deployed }
+					}
+				}
+
+				set_variable = { GER.ff_mech_requested = num_battalions_with_type@mechanized }
+
+				add_to_variable = { GER.ff_mech_requested = num_battalions_with_type@motorized }
+
+				multiply_variable = { GER.ff_mech_requested = 5}
+
+				set_variable = { GER.ff_mech_need = num_equipment@infantry_anti_air_equipment }
+
+				subtract_from_variable = { GER.ff_mech_need = GER.ff_mech_requested }
+
+
+			}
+		}
+
+		effect = {
+			if = {
+				limit = { 
+					AND = {
+						has_country_flag = fliegerfaust_designed
+						NOT = { has_country_flag = ff_inf_deployed }
+					}
+				}
+
+				set_variable = { GER.ff_inf_requested = num_battalions_with_type@infantry }
+
+				multiply_variable = { GER.ff_inf_requested = 5 }
+
+				set_variable = { GER.ff_inf_need = num_equipment@infantry_anti_air_equipment}
+
+				subtract_from_variable = { GER.ff_inf_need = GER.ff_inf_requested }
+
+			}
+		}
+
+		effect = {
+			if = {
+				limit = { 
+					AND = {
+						has_country_flag = fliegerfaust_designed
+						NOT = { has_country_flag = ff_eng_deployed }
+					}
+				}
+
+				set_variable = { GER.ff_eng_requested = num_battalions_with_type@engineer }
+
+				multiply_variable = { GER.ff_eng_requested = 2 }
+
+				set_variable = { GER.ff_eng_need = num_equipment@infantry_anti_air_equipment}
+
+				subtract_from_variable = { GER.ff_eng_need = GER.ff_eng_requested }
+			}
+		}
+
+		effect = {
+			if = {
+				limit = { 
+					AND = {
+						has_country_flag = fliegerfaust_designed
+						NOT = { has_country_flag = ff_rec_deployed }
+					}
+				}
+
+				set_variable = { GER.ff_rec_requested = num_battalions_with_type@recon }
+
+				multiply_variable = { GER.ff_rec_requested = 2 }
+
+				set_variable = { GER.ff_rec_need = num_equipment@infantry_anti_air_equipment}
+
+				subtract_from_variable = { GER.ff_rec_need = GER.ff_rec_requested }
+			}
+		}
+
+		effect = {
+			if = {
+				limit = { 
+					AND = {
+						has_country_flag = fliegerfaust_designed
+						NOT = { has_country_flag = ff_sturm_deployed }
+					}
+				}
+
+				set_variable = { GER.ff_sturm_requested = num_battalions_with_type@sturmtruppe_battalion }
+
+				multiply_variable = { GER.ff_sturm_requested = 5 }
+
+				set_variable = { GER.ff_sturm_need = num_equipment@infantry_anti_air_equipment}
+
+				subtract_from_variable = { GER.ff_sturm_need = GER.ff_sturm_requested }
+			}
+		}
+
+		effect = {
+			if = {
+				limit = { 
+					AND = {
+						has_country_flag = fg42_designed
+						NOT = { has_country_flag = fg42_rec_deployed }
+					}
+				}
+
+				set_variable = { GER.fg42_rec_requested = num_battalions_with_type@recon }
+
+				multiply_variable = { GER.fg42_rec_requested = 4 }
+
+				set_variable = { GER.fg42_rec_need = num_equipment@paratrooper_rifle_equipment}
+
+				subtract_from_variable = { GER.fg42_rec_need = GER.fg42_rec_requested }
+			}
+		}
+
+		effect = {
+			if = {
+				limit = { 
+					AND = {
+						has_country_flag = fg42_designed
+						NOT = { has_country_flag = fg42_para_deployed }
+					}
+				}
+
+				set_variable = { GER.fg42_para_requested = num_battalions_with_type@paratrooper }
+
+				multiply_variable = { GER.fg42_para_requested = 10 }
+
+				set_variable = { GER.fg42_para_need = num_equipment@paratrooper_rifle_equipment}
+
+				subtract_from_variable = { GER.fg42_para_need = GER.fg42_para_requested }
+			}
+		}
+	}
+}

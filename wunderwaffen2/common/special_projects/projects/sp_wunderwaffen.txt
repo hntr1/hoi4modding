@@ -1,0 +1,229 @@
+sp_land_fliegerfaust = {
+
+	narrative = {
+		name = "Fliegerfaust"
+
+		desc = "Man Portable Surface-to-Air Rocket Launcher"
+	}
+	
+	icon = GFX_sp_fliegerfaust
+
+	blueprint_image = GFX_sp_fliegerfaust_blueprint
+
+	specialization = specialization_land
+
+	ai_will_do = {
+		base = 1
+	}
+
+	allowed = {
+		original_tag = GER
+	}
+
+	available = {
+		FROM = {
+			has_tech = experimental_rockets
+		}
+	}
+
+	prototype_cost = {
+		resources = {
+			steel = 2
+			tungsten = 1
+		}
+	}
+
+	prototype_time = sp_time.prototype.short
+
+	complexity = sp_complexity.small
+
+	breakthrough_cost = {
+		specialization_land = {
+			base = 1
+			modifier = {
+				add = -1
+				is_special_project_completed = sp_rockets_ground_to_air_missle
+			}
+		}
+	}
+	
+	generic_prototype_rewards = {
+		sp_land_generic_reward_scientist_xp_1
+		sp_land_generic_reward_scientist_xp_2
+		sp_land_generic_reward_scientist_xp_3
+		sp_land_generic_reward_army_xp_1
+		sp_land_generic_reward_army_xp_2
+		sp_land_generic_reward_army_xp_3
+		sp_land_generic_reward_major_progress_1
+		sp_land_generic_reward_major_progress_2
+		sp_land_generic_reward_major_progress_3
+		sp_land_generic_reward_test_failure_1
+		sp_land_generic_reward_test_failure_2
+		sp_land_generic_reward_test_failure_3
+	}
+
+	unique_prototype_rewards = {
+		
+		prototype_reward = {	
+
+			fire_only_once = yes
+
+			threshold = {
+				min = 40
+				max = 70
+			}
+
+			option = {
+
+				iteration_output = {
+					country_effect = {
+						add_tech_bonus = {
+							name = ff_aa_bonus_reward
+							bonus = 0.1
+							uses = 1
+							category = cat_anti_air
+						}
+					}
+				}
+			}
+		}
+	}
+
+	project_output = {
+
+		enable_equipments = {
+			infantry_anti_air_equipment_1
+		}
+
+		country_effects = {
+			set_country_flag = {
+				flag = fliegerfaust_designed
+				value = 1
+			}
+		}
+	}
+}
+
+sp_land_fg42 = {
+
+	narrative = {
+		name = "Fallschirmjäger-Gewehr 42"
+
+		desc = "Specialized Rifle designed for airborne soldiers"
+	}
+
+	specialization = specialization_land
+
+	ai_will_do = {
+		base = 1
+	}
+
+	allowed = {
+		original_tag = GER
+	}
+
+	available = {
+		FROM = {
+			has_tech = paratroopers
+		}
+	}
+
+	breakthrough_cost = {
+		specialization_land = {
+			base = 1
+		}
+	}
+
+	icon = GFX_sp_fg42
+
+	blueprint_image = GFX_sp_fg42_blueprint
+
+	prototype_time = sp_time.prototype.short
+
+	complexity = sp_complexity.small
+
+	prototype_cost = {
+		resources = {
+			steel = 1
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_land_generic_reward_scientist_xp_1
+		sp_land_generic_reward_scientist_xp_2
+		sp_land_generic_reward_scientist_xp_3
+		sp_land_generic_reward_army_xp_1
+		sp_land_generic_reward_army_xp_2
+		sp_land_generic_reward_army_xp_3
+		sp_land_generic_reward_major_progress_1
+		sp_land_generic_reward_major_progress_2
+		sp_land_generic_reward_major_progress_3
+		sp_land_generic_reward_test_failure_1
+		sp_land_generic_reward_test_failure_2
+		sp_land_generic_reward_test_failure_3
+	}
+
+	unique_prototype_rewards = {
+	
+		prototype_reward = {
+
+			fire_only_once = yes
+
+			threshold = {
+				min = 20
+				max = 60
+			}
+
+			option = {
+				iteration_output = {
+					country_effects = {
+						add_tech_bonus = {
+							name = sp_fg42_small_arms_bonus_reward
+							bonus = 0.1
+							uses = 1
+							category = infantry_weapons
+						}
+					}
+				}
+			}
+		}
+
+		prototype_reward = {
+
+			fire_only_once = yes
+
+			threshold = {
+				min = 50
+				max = 80
+			}
+
+			option = {
+				iteration_output = {
+					country_effects = {
+						add_tech_bonus = {
+							name = sp_fg42_doctrine_bonus_reward
+							bonus = 0.2
+							uses = 1
+							category = cat_paratrooper_doctrine
+						}
+					}
+				}
+			}
+		}
+	}
+
+	project_output = {
+
+		enable_equipments = {
+			paratrooper_rifle_equipment_1
+		}
+
+		country_effects = {
+
+			set_country_flag = {
+				flag = fg42_designed
+				value = 1
+			}
+		}
+	}
+}

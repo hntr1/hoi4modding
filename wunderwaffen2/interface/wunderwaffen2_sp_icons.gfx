@@ -1,0 +1,32 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_GER_sp_fliegerfaust"
+		texturefile = "gfx/interface/technologies/fliegerfaust.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GER_sp_fg42"
+		texturefile = "gfx/interface/technologies/fg42.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GER_infantry_anti_air_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/fliegerfaust.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GER_paratrooper_rifle_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/fg42.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_fliegerfaust"
+		texturefile = "gfx/interface/special_projects/project_icons/sp_fliegerfaust.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_fg42"
+		texturefile = "gfx/interface/special_projects/project_icons/sp_fg42.dds"
+	}
+}
+}

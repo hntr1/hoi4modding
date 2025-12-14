@@ -1,0 +1,449 @@
+fliegerfaust_development = {
+	
+	### Flak Korps ###
+	deploy_ff_flak = {
+		
+		icon = generic_air
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			#has_country_flag = fliegerfaust_designed
+		}
+
+		available = {
+			has_tech = interwar_antiair
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_technology = {
+					ff_flak_tech = 1
+					popup = no
+				}
+			}
+			set_country_flag = {
+				flag = ff_aa_deployed
+				value = 1
+			}
+
+			custom_effect_tooltip = ff_flak_tt
+		}
+	}
+
+	### Gebirgskorps ###
+	deploy_ff_mountain = {
+		
+		icon = generic_intelligence_operation
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = fliegerfaust_designed
+		}
+
+		available = {
+			has_tech = tech_mountaineers
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_technology = {
+					ff_mount_tech = 1
+					popup = no
+				}
+			}
+
+			set_country_flag = {
+				flag = ff_mnt_deployed
+				value = 1
+			}
+			custom_effect_tooltip = ff_mount_tt
+		}
+	}
+
+	### Fallschirmjaeger ###
+	deploy_ff_para = {
+		
+		icon = generic_intelligence_operation
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = fliegerfaust_designed
+		}
+
+		available = {
+			has_tech = paratroopers
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_technology = {
+					ff_para_tech = 1
+					popup = no
+				}
+			}
+
+			set_country_flag = {
+				flag = ff_para_deployed
+				value = 1
+			}
+			custom_effect_tooltip = ff_para_tt
+		}
+	}
+
+	### Marinekorps ###
+	deploy_ff_marines = {
+		
+		icon = generic_intelligence_operation
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = fliegerfaust_designed
+		}
+
+		available = {
+			has_tech = marines
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_technology = {
+					ff_marine_tech = 1
+					popup = no
+				}
+			}
+
+			set_country_flag = {
+				flag = ff_mar_deployed
+				value = 1
+			}
+			custom_effect_tooltip = ff_marine_tt
+		}
+	}
+
+	### Panzergrenadiers ###
+	deploy_ff_panzergren = {
+		
+		icon = generic_motorized
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = fliegerfaust_designed
+		}
+
+		available = {
+			has_tech = tech_trucks
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_technology = {
+					ff_mot_tech = 1
+					popup = no
+				}
+			}
+
+			set_country_flag = {
+				flag = ff_mech_deployed
+				value = 1
+			}
+			custom_effect_tooltip = ff_mot_tt
+		}
+	}
+
+	### Inf ###
+	deploy_ff_inf = {
+		
+		icon = generic_military
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = fliegerfaust_designed
+		}
+
+		available = {
+			has_tech = infantry_weapons
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_technology = {
+					ff_inf_tech = 1
+					popup = no
+				}
+			}
+
+			set_country_flag = {
+				flag = ff_inf_deployed
+				value = 1
+			}
+			custom_effect_tooltip = ff_inf_tt
+		}
+	}
+
+	### engineers ###
+	deploy_ff_eng = {
+		
+		icon = generic_fortification
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = fliegerfaust_designed
+		}
+
+		available = {
+			has_tech = tech_engineers
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_technology = {
+					ff_eng_tech = 1
+					popup = no
+				}
+			}
+
+			set_country_flag = {
+				flag = ff_eng_deployed
+				value = 1
+			}
+			custom_effect_tooltip = ff_eng_tt
+		}
+	}
+
+	### recon ###
+	deploy_ff_rec = {
+		
+		icon = generic_cavalry
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = fliegerfaust_designed
+		}
+
+		available = {
+			has_tech = tech_recon
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		
+
+		
+
+		complete_effect = {
+			hidden_effect = {
+				set_technology = {
+					ff_rec_tech = 1
+					popup = no
+				}
+			}
+
+			set_country_flag = {
+				flag = ff_rec_deployed
+				value = 1
+			}
+			custom_effect_tooltip = ff_rec_tt
+		}
+	}
+
+	deploy_ff_sturm = {
+		
+		icon = generic_pickelhaube
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = fliegerfaust_designed
+		}
+
+		available = {
+			has_completed_focus = GER_stormtroopers
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		
+
+		
+
+		complete_effect = {
+			hidden_effect = {
+				set_technology = {
+					ff_sturm_tech = 1
+					popup = no
+				}
+			}
+
+			set_country_flag = {
+				flag = ff_sturm_deployed
+				value = 1
+			}
+			custom_effect_tooltip = ff_sturm_tt
+		}
+	}
+}
+
+fg42_development = {
+
+	### Fallschirmjaeger ###
+	deploy_fg42_para = {
+		
+		icon = generic_intelligence_operation
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = fg42_designed
+		}
+
+		available = {
+			has_tech = paratroopers
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		
+
+		
+
+		complete_effect = {
+			hidden_effect = {
+				set_technology = {
+					fg42_para_tech = 1
+					popup = no
+				}
+			}
+
+			set_country_flag = {
+				flag = fg42_para_deployed
+				value = 1
+			}
+			custom_effect_tooltip = fg42_para_tt
+		}
+	}
+	
+	### recon ###
+	deploy_fg42_rec = {
+		
+		icon = generic_cavalry
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = fg42_designed
+		}
+
+		available = {
+			has_tech = tech_recon
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		
+
+		
+
+		complete_effect = {
+			hidden_effect = {
+				set_technology = {
+					fg42_rec_tech = 1
+					popup = no
+				}
+			}
+
+			set_country_flag = {
+				flag = fg42_rec_deployed
+				value = 1
+			}
+			custom_effect_tooltip = fg42_rec_tt
+		}
+	}
+}

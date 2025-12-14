@@ -1,0 +1,268 @@
+hasag = {
+	name = hasag_mio_name
+	icon = GFX_hasag_mio_icon
+
+	equipment_type = { infantry_anti_air_equipment infantry_anti_tank_equipment }
+	research_categories = { infantry_weapons }
+
+	allowed = {
+		original_tag = GER
+	}
+
+	visible = {
+		always = yes
+	}
+
+	research_bonus = 0.2
+	task_capacity = 999
+
+	tree_header_text = {
+		text = "Design"
+		x = 1
+	}
+
+	tree_header_text = {
+		text = "Anti-Air"
+		x = 4
+	}
+
+	tree_header_text = {
+		text = "Anti-Tank"
+		x = 8
+	}
+
+	initial_trait = {
+		name = mio_hasag_initial_trait
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+
+		production_bonus = {
+			production_efficiency_cap_factor = 0.03
+		}
+
+		equipment_bonus = {
+			soft_attack = 0.03
+		}
+	}
+
+
+
+	trait = {
+		token = hasag_mio_trait_military_contracts
+		name = hasag_mio_trait_military_contracts
+		icon = GFX_generic_mio_department_icon_facilities
+
+		position = { x=1 y=0 }
+
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.1
+		}
+	}
+
+	trait = {
+		token = hasag_mio_trait_stabilizer_fins
+		name = hasag_mio_trait_stabilizer_fins
+		icon = GFX_generic_mio_trait_icon_reliability
+
+		position = { x=4 y=0 }
+
+		available = {
+			FROM = {
+				has_country_flag = fliegerfaust_designed
+			}
+		}
+
+		limit_to_equipment_type = {
+			infantry_anti_air_equipment
+		}
+
+		equipment_bonus = {
+			soft_attack = 0.025
+		}
+	}
+
+	trait = {
+		token = hasag_mio_trait_disposable_air
+		name = hasag_mio_trait_disposable_air
+		icon = GFX_generic_mio_trait_icon_efficiency_gain
+
+		position = { x=-1 y=2 }
+		relative_position_id = hasag_mio_trait_stabilizer_fins
+
+		limit_to_equipment_type = {
+			infantry_anti_air_equipment
+		}
+
+		all_parents = { hasag_mio_trait_stabilizer_fins }
+
+		mutually_exclusive = { hasag_mio_trait_reusable_air }
+
+		equipment_bonus = {
+			reliability = -1
+			build_cost_ic = -0.15
+		}
+
+	}
+
+	trait = {
+		token = hasag_mio_trait_reusable_air
+		name = hasag_mio_trait_reusable_air
+		icon = GFX_generic_mio_trait_icon_soft_attack
+
+		position = { x=1 y=2 }
+		relative_position_id = hasag_mio_trait_stabilizer_fins
+
+		limit_to_equipment_type = {
+			infantry_anti_air_equipment
+		}
+
+		all_parents = { hasag_mio_trait_stabilizer_fins }
+
+		mutually_exclusive = { hasag_mio_trait_disposable_air }
+
+		equipment_bonus = {
+			air_attack = 0.03
+			reliability = 0.03
+			build_cost_ic = 0.08
+		}
+	}
+
+	trait = {
+		token = hasag_mio_trait_delayed_firing_sequence
+		name = hasag_mio_trait_delayed_firing_sequence
+		icon = GFX_generic_mio_trait_icon_soft_attack
+
+		position = { x=1 y=2 }
+		relative_position_id = hasag_mio_trait_disposable_air
+
+		limit_to_equipment_type = {
+			infantry_anti_air_equipment
+		}
+
+		any_parent = { hasag_mio_trait_reusable_air hasag_mio_trait_disposable_air }
+		
+		equipment_bonus = {
+			breakthrough = 0.06
+			build_cost_ic = 0.08
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_quality_materials
+		name = generic_mio_trait_quality_materials
+		icon = GFX_generic_mio_trait_icon_reliability
+
+		position = { x=0 y=2 }
+		relative_position_id = hasag_mio_trait_military_contracts
+
+		all_parents = { hasag_mio_trait_military_contracts }
+
+		equipment_bonus = {
+			reliability = 0.05
+		}
+
+	}
+
+	trait = {
+		token = hasag_mio_trait_mass_production
+		name = hasag_mio_trait_mass_production
+		icon = GFX_generic_mio_department_icon_facilities
+
+		position = { x=0 y=2 }
+		relative_position_id = generic_mio_trait_quality_materials
+
+		all_parents = { generic_mio_trait_quality_materials }
+
+		production_bonus = {
+			production_efficiency_cap_factor = 0.03
+			production_cost_factor = -0.05
+		}
+	}
+
+	trait = {
+		token = hasag_mio_trait_shaped_charge_warhead
+		name = hasag_mio_trait_shaped_charge_warhead
+		icon = GFX_generic_mio_trait_icon_ap_attack
+
+		position = { x=8 y=0 }
+
+		available = {
+			FROM = {
+				has_country_flag = pzf_developed
+			}
+		}
+
+		limit_to_equipment_type = {
+			infantry_anti_tank_equipment
+		}
+
+		equipment_bonus = {
+			hard_attack = 0.1
+			ap_attack = 0.25
+		}
+	}
+
+	trait = {
+		token = hasag_mio_trait_improved_range
+		name = hasag_mio_trait_improved_range
+		icon = GFX_generic_mio_trait_icon_breakthrough
+
+		position = { x=-1 y=2 }
+		relative_position_id = hasag_mio_trait_shaped_charge_warhead
+
+		all_parents = { hasag_mio_trait_shaped_charge_warhead }
+		
+		limit_to_equipment_type = {
+			infantry_anti_tank_equipment
+		}
+
+		equipment_bonus = {
+			breakthrough = 0.06
+			build_cost_ic = 0.02
+		}
+	}
+
+	trait = {
+		token = hasag_mio_trait_increased_propellant
+		name = hasag_mio_trait_increased_propellant
+		icon = GFX_generic_mio_trait_icon_breakthrough
+
+		position = { x=1 y=2 }
+		relative_position_id = hasag_mio_trait_shaped_charge_warhead
+
+		all_parents = { hasag_mio_trait_shaped_charge_warhead }
+
+		limit_to_equipment_type = {
+			infantry_anti_tank_equipment
+		}
+
+		equipment_bonus = {
+			breakthrough = 0.02
+		}
+	}
+
+	trait = {
+		token = hasag_mio_trait_increased_warhead_size
+		name = hasag_mio_trait_increased_warhead_size
+		icon = GFX_generic_mio_trait_icon_ap_attack
+
+		position = { x=1 y=2 }
+		relative_position_id = hasag_mio_trait_improved_range
+
+		all_parents = { hasag_mio_trait_increased_propellant hasag_mio_trait_improved_range }
+
+		limit_to_equipment_type = {
+			infantry_anti_tank_equipment
+		}
+
+		equipment_bonus = {
+			hard_attack = 0.03
+			ap_attack = 0.25
+			build_cost_ic = 0.03
+
+		}
+	}
+
+}
