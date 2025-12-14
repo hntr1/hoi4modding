@@ -1,0 +1,21 @@
+division_template = {
+	name = "LSSAH"
+	is_locked = yes # Not allowed to delete or edit
+	force_allow_recruiting = yes # Allows you to retrain if division is destroyed
+	division_cap = 1 # can only have 1 at a time
+	priority = 2 # Elite reinforcement priority
+
+	regiments = {
+		motorized = { x = 0 y = 0}
+		motorized = { x = 0 y = 1}
+		motorized = { x = 0 y = 2}
+	}
+	support = {
+		engineer = { x = 0 y = 0}
+		mot_recon = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+		artillery = { x = 0 y = 3 }
+		anti_tank = { x = 0 y = 4 }
+
+	}
+}

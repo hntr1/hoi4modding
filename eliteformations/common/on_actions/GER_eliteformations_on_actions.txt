@@ -1,0 +1,747 @@
+# 
+# On action daily effects are used to keep track of equipment stockpiles and show the player in the decision tooltip how much equipment will be 
+# left in stockpiles when the unit is created. This makes sure you don't unknowingly go negative on equipment when spawning divisions.
+# Each effect has an if condition that makes sure the variables only get updated when necessary, this allows for 1: reusing variables between division
+# stages, and 2: reduced daily computational load on the game as values are only calculated when their corresponding tooltips are visible and relevant.
+#
+
+on_actions = {
+	on_daily_GER = {
+		effect = { # Stage 1 LSSAH loc variables
+			if = {
+				limit = {
+					NOT = { has_country_flag = lssah_stage_1}
+				}
+
+				set_variable = { GER.lssah_inf_eq_total = num_equipment@infantry_equipment }
+				subtract_from_variable = { GER.lssah_inf_eq_total = 350}
+
+				set_variable = { GER.lssah_sup_eq_total = num_equipment@support_equipment}
+				subtract_from_variable = { GER.lssah_sup_eq_total = 60}
+
+				set_variable = { GER.lssah_mot_eq_total = num_equipment@motorized_equipment}
+				subtract_from_variable = { GER.lssah_mot_eq_total = 135}
+
+				set_variable = { GER.lssah_art_eq_total = num_equipment@artillery_equipment}
+				subtract_from_variable = { GER.lssah_art_eq_total = 12}
+
+				set_variable = { GER.lssah_at_eq_total = num_equipment@anti_tank_equipment}
+				subtract_from_variable = { GER.lssah_at_eq_total = 24}
+			}
+		}
+		effect = { # Stage 2 LSSAH loc variables
+			if = {
+				limit = {
+					AND = {
+						has_country_flag = lssah_stage_1
+						NOT = {has_country_flag = lssah_stage_2}
+					}
+				}
+
+				set_variable = { GER.lssah_inf_eq_total = num_equipment@infantry_equipment}
+				subtract_from_variable = { GER.lssah_inf_eq_total = 300}
+
+				set_variable = { GER.lssah_mot_eq_total = num_equipment@motorized_equipment}
+				subtract_from_variable = { GER.lssah_mot_eq_total = 155}
+
+				set_variable = { GER.lssah_aa_eq_total = num_equipment@anti_air_equipment}
+				subtract_from_variable = { GER.lssah_aa_eq_total = 30}
+
+				set_variable = { GER.lssah_spg_eq_total = num_equipment@medium_tank_artillery_chassis}
+				subtract_from_variable = { GER.lssah_spg_eq_total = 50}
+			}
+		}
+		effect = { # Stage 3 LSSAH loc variables
+			if = {
+				limit = {
+					AND = {
+						has_country_flag = lssah_stage_2
+						NOT = {has_country_flag = lssah_stage_3}
+					}
+				}
+
+				set_variable = { GER.lssah_mot_eq_total = num_equipment@motorized_equipment}
+				subtract_from_variable = { GER.lssah_mot_eq_total = 72}
+
+				set_variable = { GER.lssah_art_eq_total = num_equipment@artillery_equipment}
+				subtract_from_variable = { GER.lssah_art_eq_total = 36}
+
+				set_variable = { GER.lssah_roc_eq_total = num_equipment@rocket_artillery_equipment}
+				subtract_from_variable = { GER.lssah_roc_eq_total = 36}
+
+				set_variable = { GER.lssah_mt_eq_total = num_equipment@medium_tank_chassis}
+				subtract_from_variable = { GER.lssah_mt_eq_total = 100}
+
+				set_variable = { GER.lssah_ht_eq_total = num_equipment@heavy_tank_chassis}
+				subtract_from_variable = { GER.lssah_ht_eq_total = 40}
+			}
+		}
+		effect = { # Das Reich loc variables
+			if = {
+				limit = {
+					NOT = { has_country_flag = dasreich_deployed}
+				}
+
+				set_variable = { GER.dasreich_inf_eq_total = num_equipment@infantry_equipment}
+				subtract_from_variable = { GER.dasreich_inf_eq_total = 600}
+
+				set_variable = { GER.dasreich_sup_eq_total = num_equipment@support_equipment}
+				subtract_from_variable = { GER.dasreich_sup_eq_total = 50}
+
+				set_variable = { GER.dasreich_mot_eq_total = num_equipment@motorized_equipment}
+				subtract_from_variable = { GER.dasreich_mot_eq_total = 10}
+
+				set_variable = { GER.dasreich_asv_eq_total = num_equipment@armored_support_vehicle}
+				subtract_from_variable = { GER.dasreich_asv_eq_total = 50}
+
+				set_variable = {GER.dasreich_lt_eq_total = num_equipment@light_tank_chassis}
+				subtract_from_variable = {GER.dasreich_lt_eq_total = 24}
+
+				set_variable = { GER.dasreich_mt_eq_total = num_equipment@medium_tank_chassis}
+				subtract_from_variable = { GER.dasreich_mt_eq_total = 150}
+
+				set_variable = { GER.dasreich_mspg_eq_total = num_equipment@medium_tank_artillery_chassis}
+				subtract_from_variable = { GER.dasreich_mspg_eq_total = 50}
+
+				set_variable = { GER.dasreich_mtd_eq_total = num_equipment@medium_tank_destroyer_chassis}
+				subtract_from_variable = { GER.dasreich_mtd_eq_total = 50}
+
+				set_variable = { GER.dasreich_mspaa_eq_total = num_equipment@medium_tank_aa_chassis}
+				subtract_from_variable = { GER.dasreich_mspaa_eq_total = 36}
+
+				set_variable = { GER.dasreich_ht_eq_total = num_equipment@heavy_tank_chassis}
+				subtract_from_variable = { GER.dasreich_ht_eq_total = 40}
+
+				set_variable = { GER.dasreich_roc_eq_total = num_equipment@rocket_artillery_equipment}
+				subtract_from_variable = { GER.dasreich_roc_eq_total = 12}
+
+				set_variable = { GER.dasreich_mech_eq_total = num_equipment@mechanized_equipment}
+				subtract_from_variable = { GER.dasreich_mech_eq_total = 240}
+
+
+			}
+		}
+		effect = { # Totenkopf loc variables
+			if = {
+				limit = {
+					NOT = { has_country_flag = totenkopf_stage_1}
+				}
+
+				set_variable = {GER.tk_inf_eq_total = num_equipment@infantry_equipment}
+				subtract_from_variable = {GER.tk_inf_eq_total = 900}
+
+				set_variable = {GER.tk_mot_eq_total = num_equipment@motorized_equipment}
+				subtract_from_variable = {GER.tk_mot_eq_total = 315}
+
+				set_variable = {GER.tk_art_eq_total = num_equipment@artillery_equipment}
+				subtract_from_variable = {GER.tk_art_eq_total = 12}
+			}
+		}
+		effect = { # Totenkopf stage 2 loc variables
+			if = {
+				limit = {
+					AND = {
+						has_country_flag = totenkopf_stage_1
+						NOT = {has_country_flag = totenkopf_stage_2}
+					}
+				}
+
+				set_variable = {GER.tk_sup_eq_total = num_equipment@support_equipment}
+				subtract_from_variable = {GER.tk_sup_eq_total = 30}
+
+				set_variable = {GER.tk_aa_eq_total = num_equipment@anti_air_equipment}
+				subtract_from_variable = {GER.tk_aa_eq_total = 20}
+
+				set_variable = {GER.tk_asv_eq_total = num_equipment@armored_support_vehicle}
+				subtract_from_variable = {GER.tk_asv_eq_total = 50}
+
+				set_variable = {GER.tk_mt_eq_total = num_equipment@medium_tank_chassis}
+				subtract_from_variable = {GER.tk_mt_eq_total = 150}
+
+				set_variable = {GER.tk_mspg_eq_total = num_equipment@medium_tank_artillery_chassis}
+				subtract_from_variable = {GER.tk_mspg_eq_total = 50}
+
+				set_variable = {GER.tk_mtd_eq_total = num_equipment@medium_tank_destroyer_chassis}
+				subtract_from_variable = {GER.tk_mtd_eq_total = 50}
+			}
+		}
+		effect = { # Polizei stage 1 loc variables
+			if = {
+				limit = {
+					NOT = {has_country_flag = polizei_stage_1}
+				}
+
+				set_variable = {GER.pol_inf_eq_total = num_equipment@infantry_equipment}
+				subtract_from_variable = {GER.pol_inf_eq_total = 610}
+
+				set_variable = {GER.pol_at_eq_total = num_equipment@anti_tank_equipment}
+				subtract_from_variable = {GER.pol_at_eq_total = 36}
+
+				set_variable = {GER.pol_art_eq_total = num_equipment@artillery_equipment}
+				subtract_from_variable = {GER.pol_art_eq_total = 36}
+
+				set_variable = {GER.pol_mot_eq_total = num_equipment@motorized_equipment}
+				subtract_from_variable = {GER.pol_mot_eq_total = 306}
+
+				set_variable = {GER.pol_sup_eq_total = num_equipment@support_equipment}
+				subtract_from_variable = {GER.pol_sup_eq_total = 50}
+			}
+		}
+		effect = { # Polizei stage 2 loc variables
+			if = {
+				limit = {
+					AND = {
+						has_country_flag = polizei_stage_1
+						NOT = {has_country_flag = polizei_stage_2}
+					}
+				}
+
+				set_variable = {GER.pol_mot_eq_total = num_equipment@motorized_equipment}
+				subtract_from_variable = {GER.pol_mot_eq_total = 50}
+
+				set_variable = {GER.pol_aa_eq_total = num_equipment@anti_air_equipment}
+				subtract_from_variable = {GER.pol_aa_eq_total = 30}
+
+				set_variable = {GER.pol_mspg_eq_total = num_equipment@medium_tank_artillery_chassis}
+				subtract_from_variable = {GER.pol_mspg_eq_total = 50}
+
+				set_variable = {GER.pol_mt_eq_total = num_equipment@medium_tank_chassis}
+				subtract_from_variable = {GER.pol_mt_eq_total = 50}
+			}
+		}
+		effect = { # Wiking stage 1 loc variables
+			if = {
+				limit = {
+					NOT = {has_country_flag = wiking_stage_1}
+				}
+
+				set_variable = {GER.wk_art_eq_total = num_equipment@artillery_equipment}
+				subtract_from_variable = {GER.wk_art_eq_total = 36}
+
+				set_variable = {GER.wk_inf_eq_total = num_equipment@infantry_equipment}
+				subtract_from_variable = {GER.wk_inf_eq_total = 600}
+
+				set_variable = {GER.wk_mot_eq_total = num_equipment@motorized_equipment}
+				subtract_from_variable = {GER.wk_mot_eq_total = 246}
+
+			}
+		}
+		effect = { # Wiking stage 2 loc variables
+			if = {
+				limit = {
+					AND = {
+						has_country_flag = wiking_stage_1
+						NOT = {has_country_flag = wiking_stage_2}
+					}
+				}
+
+				set_variable = {GER.wk_mot_eq_total = num_equipment@motorized_equipment}
+				subtract_from_variable = {GER.wk_mot_eq_total = 50}
+
+				set_variable = {GER.wk_at_eq_total = num_equipment@anti_tank_equipment}
+				subtract_from_variable = {GER.wk_at_eq_total = 36}
+
+				set_variable = {GER.wk_mtd_eq_total = num_equipment@medium_tank_destroyer_chassis}
+				subtract_from_variable = {GER.wk_mtd_eq_total = 50}
+
+				set_variable = {GER.wk_mt_eq_total = num_equipment@medium_tank_chassis}
+				subtract_from_variable = {GER.wk_mt_eq_total = 150}
+			}
+		}
+		effect = { # PE stage 1 loc variables
+			if = {
+				limit = {
+					NOT = {has_country_flag = pe_stage_1}
+				}
+
+				set_variable = {GER.pe_sup_eq_total = num_equipment@support_equipment}
+				subtract_from_variable = {GER.pe_sup_eq_total = 100}
+
+				set_variable = {GER.pe_aa_eq_total = num_equipment@anti_air_equipment}
+				subtract_from_variable = {GER.pe_aa_eq_total = 30}
+
+				set_variable = {GER.pe_inf_eq_total = num_equipment@infantry_equipment}
+				subtract_from_variable = {GER.pe_inf_eq_total = 930}
+
+				set_variable = {GER.pe_lt_eq_total = num_equipment@light_tank_chassis}
+				subtract_from_variable = {GER.pe_lt_eq_total = 60}
+
+				set_variable = {GER.pe_at_eq_total = num_equipment@anti_tank_equipment}
+				subtract_from_variable = {GER.pe_at_eq_total = 36}
+
+				set_variable = {GER.pe_art_eq_total = num_equipment@artillery_equipment}
+				subtract_from_variable = {GER.pe_art_eq_total = 36}
+
+				set_variable = {GER.pe_mot_eq_total = num_equipment@motorized_equipment}
+				subtract_from_variable = {GER.pe_mot_eq_total = 50}
+			}
+		}
+		effect = { # PE stage 2 loc variables
+			if = {
+				limit = {
+					AND = {
+						has_country_flag = pe_stage_1
+						NOT = {has_country_flag = pe_stage_2}
+					}
+				}
+
+				set_variable = {GER.pe_mspg_eq_total = num_equipment@medium_tank_artillery_chassis}
+				subtract_from_variable = {GER.pe_mspg_eq_total = 50}
+			}
+		}
+		effect = { # FG stage 1 loc variables
+			if = {
+				limit = {
+					NOT = {has_country_flag = fg_stage_1}
+				}
+
+				set_variable = {GER.fg_mot_eq_total = num_equipment@motorized_equipment}
+				subtract_from_variable = {GER.fg_mot_eq_total = 10}
+
+				set_variable = {GER.fg_aa_eq_total = num_equipment@anti_air_equipment}
+				subtract_from_variable = {GER.fg_aa_eq_total = 20}
+
+				set_variable = {GER.fg_at_eq_total = num_equipment@anti_tank_equipment}
+				subtract_from_variable = {GER.fg_at_eq_total = 24}
+
+				set_variable = {GER.fg_mtd_eq_total = num_equipment@medium_tank_destroyer_chassis}
+				subtract_from_variable = {GER.fg_mtd_eq_total = 50}
+
+				set_variable = {GER.fg_art_eq_total = num_equipment@artillery_equipment}
+				subtract_from_variable = {GER.fg_art_eq_total = 36}
+
+				set_variable = {GER.fg_inf_eq_total = num_equipment@infantry_equipment}
+				subtract_from_variable = {GER.fg_inf_eq_total = 1090}
+
+				set_variable = {GER.fg_sup_eq_total = num_equipment@support_equipment}
+				subtract_from_variable = {GER.fg_sup_eq_total = 50}
+			}
+		}
+		effect = { # FG stage 2 loc variables
+			if = {
+				limit = {
+					AND = {
+						has_country_flag = fg_stage_1
+						NOT = {has_country_flag = fg_stage_2}
+					}
+				}
+
+				set_variable = {GER.fg_mot_eq_total = num_equipment@motorized_equipment}
+				subtract_from_variable = {GER.fg_mot_eq_total = 20}
+
+				set_variable = {GER.fg_inf_eq_total = num_equipment@infantry_equipment}
+				subtract_from_variable = {GER.fg_inf_eq_total = 40}
+
+				set_variable = {GER.fg_sup_eq_total = num_equipment@support_equipment}
+				subtract_from_variable = {GER.fg_sup_eq_total = 10}
+			}
+		}
+		effect = { # HS loc variables
+			if = {
+				limit = {
+					NOT = { has_country_flag = hs_deployed}
+				}
+
+				set_variable = { GER.hs_inf_eq_total = num_equipment@infantry_equipment}
+				subtract_from_variable = { GER.hs_inf_eq_total = 600}
+
+				set_variable = { GER.hs_sup_eq_total = num_equipment@support_equipment}
+				subtract_from_variable = { GER.hs_sup_eq_total = 50}
+
+				set_variable = { GER.hs_mot_eq_total = num_equipment@motorized_equipment}
+				subtract_from_variable = { GER.hs_mot_eq_total = 10}
+
+				set_variable = { GER.hs_asv_eq_total = num_equipment@armored_support_vehicle}
+				subtract_from_variable = { GER.hs_asv_eq_total = 50}
+
+				set_variable = {GER.hs_lt_eq_total = num_equipment@light_tank_chassis}
+				subtract_from_variable = {GER.hs_lt_eq_total = 24}
+
+				set_variable = { GER.hs_mt_eq_total = num_equipment@medium_tank_chassis}
+				subtract_from_variable = { GER.hs_mt_eq_total = 150}
+
+				set_variable = { GER.hs_mspg_eq_total = num_equipment@medium_tank_artillery_chassis}
+				subtract_from_variable = { GER.hs_mspg_eq_total = 50}
+
+				set_variable = { GER.hs_mtd_eq_total = num_equipment@medium_tank_destroyer_chassis}
+				subtract_from_variable = { GER.hs_mtd_eq_total = 50}
+
+				set_variable = { GER.hs_ht_eq_total = num_equipment@heavy_tank_chassis}
+				subtract_from_variable = { GER.hs_ht_eq_total = 40}
+
+				set_variable = { GER.hs_roc_eq_total = num_equipment@rocket_artillery_equipment}
+				subtract_from_variable = { GER.hs_roc_eq_total = 12}
+
+				set_variable = { GER.hs_mech_eq_total = num_equipment@mechanized_equipment}
+				subtract_from_variable = { GER.hs_mech_eq_total = 240}
+			}
+		}
+		effect = { # FB loc variables
+			if = {
+				limit = {
+					NOT = { has_country_flag = fb_deployed}
+				}
+
+				set_variable = { GER.fb_inf_eq_total = num_equipment@infantry_equipment}
+				subtract_from_variable = { GER.fb_inf_eq_total = 600}
+
+				set_variable = { GER.fb_sup_eq_total = num_equipment@support_equipment}
+				subtract_from_variable = { GER.fb_sup_eq_total = 65}
+
+				set_variable = { GER.fb_mot_eq_total = num_equipment@motorized_equipment}
+				subtract_from_variable = { GER.fb_mot_eq_total = 10}
+
+				set_variable = { GER.fb_asv_eq_total = num_equipment@armored_support_vehicle}
+				subtract_from_variable = { GER.fb_asv_eq_total = 70}
+
+				set_variable = {GER.fb_lt_eq_total = num_equipment@light_tank_chassis}
+				subtract_from_variable = {GER.fb_lt_eq_total = 24}
+
+				set_variable = { GER.fb_mt_eq_total = num_equipment@medium_tank_chassis}
+				subtract_from_variable = { GER.fb_mt_eq_total = 150}
+
+				set_variable = { GER.fb_mspg_eq_total = num_equipment@medium_tank_artillery_chassis}
+				subtract_from_variable = { GER.fb_mspg_eq_total = 50}
+
+				set_variable = { GER.fb_mtd_eq_total = num_equipment@medium_tank_destroyer_chassis}
+				subtract_from_variable = { GER.fb_mtd_eq_total = 50}
+
+				set_variable = { GER.fb_ht_eq_total = num_equipment@heavy_tank_chassis}
+				subtract_from_variable = { GER.fb_ht_eq_total = 40}
+
+				set_variable = { GER.fb_mech_eq_total = num_equipment@mechanized_equipment}
+				subtract_from_variable = { GER.fb_mech_eq_total = 240}
+			}
+		}
+		effect = { # HJ loc variables
+			if = {
+				limit = {
+					NOT = { has_country_flag = hj_deployed}
+				}
+
+				set_variable = { GER.hj_inf_eq_total = num_equipment@infantry_equipment}
+				subtract_from_variable = { GER.hj_inf_eq_total = 600}
+
+				set_variable = { GER.hj_sup_eq_total = num_equipment@support_equipment}
+				subtract_from_variable = { GER.hj_sup_eq_total = 50}
+
+				set_variable = { GER.hj_mot_eq_total = num_equipment@motorized_equipment}
+				subtract_from_variable = { GER.hj_mot_eq_total = 10}
+
+				set_variable = { GER.hj_asv_eq_total = num_equipment@armored_support_vehicle}
+				subtract_from_variable = { GER.hj_asv_eq_total = 50}
+
+				set_variable = {GER.hj_lt_eq_total = num_equipment@light_tank_chassis}
+				subtract_from_variable = {GER.hj_lt_eq_total = 24}
+
+				set_variable = { GER.hj_mt_eq_total = num_equipment@medium_tank_chassis}
+				subtract_from_variable = { GER.hj_mt_eq_total = 150}
+
+				set_variable = { GER.hj_mspg_eq_total = num_equipment@medium_tank_artillery_chassis}
+				subtract_from_variable = { GER.hj_mspg_eq_total = 50}
+
+				set_variable = { GER.hj_mtd_eq_total = num_equipment@medium_tank_destroyer_chassis}
+				subtract_from_variable = { GER.hj_mtd_eq_total = 50}
+
+				set_variable = { GER.hj_ht_eq_total = num_equipment@heavy_tank_chassis}
+				subtract_from_variable = { GER.hj_ht_eq_total = 40}
+
+				set_variable = { GER.hj_roc_eq_total = num_equipment@rocket_artillery_equipment}
+				subtract_from_variable = { GER.hj_roc_eq_total = 12}
+
+				set_variable = { GER.hj_mspaa_eq_total = num_equipment@medium_tank_aa_chassis}
+				subtract_from_variable = { GER.hj_mspaa_eq_total = 36}
+
+				set_variable = { GER.hj_mech_eq_total = num_equipment@mechanized_equipment}
+				subtract_from_variable = { GER.hj_mech_eq_total = 240}
+			}
+		}
+		effect = { # Nordland stage 1 loc variables
+			if = {
+				limit = { 
+					NOT = { has_country_flag = nordland_stage_1 } 
+				}
+
+				set_variable = { GER.nordl_aa_eq_total = num_equipment@anti_air_equipment }
+				subtract_from_variable = { GER.nordl_aa_eq_total = 20 }
+
+				set_variable = { GER.nordl_inf_eq_total = num_equipment@infantry_equipment }
+				subtract_from_variable = { GER.nordl_inf_eq_total = 900 }
+
+				set_variable = { GER.nordl_mech_eq_total = num_equipment@mechanized_equipment }
+				subtract_from_variable = { GER.nordl_mech_eq_total = 360 }
+
+				set_variable = { GER.nordl_mot_eq_total = num_equipment@motorized_equipment }
+				subtract_from_variable = { GER.nordl_mot_eq_total = 20 }
+
+				set_variable = { GER.nordl_asv_eq_total = num_equipment@armored_support_vehicle }
+				subtract_from_variable = { GER.nordl_asv_eq_total = 20 }
+				
+				set_variable = { GER.nordl_sup_eq_total = num_equipment@support_equipment }
+				subtract_from_variable = { GER.nordl_sup_eq_total = 85 }
+
+				set_variable = { GER.nordl_mt_eq_total = num_equipment@medium_tank_chassis }
+				subtract_from_variable = { GER.nordl_mt_eq_total = 50 }	
+
+				set_variable = { GER.nordl_mspg_eq_total = num_equipment@medium_tank_artillery_chassis }
+				subtract_from_variable = { GER.nordl_mspg_eq_total = 50 }	
+
+				set_variable = { GER.nordl_mtd_eq_total = num_equipment@medium_tank_destroyer_chassis }
+				subtract_from_variable = { GER.nordl_mtd_eq_total = 50 }		
+			}
+		}
+		effect = { # Nordland stage 2 loc variable
+			if = {
+				limit = {
+					has_country_flag = nordland_stage_1
+					NOT = { has_country_flag = nordland_stage_2 }
+				}
+
+				set_variable = { GER.nordl_ht_eq_total = num_equipment@anti_air_equipment }
+				subtract_from_variable = { GER.nordl_ht_eq_total = 40 }
+			}
+		}
+		effect = { # PZGREN GD loc variables
+			if = {
+				limit = {
+					NOT = { has_country_flag = GD_Deployed}
+				}
+
+				set_variable = { GER.gd_inf_eq_total = num_equipment@infantry_equipment }
+				subtract_from_variable = { GER.gd_inf_eq_total = 350}
+
+				set_variable = { GER.gd_sup_eq_total = num_equipment@support_equipment}
+				subtract_from_variable = { GER.gd_sup_eq_total = 80}
+
+				set_variable = { GER.gd_mot_eq_total = num_equipment@motorized_equipment}
+				subtract_from_variable = { GER.gd_mot_eq_total = 40}
+
+				set_variable = { GER.gd_aa_eq_total = num_equipment@anti_air_equipment}
+				subtract_from_variable = { GER.gd_aa_eq_total = 20}
+
+				set_variable = { GER.gd_mech_eq_total = num_equipment@mechanized_equipment}
+				subtract_from_variable = { GER.gd_mech_eq_total = 120}
+
+				set_variable = { GER.gd_mt_eq_total = num_equipment@medium_tank_chassis}
+				subtract_from_variable = { GER.gd_mt_eq_total = 100}
+
+				set_variable = { GER.gd_ht_eq_total = num_equipment@heavy_tank_chassis}
+				subtract_from_variable = { GER.gd_ht_eq_total = 40}
+
+				set_variable = { GER.gd_mspg_eq_total = num_equipment@medium_tank_artillery_chassis}
+				subtract_from_variable = { GER.gd_mspg_eq_total = 50}
+
+				set_variable = { GER.gd_lspg_eq_total = num_equipment@light_tank_artillery_chassis}
+				subtract_from_variable = { GER.gd_lspg_eq_total = 50}
+
+				set_variable = { GER.gd_ltd_eq_total = num_equipment@light_tank_destroyer_chassis}
+				subtract_from_variable = { GER.gd_ltd_eq_total = 50}
+
+			}
+		}
+		effect = { # PZ HG loc variables
+			if = {
+				limit = {
+					NOT = { has_country_flag = HG_Deployed}
+				}
+
+				set_variable = { GER.hg_inf_eq_total = num_equipment@infantry_equipment }
+				subtract_from_variable = { GER.hg_inf_eq_total = 600}
+
+				set_variable = { GER.hg_sup_eq_total = num_equipment@support_equipment}
+				subtract_from_variable = { GER.hg_sup_eq_total = 65}
+
+				set_variable = { GER.hg_mot_eq_total = num_equipment@motorized_equipment}
+				subtract_from_variable = { GER.hg_mot_eq_total = 160}
+
+				set_variable = { GER.hg_aa_eq_total = num_equipment@anti_air_equipment}
+				subtract_from_variable = { GER.hg_aa_eq_total = 90}
+
+				set_variable = { GER.hg_mech_eq_total = num_equipment@mechanized_equipment}
+				subtract_from_variable = { GER.hg_mech_eq_total = 240}
+
+				set_variable = { GER.hg_mt_eq_total = num_equipment@medium_tank_chassis}
+				subtract_from_variable = { GER.hg_mt_eq_total = 100}
+
+				set_variable = { GER.hg_mspg_eq_total = num_equipment@medium_tank_artillery_chassis}
+				subtract_from_variable = { GER.hg_mspg_eq_total = 200}
+
+				set_variable = { GER.hg_lt_eq_total = num_equipment@light_tank_chassis}
+				subtract_from_variable = { GER.hg_lt_eq_total = 24}
+
+				set_variable = { GER.hg_asv_eq_total = num_equipment@armored_support_vehicle}
+				subtract_from_variable = { GER.hg_asv_eq_total = 70}
+			}
+		}
+		effect = { # PZ Lehr loc variables
+			if = {
+				limit = {
+					NOT = { has_country_flag = Lehr_Deployed}
+				}
+
+				set_variable = { GER.pzl_inf_eq_total = num_equipment@infantry_equipment }
+				subtract_from_variable = { GER.pzl_inf_eq_total = 600}
+
+				set_variable = { GER.pzl_sup_eq_total = num_equipment@support_equipment}
+				subtract_from_variable = { GER.pzl_sup_eq_total = 50}
+
+				set_variable = { GER.pzl_mot_eq_total = num_equipment@motorized_equipment}
+				subtract_from_variable = { GER.pzl_mot_eq_total = 10}
+
+				set_variable = { GER.pzl_aa_eq_total = num_equipment@anti_air_equipment}
+				subtract_from_variable = { GER.pzl_aa_eq_total = 20}
+
+				set_variable = { GER.pzl_mech_eq_total = num_equipment@mechanized_equipment}
+				subtract_from_variable = { GER.pzl_mech_eq_total = 240}
+
+				set_variable = { GER.pzl_mt_eq_total = num_equipment@medium_tank_chassis}
+				subtract_from_variable = { GER.pzl_mt_eq_total = 100}
+
+				set_variable = { GER.pzl_mspg_eq_total = num_equipment@medium_tank_artillery_chassis}
+				subtract_from_variable = { GER.pzl_mspg_eq_total = 150}
+
+				set_variable = { GER.pzl_asv_eq_total = num_equipment@armored_support_vehicle}
+				subtract_from_variable = { GER.pzl_asv_eq_total = 50}
+			}
+		}
+		effect = { # SS Nord loc variables
+			if = {
+				limit = {
+					NOT = { has_country_flag = ssnord_Deployed}
+				}
+
+				set_variable = { GER.nord_inf_eq_total = num_equipment@infantry_equipment }
+				subtract_from_variable = { GER.nord_inf_eq_total = 930}
+
+				set_variable = { GER.nord_sup_eq_total = num_equipment@support_equipment}
+				subtract_from_variable = { GER.nord_sup_eq_total = 75}
+
+				set_variable = { GER.nord_art_eq_total = num_equipment@artillery_equipment}
+				subtract_from_variable = { GER.nord_art_eq_total = 108}
+
+				set_variable = { GER.nord_aa_eq_total = num_equipment@anti_air_equipment}
+				subtract_from_variable = { GER.nord_aa_eq_total = 20}
+
+				set_variable = { GER.nord_at_eq_total = num_equipment@anti_tank_equipment}
+				subtract_from_variable = { GER.nord_at_eq_total = 36}
+
+				set_variable = { GER.nord_mot_eq_total = num_equipment@motorized_equipment}
+				subtract_from_variable = { GER.nord_mot_eq_total = 10 }
+			}
+		}
+		effect = { # 999 LAD loc variables
+			if = {
+				limit = {
+					NOT = { has_country_flag = lad999_Deployed}
+				}
+
+				set_variable = { GER.lad_inf_eq_total = num_equipment@infantry_equipment }
+				subtract_from_variable = { GER.lad_inf_eq_total = 855}
+
+				set_variable = { GER.lad_sup_eq_total = num_equipment@support_equipment}
+				subtract_from_variable = { GER.lad_sup_eq_total = 70}
+
+				set_variable = { GER.lad_art_eq_total = num_equipment@artillery_equipment}
+				subtract_from_variable = { GER.lad_art_eq_total = 36}
+
+				set_variable = { GER.lad_at_eq_total = num_equipment@anti_tank_equipment}
+				subtract_from_variable = { GER.lad_at_eq_total = 24}
+
+				set_variable = { GER.lad_mot_eq_total = num_equipment@motorized_equipment }
+				subtract_from_variable = { GER.lad_mot_eq_total = 10}
+			}
+		}
+		effect = { # Fuhrer Begleit Stage 1 loc variables
+			if = {
+				limit = {
+					NOT = { has_country_flag = fuhrerbegleit_stage_1}
+				}
+
+				set_variable = { GER.frbg_inf_eq_total = num_equipment@infantry_equipment }
+				subtract_from_variable = { GER.frbg_inf_eq_total = 300 }
+
+				set_variable = { GER.frbg_sup_eq_total = num_equipment@support_equipment }
+				subtract_from_variable = { GER.frbg_sup_eq_total = 10 }
+
+				set_variable = { GER.frbg_mt_eq_total = num_equipment@medium_tank_chassis }
+				subtract_from_variable = { GER.frbg_mt_eq_total = 50 }
+
+				set_variable = { GER.frbg_mech_eq_total = num_equipment@mechanized_equipment }
+				subtract_from_variable = { GER.frbg_mech_eq_total = 80 }
+
+				set_variable = { GER.frbg_mspg_eq_total = num_equipment@medium_tank_artillery_chassis }
+				subtract_from_variable = { GER.frbg_mspg_eq_total = 50 }
+
+				set_variable = { GER.frbg_mspaa_eq_total = num_equipment@medium_tank_aa_chassis }
+				subtract_from_variable = { GER.frbg_mspaa_eq_total = 36 }
+
+				set_variable = { GER.frbg_ac_eq_total = num_equipment@armored_car_equipment }
+				subtract_from_variable = { GER.frbg_ac_eq_total = 24 }
+			}
+		}
+		effect = { # Fuhrer Begleit Stage 2 loc variables
+			if = {
+				limit = {
+					AND = {
+						has_country_flag = fuhrerbegleit_stage_1
+						NOT = { has_country_flag = fuhrerbegleit_stage_2 }
+					}
+				}
+
+				set_variable = { GER.frbg_inf_eq_total = num_equipment@infantry_equipment }
+				subtract_from_variable = { GER.frbg_inf_eq_total = 100 }
+
+				set_variable = { GER.frbg_sup_eq_total = num_equipment@support_equipment }
+				subtract_from_variable = { GER.frbg_sup_eq_total = 55 }
+
+				set_variable = { GER.frbg_mt_eq_total = num_equipment@medium_tank_chassis }
+				subtract_from_variable = { GER.frbg_mt_eq_total = 50 }
+
+				set_variable = { GER.frbg_mot_eq_total = num_equipment@motorized_equipment }
+				subtract_from_variable = { GER.frbg_mot_eq_total = 20 }
+
+				set_variable = { GER.frbg_mech_eq_total = num_equipment@mechanized_equipment }
+				subtract_from_variable = { GER.frbg_mech_eq_total = 40 }
+
+				set_variable = { GER.frbg_mtd_eq_total = num_equipment@medium_tank_destroyer_chassis }
+				subtract_from_variable = { GER.frbg_mtd_eq_total = 50 }
+
+				set_variable = { GER.frbg_asv_eq_total = num_equipment@armored_support_vehicle }
+				subtract_from_variable = { GER.frbg_asv_eq_total = 30 }
+
+			}
+		}
+
+		effect = { # Fuhrer Grenadier Stage 1 loc variables
+			if = {
+				limit = {
+					NOT = { has_country_flag = fuhrergren_deployed}
+				}
+
+				set_variable = { GER.frgr_inf_eq_total = num_equipment@infantry_equipment }
+				subtract_from_variable = { GER.frgr_inf_eq_total = 300 }
+
+				set_variable = { GER.frgr_sup_eq_total = num_equipment@support_equipment }
+				subtract_from_variable = { GER.frgr_sup_eq_total = 10 }
+
+				set_variable = { GER.frgr_mt_eq_total = num_equipment@medium_tank_chassis }
+				subtract_from_variable = { GER.frgr_mt_eq_total = 50 }
+
+				set_variable = { GER.frgr_mech_eq_total = num_equipment@mechanized_equipment }
+				subtract_from_variable = { GER.frgr_mech_eq_total = 80 }
+
+				set_variable = { GER.frgr_mspg_eq_total = num_equipment@medium_tank_artillery_chassis }
+				subtract_from_variable = { GER.frgr_mspg_eq_total = 50 }
+
+				set_variable = { GER.frgr_asv_eq_total = num_equipment@armored_support_vehicle }
+				subtract_from_variable = { GER.frgr_asv_eq_total = 30 }
+
+				set_variable = { GER.frgr_mtd_eq_total = num_equipment@medium_tank_destroyer_chassis }
+				subtract_from_variable = { GER.frgr_mtd_eq_total = 50 }
+
+				set_variable = { GER.frgr_art_eq_total = num_equipment@artillery_equipment}
+				subtract_from_variable = {GER.frgr_art_eq_total = 12 }		
+			}
+		}
+	}
+}

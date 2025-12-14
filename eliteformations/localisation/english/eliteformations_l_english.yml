@@ -1,0 +1,220 @@
+﻿l_english:
+
+# Decision Categories
+  eliteformations_cat: "Elite Formations of the Wehrmacht"
+
+# Decisions
+  lssah_1: "Form SS-Regiment Liebstandarte SS Adolf Hitler"
+  lssah_2: "Expand LSSAH to Brigade Size"
+  lssah_3: "Expand LSSAH to Division Size"
+
+  dasreich_1: "Form SS-Panzer-Division Das Reich"
+
+  totenkopf_1: "Form SS-Division Totenkopf"
+  totenkopf_2: "Reform SS-Divison Totenkopf into an SS-Panzer-Division"
+
+  polizei_1: "Form SS-Polizei-Panzergrenadier-Division"
+  polizei_2: "Expand SS-Polizei-Panzergrenadier-Division"
+
+  wiking_1: "Form SS-Division Wiking"
+  wiking_2: "Reform SS Divison Wiking into an SS-Panzer-Division"
+
+  prinzeugen_1: "Form SS-Freiwilligen-Gebirgs-Division Prinz Eugen"
+  prinzeugen_2: "Expand SS Freiwilligen-Gebirgs-Division Prinz Eugen"
+
+  floriangeyer_1: "Form SS-Kavallerie-Division Florian Geyer"
+  floriangeyer_2: "Expand SS Kavallerie-Division Florian Geyer"
+
+  hohenstaufen_1: "Form SS-Panzer-Division Hohenstaufen"
+
+  frundsberg_1: "Form SS-Panzer-Division Frundsberg"
+
+  nordland_1: "Form SS-Panzergrenadier-Division Nordland"
+  nordland_2: "Attach SS schwere-Panzer-Abteiling 103 to SS-Panzergrenadier-Division Nordland"
+
+  hitlerjugend_1: "Form SS-Panzer-Division Hitlerjugend"
+
+  pzgrengd_1: "Form Panzergrenadier-Division Großdeutschland"
+
+  pzhg_1: "Form Fallschirm-Panzer-Division 1 Hermann Göring"
+
+  pzl_1: "Form Panzer-Lehr-Division"
+
+  ssnord_1: "Form SS-Gebirgs-Division Nord"
+
+  lad999_1: "Form 999. leichte-Afrika-Division"
+
+  fuhrerbegleit_1: "Form the Führerbegleitbrigade"
+  fuhrerbegleit_2: "Expand the Führerbegleitbrigade to Division Size"
+
+  fuhrergrenadier_1: "Form the Führergrenadierbrigade"
+
+# Events
+  eliteformations.1.t: "The Creation of Liebstandarte Adolf Hitler"
+  eliteformations.1.d: "The Liebstandarte Regiment began as Hitler's personal bodyguard unit, it is now being formed into a combat regiemnt for the Waffen-SS."
+  eliteformations.1.a: "Approve the formation"
+
+  eliteformations.2.t: "The Creation of Panzergrenadier-Division Großdeutschland"
+  eliteformations.2.d: "Originally known as Wachregiment Berlin, this ceremonial guard unit is now being formed into an elite Panzergrenadier-Division."
+  eliteformations.2.a: "Approve the formation"
+
+  eliteformations.3.t: "The Creation of Fallschirm-Panzer-Division 1 Hermann Göring"
+  eliteformations.3.d: "Formed in honor of Reichsmarschall Hermann Göring. A strange combination of Heer Panzer units with Luftwaffe personnel."
+  eliteformations.3.a: "Approve the formation"
+
+  eliteformations.4.t: "The Creation of Panzer-Lehr-Division"
+  eliteformations.4.d: "Originally a training unit, it is time to organize Panzer-Lehr into an elite Panzer-Division."
+  eliteformations.4.a: "Approve the formation"
+
+  eliteformations.5.t: "The Creation of 6. SS-Gebirgs-Division Nord"
+  eliteformations.5.d: "SS-Gebirgs_Division Nord is a mountain division with an attached Ski Battalion made up of Norwegian volunteers. Specifically trained to fight in winter conditions."
+  eliteformations.5.a: "Approve the formation"
+
+  eliteformations.6.t: "The Creation of 999. leichte-Afrika-Division"
+  eliteformations.6.d: "999. leichte-Afrika-Division is a penal division containing criminals and individuals holding anti-Nazi ideas. Formed with the intention to provide support to the African Front."
+  eliteformations.6.a: "Approve the formation"
+
+  eliteformations.7.t: "The Creation of SS Division Das Reich"
+  eliteformations.7.d: "Formed out of Regiment Germania split off from the SS Verfügungstruppe and raised into a full SS-Panzer-Division."
+  eliteformations.7.a: "Approve the formation"
+
+  eliteformations.8.t: "The Creation of SS Division Totenkopf"
+  eliteformations.8.d: "SS-Division Totenkopf is formed from the Standarten of the SS-Totenkopfverbände."
+  eliteformations.8.a: "Approve the formation"
+
+  eliteformations.9.t: "The Creation of SS Division Polizei"
+  eliteformations.9.d: "SS-Division Polizei is formed from drafted members of the Ordnungspolizei. These men remain policemen instead of soldiers in order to bypass SS recruitment caps put in place by the Wehrmacht."
+  eliteformations.9.a: "Approve the formation"
+
+  eliteformations.10.t: "The Creation of SS Division Wiking"
+  eliteformations.10.d: "SS-Division Wiking contains foreign volunteers from Northern countries such as Denmark, Norway, Sweden, Iceland, Finland, and Estonia."
+  eliteformations.10.a: "Approve the formation"
+
+  eliteformations.11.t: "The Creation of SS Division Prinz Eugen"
+  eliteformations.11.d: "Prinz Eugen is a mountain division made up of 'volunteers' from the German-speaking population of Danube Swabians in Banat"
+  eliteformations.11.a: "Approve the formation"
+
+  eliteformations.12.t: "The Creation of SS Division Florian Geyer"
+  eliteformations.12.d: "Florian Geyer is an SS-Kavallerie-Division designed to fight partisans in Bandenbekämpfung operations."
+  eliteformations.12.a: "Approve the formation"
+
+  eliteformations.13.t: "The Creation of SS Division Hohenstaufen"
+  eliteformations.13.d: "Hohenstaufen is one of a pair of SS Panzer Divisions along with Frundsberg formed from Reich Labour Service conscripts."
+  eliteformations.13.a: "Approve the formation"
+
+  eliteformations.14.t: "The Creation of SS Division Frundsberg"
+  eliteformations.14.d: "Frundsberg is one of a pair of SS Panzer Divisions along with Hohenstaufen formed from Reich Labour Service conscripts."
+  eliteformations.14.a: "Approve the formation"
+
+  eliteformations.15.t: "The Creation of SS Division Nordland"
+  eliteformations.15.d: "Nordland is made up of ethnic Germans from Romania as well as Western European volunteers."
+  eliteformations.15.a: "Approve the formation"
+
+  eliteformations.16.t: "The Creation of SS Division Hitlerjugend"
+  eliteformations.16.d: "Hitlerjugend's command staff are pulled from veterans from LSSAH and it's junior enlisted men are drawn from the Hitler Youth organization."
+  eliteformations.16.a: "Approve the formation"
+
+  eliteformations.17.t: "The Creation of the Führerbegleitbrigade"
+  eliteformations.17.d: "The Führerbegleitbrigade grows out of the Führer's escort battalion. It is to be deployed as a brigade merged with elements from Panzerkorps Großdeutschland, the Führer's presonal army guard detail, and the mobile artillery from the Wolfschanze headquarters."
+  eliteformations.17.a: "Approve the formation"
+
+  eliteformations.18.t: "The Creation of the Führergrenadierbrigade"
+  eliteformations.18.d: "The Führergrenadierbrigade is a subunit of the Großdeutschland Division. It is to be deployed as a division of its own."
+  eliteformations.18.a: "Approve the formation"
+
+# Decision Costs
+  decision_cost_CP_5: "£command_power  §Y5§!"
+  decision_cost_CP_5_blocked: "£command_power  §R5§!"
+  decision_cost_CP_5_tooltip: "It costs £command_power  §Y5§! to take the decision" 
+
+# Tooltips
+  lssah_1_tt: "\nCreates §YSS-Regiment Liebstandarte SS Adolf Hitler§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?lssah_inf_eq_total|=0+]\n Trucks: [?lssah_mot_eq_total|=0+]\n Support Equipment: [?lssah_sup_eq_total|=0+]\n Artillery: [?lssah_art_eq_total|=0+]\n Anti Tank: [?lssah_at_eq_total|=0+]§!\n\n§2There will be opportunities to expand this regiment into larger units later on.§!\n\n"
+  lssah_2_tt: "\nExpands §YSS-Regiment Liebstandarte SS Adolf Hitler§! to Brigade size.\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?lssah_inf_eq_total|=0+]\n Trucks: [?lssah_mot_eq_total|=0+]\n Medium SPGs: [?lssah_spg_eq_total|=0+]\n Anti Air: [?lssah_aa_eq_total|=0+]§!\n\n§2You will be able to expand this brigade to a division later.§!\n\n§RYou will have to manually rename the unit to SS-Brigade Liebstandarte SS Adolf Hitler if you wish as the name cannot be automatically changed.§!\n\n"
+  lssah_3_tt: "\nExpands §YSS-Brigade Liebstandarte SS Adolf Hitler§! to Division size.\n\nYou will have the following equipment left in stockpile:\n\n §YTrucks: [?lssah_mot_eq_total|=0+]\n Artillery: [?lssah_art_eq_total|=0+]\n Rocket Artillery: [?lssah_roc_eq_total|=0+]\n Medium Tanks: [?lssah_mt_eq_total|=0+]\n Heavy Tanks: [?lssah_ht_eq_total|=0+]§!\n\n§RYou will have to manually rename the unit to 1. SS-Panzer-Division 'Liebstandarte SS Adolf Hitler' if you wish as the name cannot be automatically changed.§!\n\n"
+
+  dasreich_1_tt: "\nCreates §YSS-Panzer-Division Das Reich§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?dasreich_inf_eq_total|=0+]\n Support Equipment: [?dasreich_sup_eq_total|=0+]\n Trucks: [?dasreich_mot_eq_total|=0+]\n Half-Tracks: [?dasreich_mech_eq_total|=0+]\n Rocket Artillery: [?dasreich_roc_eq_total|=0+]\n Armored Support Vehicles: [?dasreich_asv_eq_total|=0+]\n Light Tanks: [?dasreich_lt_eq_total|=0+]\n Medium Tanks: [?dasreich_mt_eq_total|=0+]\n Medium SPGs: [?dasreich_mspg_eq_total|=0+]\n Medium Tank Destroyers: [?dasreich_mtd_eq_total|=0+]\n Medium SPAA: [?dasreich_mspaa_eq_total|=0+]\n Heavy Tanks: [?dasreich_ht_eq_total=0+]§!\n\n"
+
+  totenkopf_1_tt: "\nCreates §YSS-Division Totenkopf§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?tk_inf_eq_total|=0+]\n Trucks: [?tk_mot_eq_total|=0+]\n Artillery: [?tk_art_eq_total|=0+]§!\n\n§2You will be able to expand this division later.§!\n\n"
+  totenkopf_2_tt: "\nReforms §YSS-Division Totenkopf into a Panzer-Division§!\n\nYou will have the following equipment left in stockpile:\n\n §YSupport Equipment: [?tk_sup_eq_total|=0+]\n Anti Air: [?tk_aa_eq_total|=0+]\n Armored Support Vehicles: [?tk_asv_eq_total|=0+]\n Medium Tanks: [?tk_mt_eq_total|=0+]\n Medium SPGs: [?tk_mspg_eq_total|=0+]\n Medium Tank Destroyers: [?tk_mtd_eq_total|=0+]§!\n\n"
+
+  polizei_1_tt: "\nCreates §YSS-Panzergrenadier-Division Polizei§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?pol_inf_eq_total|=0+]\n Anti-Tank: [?pol_at_eq_total|=0+]\n Artillery: [?pol_art_eq_total|=0+]\n Trucks: [?pol_mot_eq_total|=0+]\n Support Equipment: [?pol_sup_eq_total|=0+]§!\n\n§2You will be able to expand this division later.§!\n\n"
+  polizei_2_tt: "\nExpands §YSS-Panzergrenadier-Division Polizei§!\n\nYou will have the following equipment left in stockpile:\n\n §YTrucks: [?pol_mot_eq_total|=0+]\n Anti-Air: [?pol_aa_eq_total|=0+]\n Medium SPGs: [?pol_mspg_eq_total|=0+]\n Medium Tanks: [?pol_mt_eq_total|=0+]§!\n\n"
+
+  wiking_1_tt: "\nCreates §YSS-Division Wiking§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?wk_inf_eq_total|=0+]\n Artillery: [?wk_art_eq_total|=0+]\n Trucks: [?wk_mot_eq_total|=0+]§!\n\n§2You will be able to reform this division as a Panzer-Division later§!\n\n"
+  wiking_2_tt: "\nReforms §YSS-Division Wiking into a Panzer-Division§!\n\nYou will have the following equipment left in stockpile:\n\n §YTrucks: [?wk_mot_eq_total|=0+]\n Anti-Tank: [?wk_at_eq_total|=0+]\n Medium Tank Destroyers: [?wk_mtd_eq_total|=0+]\n Medium Tanks: [?wk_mt_eq_total|=0+]§!\n\n"
+
+  pe_1_tt: "\nCreates §YSS-Gebirgs-Division Prinz Eugen§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?pe_inf_eq_total|=0+]\n Support Equipment: [?pe_sup_eq_total|=0+]\n Artillery: [?pe_art_eq_total|=0+]\n Anti-Air: [?pe_aa_eq_total|=0+]\n Anti-Tank: [?pe_at_eq_total|=0+]\n Trucks: [?pe_mot_eq_total|=0+]\n Light Tanks: [?pe_lt_eq_total|=0+]§!\n\n§2You will be able to expand this division later§!\n\n"
+  pe_2_tt: "\nAdds a §YStuG Batallion§! to §YSS-Gebirgs-Division Prinz Eugen§!\n\nYou will have the following equipment left in stockpile:\n\n §YMedium SPGs: [?pe_mspg_eq_total|=0+]§!\n\n"
+
+  fg_1_tt: "\nCreates §YSS-Kavallerie-Division Florian Geyer§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?fg_inf_eq_total|=0+]\n Support Equipment: [?fg_sup_eq_total|=0+]\n Trucks: [?fg_sup_eq_total|=0+]\n Artillery: [?fg_art_eq_total|=0+]\n Anti-Tank: [?fg_at_eq_total|=0+]\n Anti-Air: [?fg_aa_eq_total|=0+]\n Medium Tank Destroyers: [?fg_mtd_eq_total|=0+]§!\n\n§2You will be able to expand this division later§!\n\n"
+  fg_2_tt: "\nAdds a §YMotorized Recon Company§ to §YSS-Kavallerie-Division Florian Geyer§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?fg_inf_eq_total|=0+]\n Support Equipment: [?fg_sup_eq_total|=0+]\n Trucks: [?fg_mot_eq_total|=0+]§!\n\n"
+
+  hs_1_tt: "\nCreates §YSS-Panzer-Division Hohenstaufen§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?hs_inf_eq_total|=0+]\n Support Equipment: [?hs_sup_eq_total|=0+]\n Trucks: [?hs_mot_eq_total|=0+]\n Armored Support Vehicles: [?hs_asv_eq_total|=0+]\n Light Tanks: [?hs_lt_eq_total|=0+]\n Medium Tanks: [?hs_mt_eq_total|=0+]\n Medium SPGs:  [?hs_mspg_eq_total|=0+]\n Medium Tank Destroyers: [?hs_mtd_eq_total|=0+]\n Heavy Tanks: [?hs_ht_eq_total|=0+]\n Rocket Artillery: [?hs_roc_eq_total|=0+]\n Half-Tracks: [?hs_mech_eq_total|=0+]§!\n\n"
+  
+  fb_1_tt: "\nCreates §YSS-Panzer-Division Frundsberg§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?fb_inf_eq_total|=0+]\n Support Equipment: [?fb_sup_eq_total|=0+]\n Trucks: [?fb_mot_eq_total|=0+]\n Armored Support Vehicles: [?fb_asv_eq_total|=0+]\n Light Tanks: [?fb_lt_eq_total|=0+]\n Medium Tanks: [?fb_mt_eq_total|=0+]\n Medium SPGs:  [?fb_mspg_eq_total|=0+]\n Medium Tank Destroyers: [?fb_mtd_eq_total|=0+]\n Heavy Tanks: [?fb_ht_eq_total|=0+]\n Half-Tracks: [?fb_mech_eq_total|=0+]§!\n\n"
+
+  nordland_1_tt: "\nCreates §YSS-Panzergrenadier-Division Nordland§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?nordl_inf_eq_total|=0+]\n Support Equipment: [?nordl_sup_eq_total|=0+]\n Anti-Air: [?nordl_aa_eq_total|=0+]\n Trucks: [?nordl_mot_eq_total|=0+]\n Half-Tracks: [?nordl_mech_eq_total|=0+]\n Armored Support Vehicles: [?nordl_asv_eq_total|=0+]\n Medium Tanks: [?nordl_mt_eq_total|=0+]\n Medium SPGs: [?nordl_mspg_eq_total|=0+]\n Medium Tank Destroyers: [?nordl_mtd_eq_total|=0+]§!\n\n§2You will be able to expand this division later§!\n\n"
+  nordland_2_tt: "\nAdds a §YHeavy Panzer Batallion§! to §YSS-Panzergrenadier-Division Nordland§!\nYou will have the following equipment left in stockpile:\n\n §YHeavy Tanks: [?nordl_ht_eq_total|=0+]§!\n\n"
+
+  hj_1_tt: "\nCreates §YSS-Panzer-Division Hitlerjugend§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?hj_inf_eq_total|=0+]\n Support Equipment: [?hj_sup_eq_total|=0+]\n Trucks: [?hj_mot_eq_total|=0+]\n Armored Support Vehicles: [?hj_asv_eq_total|=0+]\n Light Tanks: [?hj_lt_eq_total|=0+]\n Medium Tanks: [?hj_mt_eq_total|=0+]\n Medium SPGs:  [?hj_mspg_eq_total|=0+]\n Medium Tank Destroyers: [?hj_mtd_eq_total|=0+]\n Heavy Tanks: [?hj_ht_eq_total|=0+]\n Rocket Artillery: [?hj_roc_eq_total|=0+]\n Self-Propelled Anti-Air: [?hj_mspaa_eq_total|=0+]\n Half-Tracks: [?hj_mech_eq_total|=0+]§!\n\n"
+
+  pzgrengd_1_tt: "\nCreates §YPanzergrenadier-Division Großdeutschland§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?gd_inf_eq_total|=0+]\n Support Equipment: [?gd_sup_eq_total|=0+]\n Anti-Air: [?gd_aa_eq_total|=0+]\n Trucks: [?gd_mot_eq_total|=0+]\n Half-Tracks: [?gd_mech_eq_total|=0+]\n Medium Tanks: [?gd_mt_eq_total|=0+]\n Heavy Tanks: [?gd_ht_eq_total|=0+]\n Light SPGs: [?gd_lspg_eq_total|=0+]\n Light Tank Destroyers: [?gd_ltd_eq_total|=0+]\n Medium SPGs: [?gd_mspg_eq_total|=0+]§!\n\n"
+
+  pzhg_1_tt: "\nCreates §YFallschirm-Panzer-Division 1 Hermann Göring§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?hg_inf_eq_total|=0+]\n Trucks: [?hg_mot_eq_total|=0+]\n Support Equipment: [?hg_sup_eq_total|=0+]\n Anti-Air: [?hg_aa_eq_total|=0+]\n Half-Tracks: [?hg_mech_eq_total|=0+]\n Medium Tanks [?hg_mt_eq_total|=0+]\n Medium SPGs: [?hg_mspg_eq_total|=0+]\n Light Tanks: [?hg_lt_eq_total|=0+]\n Armored Support Vehicles: [?hg_asv_eq_total|=0+]§!\n"
+
+  pzl_1_tt: "\nCreates §YPanzer-Lehr-Division§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?pzl_inf_eq_total|=0+]\n Trucks: [?pzl_mot_eq_total|=0+]\n Support Equipment: [?pzl_sup_eq_total|=0+]\n Anti-Air: [?pzl_aa_eq_total|=0+]\n Half-Tracks: [?pzl_mech_eq_total|=0+]\n Medium Tanks [?pzl_mt_eq_total|=0+]\n Medium SPGs: [?pzl_mspg_eq_total|=0+]\n Armored Support Vehicles: [?pzl_asv_eq_total|=0+]§!\n\n"
+
+  ssnord_1_tt: "\nCreates §YSS-Gebirgs-Division Nord§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?nord_inf_eq_total|=0+]\n Support Equipment: [?nord_sup_eq_total|=0+]\n Artillery: [?nord_art_eq_total|=0+]\n Anti-Tank: [?nord_at_eq_total|=0+]\n Anti-Air [?nord_aa_eq_total|=0+]\n Trucks: [?nord_mot_eq_total|=0+]§!\n\n"
+
+  lad999_1_tt: "\nCreates §Y999. leichte-Afrika_Division§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?lad_inf_eq_total|=0+]\n Support Equipment: [?lad_sup_eq_total|=0+]\n Artillery: [?lad_art_eq_total|=0+]\n Anti-Tank: [?lad_at_eq_total|=0+]\n Trucks: [?lad_mot_eq_total|=0+]§!\n\n"
+
+  fuhrerbegleit_1_tt: "\nCreates §YFührerbegleitbrigade§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?frbg_inf_eq_total|=0+]\n Support Equipment: [?frbg_sup_eq_total|=0+]\n Half-Tracks: [?frbg_mech_eq_total|=0+]\n Medium Tanks: [?frbg_mt_eq_total|=0+]\n Medium SPGs: [?frbg_mspg_eq_total|=0+]\n Medium SPAA: [?frbg_mspaa_eq_total|=0+]\n Armored Cars: [?frbg_ac_eq_total|=0+]§!\n\n§2You will be able to expand this brigade to a division later.§!\n\n"
+  fuhrerbegleit_2_tt: "\nExpands §YFührerbegleitbrigade§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?frbg_inf_eq_total|=0+]\n Support Equipment: [?frbg_sup_eq_total|=0+]\n Half-Tracks: [?frbg_mech_eq_total|=0+]\n Trucks: [?frbg_mot_eq_total|=0+]\n Medium Tanks: [?frbg_mt_eq_total|=0+]\n Medium Tank Destroyers: [?frbg_mtd_eq_total|=0+]\n Armored Support Vehicles: [?frbg_asv_eq_total|=0+]§!\n\n§RYou will have to manually rename the division to Führerbegleitdivision if you wish as the name cannot be automatically changed.§!\n\n"
+  fuhrergren_1_tt: "\nCreates §YFührergrenadierbrigade§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?frgr_inf_eq_total|=0+]\n Support Equipment: [?frgr_sup_eq_total|=0+]\n Half-Tracks: [?frgr_mech_eq_total|=0+]\n Medium Tanks: [?frgr_mt_eq_total|=0+]\n Medium SPGs: [?frgr_mspg_eq_total|=0+]\n Medium SPAA: [?frgr_mspaa_eq_total|=0+]\n Armored Cars: [?frgr_ac_eq_total|=0+]§!\n\n"
+
+
+# Flags
+  lssah_stage_1: "The §YLSSAH Regiment§! has been formed"
+  lssah_stage_2: "§YLSSAH§! has been expanded to brigade size"
+  lssah_stage_3: "§YLSSAH§! has been expanded to division size"
+
+  dasreich_deployed: "The §YSS-Panzer-Division Das Reich§! has been formed"
+
+  totenkopf_stage_1: "The §YSS-Division Totenkopf§! has been formed"
+  totenkopf_stage_2: "The §YSS-Division Totenkopf§! has been reformed into a Panzer-Division"
+
+  polizei_stage_1: "The §YSS-Division Polizei§! has been formed"
+  polizei_stage_2: "The §YSS-Division Polizei§! has been expanded"
+
+  wiking_stage_1: "The Y§SS-Division Wiking§! has been formed"
+  wiking_stage_2: "The §YSS-Division Wiking§! has been reformed into a Panzer-Division"
+
+  pe_stage_1: "The §YSS-Gebirgs_Division Prinz Eugen§! has been formed"
+  pe_stage_2: "The §YSS-Gebirgs_Division Prinz Eugen§! has been expanded"
+
+  fg_stage_1: "The §YSS-Kavallerie-Division Florian Geyer§! has been formed"
+  fg_stage_2: "The §YSS-Kavallerie-Division Florian Geyer§! has been expanded"
+
+  hs_deployed: "The §YSS-Panzer-Division Hohenstaufen§! has been formed"
+
+  fb_deployed: "The §YSS-Panzer-Division Frundsberg§! has been formed"
+
+  nordland_stage_1: "The §YSS-Panzergrenadier-Division Nordland§! has been formed"
+  nordland_stage_2: "The §YSS-Panzergrenadier-Division Nordland§! has been expanded"
+
+  hj_deployed: "The §SS-Panzer-Division Hitlerjugend§! has been formed"
+
+  GD_Deployed: "The §YPanzergrenadier-Division Großdeutschland§! has been formed"
+
+  HG_Deployed: "The §YFallschirm-Panzer-Division 1 Hermann Göring§! has been formed"
+
+  Lehr_Deployed: "The §YPanzer-Lehr-Division§! has been formed"
+
+  ssnord_Deployed: "The §YSS-Gebirgs_Division Nord§! has been formed"
+
+  lad999_Deployed: "The §Y999. leichte-Afrika-Division§! has been formed"
+
+  fuhrerbegleit_stage_1: "The §YFührerbegleitbrigade§! has been formed"
+  fuhrerbegleit_stage_2: "The §YFührerbegleitbrigade§! has been expanded to division size"
+
+  fuhrergren_deployed: "The §YFührergrenadierbrigade§! has been formed"

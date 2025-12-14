@@ -1,0 +1,30 @@
+division_template = {
+	name = "DASREICH"
+	is_locked = yes # Not allowed to delete or edit
+	force_allow_recruiting = yes # Allows you to retrain if division is destroyed
+	division_cap = 1 # can only have 1 at a time
+	priority = 2 # Elite reinforcement priority
+
+	regiments = {
+		medium_armor = { x = 0 y = 0}
+		medium_armor = { x = 0 y = 1}
+		medium_armor = { x = 0 y = 2}
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2}
+		mechanized = { x = 2 y = 0}
+		mechanized = { x = 2 y = 1}
+		mechanized = { x = 2 y = 2}
+		medium_sp_artillery_brigade = { x = 3 y = 0}
+		medium_tank_destroyer_brigade = { x = 3 y = 1 }
+		medium_sp_anti_air_brigade = { x = 3 y = 2 }
+		heavy_armor = { x = 4 y = 0 }
+	}
+	support = {
+		armored_engineer = { x = 0 y = 0}
+		light_tank_recon = { x = 0 y = 1 }
+		rocket_artillery = { x = 0 y = 2 } 
+		armored_signal = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
+	}
+}

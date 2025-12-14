@@ -1,0 +1,29 @@
+division_template = {
+	name = "SSFG"
+	is_locked = yes # Not allowed to delete or edit
+	force_allow_recruiting = yes # Allows you to retrain if division is destroyed
+	division_cap = 1 # can only have 1 at a time
+	priority = 2 # Elite reinforcement priority
+
+	regiments = {
+		cavalry = { x = 0 y = 0} # SS Kav. Reg. 1
+		cavalry = { x = 0 y = 1}
+		cavalry = { x = 0 y = 2}
+		cavalry = { x = 1 y = 0 } # SS Kav. Reg. 2
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2}
+		cavalry = { x = 2 y = 0} # SS Kav. Reg. 3
+		cavalry = { x = 2 y = 1}
+		cavalry = { x = 2 y = 2}
+		artillery_brigade = { x = 3 y = 0} # SS Art. Reg
+		medium_tank_destroyer_brigade = { x = 4 y = 0} # SS Stug. Batterie
+
+	}
+	support = {
+		engineer = { x = 0 y = 0} # SS Pioneer Bat.
+		anti_air = { x = 0 y = 1 }  # SS Flak Abt.
+		signal_company = { x = 0 y = 2 } # SS Nachr. Abt.
+		anti_tank = { x = 0 y = 3 } # SS Pzj Abt. 
+		# mot_recon
+	}
+}

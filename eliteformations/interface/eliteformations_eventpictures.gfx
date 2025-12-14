@@ -1,0 +1,92 @@
+spriteTypes = { # Image location defines for Event Pictures
+	
+	spriteType = {
+		name = "GFX_lssah_event_picture"
+		texturefile = "gfx/event_pictures/lssah_event_image.dds"
+	}
+
+	spriteType = {
+		name = "GFX_dasreich_event_picture"
+		texturefile = "gfx/event_pictures/dasreich_event_image.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_tk_event_picture"
+		texturefile = "gfx/event_pictures/tk_event_image.dds"
+	}
+
+	spriteType = {
+		name = "GFX_polizei_event_picture"
+		texturefile = "gfx/event_pictures/polizei_event_image.dds"
+	}
+
+	spriteType = {
+		name = "GFX_wiking_event_picture"
+		texturefile = "gfx/event_pictures/wiking_event_image.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pe_event_picture"
+		texturefile = "gfx/event_pictures/pe_event_image.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fg_event_picture"
+		texturefile = "gfx/event_pictures/fg_event_image.dds"
+	}
+
+	spriteType = {
+		name = "GFX_hs_event_picture"
+		texturefile = "gfx/event_pictures/hs_event_image.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fb_event_picture"
+		texturefile = "gfx/event_pictures/fb_event_image.dds"
+	}
+
+	spriteType = {
+		name = "GFX_nordland_event_picture"
+		texturefile = "gfx/event_pictures/nordland_event_image.dds"
+	}
+
+	spriteType = {
+		name = "GFX_hj_event_picture"
+		texturefile = "gfx/event_pictures/hj_event_image.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pzgrengd_event_picture"
+		texturefile = "gfx/event_pictures/pzgrengd_event_image.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pzhg_event_picture"
+		texturefile = "gfx/event_pictures/pzhg_event_image.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pzl_event_picture"
+		texturefile = "gfx/event_pictures/pzl_event_image.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ssnord_event_picture"
+		texturefile = "gfx/event_pictures/ssnord_event_image.dds"
+	}
+
+	spriteType = {
+		name = "GFX_lad999_event_picture"
+		texturefile = "gfx/event_pictures/lad999_event_image.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fuhrerbegleit_event_picture"
+		texturefile = "gfx/event_pictures/fuhrerbegleit_event_image.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fuhrergren_event_picture"
+		texturefile = "gfx/event_pictures/fuhrergren_event_image.dds"
+	}
+}

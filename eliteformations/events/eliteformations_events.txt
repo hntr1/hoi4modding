@@ -1,0 +1,397 @@
+add_namespace = eliteformations
+
+country_event = {
+	id = eliteformations.1
+	title = eliteformations.1.t
+	desc = eliteformations.1.d
+
+	picture = GFX_lssah_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.1.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = { has_full_control_of = PREV } }
+			create_unit = { # Spawn LSSAH regiment somewhere in Germany. Division starts fully equipped with veteran status.
+				division = "name = \"1. SS-Division Liebstandarte SS Adolf Hitler\" division_template = \"LSSAH\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.2
+	title = eliteformations.2.t
+	desc = eliteformations.2.d
+
+	picture = GFX_pzgrengd_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.2.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = { has_full_control_of = PREV } }
+			create_unit = { # Spawn GD Division somewhere in Germany. Division starts fully equipped with veteran status.
+				division = "name = \"Panzergrenadier-Division Großdeutschland\" division_template = \"PZGRENGD\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.3
+	title = eliteformations.3.t
+	desc = eliteformations.3.d
+
+	picture = GFX_pzhg_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.3.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = { has_full_control_of = PREV } }
+			create_unit = { # Spawn HG Division somewhere in Germany. Division starts fully equipped with veteran status.
+				division = "name = \"Fallschirm-Panzer-Division 1 Hermann Göring\" division_template = \"PZHG\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.4
+	title = eliteformations.4.t
+	desc = eliteformations.4.d
+
+	picture = GFX_pzl_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.4.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = { has_full_control_of = PREV } }
+			create_unit = { # Spawn Lehr Division somewhere in Germany. Division starts fully equipped with veteran status.
+				division = "name = \"Panzer-Lehr-Division\" division_template = \"PZL\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.5
+	title = eliteformations.5.t
+	desc = eliteformations.5.d
+
+	picture = GFX_ssnord_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.5.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = { has_full_control_of = PREV } }
+			create_unit = { # Spawn Nord Division somewhere in Germany. Division starts fully equipped with veteran status.
+				division = "name = \"6. SS-Gebirgs-Division Nord\" division_template = \"SSNORD\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.6
+	title = eliteformations.6.t
+	desc = eliteformations.6.d
+
+	picture = GFX_lad999_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.6.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = { has_full_control_of = PREV } }
+			create_unit = { # Spawn LA-999 Division somewhere in Germany. Division starts fully equipped with veteran status.
+				division = "name = \"999. leichte-Afrika-Division\" division_template = \"LAD999\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.7
+	title = eliteformations.7.t
+	desc = eliteformations.7.d
+
+	picture = GFX_dasreich_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.7.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = { has_full_control_of = PREV } }
+			create_unit = { # Spawn Das Reich somewhere in Germany. Division starts fully equipped with veteran status.
+				division = "name = \"2. SS-Panzer-Division 'Das Reich'\" division_template = \"DASREICH\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.8
+	title = eliteformations.8.t
+	desc = eliteformations.8.d
+
+	picture = GFX_tk_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.8.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = { has_full_control_of = PREV } }
+			create_unit = { # Spawn TK Division somewhere in Germany. Division starts fully equipped with veteran status.
+				division = "name = \"3. SS-Panzer-Division 'Totenkopf'\" division_template = \"SSTK\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.9
+	title = eliteformations.9.t
+	desc = eliteformations.9.d
+
+	picture = GFX_polizei_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.9.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = { has_full_control_of = PREV } }
+			create_unit = { # Spawn Polizei Division somewhere in Germany. Division starts fully equipped with veteran status.
+				division = "name = \"4. SS-Panzergrenadier-Division 'Polizei'\" division_template = \"SSPOL\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.10
+	title = eliteformations.10.t
+	desc = eliteformations.10.d
+
+	picture = GFX_wiking_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.10.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = { has_full_control_of = PREV } }
+			create_unit = { # Spawn Wiking Division somewhere in Germany. Division starts fully equipped with veteran status.
+				division = "name = \"5. SS-Panzer-Division 'Wiking'\" division_template = \"SSWIKING\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.11
+	title = eliteformations.11.t
+	desc = eliteformations.11.d
+
+	picture = GFX_pe_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.11.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = { has_full_control_of = PREV } }
+			create_unit = { # Spawn PE Division somewhere in Germany. Division starts fully equipped with veteran status.
+				division = "name = \"7. SS-Freiwilligen-Gebirgs-Division 'Prinz Eugen'\" division_template = \"SSPE\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.12
+	title = eliteformations.12.t
+	desc = eliteformations.12.d
+
+	picture = GFX_fg_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.12.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = { has_full_control_of = PREV } }
+			create_unit = { # Spawn FG Division somewhere in Germany. Division starts fully equipped with veteran status.
+				division = "name = \"8. SS-Kavallerie-Division 'Florian Geyer'\" division_template = \"SSFG\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.13
+	title = eliteformations.13.t
+	desc = eliteformations.13.d
+
+	picture = GFX_hs_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.13.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = { has_full_control_of = PREV } }
+			create_unit = { # Spawn HS Division somewhere in Germany. Division starts fully equipped with veteran status.
+				division = "name = \"9. SS-Panzer-Division 'Hohenstaufen'\" division_template = \"SSHS\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.14
+	title = eliteformations.14.t
+	desc = eliteformations.14.d
+
+	picture = GFX_fb_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.14.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = { has_full_control_of = PREV } }
+			create_unit = { # Spawn FB Division somewhere in Germany. Division starts fully equipped with veteran status.
+				division = "name = \"10. SS-Panzer-Division 'Frundsberg'\" division_template = \"SSFB\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.15
+	title = eliteformations.15.t
+	desc = eliteformations.15.d
+
+	picture = GFX_nordland_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.15.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = { has_full_control_of = PREV } }
+			create_unit = { # Spawn Nordland Division somewhere in Germany. Division starts fully equipped with veteran status.
+				division = "name = \"11. SS-Panzergrenadier-Division 'Nordland'\" division_template = \"SSNORDL\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.16
+	title = eliteformations.16.t
+	desc = eliteformations.16.d
+
+	picture = GFX_hj_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.16.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = { has_full_control_of = PREV } }
+			create_unit = { # Spawn HJ Division somewhere in Germany. Division starts fully equipped with veteran status.
+				division = "name = \"12. SS-Panzer-Division 'Hitlerjugend'\" division_template = \"SSHJ\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.17
+	title = eliteformations.17.t
+	desc = eliteformations.17.d
+
+	picture = GFX_fuhrerbegleit_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.17.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Führerbegleitbrigade\" division_template = \"FBB\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.18
+	title = eliteformations.18.t
+	desc = eliteformations.18.d
+
+	picture = GFX = fuhrergren_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.18.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Führergrenadierbrigade\" division_template = \"FGB\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}

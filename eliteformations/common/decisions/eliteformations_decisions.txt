@@ -1,0 +1,1728 @@
+eliteformations_cat = {
+	lssah_1 = { # Form LSSAH Regiment
+		
+		#icon = 
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_government = fascism # Only nazis form ss divisions
+		}
+
+		available = {
+			AND = { # LSSAH regiment had AT and signals
+				has_tech = interwar_antitank
+				has_tech = tech_signal_company
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = { # Costs 5 Command Power
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		fire_only_once = yes
+
+		ai_will_do = { # Ai will do 50/50
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5 # Deduct decision cost
+				load_oob = lssah_template # Adds the template to Germany's recruitment screen
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			custom_effect_tooltip = lssah_1_tt
+			country_event = eliteformations.1
+
+			hidden_effect = {
+				set_country_flag = {
+					flag = lssah_stage_1 # Stages keep track of which on_action variables get updated
+					value = 1
+				}
+			}
+		}
+	}
+
+	lssah_2 = {
+
+		#icon = 
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_government = fascism
+			has_country_flag = lssah_stage_1
+		}
+
+		available = { # LSSAH brigade had stugs
+			has_design_based_on = medium_tank_artillery_chassis
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			custom_effect_tooltip = lssah_2_tt
+			
+			hidden_effect = {
+				set_country_flag = {
+					flag = lssah_stage_2
+					value = 1
+				}
+				add_units_to_division_template = {
+					template_name = "LSSAH"
+					regiments = { # Add 3 motorized to column 2, AA to column 3, and stugs to column 4
+						motorized = 1
+						motorized = 1
+						motorized = 1
+						mot_anti_air_brigade = 2
+						medium_sp_artillery_brigade = 3
+
+					}
+				}
+			}
+		}
+	}
+
+	lssah_3 = {
+
+		#icon = 
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_government = fascism
+			has_country_flag = lssah_stage_2
+		}
+
+		available = {
+			AND = { # LSSAH division had tanks and rocket arty
+				has_design_based_on = medium_tank_chassis
+				has_tech = rocket_artillery
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			custom_effect_tooltip = lssah_3_tt
+			
+			hidden_effect = {
+				set_country_flag = {
+					flag = lssah_stage_3
+					value = 1
+				}
+				add_units_to_division_template = { # Unfortunatly, there is no way to remove regiments, so support companies cannot be auto upgraded and are omitted
+					template_name = "LSSAH"
+					regiments = {
+						mot_artillery_brigade = 2
+						mot_rocket_artillery_brigade = 2
+						medium_armor = 4
+						medium_armor = 4
+						heavy_armor = 4 # SS s.Pz.Abt. 101
+					}	
+				}
+			}
+		}
+	}
+
+	dasreich_1 = { # Form Das Reich Division
+		
+		#icon = 
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_government = fascism # Only nazis form ss divisions
+		}
+
+		available = {
+			AND = { 
+				has_design_based_on = medium_tank_chassis
+				has_tech = mechanised_infantry
+				has_design_based_on = medium_tank_artillery_chassis
+				has_design_based_on = medium_tank_destroyer_chassis
+				has_design_based_on = medium_tank_aa_chassis
+				has_design_based_on = heavy_tank_chassis
+				has_tech = sp_armored_engineer_tech
+				has_tech = tech_recon
+				has_tech = rocket_artillery
+				has_tech = sp_armored_signal_tech
+				has_tech = tech_logistics_company
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = { # Costs 5 Command Power
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		fire_only_once = yes
+
+		ai_will_do = { # Ai will do 50/50
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5 # Deduct decision cost
+				load_oob = dasreich_template # Adds the template to Germany's recruitment screen
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			custom_effect_tooltip = dasreich_1_tt
+			country_event = eliteformations.7
+
+			hidden_effect = {
+				set_country_flag = {
+					flag = dasreich_deployed
+					value = 1
+				}
+			}
+		}
+	}
+
+	totenkopf_1 = { # Form Totenkopf Division
+		
+		#icon = 
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_government = fascism # Only nazis form ss divisions
+		}
+
+		available = {
+			AND = {
+				has_tech = motorised_infantry
+				has_tech = gw_artillery
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = { # Costs 5 Command Power
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		fire_only_once = yes
+
+		ai_will_do = { # Ai will do 50/50
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5 # Deduct decision cost
+				load_oob = totenkopf_template # Adds the template to Germany's recruitment screen
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			custom_effect_tooltip = totenkopf_1_tt
+			country_event = eliteformations.8
+
+			hidden_effect = {
+				set_country_flag = {
+					flag = totenkopf_stage_1 # Stages keep track of which on_action variables get updated
+					value = 1
+				}
+			}
+		}
+	}
+
+	totenkopf_2 = {
+
+		#icon = 
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_government = fascism
+			has_country_flag = totenkopf_stage_1
+		}
+
+		available = {
+			has_design_based_on = medium_tank_chassis
+			has_design_based_on = medium_tank_artillery_chassis
+			has_design_based_on = medium_tank_destroyer_chassis
+			has_tech = sp_armored_engineer_tech
+			has_tech = tech_recon
+			has_tech = sp_armored_signal_tech
+			has_tech = interwar_antiair
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			custom_effect_tooltip = totenkopf_2_tt
+			
+			hidden_effect = {
+				set_country_flag = {
+					flag = totenkopf_stage_2
+					value = 1
+				}
+				add_units_to_division_template = {
+					template_name = "SSTK"
+					regiments = { # 
+						medium_armor = 3
+						medium_armor = 3
+						medium_armor = 3
+						medium_sp_artillery_brigade = 4
+						medium_tank_destroyer_brigade = 4
+					}
+					support = {
+						armored_engineer = 0
+						light_tank_recon = 0
+						armored_signal = 0
+						anti_air = 0
+					}
+				}
+			}
+		}
+	}
+
+	polizei_1 = { # Form Polizei Division
+		
+		#icon = 
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_government = fascism # Only nazis form ss divisions
+		}
+
+		available = {
+			AND = {
+				has_tech = motorised_infantry
+				has_tech = gw_artillery
+				has_tech = interwar_antitank
+				has_tech = tech_engineers
+				has_tech = tech_signal_company
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = { # Costs 5 Command Power
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		fire_only_once = yes
+
+		ai_will_do = { # Ai will do 50/50
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5 # Deduct decision cost
+				load_oob = sspolizei_template # Adds the template to Germany's recruitment screen
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			custom_effect_tooltip = polizei_1_tt
+			country_event = eliteformations.9
+
+			hidden_effect = {
+				set_country_flag = {
+					flag = polizei_stage_1 # Stages keep track of which on_action variables get updated
+					value = 1
+				}
+			}
+		}
+	}
+
+	polizei_2 = {
+
+		#icon = 
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_government = fascism
+			has_country_flag = polizei_stage_1
+		}
+
+		available = {
+			has_design_based_on = medium_tank_chassis
+			has_design_based_on = medium_tank_artillery_chassis
+			has_tech = tech_recon
+			has_tech = tech_logistics_company
+			has_tech = tech_military_police
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			custom_effect_tooltip = polizei_2_tt
+			
+			hidden_effect = {
+				set_country_flag = {
+					flag = polizei_stage_2
+					value = 1
+				}
+				add_units_to_division_template = {
+					template_name = "SSPOL"
+					regiments = { # 
+						mot_anti_air_brigade = 2
+						medium_armor = 3
+						medium_sp_artillery_brigade = 4
+					}
+					support = {
+						light_tank_recon = 0
+						logistics_company = 0
+						military_police = 0
+					}
+				}
+			}
+		}
+	}
+
+	wiking_1 = { # Form Wiking Division
+		
+		#icon = 
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_government = fascism # Only nazis form ss divisions
+		}
+
+		available = {
+
+			AND = {
+				GER = { has_war_with = NOR}
+				NOR = { has_capitulated = yes }
+			}
+
+			AND = {
+				has_tech = motorised_infantry
+				has_tech = gw_artillery
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = { # Costs 5 Command Power
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		fire_only_once = yes
+
+		ai_will_do = { # Ai will do 50/50
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5 # Deduct decision cost
+				load_oob = wiking_template # Adds the template to Germany's recruitment screen
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			custom_effect_tooltip = wiking_1_tt
+			country_event = eliteformations.10
+
+			hidden_effect = {
+				set_country_flag = {
+					flag = wiking_stage_1 # Stages keep track of which on_action variables get updated
+					value = 1
+				}
+			}
+		}
+	}
+
+	wiking_2 = {
+
+		#icon = 
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_government = fascism
+			has_country_flag = wiking_stage_1
+		}
+
+		available = {
+			has_design_based_on = medium_tank_chassis
+			has_design_based_on = medium_tank_destroyer_chassis
+			has_tech = tech_engineers
+			has_tech = tech_field_hospital
+			has_tech = interwar_antitank
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+
+			if = {
+				limit = { NOT = { has_tech = winter_logistics_support_tech } }
+				set_technology = { # Add winter logistics company to Germany
+					winter_logistics_support_tech = 1
+					popup = no
+				}
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			custom_effect_tooltip = wiking_2_tt
+			
+			hidden_effect = {
+				set_country_flag = {
+					flag = wiking_stage_2
+					value = 1
+				}
+				add_units_to_division_template = {
+					template_name = "SSWIKING"
+					regiments = { # 
+						mot_anti_tank_brigade = 2
+						medium_armor = 3
+						medium_armor = 3
+						medium_armor = 3
+						medium_tank_destroyer_brigade = 4
+					}
+					support = {
+						engineer = 0
+						field_hospital = 0
+						winter_logistics_support = 0
+					}
+				}
+			}
+		}
+	}
+
+	ssnord_1 = { # Form SS Division Nord
+		
+		#icon = 
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_government = fascism
+		}
+
+		available = { # Must have all the equipment necessary for historical organization
+			AND = {
+				
+				has_tech = special_forces_mountaineers
+				has_tech = tech_signal_company
+				has_tech = interwar_antitank
+			}
+			AND = {
+				GER = { has_war_with = NOR}
+				NOR = { has_capitulated = yes }
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = { # Costs 5 Command Power
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		fire_only_once = yes
+
+		ai_will_do = { # Ai will do 50/50
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5 # Deduct decision cost
+				load_oob = ssnord_template # Adds the template to Germany's recruitment screen
+				
+				if = {
+					limit = { NOT = { has_tech winter_logistics_support_tech } }
+					set_technology = { # Add winter logistics company to Germany
+						winter_logistics_support_tech = 1
+						popup = no
+					}
+				}
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			custom_effect_tooltip = ssnord_1_tt
+			country_event = eliteformations.5
+
+			hidden_effect = {
+				set_country_flag = {
+					flag = ssnord_Deployed
+					value = 1
+				}
+			}
+		}
+	}
+
+	prinzeugen_1 = { # Form Prinz Eugen Division
+		
+		#icon = 
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_government = fascism # Only nazis form ss divisions
+		}
+
+		available = {
+
+			AND = {
+				GER = { has_war_with = YUG}
+				YUG = { has_capitulated = yes }
+			}
+
+			AND = {
+				has_tech = tech_mountaineers
+				has_tech = gw_artillery
+				has_tech = interwar_antitank
+				has_tech = interwar_antiair
+				has_design_based_on = light_tank_chassis
+				has_tech = tech_engineers
+				has_tech = tech_recon
+				has_tech = tech_military_police
+				has_tech = tech_signal_company
+				has_tech = tech_field_hospital
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = { # Costs 5 Command Power
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		fire_only_once = yes
+
+		ai_will_do = { # Ai will do 50/50
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5 # Deduct decision cost
+				load_oob = prinzeugen_template # Adds the template to Germany's recruitment screen
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			custom_effect_tooltip = pe_1_tt
+			country_event = eliteformations.11
+
+			hidden_effect = {
+				set_country_flag = {
+					flag = pe_stage_1 # Stages keep track of which on_action variables get updated
+					value = 1
+				}
+			}
+		}
+	}
+
+	prinzeugen_2 = {
+
+		#icon = 
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_government = fascism
+			has_country_flag = pe_stage_1
+		}
+
+		available = {
+			has_design_based_on = medium_tank_artillery_chassis
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			custom_effect_tooltip = pe_2_tt
+			
+			hidden_effect = {
+				set_country_flag = {
+					flag = pe_stage_2
+					value = 1
+				}
+				add_units_to_division_template = {
+					template_name = "SSPE"
+					regiments = { # 
+						medium_sp_artillery_brigade = 4
+					}
+				}
+			}
+		}
+	}
+
+	floriangeyer_1 = { # Form Florian Geyer Division
+		
+		#icon = 
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_government = fascism # Only nazis form ss divisions
+		}
+
+		available = {
+
+			AND = {
+				has_tech = gw_artillery
+				has_tech = interwar_antitank
+				has_tech = interwar_antiair
+				has_tech = tech_engineers
+				has_tech = tech_signal_company
+				has_design_based_on = medium_tank_destroyer_chassis
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = { # Costs 5 Command Power
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		fire_only_once = yes
+
+		ai_will_do = { # Ai will do 50/50
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5 # Deduct decision cost
+				load_oob = floriangeyer_template # Adds the template to Germany's recruitment screen
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			custom_effect_tooltip = fg_1_tt
+			country_event = eliteformations.12
+
+			hidden_effect = {
+				set_country_flag = {
+					flag = fg_stage_1 # Stages keep track of which on_action variables get updated
+					value = 1
+				}
+			}
+		}
+	}
+
+	floriangeyer_2 = {
+
+		#icon = 
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_government = fascism
+			has_country_flag = fg_stage_1
+		}
+
+		available = {
+			has_tech = tech_recon
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			custom_effect_tooltip = fg_2_tt
+			
+			hidden_effect = {
+				set_country_flag = {
+					flag = fg_stage_2
+					value = 1
+				}
+				add_units_to_division_template = {
+					template_name = "SSFG"
+					support = {
+						mot_recon = 0
+					}
+				}
+			}
+		}
+	}
+
+	hohenstaufen_1 = { # Form Hohenstaufen Division
+		
+		#icon = 
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_government = fascism # Only nazis form ss divisions
+		}
+
+		available = {
+			AND = { 
+				has_design_based_on = medium_tank_chassis
+				has_tech = mechanised_infantry
+				has_design_based_on = medium_tank_artillery_chassis
+				has_design_based_on = medium_tank_destroyer_chassis
+				has_design_based_on = heavy_tank_chassis
+				has_tech = sp_armored_engineer_tech
+				has_tech = tech_recon
+				has_tech = rocket_artillery
+				has_tech = sp_armored_signal_tech
+				has_tech = tech_logistics_company
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = { # Costs 5 Command Power
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		fire_only_once = yes
+
+		ai_will_do = { # Ai will do 50/50
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5 # Deduct decision cost
+				load_oob = hohenstaufen_template # Adds the template to Germany's recruitment screen
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			custom_effect_tooltip = hs_1_tt
+			country_event = eliteformations.13
+
+			hidden_effect = {
+				set_country_flag = {
+					flag = hs_deployed
+					value = 1
+				}
+			}
+		}
+	}
+
+	frundsberg_1 = { # Form Frundsberg Division
+		
+		#icon = 
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_government = fascism # Only nazis form ss divisions
+		}
+
+		available = {
+			AND = { 
+				has_design_based_on = medium_tank_chassis
+				has_tech = mechanised_infantry
+				has_design_based_on = medium_tank_artillery_chassis
+				has_design_based_on = medium_tank_destroyer_chassis
+				has_design_based_on = heavy_tank_chassis
+				has_tech = sp_armored_engineer_tech
+				has_tech = tech_recon
+				has_tech = sp_armored_maintenance_tech
+				has_tech = sp_armored_signal_tech
+				has_tech = tech_logistics_company
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = { # Costs 5 Command Power
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		fire_only_once = yes
+
+		ai_will_do = { # Ai will do 50/50
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5 # Deduct decision cost
+				load_oob = frundsberg_template # Adds the template to Germany's recruitment screen
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			custom_effect_tooltip = fb_1_tt
+			country_event = eliteformations.14
+
+			hidden_effect = {
+				set_country_flag = {
+					flag = fb_deployed
+					value = 1
+				}
+			}
+		}
+	}
+
+
+	nordland_1 = { # Form Nordland Division
+		
+		#icon = 
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_government = fascism # Only nazis form ss divisions
+		}
+
+		available = {
+
+			has_country_flag = wiking_stage_2
+
+			AND = {
+				has_tech = mechanised_infantry
+				has_design_based_on = medium_tank_artillery_chassis
+				has_design_based_on = medium_tank_destroyer_chassis
+				has_design_based_on = medium_tank_chassis
+				has_tech = tech_maintenance_company
+				has_tech = tech_logistics_company
+				has_tech = tech_signal_company
+				has_tech = interwar_antiair		
+			}
+
+			ROOT = { is_special_project_completed = sp:sp_land_military_engineering_vehicles }
+		}
+
+		cost = 0
+		custom_cost_trigger = { # Costs 5 Command Power
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		fire_only_once = yes
+
+		ai_will_do = { # Ai will do 50/50
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5 # Deduct decision cost
+				load_oob = nordland_template # Adds the template to Germany's recruitment screen
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			custom_effect_tooltip = nordland_1_tt
+			country_event = eliteformations.15
+
+			hidden_effect = {
+				set_country_flag = {
+					flag = nordland_stage_1 # Stages keep track of which on_action variables get updated
+					value = 1
+				}
+			}
+		}
+	}
+
+	nordland_2 = {
+
+		#icon = 
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_government = fascism
+			has_country_flag = nordland_stage_1
+		}
+
+		available = {
+			has_design_based_on = heavy_tank_chassis
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			custom_effect_tooltip = nordland_2_tt
+			
+			hidden_effect = {
+				set_country_flag = {
+					flag = nordland_stage_2
+					value = 1
+				}
+				add_units_to_division_template = {
+					template_name = "SSNORDL"
+					regiments = {
+						heavy_armor = 4
+					}
+				}
+			}
+		}
+	}
+
+	hitlerjugend_1 = { # Form Hitlerjugend Division
+		
+		#icon = 
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_government = fascism # Only nazis form ss divisions
+		}
+
+		available = {
+			AND = { 
+				has_design_based_on = medium_tank_chassis
+				has_tech = mechanised_infantry
+				has_design_based_on = medium_tank_artillery_chassis
+				has_design_based_on = medium_tank_destroyer_chassis
+				has_design_based_on = medium_tank_aa_chassis
+				has_design_based_on = heavy_tank_chassis
+				has_tech = sp_armored_engineer_tech
+				has_tech = tech_recon
+				has_tech = rocket_artillery
+				has_tech = sp_armored_signal_tech
+				has_tech = tech_logistics_company
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = { # Costs 5 Command Power
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		fire_only_once = yes
+
+		ai_will_do = { # Ai will do 50/50
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5 # Deduct decision cost
+				load_oob = hitlerjugend_template # Adds the template to Germany's recruitment screen
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			custom_effect_tooltip = hj_1_tt
+			country_event = eliteformations.16
+
+			hidden_effect = {
+				set_country_flag = {
+					flag = hj_deployed
+					value = 1
+				}
+			}
+		}
+	}
+
+
+	pzgrengd_1 = { # Form Grossdeutschland Division
+		
+		#icon = 
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			OR = { # Let monarchist germany make GD too if they want.
+				has_government = fascism
+				has_government = neutrality
+			}
+		}
+
+		available = { # Must have all the equipment necessary for historical organization
+			AND = {
+				has_tech = mechanised_infantry
+				has_tech = tech_logistics_company
+				has_tech = tech_signal_company
+				has_design_based_on = medium_tank_chassis
+				has_design_based_on = heavy_tank_chassis
+				has_design_based_on = medium_tank_artillery_chassis
+				has_design_based_on = light_tank_artillery_chassis
+				has_design_based_on = light_tank_destroyer_chassis
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = { # Costs 5 Command Power
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		fire_only_once = yes
+
+		ai_will_do = { # Ai will do 50/50
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5 # Deduct decision cost
+				load_oob = pzgrengd_template # Adds the template to Germany's recruitment screen
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			custom_effect_tooltip = pzgrengd_1_tt
+			country_event = eliteformations.2
+
+			hidden_effect = {
+				set_country_flag = {
+					flag = GD_Deployed
+					value = 1
+				}
+			}
+		}
+	}
+
+	pzhg_1 = { # Form Panzer Division Hermann Goring
+		
+		#icon = 
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			AND = {
+				has_government = fascism
+				has_completed_focus = GER_fallschirmjager
+			}
+		}
+
+		available = { # Must have all the equipment necessary for historical organization
+			AND = {
+				has_tech = mechanised_infantry
+				has_tech = tech_logistics_company
+				has_tech = sp_armored_signal_tech
+				has_tech = sp_armored_engineer_tech
+				has_tech = paras_airborne_light_armor
+				has_tech = sp_armored_maintenance_tech
+				has_design_based_on = medium_tank_chassis
+				has_design_based_on = medium_tank_artillery_chassis
+
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = { # Costs 5 Command Power
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		fire_only_once = yes
+
+		ai_will_do = { # Ai will do 50/50
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5 # Deduct decision cost
+				load_oob = pzhg_template # Adds the template to Germany's recruitment screen
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			custom_effect_tooltip = pzhg_1_tt
+			country_event = eliteformations.3
+
+			hidden_effect = {
+				set_country_flag = {
+					flag = HG_Deployed
+					value = 1
+				}
+			}
+		}
+	}
+
+	pzl_1 = { # Form Panzer Lehr Division
+		
+		#icon = 
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+		}
+
+		available = { # Must have all the equipment necessary for historical organization
+			AND = {
+				has_tech = mechanised_infantry
+				has_tech = tech_logistics_company
+				has_tech = sp_armored_signal_tech
+				has_tech = sp_armored_engineer_tech
+				has_design_based_on = medium_tank_chassis
+				has_design_based_on = medium_tank_artillery_chassis
+
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = { # Costs 5 Command Power
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		fire_only_once = yes
+
+		ai_will_do = { # Ai will do 50/50
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5 # Deduct decision cost
+				load_oob = pzl_template # Adds the template to Germany's recruitment screen
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			custom_effect_tooltip = pzl_1_tt
+			country_event = eliteformations.4
+
+			hidden_effect = {
+				set_country_flag = {
+					flag = Lehr_Deployed
+					value = 1
+				}
+			}
+		}
+	}
+
+	lad999_1 = { # Form 999. L. Afrika Division
+		
+		#icon = 
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_government = fascism
+		}
+
+		available = { # Must have all the equipment necessary for historical organization
+			AND = {	
+				has_tech = tech_signal_company
+				has_tech = tech_military_police
+				has_tech = interwar_antitank
+			}
+
+			has_completed_focus = GER_strafbataillon # Must unlock penal battalions
+
+			any_country = { # Must still be fighting for Africa
+				has_war_with = ROOT
+				any_controlled_state = {
+					is_on_continent = africa
+					any_neighbor_state = {
+						is_controlled_by_ROOT_or_ally = yes
+					}
+				}
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = { # Costs 5 Command Power
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		fire_only_once = yes
+
+		ai_will_do = { # Ai will do 50/50
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5 # Deduct decision cost
+				load_oob = lad999_template # Adds the template to Germany's recruitment screen
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			custom_effect_tooltip = lad999_1_tt
+			country_event = eliteformations.6
+
+			hidden_effect = {
+				set_country_flag = {
+					flag = lad999_Deployed
+					value = 1
+				}
+			}
+		}
+	}
+
+	fuhrerbegleit_1 = {
+		# icon = 
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_government = fascism
+		}
+
+		available = {
+			AND = {
+				has_design_based_on = medium_tank_chassis
+				has_tech = mechanised_infantry
+				has_design_based_on = medium_tank_artillery_chassis
+				has_design_based_on = medium_tank_aa_chassis
+				has_tech = armored_car1
+				has_tech = tech_recon
+			}
+
+			has_country_flag = GD_Deployed
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+
+				set_technology = {
+					bicycle_infantry = 1
+					popup = no
+				}
+
+				load_oob = fuhrerbegleit_template
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			custom_effect_tooltip = fuhrerbegleit_1_tt
+			country_event = eliteformations.17
+
+			hidden_effect = {
+				set_country_flag = {
+					flag = fuhrerbegleit_stage_1
+					value = 1
+				}
+			}
+		}
+	}
+
+	fuhrerbegleit_2 = {
+
+		#icon = 
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = fuhrerbegleit_stage_1
+			has_government = fascism
+		}
+
+		available = {
+			AND = {
+				has_design_based_on = medium_tank_destroyer_chassis
+				has_tech = sp_armored_engineer_tech
+				has_tech = tech_signal_company
+				has_tech = tech_logistics_company
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			hidden_effect = {
+				set_country_flag = {
+					flag = fuhrerbegleit_stage_2
+					value = 1
+				}
+
+				add_units_to_division_template = {
+					template_name = "FBB"
+					
+					regiments = {
+						medium_armor = 0 # Expand to full Panzerregiment
+						mechanized = 1 # Expand Panzergrenadierregiment
+						medium_tank_destroyer_brigade = 2 # Add Panzerjägerbattalion 673
+					}
+
+					support = {
+						armored_engineer = 0 # Panzerpioneerbattalion 120
+						signal_company = 0 # Nachrichtenbattalion 120
+						logistics_company = 0 # Div.Nachschubtruppen 120
+					}
+				}
+			}
+			custom_effect_tooltip = fuhrerbegleit_2_tt
+		}
+	}
+
+	fuhrergrenadier_1 = {
+		# icon = 
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_government = fascism
+		}
+
+		available = {
+			AND = {
+				has_design_based_on = medium_tank_chassis
+				has_tech = mechanised_infantry
+				has_design_based_on = medium_tank_artillery_chassis
+				has_design_based_on = medium_tank_destroyer_chassis
+				has_design_based_on = light_tank_chassis
+				has_tech = tech_recon
+				is_special_project_completed = sp:sp_land_military_engineering_vehicles
+				has_tech = interwar_antiair
+				has_tech = tech_logistics_company
+				has_tech = gw_artillery
+			}
+
+			has_country_flag = GD_Deployed
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+				load_oob = fuhrergrenadier_template
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			custom_effect_tooltip = fuhrergren_1_tt
+			country_event = eliteformations.18
+
+			hidden_effect = {
+				set_country_flag = {
+					flag = fuhrergren_deployed
+					value = 1
+				}
+			}
+		}
+	}
+
+}
