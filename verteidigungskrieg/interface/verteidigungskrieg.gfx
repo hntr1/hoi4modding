@@ -1,0 +1,76 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_GER_last_ditch_rifle_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/volkssturmgewehr.dds"
+	}
+
+	spriteType = {
+		name = "GFX_last_ditch_rifle_medium"
+		texturefile = "gfx/interface/technologies/volkssturmgewehr.dds"
+	}
+
+	spriteType = {
+		name = "GFX_unit_volkssturm_unit_icon_small"
+		texturefile = "gfx/texticons/unit_volkssturm_unit_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_volkssturm_unit_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/unit_volkssturm_unit_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = GFX_unit_volkssturm_unit_icon_medium_white
+		texturefile = "gfx/interface/counters/divisions_small/onmap_unit_volkssturm_unit_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_GER_panzerfaust_equipment_medium"
+		texturefile = "gfx/interface/technologies/panzerfaust.dds"
+	}
+
+	spriteType = {
+		name = "GFX_infantry_anti_tank_medium"
+		texturefile = "gfx/interface/technologies/panzerfaust.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GER_eintossflammenwerfer_equipment_medium"
+		texturefile = "gfx/interface/technologies/eintossflammenwerfer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_flamethrower_equipment_medium"
+		texturefile = "gfx/interface/technologies/eintossflammenwerfer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fortress_cities_tech_medium"
+		texturefile = "gfx/interface/technologies/fort.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fortress_cities_remove_tech_medium"
+		texturefile = "gfx/interface/technologies/fort.dds"
+	}
+
+	spriteType = {
+		name = "GFX_eintossflammenwerfer_tech_medium"
+		texturefile = "gfx/interface/technologies/eintossflammenwerfer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_panzerfaust_tech_medium"
+		texturefile = "gfx/interface/technologies/panzerfaust.dds"
+	}
+
+	spriteType = {
+		name = "GFX_hasag_mio_icon"
+		texturefile = "gfx/interface/ideas/ger_hasag_mio.dds"
+	}
+
+}

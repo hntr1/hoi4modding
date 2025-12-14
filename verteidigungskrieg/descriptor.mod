@@ -1,0 +1,10 @@
+version="1"
+tags={
+	"Events"
+	"Gameplay"
+	"Historical"
+}
+name="Verteidigungskrieg"
+picture="thumbnail.png"
+supported_version="1.17.*"
+remote_file_id="3172131814"

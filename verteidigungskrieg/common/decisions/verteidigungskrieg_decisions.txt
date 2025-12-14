@@ -1,0 +1,1545 @@
+endsieg = {
+	### Activate the Volkssturm (FD 69) ###
+	activate_volksstrum = {
+
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_war = yes
+			has_government = fascism
+		}
+
+		available = {
+			has_country_flag = vsg_developed # Need to have the Volkssturmgewehr
+			casualties_k > 1500 # Need 1.5M Casualties
+		}
+
+		custom_cost_trigger = { # Costs 25 Command Power
+			NOT = {
+				command_power < 25
+			}
+		}
+		custom_cost_text = decision_cost_CP_25
+
+		fire_only_once = yes
+
+		ai_will_do = { # AI always does once it can
+			factor = 500
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+				load_oob = GER_volkssturm # Adds the Volkssturm division template to the deploy menu
+			}
+			
+			custom_effect_tooltip = activate_volkssturm_tt
+
+			set_country_flag = {
+				flag = volkssturm_active
+				value = 1
+			}
+		}
+
+		days_remove = -1 # Keep the decision visible in the menu after activation
+	}
+
+	### Luftwaffe Field Divisions ###
+	lw_field_div = {
+
+		icon = generic_military
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_war = yes
+			has_government = fascism
+		}
+
+		available = {
+			casualties_k > 500 # Need 500k casualties
+		}
+
+		custom_cost_trigger = { # Costs 10 Command Power
+			NOT = {
+				command_power < 10
+			}
+		}
+		custom_cost_text = decision_cost_CP_10
+
+		fire_only_once = yes
+
+		ai_will_do = { # AI moderately likely to do 
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -10
+			}
+			set_country_flag = lw_field_div_raised
+		}
+
+		days_remove = 10
+
+		remove_effect = {
+			custom_effect_tooltip = lw_field_div_tt
+			country_event = germany.303 # Event spawns divisons
+		}
+	}
+
+	### Disband Luftwaffe Field Divisions ###
+	disband_lw_field_div = {
+
+		icon = generic_military
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = lw_field_div_raised # Need to have luftwaffe-feld-divisions
+		}
+
+		available = {} # No other requirements
+
+		cost = 0
+		custom_cost_trigger = { # Costs 10 Command Power
+			NOT = {
+				command_power < 10
+			}
+		}
+		custom_cost_text = decision_cost_CP_10
+
+		fire_only_once = yes
+
+		ai_will_do = { # AI will never disband the units
+			factor = 0
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -10
+			}
+			delete_unit_template_and_units = { division_template = "Luftwaffe-Feld-Division"}
+			country_event = germany.304 # Removes the negative spirit
+			set_country_flag = {
+				flag = lw_field_div_raised
+				value = 0
+			}
+		}
+	}
+
+
+	### Emergency Conscription ###
+	emergency_conscription = {
+
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_war = yes
+			has_government = fascism
+			surrender_progress > 0 # have to be losing to see
+		}
+
+		available = {
+			surrender_progress > 0.2 # have to be losing more to take
+			has_manpower < 300000 # need under 300k manpower in reserve
+		}
+
+		cost = 25
+		days_remove = -1
+		remove_trigger = { # modifier goes away if at peace, after surrender, or if Germany is no longer occupied
+			OR = {
+				has_war = no
+				has_capitulated = yes
+				surrender_progress < 0.01
+			}
+		}
+		modifier = { # Is active until the remove trigger is met
+			conscription = 0.1
+			mobilization_speed = 0.3
+			stability_factor = -0.1
+			war_support_factor = -0.1
+		}
+		fire_only_once = yes
+		ai_will_do = { # AI not likely to do
+			factor = 1
+		}
+		complete_effect = {} # Effect is permenant if the remove trigger isn't met
+	}
+
+
+
+
+	### Nerobefehl (FD 71) ###
+	nero_decree = {
+
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_war = yes
+			surrender_progress > 0 # have to be losing to see
+		}
+
+		available = {
+			surrender_progress > 0.1 # have to be losing more to take
+		}
+
+		cost = 75
+		fire_only_once = no
+
+		ai_will_do = { # AI will burn all its PP destroying Germany if we reach this point
+			factor = 100
+		}
+
+		days_remove = 30 # 1 month to complete
+		complete_effect = {}
+		remove_effect = {
+			every_owned_state = { # Destroys a level of infrastructure in every state that has more than 1
+				limit = {
+					is_core_of = GER
+					infrastructure > 1
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 1
+				}
+			}
+		}
+	}
+
+	### Blow Rhine Bridges ###
+	blow_rhine_bridges = {
+		icon = generic_ignite_civil_war
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_war = yes 
+		}
+
+		available = {
+			surrender_progress > 0 # Need to be losing
+			NOT = {
+				has_country_flag = rhine_bridges_blown_flag # Can't blow the bridges if the bridges are already blown
+			}
+			custom_trigger_tooltip = {
+				tooltip = blow_rhine_bridges_tt
+				AND = { # Need to control all of the provinces on the east bank of the rhine
+					controls_province = 3512
+					controls_province = 6469
+					controls_province = 6570
+					controls_province = 529
+					controls_province = 6444
+					controls_province = 6488
+					controls_province = 589
+					controls_province = 6568
+					controls_province = 3530
+					controls_province = 6542
+					controls_province = 6712	
+					controls_province = 11640
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 51 # Rhineland
+				state = 42
+				state = 978
+				state = 55
+
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 51 # Rhineland
+			name = blow_rhine_bridges
+			zoom = 850
+		}
+
+		cost = 50
+		fire_only_once = no 
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		days_remove = 3
+		complete_effect = {}
+		remove_effect = {
+
+			set_country_flag = {
+				flag = rhine_bridges_blown_flag
+				value = 1
+			}
+
+			51 = {
+				add_dynamic_modifier = {
+					modifier = rhine_bridges_blown_mod
+				}
+			}
+
+			55 = {
+				add_dynamic_modifier = {
+					modifier = rhine_bridges_blown_mod
+				}
+			}
+
+			42 = {
+				add_dynamic_modifier = {
+					modifier = rhine_bridges_blown_mod
+				}
+			}
+
+			978 = {
+				add_dynamic_modifier = {
+					modifier = rhine_bridges_blown_mod
+				}
+			}
+		}
+	}
+
+
+
+	### Repair Rhine Bridges ###
+	repair_rhine_bridges = {
+		icon = generic_construction
+
+		allowed = {
+			original_tag = GER 
+		}
+
+		visible = {
+			has_country_flag = rhine_bridges_blown_flag # Needs to have blown the bridges
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = repair_rhine_bridges_tt
+				AND = { # Needs to control the west bank of the rhine, AKA counter attack across the river
+					controls_province = 3512
+					controls_province = 6469
+					controls_province = 6570
+					controls_province = 529
+					controls_province = 6444
+					controls_province = 6488
+					controls_province = 589
+					controls_province = 6568
+					controls_province = 3530
+					controls_province = 6542
+					controls_province = 6712
+					controls_province = 11640
+					controls_province = 3444
+					controls_province = 587
+					controls_province = 3547
+					controls_province = 11494
+					controls_province = 3423
+					controls_province = 11560
+					controls_province = 3558
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 51 # Rhineland
+				state = 42
+				state = 978
+				state = 55
+
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 51 # Rhineland
+			name = blow_rhine_bridges
+			zoom = 850
+		}
+
+		cost = 25
+
+		complete_effect = {}
+
+		days_remove = 30
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		remove_effect = {
+			51 = {
+				remove_dynamic_modifier = {
+					modifier = rhine_bridges_blown_mod
+				}
+			}
+
+			55 = {
+				remove_dynamic_modifier = {
+					modifier = rhine_bridges_blown_mod
+				}
+			}
+
+			42 = {
+				remove_dynamic_modifier = {
+					modifier = rhine_bridges_blown_mod
+				}
+			}
+
+			978 = {
+				remove_dynamic_modifier = {
+					modifier = rhine_bridges_blown_mod
+				}
+			}
+
+			set_country_flag = {
+				flag = rhine_bridges_blown_flag
+				value = 0
+			}			
+		}
+	}
+
+	### Fortress Cities ###
+	fortress_cities = {
+
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_war = yes
+		}
+
+		available = {
+			surrender_progress > 0.01 # Need to be losing
+		}
+
+		custom_cost_trigger = { # Costs 25 Command Power
+			NOT = {
+				command_power < 25
+			}
+		}
+		custom_cost_text = decision_cost_CP_25
+
+		fire_only_once = yes
+
+		ai_will_do = { # AI will always do
+			factor = 100
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+			}
+			GER = {
+				country_event = { id = germany.301} # Event unlocks fortress cities tech
+			}
+		}
+	}
+
+	### Deploy Reserve Armories ###
+	deploy_reserve_armories = {
+
+		icon = generic_industry
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_war = yes
+		}
+
+		available = {
+			has_war = yes
+			
+			has_equipment = {
+				infantry_equipment < 0 # Need negative gun stockpile
+			}
+		}
+
+		ai_will_do = { # AI will do this as soon as it can
+			factor = 500
+		}
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 25
+			}
+		}
+		custom_cost_text = decision_cost_CP_25
+
+		fire_only_once = yes
+
+		days_remove = 15 
+		remove_effect = {
+			add_equipment_to_stockpile = { # Old guns
+				type = infantry_equipment_0
+				amount = 25000
+				producer = GER
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+			}
+		}
+	}
+
+	# RAD Divisions
+	rad_div = {
+
+		icon = generic_military
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_war = yes
+			has_government = fascism
+		}
+
+		available = {
+			AND = {
+				casualties_k > 750 # Need 750K casualties
+			}
+		}
+
+		custom_cost_trigger = { # Costs 10 Command Power
+			NOT = {
+				command_power < 10
+			}
+		}
+		custom_cost_text = decision_cost_CP_10
+
+		fire_only_once = yes
+
+		ai_will_do = { # AI moderately likely to do
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -10
+			}
+			set_country_flag = rad_div_raised
+		}
+
+		days_remove = 10
+
+		remove_effect = {
+			custom_effect_tooltip = rad_div_tt
+			country_event = germany.305 # Event spawns divisions
+		}
+	}
+
+# Flak Towers
+	flak_tower_berlin = {
+		
+		icon = generic_fortification
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_war = yes
+			has_government = fascism
+		}
+
+		available = {
+			GER = {
+				controls_state = 64 # Brandenburg
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 64 # Brandenburg
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 64 # Brandenburg
+			name = flak_tower_berlin
+			zoom = 850
+		}
+
+		custom_cost_trigger = { # Costs 25 Command Power
+			NOT = {
+				command_power < 25
+			}
+		}
+		custom_cost_text = decision_cost_CP_25
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+			}
+		}
+
+		days_remove = 30
+
+		remove_effect = {
+			64 = { # Brandenburg
+				set_building_level = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	flak_tower_hamburg = {
+
+		icon = generic_fortification
+		
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_war = yes
+			has_government = fascism
+		}
+
+		available = {
+			GER = {
+				controls_state = 58 # Schleswig Holstein
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 58 # Schleswig Holstein
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 58 # Schleswig Holstein
+			name = flak_tower_hamburg
+			zoom = 850
+		}
+
+		custom_cost_trigger = { # Costs 25 Command Power
+			NOT = {
+				command_power < 25
+			}
+		}
+		custom_cost_text = decision_cost_CP_25
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			58 = { # Schleswig Holstein
+				set_building_level = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	flak_tower_vienna = {
+
+		icon = generic_fortification
+		
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_war = yes
+			has_government = fascism
+		}
+
+		available = {
+			GER = {
+				controls_state = 4 # Vienna
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 4 # Vienna
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 4 # Vienna
+			name = flak_tower_vienna
+			zoom = 850
+		}
+
+		custom_cost_trigger = { # Costs 25 Command Power
+			NOT = {
+				command_power < 25
+			}
+		}
+		custom_cost_text = decision_cost_CP_25
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			4 = {  # Vienna
+				set_building_level = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	flak_tower_bremen = {
+
+		icon = generic_fortification
+		
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_war = yes
+			has_government = fascism
+		}
+
+		available = {
+			GER = {
+				controls_state = 59 # Hannover
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 59 # Hannover
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 59 # Hannover
+			name = flak_tower_bremen
+			zoom = 850
+		}
+
+		custom_cost_trigger = { # Costs 25 Command Power
+			NOT = {
+				command_power < 25
+			}
+		}
+		custom_cost_text = decision_cost_CP_25
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+			}
+		}
+
+		days_remove = 10
+
+		remove_effect = {
+			59 = {   # Hannover
+				set_building_level = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	flak_tower_munich = {
+
+		icon = generic_fortification
+		
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_war = yes
+			has_government = fascism
+		}
+
+		available = {
+			GER = {
+				controls_state = 53 # Bavaria
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 52 # Bavaria
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 52 # Bavaria
+			name = flak_tower_munich
+			zoom = 850
+		}
+
+		custom_cost_trigger = { # Costs 25 Command Power
+			NOT = {
+				command_power < 25
+			}
+		}
+		custom_cost_text = decision_cost_CP_25
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+			}
+		}
+
+		days_remove = 40
+
+		remove_effect = {
+			52 = {   # Bavaria
+				set_building_level = {
+					type = anti_air_building
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+# Volksgrenadier Divisions
+
+	volskgren_div = {
+
+		icon = generic_military
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_war = yes
+		}
+
+		available = {
+			casualties_k = 1000
+
+			has_tech = tech_signal_company
+			has_tech = tech_logistics_company
+			has_tech = interwar_antitank
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				army_experience < 20
+			}
+		}
+		custom_cost_text = decision_cost_ArmXP_20
+
+		ai_will_do = {
+			factor = 7
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				army_experience = -20
+				load_oob = GER_volksgren_div
+			}
+			custom_effect_tooltip = volksgren_tt
+		}
+	}
+# Kiel Canal
+	blow_kiel_canal = {
+
+		icon = generic_ignite_civil_war
+
+		allowed = {
+			original_tag = GER
+			has_dlc = "Waking the Tiger" # DLC required for canal blocking
+		}
+
+		visible = {
+			has_war = yes
+			NOT = { has_global_flag = KIEL_CANAL_BLOCKED} # Can't blow the canal if it's already damaged
+		}
+
+		available = {
+			controls_state = 58 # Holstein
+			controls_state = 909 # Schleswig
+		}
+
+		on_map_area = {
+			state = 58
+			name blow_kiel_canal
+			zoom = 850
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 58
+				state = 909
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		fire_only_once = no
+
+		days_remove = 30
+
+		custom_cost_trigger = { # Costs 5 civs for 30 days
+			NOT = {
+				num_of_civilian_factories < 5
+			}
+		}
+		custom_cost_text = decision_cost_civ_5
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							OR = {
+								owns_state = 58
+								owns_state = 909
+							}
+						}
+					}
+					random_country = {
+						limit = {
+							OR = {
+								owns_state = 58
+								owns_state = 909
+							}
+						}
+						country_event = { id = verteidigungskrieg.1 days = 1 }
+					}
+				}
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_full_control_of_state = 58
+						has_full_control_of_state = 909
+					}
+				}
+				set_country_flag = blew_up_kiel
+				set_global_flag = KIEL_CANAL_BLOCKED # Block the canal
+				country_event = { id = verteidigungskrieg_news.1 hours = 6} # Send the news event
+			}
+			effect_tooltip = {
+				if = {
+					limit = {
+						GER = { # German people don't like it when you destroy the canal
+							OR = {
+								owns_state = 58
+								owns_state = 909
+							}
+						}
+					}
+					add_war_support = -0.05
+					add_stability = -0.05
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 0 # Don't randomly blow up the canal for no reason
+			modifier = {
+				add = 100 # Blow it up if enemy is getting close
+				58 = {
+					OWNER = {
+						OR = {
+							tag = ROOT
+							is_in_faction_with = ROOT
+						}
+					}
+				}
+				OR = {
+					58 = {
+						NOT = { controller = { tag = ROOT } }
+						controller = { has_war_with = ROOT }
+					}
+					59 = {
+						NOT = { controller = { tag = ROOT } }
+						controller = { has_war_with = ROOT }
+					}
+					61 = {
+						NOT = { controller = { tag = ROOT } }
+						controller = { has_war_with = ROOT }
+					}
+				}
+				has_war = yes
+			}
+		}
+	}
+
+# Primative Weapons
+
+	establish_pwp = {
+
+		icon = generic_protection
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_war = yes
+			has_government = fascism
+		}
+
+		available = {
+			OR = { # Need total mob
+				has_idea = tot_economic_mobilisation
+				has_idea = totaler_krieg_economy
+			}
+		}
+
+		cost = 20
+		fire_only_once = yes
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = {
+					flag = pwp_established # Unlocks later decisions
+					value = 1
+				}
+			}
+			custom_effect_tooltip = pwp_tt
+		}
+	}
+
+	develop_vsg = {
+
+		icon = generic_prepare_civil_war
+		
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_war = yes
+			has_government = fascism
+			has_country_flag = pwp_established # Need Primativ-Waffen-Programm
+		}
+
+		available = {
+			OR = { # Still need total mob
+				has_idea = tot_economic_mobilisation
+				has_idea = totaler_krieg_economy
+			}
+		}
+
+		custom_cost_trigger = { # Costs 25 Command Power
+			NOT = {
+				command_power < 25
+			}
+		}
+		custom_cost_text = decision_cost_CP_25
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+			}
+		}
+
+		days_remove = 10
+
+		remove_effect = {
+			set_technology = {
+				last_ditch_rifle = 1 # Unlock Volkssturmgewehr tech
+			}
+
+			set_country_flag = {
+				flag = vsg_developed
+				value = 1
+			}
+
+			add_equipment_to_stockpile = { # Gives 10k VSG's immediately
+				type = last_ditch_rifle_equipment_1
+				producer = GER
+				amount = 10000
+			}
+		}
+	}
+
+	develop_etfw = {
+
+		icon = generic_scorched_earth
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_war = yes
+			has_government = fascism
+			has_country_flag = pwp_established # Needs Primitiv-Waffen-Programm
+		}
+
+		available = {
+			OR = { # Still need total mob
+				has_idea = tot_economic_mobilisation
+				has_idea = totaler_krieg_economy
+			}
+			has_tech = tech_engineers2 # Needs Engineers 2 Tech
+		}
+
+		custom_cost_trigger = { # Costs 25 Command Power
+			NOT = {
+				command_power < 25
+			}
+		}
+		custom_cost_text = decision_cost_CP_25
+
+		fire_only_once = yes
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+			}
+		}
+
+		days_remove = 10
+
+		remove_effect = {
+			set_technology = {
+				eintossflammenwerfer_tech = 1 # Unlocks ETFW tech
+			}
+
+			hidden_effect = {
+				set_country_flag = {
+					flag = etfw_developed
+					value = 1
+				}
+			}
+		}
+	}
+
+	develop_pzf = {
+
+		icon = generic_ignite_civil_war
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_war = yes
+			has_government = fascism
+			has_country_flag = pwp_established # Needs Primativ-Waffen-Programm
+		}
+
+		available = {
+			OR = { # Still needs total mob
+				has_idea = tot_economic_mobilisation
+				has_idea = totaler_krieg_economy
+			}
+			has_tech = infantry_at # Needs Infantry Anti-Tank 1 tech
+		}
+
+		custom_cost_trigger = { # Costs 25 Command Power
+			NOT = {
+				command_power < 25
+			}
+		}
+		custom_cost_text = decision_cost_CP_25
+
+		fire_only_once = yes
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+			}
+		}
+
+		days_remove = 10
+
+		remove_effect = {
+			set_technology = {
+				panzerfaust_tech = 1 # Unlocks Panzerfaust tech
+			}
+
+			hidden_effect = {
+				set_country_flag = {
+					flag = pzf_developed
+					value = 1
+				}
+			}
+		}
+	}
+}
+
+etfw_deployment = {
+	
+	# Volkssturm
+	etfw_volk = {
+
+		icon = generic_reorganize_irregulars
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_active # Needs volkssturm
+		}
+
+		available = {}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		complete_effect = {
+			hidden_effect = {
+				set_technology = {
+					etfw_volk_tech = 1 # Adds ETFW to volkssturm battalions
+				}
+			}
+
+			set_country_flag = etfw_volk_deployed # halts stockpile calculations in daily on-actions
+			custom_effect_tooltip = etfw_volk_tt
+		}
+	}
+
+	# Paratroopers
+	etfw_para = {
+
+		icon = generic_intelligence_operation
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {}
+
+		available = {
+			has_tech = paratroopers # Needs paratroopers
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		complete_effect = {
+			hidden_effect = {
+				set_technology = {
+					etfw_para_tech = 1 # Adds ETFW to paratrooper battalions
+				}
+			}
+			set_country_flag = etfw_para_deployed # halts stockpile calculations in daily on-actions
+			custom_effect_tooltip = etfw_para_tt
+		}
+	}
+
+	# Engineers
+	etfw_eng = {
+
+		icon = generic_fortification
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {}
+
+		available = {
+			has_tech = tech_engineers # Needs engineers
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		complete_effect = {
+			hidden_effect = {
+				set_technology = {
+					etfw_eng_tech = 1 # Adds ETFW to engineer company
+				}
+			}
+			set_country_flag = etfw_eng_deployed # halts stockpile calculations in daily on-actions
+			custom_effect_tooltip = etfw_eng_tt
+		}
+	}
+}
+
+pzf_deployment = {
+	
+	# Volkssturm
+	pzf_volk = {
+
+		icon = generic_reorganize_irregulars
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_active
+		}
+
+		available = {}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		complete_effect = {
+			hidden_effect = {
+				set_technology = {
+					pzf_volk_tech = 1
+				}
+			}
+			set_country_flag = pzf_volk_deployed
+			custom_effect_tooltip = pzf_volk_tt		
+		}
+	}
+
+	# Spec Forces
+	pzf_sf = {
+
+		icon = generic_intelligence_operation
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {}
+
+		available = {
+			OR = {
+				has_tech = paratroopers
+				has_tech = tech_mountaineers
+				has_tech = marines
+			}
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		complete_effect = {
+			hidden_effect = {
+				set_technology = {
+					pzf_sf_tech = 1
+				}
+			}
+			set_country_flag = pzf_sf_deployed
+			custom_effect_tooltip = pzf_sf_tt
+		}
+	}
+
+	# Panzergrenadiers
+	pzf_mech = {
+
+		icon = generic_motorized
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {}
+
+		available = {
+			has_tech = mechanised_infantry
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		complete_effect = {
+			hidden_effect = {
+				set_technology = {
+					pzf_mech_tech = 1
+				}
+			}
+			set_country_flag = pzf_mech_deployed
+			custom_effect_tooltip = pzf_mech_tt
+		}
+	}
+
+	# Inf
+	pzf_inf = {
+
+		icon = generic_military
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {}
+
+		available = {}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		complete_effect = {
+			hidden_effect = {
+				set_technology = {
+					pzf_inf_tech = 1
+				}
+			}
+			set_country_flag = pzf_inf_deployed
+			custom_effect_tooltip = pzf_inf_tt
+		}
+	}
+}
+
+special_projects = {
+	
+	rebuild_kiel_canal = {
+
+		icon = GFX_decision_generic_special_project
+
+		available = { # Need control of both sides of the canal
+			has_full_control_of_state = 58
+			has_full_control_of_state = 909
+			num_of_civilian_factories > 15 # Need enough civs to pay for it
+		}
+
+		visible = {
+			has_global_flag = KIEL_CANAL_BLOCKED # Can't repair the canal unless its destroyed
+		}
+
+		on_map_area = {
+			state = 58
+			name rebuild_kiel_canal
+			zoom = 850
+		}
+
+		fire_only_once = no
+
+		days_remove = 365 # Takes a year to repair
+
+		custom_cost_trigger = { # Costs 15 civs for 1 year
+			NOT = {
+				num_of_civilian_factories < 15
+			}
+		}
+		custom_cost_text = decision_cost_civ_15
+
+		modifier = {
+			civilian_factory_use = 15
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					has_full_control_of_state = 58
+				}
+				set_country_flag = rebuilt_kiel
+				clr_global_flag = KIEL_CANAL_BLOCKED # unblock the canal
+				country_event = { id = verteidigungskrieg_news.2 hours = 6} # Send the news event
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0 # AI never attempts during war
+				has_war = yes
+			}
+			modifier = {
+				factor = 10 # AI will do at peace
+				has_war = no
+			}
+		}
+	}
+}

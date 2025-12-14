@@ -1,0 +1,1567 @@
+add_namespace = volkssturm
+
+country_event = {
+	id = volkssturm.1
+	title =volkssturm.1.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		978 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Baden\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Baden\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Baden\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Baden\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 5 Baden\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"					owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 6 Baden\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"					owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 7 Baden\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 8 Baden\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 9 Baden\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 10 Baden\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.2
+	title = volkssturm.2.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		53 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Bayreuth\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Bayreuth\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Bayreuth\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Bayreuth\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 5 Bayreuth\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"					
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 6 Bayreuth\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"					
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 7 Bayreuth\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 8 Bayreuth\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 9 Bayreuth\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 10 Bayreuth\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.3
+	title =volkssturm.3.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		64 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Berlin\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Berlin\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Berlin\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Berlin\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 5 Berlin\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"					
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 6 Berlin\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"					
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 7 Berlin\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 8 Berlin\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 9 Berlin\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 10 Berlin\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.4
+	title =volkssturm.4.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		85 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Danzig-Westpreussen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Danzig-Westpreussen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Danzig-Westpreussen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Danzig-Westpreussen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 5 Danzig-Westpreussen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"					
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.5
+	title =volkssturm.5.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		57 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Düsseldorf\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Düsseldorf\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Düsseldorf\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Düsseldorf\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 5 Düsseldorf\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"					
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 6 Düsseldorf\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"					
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 7 Düsseldorf\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 8 Düsseldorf\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 9 Düsseldorf\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 10 Düsseldorf\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.6
+	title =volkssturm.6.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		51 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Essen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Essen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Essen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Essen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 5 Essen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"					
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 6 Essen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"					
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 7 Essen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 8 Essen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 9 Essen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 10 Essen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.7
+	title =volkssturm.7.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		54 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Franken\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Franken\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Franken\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Franken\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 5 Franken\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"					
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 6 Franken\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"					
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 7 Franken\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 8 Franken\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 9 Franken\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 10 Franken\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.8
+	title =volkssturm.8.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		65 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Halle-Mersenburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Halle-Mersenburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Halle-Mersenburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Halle-Mersenburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 5 Halle-Mersenburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"					
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 6 Halle-Mersenburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"					
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 7 Halle-Mersenburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 8 Halle-Mersenburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 9 Halle-Mersenburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 10 Halle-Mersenburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.9
+	title =volkssturm.9.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		58 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Hamburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Hamburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Hamburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Hamburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 5 Hamburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"					
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 6 Hamburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"					
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 7 Hamburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 8 Hamburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.10
+	title =volkssturm.10.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		55 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Hessen-Nassau\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Hessen-Nassau\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Hessen-Nassau\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Hessen-Nassau\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 5 Hessen-Nassau\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"					
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 6 Hessen-Nassau\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"					
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 7 Hessen-Nassau\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 8 Hessen-Nassau\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 9 Hessen-Nassau\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 10 Hessen-Nassau\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.11
+	title =volkssturm.11.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		976 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Kärnten\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Kärnten\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Kärnten\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Kärnten\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 5 Kärnten\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"					
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 6 Kärnten\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"					
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.12
+	title =volkssturm.12.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		51 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Köln-Aachen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Köln-Aachen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Köln-Aachen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Köln-Aachen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 5 Köln-Aachen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"					
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 6 Köln-Aachen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"					
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.13
+	title =volkssturm.13.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		55 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Kurhessen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Kurhessen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Kurhessen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Kurhessen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.14
+	title =volkssturm.14.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		64 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Magdeburg-Anhalt\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Magdeburg-Anhalt\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Magdeburg-Anhalt\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Magdeburg-Anhalt\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.15
+	title =volkssturm.15.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		55 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Mainfranken\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Mainfranken\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Mainfranken\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Mainfranken\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.16
+	title =volkssturm.16.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		68 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Mark Brandenburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Mark Brandenburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Mark Brandenburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Mark Brandenburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.17
+	title =volkssturm.17.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		61 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Mecklenburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Mecklenburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Mecklenburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Mecklenburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = volkssturm.18
+	title =volkssturm.18.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		42 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Moselland\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Moselland\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Moselland\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Moselland\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.19
+	title =volkssturm.19.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		53 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 München-Oberbayern\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 München-Oberbayern\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 München-Oberbayern\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 München-Oberbayern\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 5 München-Oberbayern\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 6 München-Oberbayern\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 7 München-Oberbayern\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 8 München-Oberbayern\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.20
+	title =volkssturm.20.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		4 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Niederdonau\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Niederdonau\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Niederdonau\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Niederdonau\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.21
+	title =volkssturm.21.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		66 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Niederschleisen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Niederschleisen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Niederschleisen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Niederschleisen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.22
+	title =volkssturm.22.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		152 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Oberdonau\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Oberdonau\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Oberdonau\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Oberdonau\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.23
+	title =volkssturm.23.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		67 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Oberschleisen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Oberschleisen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Oberschleisen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Oberschleisen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.24
+	title =volkssturm.24.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		59 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Ost-Hannover\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Ost-Hannover\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Ost-Hannover\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Ost-Hannover\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.25
+	title =volkssturm.25.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		763 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Ostpreussen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Ostpreussen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Ostpreussen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Ostpreussen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 5 Ostpreussen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 6 Ostpreussen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 7 Ostpreussen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 8 Ostpreussen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 9 Ostpreussen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 10 Ostpreussen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.26
+	title =volkssturm.26.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		62 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Pommern\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Pommern\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Pommern\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Pommern\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+		63 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 5 Pommern\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 6 Pommern\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 7 Pommern\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 8 Pommern\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.27
+	title =volkssturm.27.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		65 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Sachsen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Sachsen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Sachsen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Sachsen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.28
+	title =volkssturm.28.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		152 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Salzburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Salzburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Salzburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Salzburg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.29
+	title =volkssturm.29.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		909 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Schleswig-Holstein\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Schleswig-Holstein\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Schleswig-Holstein\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Schleswig-Holstein\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.30
+	title =volkssturm.30.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		50 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Schwaben\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Schwaben\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Schwaben\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Schwaben\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.31
+	title =volkssturm.31.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		976 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Steiermark\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Steiermark\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Steiermark\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Steiermark\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.32
+	title =volkssturm.32.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		69 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Sudetenland\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Sudetenland\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Sudetenland\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Sudetenland\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.33
+	title =volkssturm.33.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		60 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Süd Hannover-Braunschweig\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Süd Hannover-Braunschweig\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Süd Hannover-Braunschweig\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Süd Hannover-Braunschweig\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.34
+	title =volkssturm.34.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		60 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Thüringen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Thüringen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Thüringen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Thüringen\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.35
+	title =volkssturm.35.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		153 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Tirol-Voralberg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Tirol-Voralberg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Tirol-Voralberg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Tirol-Voralberg\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.36
+	title =volkssturm.36.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		86 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Wartheland\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Wartheland\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Wartheland\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Wartheland\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.37
+	title =volkssturm.37.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		56 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Weser-Ems\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Weser-Ems\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Weser-Ems\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Weser-Ems\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.38
+	title =volkssturm.38.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		57 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Westfalen-Nord\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Westfalen-Nord\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.39
+	title =volkssturm.39.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		57 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Westfalen-Süd\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Westfalen-Süd\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.40
+	title =volkssturm.40.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		42 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Westmark\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Westmark\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Westmark\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Westmark\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.41
+	title =volkssturm.41.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		4 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Wien\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Wien\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 3 Wien\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 4 Wien\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = volkssturm.42
+	title =volkssturm.42.t
+	desc = volkssturm.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = volkssturm.1.a
+		50 = {
+			limit = {ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"Volkssturm-Division 1 Wüttemberg-Hohenzollern\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Volkssturm-Division 2 Wüttemberg-Hohenzollern\" division_template = \"Volkssturm Division\" start_experience_factor = 0.01 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+

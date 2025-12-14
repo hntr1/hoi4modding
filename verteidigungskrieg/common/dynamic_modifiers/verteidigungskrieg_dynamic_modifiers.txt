@@ -1,0 +1,9 @@
+rhine_bridges_blown_mod = {
+
+	enable = { always = yes }
+
+	icon = GFX_decision_hol_inundate_water_lines
+
+	disable_strategic_redeployment = yes 
+	army_speed_factor_for_controller = -0.25
+}

@@ -1,0 +1,350 @@
+﻿l_english:
+
+# Decision Categories
+  endsieg: "Reichsverteidigung"
+  endsieg_desc: "We must defend the Reich at all costs. If we must fall, then the world will fall with us."
+  
+  etfw_deployment: "Eintossflammenwerfer Deployment"
+  etfw_deployment_desc: "Chose to selectively deploy the Eintossflammenwerfer to certain branches of the Wehrmacht. We currently have [?num_equipment@flamethrower_equipment|=0+] in stockpile."
+
+  pzf_deployment: "Panzerfaust Deployment"
+  pzf_deployment_desc: "Chose to selectively deploy the Panzerfaust to certain branches of the Wehrmacht. We currently have [?num_equipment@infantry_anti_tank_equipment|=0+] in stockpile."
+
+  volkssturm_decision_cat: "Volkssturm Levy Orders"
+  volkssturm_decision_cat_desc: "Select states to raise Volkssturm units on map."
+
+
+# Decisions
+  activate_volksstrum: "Führerbefehle 69"
+  activate_volksstrum_desc: "Experience in the east has shown that Volkssturm, emergency and reserve units have little fighting value when left to themselves, and can be quickly destroyed. The fighting value of these units, which are for the most part strong in numbers, but weak in the armaments required for modern battle, is immeasurably higher when the go into action with troops of the regular army in the field. I, therefore, order where Volkssturm, emergency, and reserve units are available, together with regular units, in any battle sector, mixed battlegroups (Brigades) will be formed under unified command, so as to give the Volkssturm, emergency, and reserve units stiffening and support. - Adolf Hitler"
+  activate_volkssturm_tt: "Raises Volkssturm divisions in Germany"
+
+  disband_volksstrum: "Disband the Volkssturm"
+  disband_volksstrum_desc: "We no longer have a need for the Volkssturm. Order the units to stand down"
+
+  lw_field_div: "Recruit Luftwaffe Field Divisions"
+  lw_field_div_desc: "To replace losses on the battlefield, excess personnel from the Luftwaffe will be formed into combat divisions"
+  lw_field_div_tt: "Raises 21 Luftwaffe-Feld-Divisions in Germany"
+  
+  prepare_werewolf: "Unternehmen Werewolf"
+  prepare_werewolf_desc: "The Werwolf Guerrillas will continue the fight for Deutschland even if the Wehrmacht will not."
+  
+  deploy_reserve_armories: "Deploy Reserve Armories"
+  deploy_reserve_armories_desc: "Our shortage in equipment can be alleviated by issuing old stockpiles from the Great War"
+  
+  nero_decree: "Führerbefehle 71"
+  nero_decree_desc: "It is a mistake to think that transport and communication facilities, industrial establishments and supply depots, which have not been destroyed, or have only been temporarily put out of action, can be used again for our own ends when the lost territory has been recovered. The enemy will leave us nothing but scorched earth when he withdraws, without paying the slightest regard to the population. I therefore order all military transport and communication facilities, industrial establishments and supply depots, as well as anything else of value within Reich territory, which could be used by the enemy immediately or within the foreseeable future for the prosecution of the war, will be destroyed. - Adolf Hitler"
+  
+  blow_rhine_bridges: "Blow the Rhine Bridges"
+  blow_rhine_bridges_desc: "Then enemy approaches the Rhine! we should destroy the bridges before they can cross deeper into Germany."
+  blow_rhine_bridges_tt: "Controls all German provinces on the east bank of the Rhine river"
+
+  repair_rhine_bridges: "Repair the Rhine Bridges"
+  repair_rhine_bridges_desc: "We have pushed the enemy out of Germany, it is time to repair the bridges across the Rhine."
+  repair_rhine_bridges_tt: "Controls all German provinces on both banks of the Rhine"
+
+  emergency_conscription: "Enact Emergency Conscription"
+  emergency_conscription_desc: "The Reich is under serious threat. In this war, there is no such thing as a civilian"
+  
+  fortress_cities: "Führerbefehle 53"
+  fortress_cities_desc: "The Fortified Areas will fulfill the function of fortresses in former historical times. They will ensure that the enemy does not occupy these areas of decisive operational importance. They will allow themselves to be surrounded, thereby holding down the largest possible number of enemy forces, and establishing conditions favorable for successful counterattacks. Local Strongpoints are strongpoints deep in the battle area, which will be tenaciously defended in the event of enemy penetration. By being included in the main line of battle, they will act as a reserve of defence and, should the enemy break through, as hinges and cornerstones for the Front, forming positions from which counterattacks can be launched. Each Fortified Area Commandant should be a specially selected, hardened soldier, preferably of General's rank. He will be appointed by the Army Group concerned. Fortified Area Commandants will be personally responsible to the Commander in Chief of the Army Group. Fortified Area Commandants will pledge their honor as soldiers to carry out their duties to the last. - Adolf Hitler"
+  
+  rad_div: "Conscript the Reichsarbeitsdienst"
+  rad_div_desc: "The Reichsarbeitsdienst is the official state and party labor service. For the duration of the war these units were rear-line support and construction units. Now they are needed on the frontline."
+  rad_div_tt: "Raises 6 RAD-Divisions in Germany"
+
+  volskgren_div: "Organize the Volksgrenadier Division"
+  volksgren_div_desc: "We are suffering too many losses to properly reinforce our current division organizations, we should create a new organization with fewer battalions to allow us to train more divisions with less men."
+  volksgren_tt: "Creates the §YVolksgrenadier-Division§! Division Template"
+
+  develop_vsg: "Develop the Volkssturmgewehr"
+  develop_vsg_desc: "The Primitiv-Waffen-Programm has birthed a simplified semi-automatic rifle that can be cheaply made to help outfit the Volkssturm."
+
+  establish_pwp: "Establish the Primitiv-Waffen-Programm"
+  pwp_tt: "Creating the Primitiv-Waffen-Programm will allow the design of cost-effective weaponry for the Wehrmacht"
+
+  develop_etfw: "Develop the Eintossflammenwerfer"
+  develop_etfw_desc: "A disposable flame-throwing device"
+
+  etfw_volk: "Deploy units to the Volkssturm"
+  etfw_volk_desc: "Equip all Volkssturm battalions with the Eintossflammenwerfer"
+  etfw_volk_tt: "We will have [?etfw_volk_need|=0+] Eintossflammenwerfen left in stockpile."
+
+  etfw_para: "Deploy units to the Fallschirmjägerkorps"
+  etfw_para_desc: "Equip all paratrooper battalions with the Eintossflammenwerfer"
+  etfw_para_tt: "We will have [?etfw_para_need|=0+] Eintossflammenwerfen left in stockpile."
+
+  etfw_eng: "Deploy units to the Pioneerkorps"
+  etfw_eng_desc: "Equip all engineer companies with the Eintossflammenwerfer"
+  etfw_eng_tt: "We will have [?etfw_eng_need|=0+] Eintossflammenwerfen left in stockpile."
+
+  develop_pzf: "Develop the Panzerfaust"
+  develop_pzf_desc: "A man-portable anti-tank weapon"
+
+  pzf_volk: "Deploy units to the Volkssturm"
+  pzf_volk_desc: "Equip all Volkssturm battalions with the Panzerfaust"
+  pzf_volk_tt: "We will have [?pzf_volk_need|=0+] Panzerfauste left in stockpile."
+
+  pzf_sf: "Deploy units to the Spezialtruppen"
+  pzf_sf_desc: "Equip all paratrooper, marine, and mountaineer battalions with the Panzerfaust"
+  pzf_sf_tt: "We will have [?pzf_sf_need|=0+] Panzerfauste left in stockpile."
+
+  pzf_mech: "Deploy to the Panzergrenadiers"
+  pzf_mech_desc: "Equip all motorized and mechanized battalions with the Panzerfaust"
+  pzf_mech_tt: "We will have [?pzf_mech_need|=0+] Panzerfauste left in stockpile."
+
+  pzf_inf: "Push into full service"
+  pzf_inf_desc: "Equip all infantry battalions with the Panzerfaust"
+  pzf_inf_tt: "We will have [?pzf_inf_need|=0+] Panzerfauste left in stockpile."
+
+  flak_tower_berlin: "Build Flaktürme in Berlin"
+  flak_tower_berlin_desc: "Flak Towers will help defend the area from enemy bombing"
+
+  flak_tower_hamburg: "Build Flaktürme in Hamburg"
+  flak_tower_hamburg_desc: "Flak Towers will help defend the area from enemy bombing"
+
+  flak_tower_vienna: "Build Flaktürme in Vienna"
+  flak_tower_vienna_desc: "Flak Towers will help defend the area from enemy bombing"
+
+  flak_tower_bremen: "Build Flaktürme in Bremen"
+  flak_tower_bremen_desc: "Flak Towers will help defend the area from enemy bombing"
+
+  flak_tower_munich: "Build Flaktürme in München"
+  flak_tower_munich_desc: "Flak Towers will help defend the area from enemy bombing"
+
+  blow_kiel_canal: "Blow the Kiel Canal"
+  blow_kiel_canal_desc: "Blow up the Kiel Canal to prevent ships from utilizing it."
+
+  rebuild_kiel_canal: "Repair the Kiel Canal"
+  rebuild_kiel_canal_desc: "Restore the Kiel Canal to working order."
+
+  disband_lw_field_div: "Disband the Luftwaffe-Feld-Divisions"
+  disband_lw_field_div_desc: "We no longer need Luftwaffe-Feld-Divisions. Order the units to stand down."
+
+  show_volk_dec: "Show Volkssturm Deployment Decisions"
+  show_volk_tt: "Shows on-map decisions for Volkssturm deployment"
+
+  hide_volk_dec: "Hide Volkssturm Deployment Decisions"
+  hide_volk_tt: "Hides on-map decisions for Volkssturm deployment"
+  
+  # Volkssturm
+  vs_deploy_baden: "Raise Volkssturm in Gau Baden"
+  vs_deploy_bayreuth: "Raise Volkssturm in Gau Bayreuth"
+  vs_deploy_berlin: "Raise Volkssturm in Gau Berlin"
+  vs_deploy_danzig: "Raise Volkssturm in Gau Danzig-Westpreussen"
+  vs_deploy_dusseldorf: "Raise Volkssturm in Gau Düsseldorf"
+  vs_deploy_essen: "Raise Volkssturm in Gau Essen"
+  vs_deploy_franken: "Raise Volkssturm in Gau Franken"
+  vs_deploy_halle: "Raise Volkssturm in Gau Halle-Mersenburg"
+  vs_deploy_hamburg: "Raise Volkssturm in Gau Hamburg"
+  vs_deploy_hessen: "Raise Volkssturm in Gau Hessen-Nassau"
+  vs_deploy_karnten: "Raise Volkssturm in Gau Kärnten"
+  vs_deploy_koln: "Raise Volkssturm in Gau Köln-Aachen"
+  vs_deploy_kurhessen: "Raise Volkssturm in Gau Kurhessen"
+  vs_deploy_anhalt: "Raise Volkssturm in Gau Magdeburg-Anhalt"
+  vs_deploy_mainfranken: "Raise Volkssturm in Gau Mainfranken"
+  vs_deploy_brandenburg: "Raise Volkssturm in Gau Mark Brandenburg"
+  vs_deploy_mecklenburg: "Raise Volkssturm in Gau Mecklenburg"
+  vs_deploy_moselland: "Raise Volkssturm in Gau Moselland"
+  vs_deploy_munich: "Raise Volkssturm in Gau München-Oberbayern"
+  vs_deploy_niederdonau: "Raise Volkssturm in Gau Niederdonau"
+  vs_deploy_niederschlesien: "Raise Volkssturm in Gau Niederschlesien"
+  vs_deploy_oberdonau: "Raise Volkssturm in Gau Oberdonau"
+  vs_deploy_oberschlesien: "Raise Volkssturm in Gau Oberschlesien"
+  vs_deploy_osthannover: "Raise Volkssturm in Gau Ost-Hannover"
+  vs_deploy_ostpreussen: "Raise Volkssturm in Gau Ostpreussen"
+  vs_deploy_pommern: "Raise Volkssturm in Gau Pommern"
+  vs_deploy_sachsen: "Raise Volkssturm in Gau Sachsen"
+  vs_deploy_salzburg: "Raise Volkssturm in Gau Salzburg"
+  vs_deploy_sh: "Raise Volkssturm in Gau Schelswig-Holstein"
+  vs_deploy_schwaben: "Raise Volkssturm in Gau Schwaben"
+  vs_deploy_steiermark: "Raise Volkssturm in Gau Steiermark"
+  vs_deploy_sudeten: "Raise Volkssturm in Gau Sudetenland"
+  vs_deploy_sudhannover: "Raise Volkssturm in Gau Süd Hannover-Braunschweig"
+  vs_deploy_thuringen: "Raise Volkssturm in Gau Thürigen"
+  vs_deploy_tirol: "Raise Volkssturm in Gau Tirol-Voralberg"
+  vs_deploy_wartheland: "Raise Volkssturm in Gau Wartheland"
+  vs_deploy_weser: "Raise Volkssturm in Gau Weser-Ems"
+  vs_deploy_nwestfalen: "Raise Volkssturm in Gau Westfalen-Nord"
+  vs_deploy_swestfalen: "Raise Volkssturm in Gau Westfalen-Süd"
+  vs_deploy_westmark: "Raise Volkssturm in Gau Westmark"
+  vs_deploy_wien: "Raise Volkssturm in Gau Wien"
+  vs_deploy_wh: "Raise Volkssturm in Gau Wüttemberg-Hohenzollern"
+
+  volkssturm_tt: "Raises Volkssturm Divisions in the selected state"
+
+
+  
+# Events
+  germany.301.t: "Führerbefehle 53 - Fortress Cities"
+  germany.301.d: "The Fortified Areas will fulfill the function of fortresses in former historical times. They will ensure that the enemy does not occupy these areas of decisive operational importance. They will allow themselves to be surrounded, thereby holding down the largest possible number of enemy forces, and establishing conditions favorable for successful counterattacks. \n\n Local Strongpoints are strongpoints deep in the battle area, which will be tenaciously defended in the event of enemy penetration. By being included in the main line of battle, they will act as a reserve of defence and, should the enemy break through, as hinges and cornerstones for the Front, forming positions from which counterattacks can be launched.\n\n Each Fortified Area Commandant should be a specially selected, hardened soldier, preferably of General's rank. He will be appointed by the Army Group concerned. Fortified Area Commandants will be personally responsible to the Commander in Chief of the Army Group. Fortified Area Commandants will pledge their honor as soldiers to carry out their duties to the last. \n\n - Adolf Hitler"
+  germany.301.a: "Send the Order!"
+ 
+  germany.302.t: "Führerbefehle 53 repealed"
+  germany.302.d: "It is no longer necessary to keep up the defense of the fortress cities."
+  germany.302.a: "Tell the defenders to stand down."
+
+  germany.303.t: "Luftwaffe Field Divisions Raised"
+  germany.303.d: "The order has been given to raise 21 new divisions from excess Luftwaffe personnel to fill unit shortages."
+  germany.303.a: "Form the units!"
+  lw_field_div_event_tt: "Spawns 21 Luftwaffe-Feld-Divisions in Germany"
+
+  germany.304.t: "Luftwaffe Field Divisions Disbanded"
+  germany.304.d: "The order has been given to disband all Luftwaffe Field Divisions."
+  germany.304.a: "Disband them."
+
+  germany.305.t: "RAD-Divisions Raised"
+  germany.305.d: "The order has been given to raise 6 new divisions out of the remaining members of the Reichsarbeitsdienst to fill unit shortages."
+  germany.305.a: "Form the units!"
+  rad_div_event_tt: "Spawns 6 RAD-Divisions in Germany"
+
+  verteidigungskrieg_news.1.t: "Kiel Canal Blown"
+  verteidigungskrieg_news.1.desc_ger: "In response to hostile forces closing in on the Kiel Canal, and risking losing the vital commerce artery to the enemy, [From.GetNameDef] has instead chosen to blown the canal to ensure its use is denied to them. Through a combination of blockships, demolitions, and mining, the destruction is quite complete, and will likely take months of extensive industrial effort to repair."
+  verteidigungskrieg_news.1.desc_not_ger: "In what can only be described as a daring and brilliant military operation, [From.GetNameDef] has succeeded in severing the vital commerce artery that is the Kiel Canal. Through a combination of blockships, demolitions, and mining, the destruction is quite complete, and will likely take months of extensive industrial effort to repair."
+  verteidigungskrieg_news.1.a: "A Disaster!"
+  verteidigungskrieg_news.1.b: "We couldn't let it fall into enemy hands."
+  verteidigungskrieg_news.1.c: "We shall not underestimate their resolve again."
+  verteidigungskrieg_news.1.d: "Mission Accomplished!"
+  verteidigungskrieg_news.1.e: "A magnificent blow against the Germans!"
+  verteidigungskrieg_news.1.f: "They made the right call."
+  verteidigungskrieg_news.1.g: "A great blow against our ally..."
+  verteidigungskrieg_news.1.h: "This will have horrible consequences for the Baltic..."
+
+  verteidigungskrieg_news.2.t: "Kiel Canal Repaired"
+  verteidigungskrieg_news.2.desc: "With a tremendous industrial effort [From.GetNameDef] has managed to repair the Kiel Canal. This morning saw the re-opening of the vital commerce artery into the Baltic Sea, after over half a year of intensive repair work."
+  verteidigungskrieg_news.2.a: "We have restored our nation's greatest marvel of engineering."
+  verteidigungskrieg_news.2.b: "A necessary investment for our nation."
+  verteidigungskrieg_news.2.c: "This will aid our efforts greatly."
+  verteidigungskrieg_news.2.d: "They have undone the setback..."
+  verteidigungskrieg_news.2.e: "The effects will be felt by all."
+
+  # Volkssturm Events
+  volkssturm.1.t: "Gau Baden Volkssturm"
+  volkssturm.2.t: "Gau Bayreuth Volkssturm"
+  volkssturm.3.t: "Gau Berlin Volkssturm"
+  volkssturm.4.t: "Gau Danzig-Westpreussen Volkssturm"
+  volkssturm.5.t: "Gau Düsseldorf Volkssturm"
+  volkssturm.6.t: "Gau Essen Volkssturm"
+  volkssturm.7.t: "Gau Franken Volkssturm"
+  volkssturm.8.t: "Gau Halle-Mersenburg Volkssturm"
+  volkssturm.9.t: "Gau Hamburg Volkssturm"
+  volkssturm.10.t: "Gau Hessen-Nassau Volkssturm"
+  volkssturm.11.t: "Gau Kärnten Volkssturm"
+  volkssturm.12.t: "Gau Köln-Aachen Volkssturm"
+  volkssturm.13.t: "Gau Kurhessen Volkssturm"
+  volkssturm.14.t: "Gau Magdeburg-Anhalt Volkssturm"
+  volkssturm.15.t: "Gau Mainfranken Volkssturm"
+  volkssturm.16.t: "Gau Mark Brandenburg Volkssturm"
+  volkssturm.17.t: "Gau Mecklenburg Volkssturm"
+  volkssturm.18.t: "Gau Moselland Volkssturm"
+  volkssturm.19.t: "Gau München-Oberbayern Volkssturm"
+  volkssturm.20.t: "Gau Niederdonau Volkssturm"
+  volkssturm.21.t: "Gau Niederschlesien Volkssturm"
+  volkssturm.22.t: "Gau Oberdonau Volkssturm"
+  volkssturm.23.t: "Gau Oberschlesien Volkssturm"
+  volkssturm.24.t: "Gau Ost-Hannover Volkssturm"
+  volkssturm.25.t: "Gau Ostpreussen Volkssturm"
+  volkssturm.26.t: "Gau Pommern Volkssturm"
+  volkssturm.27.t: "Gau Sachsen Volkssturm"
+  volkssturm.28.t: "Gau Salzburg Volkssturm"
+  volkssturm.29.t: "Gau Schelswig-Holstein"
+  volkssturm.30.t: "Gau Schwaben Volkssturm"
+  volkssturm.31.t: "Gau Steiermark Volkssturm"
+  volkssturm.32.t: "Gau Sudetenland Volkssturm"
+  volkssturm.33.t: "Gau Süd Hannover-Braunschweig"
+  volkssturm.34.t: "Gau Thürigen Volkssturm"
+  volkssturm.35.t: "Gau Tirol-Voralberg Volkssturm"
+  volkssturm.36.t: "Gau Wartheland Volkssturm"
+  volkssturm.37.t: "Gau Weser-Ems Volkssturm"
+  volkssturm.38.t: "Gau Westfalen-Nord Volkssturm"
+  volkssturm.39.t: "Gau Westfalen-Süd Volkssturm"
+  volkssturm.40.t: "Gau Westmark Volkssturm"
+  volkssturm.41.t: "Gau Wien Volkssturm"
+  volkssturm.42.t: "Gau Wüttemberg-Hohenzollern Volkssturm"
+ 
+  volkssturm.1.d: "Volkssturm Units will be raised in this state."
+  volkssturm.1.a: "Deploy!"
+
+# Technology
+  fortress_cities_tech: "Construct Fortress Cities"
+  fortress_cities_tech_desc: "Our units have been ordered to hold all major cities to the last man."
+
+  fortress_cities_remove_tech: "Dismantle Fortress Cities"
+  fortress_cities_remove_tech_desc: "The Fortress Cities decree has been repealed."
+
+  last_ditch_rifle: "Volkssturmgewehr"
+  last_ditch_rifle_desc: "A simplified semi-automatic rifle."
+
+  eintossflammenwerfer_tech: "Eintossflammenwerfer"
+  eintossflammenwerfer_tech_desc: "A disposable flame-throwing device."
+
+  etfw_volk_tech: "Eintossflammenwerfer Volkssturm Deployment"
+  etfw_para_tech: "Eintossflammenwerfer Fallschirmjäger Deployment"
+  etfw_eng_tech: " Eintossflammenwerfer Pioneerkorps Deployment"
+
+  panzerfaust_tech: "Panzerfaust"
+  panzerfaust_tech_desc: "A man-portable anti-tank weapon"
+
+  pzf_volk_tech: "Panzerfaust Volkssturm Deployment"
+  pzf_sf_tech: "Panzerfaust Spezialtruppen Deployment"
+  pzf_mech_tech: "Panzerfaust Panzergrenadier Deployment"
+  pzf_inf_tech: "Panzerfaust Infanterie Deployment"
+
+  
+# Decision costs
+  decision_cost_ie_5000: "£infantry_equipment_text_icon  §Y5000§!"
+  decision_cost_ie_5000_blocked: "£infantry_equipment_text_icon  §R5000§!"
+  decision_cost_ie_5000_tooltip: "It costs £infantry_equipment_text_icon  §Y5000§! to take the decision"
+
+  decision_cost_civ_5: "£civ_factory  §Y5§!" 
+  decision_cost_civ_5_blocked: "£civ_factory  §R5§!"
+  decision_cost_civ_5_tooltip: "It costs £civ_factory  §Y5§! while this decision is active"
+
+  decision_cost_civ_15: "£civ_factory  §Y15§!" 
+  decision_cost_civ_15_blocked: "£civ_factory  §R15§!"
+  decision_cost_civ_15_tooltip: "It costs £civ_factory  §Y15§! while this decision is active"
+
+  decision_cost_CP_10: "£command_power  §Y10§!"
+  decision_cost_CP_10_blocked: "£command_power  §R10§!"
+  decision_cost_CP_10_tooltip: "It costs £command_power  §Y10§! to take the decision"
+
+  decision_cost_CP_5: "£command_power  §Y5§!"
+  decision_cost_CP_5_blocked: "£command_power  §R5§!"
+  decision_cost_CP_5_tooltip: "It costs £command_power  §Y5§! to take the decision"
+
+  decision_cost_ArmXP_20: "£army_experience  §Y20§!"
+  decision_cost_ArmXP_20_blocked: "£army_experience  §R20§!"
+  decision_cost_ArmXP_20_tooltip: "It costs £army_experience §Y20§! to take the decision"
+  
+# Equipment
+  
+  last_ditch_rifle_equipment: "Last-Ditch Rifle"
+  last_ditch_rifle_equipment_1: "Volkssturmgewehr"
+  last_ditch_rifle_equipment_desc: "An extremely simplified semi-automatic rifle"
+
+  flamethrower_equipment: "Single-Use Flamethrower"
+  eintossflammenwerfer_equipment: "Eintossflammenwerfer"
+  flamethrower_equipment_desc: "A disposable flame-throwing device"
+
+  infantry_anti_tank_equipment: "Infantry Anti-Tank Equipment"
+  panzerfaust_equipment: "Panzerfaust"
+  infantry_anti_tank_equipment_desc: "Man-portable Anti-Tank weaponry"
+
+# Flags
+  pwp_established: "Primitiv-Waffen-Programm Established"
+  vsg_developed: "Volkssturmgewehr Developed"
+  volkssturm_active: "Volkssturm Activated"
+  etfw_developed: "Eintossflammenwerfer Developed"
+  pzf_developed: "Panzerfaust Developed"
+  rhine_bridges_blown_flag: "Rhine Bridges are destroyed"
+
+# Units
+  volkssturm_unit: "Volkssturm Battalion"
+  volkssturm_unit_desc: "Forcefully conscripted civilians mobilized to defend the Reich."
+
+# Ideas
+  lw_field_div_deployed: "Luftwaffe Field Divisions Raised"
+  lw_field_div_deployed_desc: "Personnel from the Luftwaffe have been pulled from their original duties to form ground units. This will have a negative effect on our air power."
+
+# Modifiers
+  rhine_bridges_blown_mod: "Rhine Bridges Blown"

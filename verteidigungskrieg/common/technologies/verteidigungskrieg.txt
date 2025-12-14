@@ -1,0 +1,192 @@
+technologies = {
+	fortress_cities_tech = {
+		allow = {
+			always = no
+		}
+
+		category_all_infantry = {
+			urban = {
+				defence = 0.5
+			}
+		}
+
+		research_cost = 1
+	}
+
+	fortress_cities_remove_tech = {
+		allow = {
+			always = no
+		}
+
+		category_all_infantry = {
+			urban = {
+				defence = -0.5
+			}
+		}
+
+		research_cost = 1
+	}
+
+	last_ditch_rifle = {
+		allow = {
+			always = no
+		}
+
+		enable_equipments = {
+			last_ditch_rifle_equipment_1
+		}
+
+		enable_subunits = {
+			volkssturm_unit
+		}
+
+		research_cost = 1
+	}
+
+	eintossflammenwerfer_tech = {
+		allow = {
+			always = no
+		}
+
+		enable_equipments = {
+			eintossflammenwerfer_equipment
+		}
+
+		research_cost = 1
+	}
+
+	panzerfaust_tech = {
+		allow = {
+			always = no
+		}
+
+		enable_equipments = {
+			panzerfaust_equipment
+		}
+
+		research_cost = 1
+	}
+
+	etfw_volk_tech = {
+
+		allow = {
+			always = no
+		}
+
+		volkssturm_unit = {
+			need = {
+				eintossflammenwerfer_equipment = 20
+			}
+		}
+
+		research_cost = 1
+	}
+
+	etfw_para_tech = {
+
+		allow = {
+			always = no
+		}
+
+		paratrooper = {
+			need = {
+				eintossflammenwerfer_equipment = 20
+			}
+		}
+
+		research_cost = 1
+	}
+
+	etfw_eng_tech = {
+
+		allow = {
+			always = no
+		}
+
+		engineer = {
+			need = {
+				eintossflammenwerfer_equipment = 10
+			}
+		}
+
+		research_cost = 1
+	}
+
+	pzf_volk_tech = {
+
+		allow = {
+			always = no
+		}
+
+		volkssturm_unit = {
+			need = {
+				panzerfaust_equipment = 20
+			}
+		}
+
+		research_cost = 1
+	}
+
+	pzf_sf_tech = {
+
+		allow = {
+			always = no
+		}
+
+		paratrooper = {
+			need = {
+				panzerfaust_equipment = 20
+			}
+		}
+
+		marine = {
+			need = {
+				panzerfaust_equipment = 20
+			}
+		}
+
+		mountaineers = {
+			need = {
+				panzerfaust_equipment = 20
+			}
+		}
+
+		research_cost = 1
+	}
+
+	pzf_mech_tech = {
+
+		allow = {
+			always = no
+		}
+
+		mechanized = {
+			need = {
+				panzerfaust_equipment = 20
+			}
+		}
+		motorized = {
+			need = {
+				panzerfaust_equipment = 20
+			}
+		}
+
+		research_cost = 1
+	}
+
+	pzf_inf_tech = {
+
+		allow = {
+			always = no
+		}
+
+		infantry = {
+			need = {
+				panzerfaust_equipment = 20
+			}
+		}
+
+		research_cost = 1
+	}
+}
+

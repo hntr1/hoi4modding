@@ -1,0 +1,406 @@
+add_namespace = verteidigungskrieg_news
+
+country_event = {
+	id = germany.301
+	title = germany.301.t
+	desc = germany.301.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.301.a
+		set_technology = {
+			fortress_cities_tech = 1
+		}
+	}
+}
+
+country_event = {
+	id = germany.302
+	title = germany.302.t
+	desc = germany.302.d
+
+	trigger = {
+		AND = {
+			tag = GER
+			has_tech = fortress_cities_tech
+			OR = {
+				has_war = no
+				has_capitulated = yes
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = germany.302.a
+		set_technology = {
+			fortress_cities_remove_tech = 1
+		}
+	}
+}
+
+country_event = {
+	id = germany.303
+	title = germany.303.t
+	desc = germany.303.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = germany.303.a
+		GER = {
+			add_idea = lw_field_div_deployed
+		}
+		custom_effect_tooltip = lw_field_div_event_tt
+		random_owned_controlled_state = {
+			limit = { ROOT = { has_full_control_of_state = PREV } }
+			create_unit = {
+				division = "name = \"1. Luftwaffe-Feld-Division\" division_template = \"Luftwaffe-Feld-Division\" start_experience_factor = 1.0 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"2. Luftwaffe-Feld-Division\" division_template = \"Luftwaffe-Feld-Division\" start_experience_factor = 1.0 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"3. Luftwaffe-Feld-Division\" division_template = \"Luftwaffe-Feld-Division\" start_experience_factor = 1.0 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"4. Luftwaffe-Feld-Division\" division_template = \"Luftwaffe-Feld-Division\" start_experience_factor = 1.0 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"5. Luftwaffe-Feld-Division\" division_template = \"Luftwaffe-Feld-Division\" start_experience_factor = 1.0 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"6. Luftwaffe-Feld-Division\" division_template = \"Luftwaffe-Feld-Division\" start_experience_factor = 1.0 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"7. Luftwaffe-Feld-Division\" division_template = \"Luftwaffe-Feld-Division\" start_experience_factor = 1.0 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"8. Luftwaffe-Feld-Division\" division_template = \"Luftwaffe-Feld-Division\" start_experience_factor = 1.0 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"9. Luftwaffe-Feld-Division\" division_template = \"Luftwaffe-Feld-Division\" start_experience_factor = 1.0 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"10. Luftwaffe-Feld-Division\" division_template = \"Luftwaffe-Feld-Division\" start_experience_factor = 1.0 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"11. Luftwaffe-Feld-Division\" division_template = \"Luftwaffe-Feld-Division\" start_experience_factor = 1.0 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"12. Luftwaffe-Feld-Division\" division_template = \"Luftwaffe-Feld-Division\" start_experience_factor = 1.0 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"13. Luftwaffe-Feld-Division\" division_template = \"Luftwaffe-Feld-Division\" start_experience_factor = 1.0 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"14. Luftwaffe-Feld-Division\" division_template = \"Luftwaffe-Feld-Division\" start_experience_factor = 1.0 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"15. Luftwaffe-Feld-Division\" division_template = \"Luftwaffe-Feld-Division\" start_experience_factor = 1.0 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"16. Luftwaffe-Feld-Division\" division_template = \"Luftwaffe-Feld-Division\" start_experience_factor = 1.0 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"17. Luftwaffe-Feld-Division\" division_template = \"Luftwaffe-Feld-Division\" start_experience_factor = 1.0 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"18. Luftwaffe-Feld-Division\" division_template = \"Luftwaffe-Feld-Division\" start_experience_factor = 1.0 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"19. Luftwaffe-Sturm-Division\" division_template = \"Luftwaffe-Feld-Division\" start_experience_factor = 1.0 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"20. Luftwaffe-Sturm-Division\" division_template = \"Luftwaffe-Feld-Division\" start_experience_factor = 1.0 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"21. Luftwaffe-Feld-Division\" division_template = \"Luftwaffe-Feld-Division\" start_experience_factor = 1.0 start_equipment_factor = 0.01"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = germany.304
+	title = germany.304.t
+	desc = germany.304.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = germany.304.a
+		remove_ideas = lw_field_div_deployed
+	}
+}
+
+country_event = {
+	id = germany.305
+	title = germany.305.t
+	desc = germany.305.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = germany.305.a
+
+		custom_effect_tooltip = rad_div_event_tt
+		random_owned_controlled_state = {
+			limit = { ROOT = { has_full_control_of_state = PREV } }
+			create_unit = {
+				division = "name = \"RAD-Division z.b.V.1/Infanterie-Division Alvert Leo Schlageter\" division_template = \"RAD-Division\" start_experience_factor = 1.0 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"RAD-Division z.b.V.2/Infanterie-Division Friedrich Ludwig Jahn\" division_template = \"RAD-Division\" start_experience_factor = 1.0 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"RAD-Division z.b.V.3/Infanterie-Division Theodor Körner\" division_template = \"RAD-Division\" start_experience_factor = 1.0 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"RAD-Division z.b.V.4/Infanterie-Division Güstrow\" division_template = \"RAD-Division\" start_experience_factor = 1.0 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Gebirgsjäger-Brigade Steiermark\" division_template = \"RAD-Division\" start_experience_factor = 1.0 start_equipment_factor = 0.01"
+				owner = GER
+			}
+			create_unit = {
+				division = "name = \"Gebirgsjäger-Brigade Enns\" division_template = \"RAD-Division\" start_experience_factor = 1.0 start_equipment_factor = 0.01"
+				owner = GER
+			}
+	}
+}
+
+news_event = {
+	id = verteidigungskrieg_news.1
+	title = verteidigungskrieg_news.1.t
+	desc = {
+		text = verteidigungskrieg_news.1.desc_ger
+		trigger = {
+			FROM = {
+				has_country_flag = blew_up_kiel
+				owns_state = 58
+			}
+		}
+	}
+	desc = {
+		text = verteidigungskrieg_news.1.desc_not_ger
+		trigger = {
+			FROM = {
+				OR = {
+					NOT = { has_country_flag = blew_up_kiel }
+					NOT = { owns_state = 58 }
+				}
+			}
+		}
+	}
+
+	picture = GFX_news_event_020
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = verteidigungskrieg_news.1.a
+		trigger = {
+			NOT = { has_country_flag = blew_up_kiel }
+			owns_state = 58
+		}
+		if = {
+			limit = {
+				original_tag = GER
+			}
+			add_war_support = -0.05
+			add_stability = -0.05
+		}
+	}
+	option = {
+		name = verteidigungskrieg_news.1.b
+		trigger = {
+			has_country_flag = blew_up_kiel
+			owns_state = 58
+		}
+		if = {
+			limit = {
+				original_tag = GER
+			}
+			add_war_support = -0.05
+			add_stability = -0.05
+		}
+		clr_country_flag = blew_up_kiel
+	}
+	option = {
+		name = verteidigungskrieg_news.1.c
+		trigger = {
+			any_country = {
+				has_war_with = ROOT
+				owns_state = 58
+				has_country_flag = blew_up_kiel
+			}
+		}
+	}
+	option = {
+		name = verteidigungskrieg_news.1.d
+		trigger = {
+			any_country = {
+				has_war_with = ROOT
+				owns_state = 58
+			}
+			has_country_flag = blew_up_kiel
+		}
+		clr_country_flag = blew_up_kiel
+	}
+	option = {
+		name = verteidigungskrieg_news.1.e
+		trigger = {
+			any_country = {
+				has_war_with = ROOT
+				owns_state = 58
+				NOT = { has_country_flag = blew_up_kiel }
+			}
+			any_other_country = {
+				has_war_together_with = ROOT
+				has_country_flag = blew_up_kiel
+			}
+			NOT = { has_country_flag = blew_up_kiel }
+		}
+	}
+	option = {
+		name = verteidigungskrieg_news.1.f
+		trigger = {
+			any_other_country = {
+				has_war_together_with = ROOT
+				owns_state = 58
+				has_country_flag = blew_up_kiel
+			}
+			NOT = { has_country_flag = blew_up_kiel }
+		}
+	}
+	option = {
+		name = verteidigungskrieg_news.1.g
+		trigger = {
+			any_country = {
+				has_war_with = ROOT
+				has_country_flag = blew_up_kiel
+			}
+			any_other_country = {
+				has_war_together_with = ROOT
+				owns_state = 58
+				NOT = { has_country_flag = blew_up_kiel }
+			}
+		}
+	}
+	option = {
+		name = verteidigungskrieg_news.1.h
+		trigger = {
+			NOT = {
+				any_country = {
+					has_war_with = ROOT
+					has_country_flag = blew_up_kiel
+				}
+			}
+			NOT = {
+				any_other_country = {
+					has_war_together_with = ROOT
+					owns_state = 58
+					has_country_flag = blew_up_kiel
+				}
+			}
+			NOT = { has_country_flag = blew_up_kiel }
+		}
+	}
+}
+
+news_event = {
+	id = verteidigungskrieg_news.2
+	title = verteidigungskrieg_news.2.t
+	desc = verteidigungskrieg_news.2.desc
+	picture = GFX_news_event_020
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = verteidigungskrieg_news.2.a
+		trigger = {
+			original_tag = GER
+			has_country_flag = rebuilt_kiel
+		}
+		clr_country_flag = rebuilt_kiel
+	}
+	option = {
+		name = verteidigungskrieg_news.2.b
+		trigger = {
+			NOT = { original_tag = ENG }
+			has_country_flag = rebuilt_kiel
+		}
+		clr_country_flag = rebuilt_kiel
+	}
+	option = {
+		name = verteidigungskrieg_news.2.c
+		trigger = {
+			any_other_country = {
+				has_war_together_with = ROOT
+				has_country_flag = rebuilt_kiel
+			}
+			NOT = { has_country_flag = rebuilt_kiel}
+		}
+	}
+	option = {
+		name = verteidigungskrieg_news.2.d
+		trigger = {
+			any_other_country = {
+				has_war_with = ROOT
+				has_country_flag = rebuilt_kiel
+			}
+			NOT = { has_country_flag = rebuilt_kiel}
+		}
+	}
+	option = {
+		name = verteidigungskrieg_news.2.e
+		trigger = {
+			NOT = { has_country_flag = rebuilt_kiel }
+			NOT = {
+				any_other_country = {
+					has_war_together_with = ROOT
+					has_country_flag = rebuilt_kiel
+				}
+			}
+			NOT = {
+				any_other_country = {
+					has_war_with = ROOT
+					has_country_flag = rebuilt_kiel
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+equipments = {
+	last_ditch_rifle_equipment = {
+
+		is_archetype = yes
+		picture = "gfx/interface/technologies/volkssturmgewehr.dds"
+		is_buildable = no
+		type = {
+			infantry
+		}
+		group_by = archetype
+
+		interface_category = interface_category_land
+
+		#Misc Abilities
+		reliability = 0.6
+
+		#Offensive Abilities
+		soft_attack = 3
+		hard_attack = 0.5
+		ap_attack = 1
+		air_attack = 0
+
+		#Defensive Abilities
+		defense = 20
+		breakthrough = 2
+		hardness = 0
+		armor_value = 0
+
+		lend_lease_cost = 1
+
+		build_cost_ic = 0.35
+		resources = {
+			steel = 1
+		}
+	}
+
+	last_ditch_rifle_equipment_1 = {
+		year = 1945
+
+		archetype = last_ditch_rifle_equipment
+		active = no
+		priority = 5
+		visual_level = 0
+	}
+}

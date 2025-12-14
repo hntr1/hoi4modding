@@ -1,0 +1,83 @@
+endsieg = {
+	icon = GFX_decision_category_military_operation
+
+	priority = 5
+
+	allowed = {
+		original_tag = GER
+	}
+
+	visible = {
+		has_war = yes
+	}
+}
+
+etfw_deployment = {
+
+	priority = 6
+
+	allowed = {
+		original_tag = GER
+	}
+
+	visible = {
+		has_country_flag = etfw_developed
+	}
+}
+
+pzf_deployment = {
+
+	priority = 6
+
+	allowed = {
+		original_tag = GER
+	}
+
+	visible = {
+		has_country_flag = pzf_developed
+	}
+}
+
+volkssturm_decision_cat = {
+	
+	priority = 10
+
+	allowed = {
+		original_tag = GER
+	}
+
+	visible = {
+		has_country_flag = volkssturm_active
+	}
+
+#	on_map_area = {
+#		state = 50
+#		state = 53
+#		state = 64
+#		state = 85
+#		state = 57
+#		state = 51
+#		state = 54
+#		state = 65
+#		state = 58
+#		state = 55
+#		state = 152
+#		state = 68
+#		state = 61
+#		state = 4
+#		state = 66
+#		state = 67
+#		state = 59
+#		state = 763
+#		state = 62
+#		state = 63
+#		state = 69
+#		state = 60
+#		state = 153
+#		state = 86
+#		state = 56
+#		state = 42
+#		name = GER_recruit_volkksturm_locations_map_category_name
+#		zoom = 500
+#	}
+}

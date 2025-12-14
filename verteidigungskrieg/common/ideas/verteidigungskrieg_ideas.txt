@@ -1,0 +1,12 @@
+ideas = {
+	country = {
+		lw_field_div_deployed = { # shifting air force personnel to the army makes the airforce worse
+
+			picture = GFX_idea_generic_manpower_bonus
+
+			modifier = {
+				air_mission_efficiency = -0.2
+			}
+		}
+	}
+}

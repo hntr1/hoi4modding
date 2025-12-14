@@ -1,0 +1,2731 @@
+#Volkssturm Decisions
+
+volkssturm_decision_cat = {
+
+	vs_deploy_baden = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 978
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 978
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 978
+			name = vs_deploy_baden
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.1
+		}
+	}
+
+	vs_deploy_bayreuth = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 53
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 53
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 53
+			name = vs_deploy_bayreuth
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.2
+		}
+	}
+
+		vs_deploy_berlin = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 64
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 64
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 64
+			name = vs_deploy_berlin
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.3
+		}
+	}
+
+	vs_deploy_danzig = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 85
+				has_full_control_of_state = 807
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 85
+				state = 807
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 85
+			name = vs_deploy_danzig
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.4
+		}
+	}
+
+	vs_deploy_dusseldorf = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 57
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 57
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 57
+			name = vs_deploy_dusseldorf
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.5
+		}
+	}
+
+	vs_deploy_essen = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 51
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 51
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 51
+			name = vs_deploy_essen
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.6
+		}
+	}
+
+	vs_deploy_franken = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 54
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 54
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 54
+			name = vs_deploy_franken
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.7
+		}
+	}
+
+	vs_deploy_halle = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 65
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 65
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 65
+			name = vs_deploy_halle
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.8
+		}
+	}
+
+	vs_deploy_hamburg = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 58
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 58
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 58
+			name = vs_deploy_hamburg
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.9
+		}
+	}
+
+	vs_deploy_hessen = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 55
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 55
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 55
+			name = vs_deploy_hessen
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.10
+		}
+	}
+
+	vs_deploy_karnten = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 976
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 976
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 152
+			name = vs_deploy_karnten
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.11
+		}
+	}
+
+	vs_deploy_koln = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 51
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 51
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 51
+			name = vs_deploy_koln
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.12
+		}
+	}
+
+	vs_deploy_kurhessen = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 55
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 55
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 55
+			name = vs_deploy_kurhessen
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.13
+		}
+	}
+
+	vs_deploy_anhalt = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 64
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 64
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 64
+			name = vs_deploy_anhalt
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.14
+		}
+	}
+
+	vs_deploy_mainfranken = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 55
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 55
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 55
+			name = vs_deploy_mainfranken
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.15
+		}
+	}
+
+	vs_deploy_brandenburg = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 68
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 68
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 68
+			name = vs_deploy_brandenburg
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.16
+		}
+	}
+
+	vs_deploy_mecklenburg = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 61
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 61
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 61
+			name = vs_deploy_mecklenburg
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.17
+		}
+	}
+
+	vs_deploy_moselland = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 42
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 42
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 42
+			name = vs_deploy_moselland
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.18
+		}
+	}
+
+	vs_deploy_munich = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 53
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 53
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 53
+			name = vs_deploy_munich
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.19
+		}
+	}
+
+	vs_deploy_niederdonau = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 4
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 4
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 4
+			name = vs_deploy_niederdonau
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.20
+		}
+	}
+
+	vs_deploy_niederschlesien = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 66
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 66
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 66
+			name = vs_deploy_niederschlesien
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.21
+		}
+	}
+
+	vs_deploy_oberdonau = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 152
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 152
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 152
+			name = vs_deploy_oberdonau
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.22
+		}
+	}
+
+	vs_deploy_oberschlesien = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 67
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 67
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 67
+			name = vs_deploy_oberschlesien
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.23
+		}
+	}
+
+	vs_deploy_osthannover = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 59
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 59
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 59
+			name = vs_deploy_osthannover
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.24
+		}
+	}
+
+	vs_deploy_ostpreussen = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 763
+				has_full_control_of_state = 5
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 763
+				state = 5
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 763
+			name = vs_deploy_ostpreussen
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.25
+		}
+	}
+
+	vs_deploy_pommern = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 62
+				has_full_control_of_state = 63
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 62
+				state = 63
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 63
+			name = vs_deploy_pommern
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.26
+		}
+	}
+
+	vs_deploy_sachsen = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 65
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 65
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 65
+			name = vs_deploy_sachsen
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.27
+		}
+	}
+
+	vs_deploy_salzburg = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 152
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 152
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 152
+			name = vs_deploy_salzburg
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.28
+		}
+	}
+
+	vs_deploy_sh = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 58
+				has_full_control_of_state = 909
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 58
+				state = 909
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 909
+			name = vs_deploy_sh
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.29
+		}
+	}
+
+	vs_deploy_schwaben = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 50
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 50
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 50
+			name = vs_deploy_schwaben
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.30
+		}
+	}
+
+	vs_deploy_steiermark = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 976
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 976
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 976
+			name = vs_deploy_steiermark
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.31
+		}
+	}
+
+	vs_deploy_sudeten = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 69
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 69
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 69
+			name = vs_deploy_sudeten
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.32
+		}
+	}
+
+	vs_deploy_sudhannover = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 60
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 60
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 60
+			name = vs_deploy_sudhannover
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.33
+		}
+	}
+
+	vs_deploy_thuringen = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 60
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 60
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 60
+			name = vs_deploy_thuringen
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.34
+		}
+	}
+
+	vs_deploy_tirol = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 153
+				has_full_control_of_state = 848
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 153
+				state = 848
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 153
+			name = vs_deploy_tirol
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.35
+		}
+	}
+
+	vs_deploy_wartheland = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 86
+				has_full_control_of_state = 87
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 86
+				state = 87
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 86
+			name = vs_deploy_berlin
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.36
+		}
+	}
+
+	vs_deploy_weser = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 56
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 56
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 56
+			name = vs_deploy_weser
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.37
+		}
+	}
+
+	vs_deploy_nwestfalen = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 57
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 57
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 57
+			name = vs_deploy_nwestfalen
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.38
+		}
+	}
+
+	vs_deploy_swestfalen = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 57
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 57
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 57
+			name = vs_deploy_swestfalen
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.39
+		}
+	}
+
+	vs_deploy_westmark = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 42
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 42
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 42
+			name = vs_deploy_westmark
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.40
+		}
+	}
+
+	vs_deploy_wien = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 4
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 4
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 4
+			name = vs_deploy_wien
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.41
+		}
+	}
+
+	vs_deploy_wh = {
+		
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {
+			ROOT = {
+				has_full_control_of_state = 50
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 50
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		on_map_area = {
+			state = 50
+			name = vs_deploy_wh
+			zoom = 850
+		}
+
+		on_map_mode = map_only
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		days_remove = 5
+
+		remove_effect = {
+			custom_effect_tooltip = volkssturm_tt
+			country_event = volkssturm.42
+		}
+	}
+
+	show_volk_dec = {
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			NOT = {
+				has_country_flag = volkssturm_visible
+			}
+		}
+
+		available = {}
+
+		cost = 0
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = {
+					flag = volkssturm_visible
+					value = 1
+				}
+			}
+
+			custom_effect_tooltip = show_volk_tt
+		}
+	}
+
+	hide_volk_dec = {
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+			has_country_flag = volkssturm_visible
+		}
+
+		available = {}
+
+		cost = 0
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = {
+					flag = volkssturm_visible
+					value = 0
+				}
+			}
+
+			custom_effect_tooltip = hide_volk_tt
+		}
+	}
+
+	disband_volksstrum = {
+
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		visible = {
+
+		}
+
+		available = {
+			ROOT = {
+				any_country_division = {
+					has_template = "Volksstrum Division"
+				}
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 10
+			}
+		}
+		custom_cost_text = decision_cost_CP_10
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -10
+			}
+			delete_unit_template_and_units = { division_template = "Volkssturm Division"}
+			set_country_flag = {
+				flag = volkssturm_active
+				value = 0
+			}
+		}
+	}
+}
