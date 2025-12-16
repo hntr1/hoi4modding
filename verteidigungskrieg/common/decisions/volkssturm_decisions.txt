@@ -2696,11 +2696,7 @@ volkssturm_decision_cat = {
 		}
 
 		available = {
-			ROOT = {
-				any_country_division = {
-					has_template = "Volksstrum Division"
-				}
-			}
+			has_country_flag = volkssturm_active
 		}
 
 		cost = 0
