@@ -1,52 +1,52 @@
 endsieg = {
 	icon = GFX_decision_category_military_operation
 
-	priority = 5
+	priority = 5 # Place in the middle of the decision list
 
-	allowed = {
+	allowed = { # Only Germany can take these decisions
 		original_tag = GER
 	}
 
-	visible = {
+	visible = { # Can only be taken during wartime
 		has_war = yes
 	}
 }
 
 etfw_deployment = {
 
-	priority = 6
+	priority = 6 # Place above endsieg
 
-	allowed = {
+	allowed = { # Only Germany can take these decisions
 		original_tag = GER
 	}
 
-	visible = {
+	visible = { # Shows if the ETFW has been developed
 		has_country_flag = etfw_developed
 	}
 }
 
 pzf_deployment = {
 
-	priority = 6
+	priority = 6 # Place above endsieg
 
-	allowed = {
+	allowed = { # Only Germany can take these decisions
 		original_tag = GER
 	}
 
-	visible = {
+	visible = { # Shows if the PzF has been developed
 		has_country_flag = pzf_developed
 	}
 }
 
 volkssturm_decision_cat = {
 	
-	priority = 10
+	priority = 10 # Place at the top of the decision list
 
-	allowed = {
+	allowed = { # Only Germany can take these decisions
 		original_tag = GER
 	}
 
-	visible = {
+	visible = { # Shows if the Volkssturm has been activated
 		has_country_flag = volkssturm_active
 	}
 

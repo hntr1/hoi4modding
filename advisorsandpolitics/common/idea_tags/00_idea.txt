@@ -34,6 +34,8 @@ idea_categories = {
 		removal_cost = 0
 	}
 
+	# New category for 2nd government advisor set
+
 	government2 = {
 		character_slot = political_advisor
 		character_slot = political_advisor
@@ -76,6 +78,8 @@ idea_categories = {
 		cost = 150
 		removal_cost = 0
 	}
+
+	# New category for 2nd military advisor set
 
 	military_staff2 = {
 		character_slot = high_command
