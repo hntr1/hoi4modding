@@ -379,7 +379,7 @@ country_event = {
 	title = eliteformations.18.t
 	desc = eliteformations.18.d
 
-	picture = GFX = fuhrergren_event_picture
+	picture = GFX_fuhrergren_event_picture
 
 	is_triggered_only = yes
 
