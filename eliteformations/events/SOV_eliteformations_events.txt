@@ -15,7 +15,7 @@ country_event = {
 		random_owned_controlled_state = {
 			limit = { ROOT = { has_full_control_of = PREV } }
 			create_unit = {
-				division = "name = \"2nd Guards Motor Rifle 'Tamanskaya' Division\" division_template = \"GUARDS2\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				division = "name = \"2ya 'Tamanskaya' Gvds. Motostrelkovaya Diviziya\" division_template = \"GUARDS2\" start_experience_factor = 1.0 start_equipment_factor = 1"
 				owner = SOV
 			}
 		}
