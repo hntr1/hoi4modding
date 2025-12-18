@@ -11,3 +11,17 @@ eliteformations_cat = {
 		always = yes
 	}
 }
+
+eliteformations_sov_cat = {
+	icon = GFX_decision_category_military_operation
+
+	priority = 5 # Place midway on the decision screen
+
+	allowed = {
+		original_tag = SOV # Only soviet union gets this category
+	}
+
+	visible = {
+		always = yes
+	}
+}

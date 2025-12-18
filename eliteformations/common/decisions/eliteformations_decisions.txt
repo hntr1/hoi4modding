@@ -1,4 +1,4 @@
-eliteformations_cat = {
+eliteformations_cat = { # German Elite Formations Decisions
 	lssah_1 = { # Form LSSAH Regiment
 		
 		#icon = 
@@ -1723,6 +1723,57 @@ eliteformations_cat = {
 				}
 			}
 		}
+	}
+}
+
+eliteformations_sov_cat = { # Soviet Elite Formations Category
+
+	guards2_1 = {
+		#icon = 
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		visible = {}
+
+		available = {}
+
+		cost = 0
+		custom_cost_trigger = { # Costs 5 Command Power
+			NOT = {
+				command_power < 5
+			}
+		}
+		custom_cost_text = decision_cost_CP_5
+
+		fire_only_once = yes
+
+		ai_will_do = { # Ai will do 50/50
+			factor = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5 # Deduct decision cost
+				load_oob = guards2_template # Adds the template to Soviet's recruitment screen
+			}
+		}
+
+		days_remove = 20
+
+		remove_effect = {
+			custom_effect_tooltip = guards2_1_tt
+			country_event = eliteformations_sov.1
+
+			hidden_effect = {
+				set_country_flag = {
+					flag = guards2_deployed
+					value = 1
+				}
+			}
+		}
+
 	}
 
 }

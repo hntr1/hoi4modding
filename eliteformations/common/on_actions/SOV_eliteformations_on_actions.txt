@@ -1,0 +1,37 @@
+# 
+# On action daily effects are used to keep track of equipment stockpiles and show the player in the decision tooltip how much equipment will be 
+# left in stockpiles when the unit is created. This makes sure you don't unknowingly go negative on equipment when spawning divisions.
+# Each effect has an if condition that makes sure the variables only get updated when necessary, this allows for 1: reusing variables between division
+# stages, and 2: reduced daily computational load on the game as values are only calculated when their corresponding tooltips are visible and relevant.
+#
+
+on_action = {
+	on_daily_SOV = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {has_country_flag = guards2_deployed}
+				}
+
+				set_variable = { SOV.g2_inf_eq_total = num_equipment@infantry_equipment }
+				subtract_from_variable = { SOV.g2_inf_eq_total = 0}
+
+				set_variable = { SOV.g2_art_eq_total = num_equipment@artillery_equipment }
+				subtract_from_variable = { SOV.g2_art_eq_total = 0}
+
+				set_variable = { SOV.g2_at_eq_total = num_equipment@anti_tank_equipment }
+				subtract_from_variable = { SOV.g2_at_eq_total = 0 }
+
+				set_variable = { SOV.g2_aa_eq_total = num_equipment@anti_air_equipment }
+				subtract_from_variable = { SOV.g2_aa_eq_total = 0 }
+
+				set_variable = { SOV.g2_mot_eq_total = num_equipment@motorized_equipment }
+				subtract_from_variable = { SOV.g2_mot_eq_total = 0 }
+
+				set_variable = { SOV.g2_sup_eq_total = num_equipment@support_equipment }
+				subtract_from_variable = { SOV.g2_sup_eq_total = 0 }
+
+			}
+		}
+	}
+}

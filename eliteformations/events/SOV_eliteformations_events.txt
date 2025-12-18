@@ -1,0 +1,23 @@
+add_namespace = eliteformations_sov
+
+country_event = {
+	id = eliteformations_sov.1
+	title = eliteformations_sov.1.t
+	desc = eliteformations_sov.1.d
+
+	picture = GFX_2nd_guards_event_picture
+
+	is_triggered_only = yes	
+
+	option = {
+		name = eliteformations_sov.1.a # Accept
+		
+		random_owned_controlled_state = {
+			limit = { ROOT = { has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"2nd Guards Motor Rifle 'Tamanskaya' Division\" division_template = \"GUARDS2\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = SOV
+			}
+		}
+	}
+}

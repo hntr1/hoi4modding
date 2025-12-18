@@ -2,6 +2,7 @@
 
 # Decision Categories
   eliteformations_cat: "Elite Formations of the Wehrmacht"
+  eliteformations_sov_cat: "Elite Formations of the Red Army"
 
 # Decisions
   lssah_1: "Form SS-Regiment Liebstandarte SS Adolf Hitler"
@@ -48,6 +49,8 @@
   fuhrerbegleit_2: "Expand the Führerbegleitbrigade to Division Size"
 
   fuhrergrenadier_1: "Form the Führergrenadierbrigade"
+
+  guards_2_1: "Form the 2nd Guards Motor Rifle Division"
 
 # Events
   eliteformations.1.t: "The Creation of Liebstandarte Adolf Hitler"
@@ -122,6 +125,10 @@
   eliteformations.18.d: "The Führergrenadierbrigade is a subunit of the Großdeutschland Division. It is to be deployed as a division of its own."
   eliteformations.18.a: "Approve the formation"
 
+  eliteformations_sov.1.t: "The Creation of the 2nd Guards Motor Rifle Division"
+  eliteformations_sov.1.d: "The 2nd Guards Motor Rifle Division formed from the shattered 127th Rifle Division. Awarded Guards status for distinguished combat service."
+  eliteformations_sov.1.a: "Approve the formation"
+
 # Decision Costs
   decision_cost_CP_5: "£command_power  §Y5§!"
   decision_cost_CP_5_blocked: "£command_power  §R5§!"
@@ -173,6 +180,8 @@
   
   fuhrergren_1_tt: "\nCreates §YFührergrenadierbrigade§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?frgr_inf_eq_total|=0+]\n Support Equipment: [?frgr_sup_eq_total|=0+]\n Half-Tracks: [?frgr_mech_eq_total|=0+]\n Armored Support Vehicles: [?frgr_asv_eq_total|=0+]\n Medium Tanks: [?frgr_mt_eq_total|=0+]\n Medium SPGs: [?frgr_mspg_eq_total|=0+]\n Medium Tank Destroyer: [?frgr_mtd_eq_total|=0+]\n Artillery: [?frgr_art_eq_total|=0+]\n Anti-Air: [?frgr_aa_eq_total|=0+]§!\n\n"
 
+  guards_2_1_tt: "\nCreates §Y2nd Guards Motor Rifle Division§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?g2_inf_eq_total|=0+]\n Support Equipment: [?g2_sup_eq_total|=0+]\n Trucks: [?g2_mot_eq_total|=0+]\n Artillery: [?g2_art_eq_total|=0+]\n Anti-Tank: [?g2_at_eq_total|=0+]\n Anti-Air: [?g2_aa_eq_total|=0+]§!\n\n"
+
 
 # Flags
   lssah_stage_1: "The §YLSSAH Regiment§! has been formed"
@@ -219,3 +228,5 @@
   fuhrerbegleit_stage_2: "The §YFührerbegleitbrigade§! has been expanded to division size"
 
   fuhrergren_deployed: "The §YFührergrenadierbrigade§! has been formed"
+
+  guards_2_deployed: "The §Y2nd Guards Motor Rifle Division§! has been formed"
