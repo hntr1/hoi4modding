@@ -91,7 +91,7 @@ spriteTypes = { # Image location defines for Event Pictures
 	}
 
 	spriteType = {
-		name = "GFX_2nd_Guards_event_picture"
+		name = "GFX_2nd_guards_event_picture"
 		texturefile = "gfx/event_pictures/2nd_guards_event_image.dds"
 	}
 }
