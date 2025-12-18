@@ -5,7 +5,7 @@
 # stages, and 2: reduced daily computational load on the game as values are only calculated when their corresponding tooltips are visible and relevant.
 #
 
-on_action = {
+on_actions = {
 	on_daily_SOV = {
 		effect = {
 			if = {
