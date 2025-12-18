@@ -8,7 +8,7 @@ division_template = {
 	regiments = {
 		motorized = { x = 0 y = 0 } # 1st Guards Rifle Regiment
 		motorized = { x = 0 y = 1 } 
-		motorized = { x = 1 y = 2 }
+		motorized = { x = 0 y = 2 }
 		motorized = { x = 1 y = 0 } # 6th Guards Rifle Regiment
 		motorized = { x = 1 y = 1 } 
 		motorized = { x = 1 y = 2 } 
@@ -21,7 +21,7 @@ division_template = {
 	}
 
 	support = {
-		engineer_company = { x = 0 y = 0 } # 7th Independent Guards Engineer Battalion
+		engineer = { x = 0 y = 0 } # 7th Independent Guards Engineer Battalion
 		mot_recon = { x = 0 y = 1 } # 18th Independent Guards Reconnaissance Company
 		field_hospital = { x = 0 y = 2 } # 370th Medical Battalion
 		signal_company = { x = 0 y = 3 } # 47th Independent Guards Signal Battalion
