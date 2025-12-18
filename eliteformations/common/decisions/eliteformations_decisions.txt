@@ -1737,7 +1737,12 @@ eliteformations_sov_cat = { # Soviet Elite Formations Category
 
 		visible = {}
 
-		available = {}
+		available = {
+			has_tech = interwar_antitank
+			has_tech = tech_field_hospital
+			has_tech = tech_logistics_company
+			has_tech = tech_signal_company
+		}
 
 		cost = 0
 		custom_cost_trigger = { # Costs 5 Command Power

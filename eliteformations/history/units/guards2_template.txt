@@ -15,9 +15,9 @@ division_template = {
 		motorized = { x = 2 y = 0 } # 15th Guards Rifle Regiment
 		motorized = { x = 2 y = 1 } 
 		motorized = { x = 2 y = 2 } 
-		mot_artillery_brigade = { x = 2 y = 0} # 21st Guards Artillery Regiment
-		mot_anti_tank_brigade = { x = 2 y = 1 } # 16th Independent Anti-Tank Company
-		mot_anti_air_brigade = { x = 2 y = 2 } # 9th Independent Guards Anti-Aircraft Battery
+		mot_artillery_brigade = { x = 3 y = 0} # 21st Guards Artillery Regiment
+		mot_anti_tank_brigade = { x = 3 y = 1 } # 16th Independent Anti-Tank Company
+		mot_anti_air_brigade = { x = 3 y = 2 } # 9th Independent Guards Anti-Aircraft Battery
 	}
 
 	support = {

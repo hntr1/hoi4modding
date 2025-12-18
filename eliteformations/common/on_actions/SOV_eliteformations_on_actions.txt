@@ -14,22 +14,22 @@ on_action = {
 				}
 
 				set_variable = { SOV.g2_inf_eq_total = num_equipment@infantry_equipment }
-				subtract_from_variable = { SOV.g2_inf_eq_total = 0}
+				subtract_from_variable = { SOV.g2_inf_eq_total = 950}
 
 				set_variable = { SOV.g2_art_eq_total = num_equipment@artillery_equipment }
-				subtract_from_variable = { SOV.g2_art_eq_total = 0}
+				subtract_from_variable = { SOV.g2_art_eq_total = 24}
 
 				set_variable = { SOV.g2_at_eq_total = num_equipment@anti_tank_equipment }
-				subtract_from_variable = { SOV.g2_at_eq_total = 0 }
+				subtract_from_variable = { SOV.g2_at_eq_total = 36 }
 
 				set_variable = { SOV.g2_aa_eq_total = num_equipment@anti_air_equipment }
-				subtract_from_variable = { SOV.g2_aa_eq_total = 0 }
+				subtract_from_variable = { SOV.g2_aa_eq_total = 36 }
 
 				set_variable = { SOV.g2_mot_eq_total = num_equipment@motorized_equipment }
-				subtract_from_variable = { SOV.g2_mot_eq_total = 0 }
+				subtract_from_variable = { SOV.g2_mot_eq_total = 483 }
 
 				set_variable = { SOV.g2_sup_eq_total = num_equipment@support_equipment }
-				subtract_from_variable = { SOV.g2_sup_eq_total = 0 }
+				subtract_from_variable = { SOV.g2_sup_eq_total = 110 }
 
 			}
 		}
