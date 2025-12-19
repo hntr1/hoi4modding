@@ -197,6 +197,7 @@ country_event = {
 				division = "name = \"Gebirgsjäger-Brigade Enns\" division_template = \"RAD-Division\" start_experience_factor = 1.0 start_equipment_factor = 0.01"
 				owner = GER
 			}
+		}
 	}
 }
 
