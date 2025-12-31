@@ -187,6 +187,7 @@
   germany.303.t: "Luftwaffe Field Divisions Raised"
   germany.303.d: "The order has been given to raise 21 new divisions from excess Luftwaffe personnel to fill unit shortages."
   germany.303.a: "Form the units!"
+  germany.303.b: "On second thought, we can't afford to lose the airmen."
   lw_field_div_event_tt: "Spawns 21 Luftwaffe-Feld-Divisions in Germany"
 
   germany.304.t: "Luftwaffe Field Divisions Disbanded"
@@ -343,8 +344,8 @@
   volkssturm_unit_desc: "Forcefully conscripted civilians mobilized to defend the Reich."
 
 # Ideas
-  lw_field_div_deployed: "Luftwaffe Field Divisions Raised"
-  lw_field_div_deployed_desc: "Personnel from the Luftwaffe have been pulled from their original duties to form ground units. This will have a negative effect on our air power."
+  lw_field_div_deployed_idea: "Luftwaffe Field Divisions Raised"
+  lw_field_div_deployed_idea_desc: "Personnel from the Luftwaffe have been pulled from their original duties to form ground units. This will have a negative effect on our air power."
 
 # Modifiers
   rhine_bridges_blown_mod: "Rhine Bridges Blown"

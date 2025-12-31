@@ -51,11 +51,16 @@ country_event = {
 
 	option = {
 		name = germany.303.a
+
+		set_country_flag = lw_field_div_raised # Flag triggers the visibility of the disband decision
+
 		GER = {
-			add_idea = lw_field_div_deployed
+			add_ideas = lw_field_div_deployed_idea # Add negative air mission efficiency idea
 		}
+
 		custom_effect_tooltip = lw_field_div_event_tt
-		random_owned_controlled_state = {
+
+		random_owned_controlled_state = { # Spawn the Divisions
 			limit = { ROOT = { has_full_control_of_state = PREV } }
 			create_unit = {
 				division = "name = \"1. Luftwaffe-Feld-Division\" division_template = \"Luftwaffe-Feld-Division\" start_experience_factor = 1.0 start_equipment_factor = 0.01"
@@ -142,6 +147,12 @@ country_event = {
 				owner = GER
 			}
 		}
+	}
+
+	option = {
+		name = germany.303.b # Do nothing option
+
+		add_command_power = 10 # Refund decision cost
 	}
 }
 
