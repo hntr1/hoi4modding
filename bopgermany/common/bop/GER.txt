@@ -1,0 +1,90 @@
+GER_balance_of_power = {
+	initial_value = 0
+	left_side = GER_left_side
+	right_side = GER_right_side
+	decision_category = GER_bop_decisions_cat
+
+	range = {
+		id = GER_center_range
+		min = -0.25
+		max = 0.25
+		modifier = {
+			command_power_gain_mult = 0.1
+			political_power_factor = 0.01
+		}
+	}
+
+	side = {
+		id = GER_left_side
+		icon = GFX_bop_SWI_centralization_canton_side
+		
+		range = {
+			id = GER_left_half
+			min = -0.75
+			max = -0.25
+			modifier = {
+				resistance_decay_on_our_occupied_states = 0.1
+				foreign_subversive_activities = -0.1
+
+				unit_upkeep_attrition_factor = 0.02
+				conscription_factor = -0.01
+			}
+		}
+
+		range = {
+			id = GER_left_full
+			min = -1
+			max = -0.75
+			modifier = {
+				resistance_decay_on_our_occupied_states = 0.2
+				foreign_subversive_activities = -0.2
+
+				unit_upkeep_attrition_factor = 0.04
+				conscription_factor = -0.02
+			}
+		}
+	}
+
+	side = {
+		id = GER_right_side
+		icon = GFX_bop_SWI_federalism_canton_side
+		
+		range = {
+			id = GER_right_half
+			min = 0.25
+			max = 0.75
+			modifier = {
+				experience_gain_army_factor = 0.1
+				experience_gain_navy_factor = 0.1
+				experience_gain_air_factor = 0.1
+
+				resistance_growth_on_our_occupied_states = 0.1
+				forced_surrender_limit = -0.02
+
+			}
+		}
+
+		range = {
+			id = GER_right_full
+			min = 0.75
+			max = 1
+			modifier = {
+				infantry_track_mastery_gain_factor = 0.05
+				armor_track_mastery_gain_factor = 0.05
+				combat_support_track_mastery_gain_factor = 0.05
+				operations_track_mastery_gain_factor = 0.05
+				screens_track_mastery_gain_factor = 0.05
+				submarines_track_mastery_gain_factor = 0.05
+				capital_ships_track_mastery_gain_factor = 0.05
+				carriers_track_mastery_gain_factor = 0.05
+				fighter_aircraft_track_mastery_gain_factor = 0.05
+				strike_aircraft_track_mastery_gain_factor = 0.05
+				medium_aircraft_track_mastery_gain_factor = 0.05
+				heavy_aircraft_track_mastery_gain_factor = 0.05
+
+				resistance_growth_on_our_occupied_states = 0.2
+				forced_surrender_limit = -0.04
+			}
+		}
+	}
+}
