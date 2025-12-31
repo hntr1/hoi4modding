@@ -1,0 +1,29 @@
+add_namespace = germany_bop
+
+country_event = {
+	id = germany_bop.1
+	title = germany_bop.1.t
+	desc = germany_bop.1.d
+	picture = GFX_report_event_generic
+
+	trigger = {
+		tag = GER
+		has_completed_focus = GER_remilitarize_the_rhineland
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = germany_bop.1.a
+		GER = {
+			set_power_balance = {
+				id = GER_balance_of_power
+			}
+			hidden_effect = {
+				set_country_flag = GER_BOP_flag
+			}
+		}
+	}
+}
