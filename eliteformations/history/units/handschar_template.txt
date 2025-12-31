@@ -1,0 +1,26 @@
+division_template = {
+	name = "HANDSCHAR"
+	is_locked = yes # Not allowed to delete or edit
+	force_allow_recruiting = yes # Allows you to retrain if division is destroyed
+	division_cap = 1 # can only have 1 at a time
+	priority = 2 # Elite reinforcement priority
+
+	regiments = {
+		mountaineer = { x = 0 y = 0} # 27th Waf. SS Gebirgsjäger Regiment (1st Croatian)
+		mountaineer = { x = 0 y = 1}
+		mountaineer = { x = 0 y = 2}
+		mountaineer = { x = 1 y = 0 } # 278th Waf. SS Gebirgsjäger Regiment (2nd Croatian)
+		mountaineer = { x = 1 y = 1 }
+		mountaineer = { x = 1 y = 2}
+		artillery_brigade = { x = 2 y = 0} # 13th SS Gebirgs Artillery Regiment
+		anti_tank_brigade = { x = 2 y = 1} # 13th SS Gebirgs Pzj Battalion
+		anti_air_brigade = { x = 2 y = 2} # 13th SS Gebirgs Flak Battalion
+	}
+	support = {
+		engineer = { x = 0 y = 0} # 13th SS Gebirgs Pioneer Battalion
+		recon = { x = 0 y = 1 }   # 13th SS Gebirgs Recon Battalion
+		signal_company = { x = 0 y = 3 }   # 13th SS Gebirgs Signal Battalion
+        logistics_company = { x = 0 y = 4 }   # 13th SS Division Supply Battalion
+        field_hospital = { x = 0 y = 5 }   # 13th SS Medical Battalion
+    }
+}
