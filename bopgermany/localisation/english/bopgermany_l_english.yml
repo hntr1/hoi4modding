@@ -1,0 +1,79 @@
+﻿l_english:
+
+# Decision Categories
+  GER_bop_decisions_cat: "Balance of Power Decisions"
+  GER_bop_decisions_cat_desc: "Test"
+
+# Decisions
+
+  GER_bop_take_wehrmacht_advice: "Take Wehrmacht Advice"
+  GER_bop_take_ss_advice: "Take SS Advice"
+  GER_bop_appoint_himmler_command: "Appoint Himmler Commander of the Replacement Army"
+  GER_bop_remove_himmler_command: "Remove Himmler's command of the Replacement Army"
+  GER_bop_appoint_goring_command: "Appoint Göring Reichsmarschall"
+  GER_bop_remove_goring_command: "Remove Göring as Reichsmarschall"
+  GER_bop_form_division: "Elite Division Formation (Hover for Info)"
+  GER_bop_himmler_inner_circle: "Himmler in the Inner Circle (Hover for Info)"
+  GER_bop_goring_inner_circle: "Göring in the Inner Circle (Hover for Info)"
+  GER_bop_promote_general: "General and Division Commander Promotions (Hover for Info)"
+
+# Events
+  germany_bop.1.t: "Power Struggle between the SS and the Wehrmacht"
+  germany_bop.1.d: "The power struggle between the SS and the Wehrmacht has reached a boiling point. Both organizations are vying for greater influence within the German government. It is imperative that we choose whose advice to follow in order to maintain stability within the nation."
+  germany_bop.1.a: "Let's hope we can maintain stability."
+
+  germany_bop.2.t: "Himmler's Ascension in the Inner Circle"
+  germany_bop.2.d: "Heinrich Himmler has managed to secure a position within the Inner Circle from which he can exert his influence. This move has significant implications for the balance of power within Germany, as the SS gains power."
+  germany_bop.2.a: "This could change everything."
+
+  germany_bop.3.t: "Göring's Ascension in the Inner Circle"
+  germany_bop.3.d: "Hermann Göring has managed to secure a position within the Inner Circle from which he can exert his influence. This move has significant implications for the balance of power within Germany, as the Wehrmacht gains power."
+  germany_bop.3.a: "This could change everything."
+
+  germany_bop.4.t: "Himmler Removed from the Inner Circle"
+  germany_bop.4.d: "Heinrich Himmler has been removed from the Inner Circle, diminishing the influence of the SS within Germany. This shift in power dynamics may lead to increased stability within the nation."
+  germany_bop.4.a: "A wise decision."
+
+  germany_bop.5.t: "Göring Removed from the Inner Circle"
+  germany_bop.5.d: "Hermann Göring has been removed from the Inner Circle, diminishing the influence of the Wehrmacht within Germany. This shift in power dynamics may lead to increased stability within the nation."
+  germany_bop.5.a: "A wise decision."
+
+
+
+# Ideas
+
+  GER_bop_himmler_in_circle: "SS Influences the Inner Circle"
+  GER_bop_himmler_in_circle_desc: "Heinrich Himmler's prescence in the Inner Circle allows him to increase the influence of the SS within Germany."
+  GER_bop_goring_in_circle: "Wehrmacht Influences the Inner Circle"
+  GER_bop_goring_in_circle_desc: "Hermann Göring's prescence in the Inner Circle allows him to increase the influence of the Wehrmacht within Germany."
+  GER_bop_himmler_command: "Himmler appointed Commander of the Replacement Army"
+  GER_bop_himmler_command_desc: "As Commander of the Replacement Army, Heinrich Himmler can siphon manpower and equipment from the Wehrmacht to bolster the SS."
+  GER_bop_goring_command: "Göring appointed Reichsmarschall"
+  GER_bop_goring_command_desc: "As Reichsmarschall, Hermann Göring can prioritize the needs of the Wehrmacht, specifically the Luftwaffe and his Four Year Plan, over the SS."
+
+# Balance of Power
+
+  GER_balance_of_power: "SS vs Wehrmacht Power Struggle"
+  GER_left_side: "The SS"
+  GER_right_side: "The Wehrmacht"
+
+  GER_center_range: "Power Struggle Balanced"
+  GER_right_half: "Wehrmacht Favored"
+  GER_left_half: "SS Favored"
+  GER_right_full: "Wehrmacht Dominant"
+  GER_left_full: "SS Dominant"
+
+# Tooltips
+
+  all_xp_gain_factor_5_tt: "£army_experience £navy_experience £air_experience All Experience Gain Factor: §G+5%§!"
+  all_mastery_modifier_tt: "£doctrine_mastery Mastery Gain Factor for all £doctrine §YDoctrine Tracks§!: §G+5%§!"
+  all_xp_gain_factor_10_tt: "£army_experience £navy_experience £air_experience All Experience Gain Factor: §G+10%§!"
+  GER_bop_form_division_tt: "Forming an SS Division from the §Y\"Elite Formations\"§! Decision Category will move the Power Struggle £BoP_left_texticon §Y2%§! towards §YThe SS§!\n\nForming a Wehrmacht Division from the §Y\"Elite Formations\"§! Decision Category will move the Power Struggle £BoP_right_texticon §Y2%§! towards §YThe Wehrmacht§!\n\nForming a \"Führer\" Division from the §Y\"Elite Formations\"§! Decision Category will move the Power Struggle £BoP_right_texticon £BoP_left_texticon  towards §YThe Center§!"
+  GER_bop_form_wehrmacht_division_tt: "Forming a Wehrmacht Division from the §Y\"Elite Formations\"§! Decision Category will move the Power Struggle £BoP_right_texticon §Y2%§! towards §YThe Wehrmacht§!"
+  GER_bop_himmler_inner_circle_tt: "Appointing Himmler to the §YInner Circle§! will add a §Rweekly§! balance of power tick £BoP_left_texticon §Y1%§! towards §YThe SS§!"
+  GER_bop_goring_inner_circle_tt: "Appointing Göring to the §YInner Circle§! will add a §Rweekly§! balance of power tick £BoP_right_texticon §Y1%§! towards §YThe Wehrmacht§!"
+  GER_bop_promote_general_tt: "Promoting a §YGeneral§! to §YField Marshall§! will move the Power Struggle £BoP_right_texticon §Y3%§! towards §YThe Wehrmacht§!\n\n Promoting a §YDivision Commander§! to §YGeneral§! will move the Power Struggle £BoP_right_texticon §Y1%§! towards §YThe Wehrmacht§!"
+
+# Flags
+
+  EF_Installed: "Mod §Y\"Elite Formations of the Wehrmacht\"§! §GInstalled§!"
