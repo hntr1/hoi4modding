@@ -6,6 +6,16 @@
 #
 
 on_actions = {
+
+	on_startup = {
+		effect = {
+			set_global_flag = {
+				flag = EF_Installed
+				value = 1
+			}
+		}
+	}
+
 	on_daily_GER = {
 		effect = { # Stage 1 LSSAH loc variables
 			if = {
