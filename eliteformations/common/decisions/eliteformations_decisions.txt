@@ -37,6 +37,14 @@ eliteformations_cat = { # German Elite Formations Decisions
 				add_command_power = -5 # Deduct decision cost
 				load_oob = lssah_template # Adds the template to Germany's recruitment screen
 			}
+
+			if = {
+				limit = {has_power_balance = { id = GER_balance_of_power } }
+				add_power_balance_value = {
+					id = GER_balance_of_power
+					value = -0.02
+				}
+			}
 		}
 
 		days_remove = 20
@@ -227,6 +235,14 @@ eliteformations_cat = { # German Elite Formations Decisions
 				add_command_power = -5 # Deduct decision cost
 				load_oob = dasreich_template # Adds the template to Germany's recruitment screen
 			}
+
+			if = {
+				limit = {has_power_balance = { id = GER_balance_of_power } }
+				add_power_balance_value = {
+					id = GER_balance_of_power
+					value = -0.02
+				}
+			}
 		}
 
 		days_remove = 20
@@ -281,6 +297,14 @@ eliteformations_cat = { # German Elite Formations Decisions
 			hidden_effect = {
 				add_command_power = -5 # Deduct decision cost
 				load_oob = totenkopf_template # Adds the template to Germany's recruitment screen
+			}
+
+			if = {
+				limit = {has_power_balance = { id = GER_balance_of_power } }
+				add_power_balance_value = {
+					id = GER_balance_of_power
+					value = -0.02
+				}
 			}
 		}
 
@@ -413,6 +437,14 @@ eliteformations_cat = { # German Elite Formations Decisions
 				add_command_power = -5 # Deduct decision cost
 				load_oob = sspolizei_template # Adds the template to Germany's recruitment screen
 			}
+
+			if = {
+				limit = { has_power_balance = { id = GER_balance_of_power } }
+				add_power_balance_value = {
+					id = GER_balance_of_power
+					value = -0.02
+				}
+			}
 		}
 
 		days_remove = 20
@@ -541,6 +573,14 @@ eliteformations_cat = { # German Elite Formations Decisions
 			hidden_effect = {
 				add_command_power = -5 # Deduct decision cost
 				load_oob = wiking_template # Adds the template to Germany's recruitment screen
+			}
+
+			if = {
+				limit = {has_power_balance = GER_balance_of_power}
+				add_power_balance_value = {
+					id = GER_balance_of_power
+					value = -0.02
+				}
 			}
 		}
 
@@ -688,6 +728,14 @@ eliteformations_cat = { # German Elite Formations Decisions
 						popup = no
 					}
 				}
+
+				if = {
+				limit = {has_power_balance = GER_balance_of_power}
+				add_power_balance_value = {
+					id = GER_balance_of_power
+					value = -0.02
+				}
+			}
 			}
 		}
 
@@ -757,6 +805,14 @@ eliteformations_cat = { # German Elite Formations Decisions
 			hidden_effect = {
 				add_command_power = -5 # Deduct decision cost
 				load_oob = prinzeugen_template # Adds the template to Germany's recruitment screen
+			}
+
+			if = {
+				limit = {has_power_balance = GER_balance_of_power}
+				add_power_balance_value = {
+					id = GER_balance_of_power
+					value = -0.02
+				}
 			}
 		}
 
@@ -874,6 +930,14 @@ eliteformations_cat = { # German Elite Formations Decisions
 			hidden_effect = {
 				add_command_power = -5 # Deduct decision cost
 				load_oob = floriangeyer_template # Adds the template to Germany's recruitment screen
+			}
+
+			if = {
+				limit = {has_power_balance = GER_balance_of_power}
+				add_power_balance_value = {
+					id = GER_balance_of_power
+					value = -0.02
+				}
 			}
 		}
 
@@ -995,6 +1059,14 @@ eliteformations_cat = { # German Elite Formations Decisions
 				add_command_power = -5 # Deduct decision cost
 				load_oob = hohenstaufen_template # Adds the template to Germany's recruitment screen
 			}
+
+			if = {
+				limit = {has_power_balance = GER_balance_of_power}
+				add_power_balance_value = {
+					id = GER_balance_of_power
+					value = -0.02
+				}
+			}
 		}
 
 		days_remove = 20
@@ -1057,6 +1129,14 @@ eliteformations_cat = { # German Elite Formations Decisions
 			hidden_effect = {
 				add_command_power = -5 # Deduct decision cost
 				load_oob = frundsberg_template # Adds the template to Germany's recruitment screen
+			}
+
+			if = {
+				limit = {has_power_balance = GER_balance_of_power}
+				add_power_balance_value = {
+					id = GER_balance_of_power
+					value = -0.02
+				}
 			}
 		}
 
@@ -1124,6 +1204,14 @@ eliteformations_cat = { # German Elite Formations Decisions
 			hidden_effect = {
 				add_command_power = -5 # Deduct decision cost
 				load_oob = nordland_template # Adds the template to Germany's recruitment screen
+			}
+
+			if = {
+				limit = {has_power_balance = GER_balance_of_power}
+				add_power_balance_value = {
+					id = GER_balance_of_power
+					value = -0.02
+				}
 			}
 		}
 
@@ -1246,6 +1334,14 @@ eliteformations_cat = { # German Elite Formations Decisions
 				add_command_power = -5 # Deduct decision cost
 				load_oob = hitlerjugend_template # Adds the template to Germany's recruitment screen
 			}
+
+			if = {
+				limit = {has_power_balance = GER_balance_of_power}
+				add_power_balance_value = {
+					id = GER_balance_of_power
+					value = -0.02
+				}
+			}
 		}
 
 		days_remove = 20
@@ -1310,6 +1406,14 @@ eliteformations_cat = { # German Elite Formations Decisions
 			hidden_effect = {
 				add_command_power = -5 # Deduct decision cost
 				load_oob = pzgrengd_template # Adds the template to Germany's recruitment screen
+			}
+
+			if = {
+				limit = {has_power_balance = GER_balance_of_power}
+				add_power_balance_value = {
+					id = GER_balance_of_power
+					value = 0.02
+				}
 			}
 		}
 
@@ -1376,6 +1480,14 @@ eliteformations_cat = { # German Elite Formations Decisions
 				add_command_power = -5 # Deduct decision cost
 				load_oob = pzhg_template # Adds the template to Germany's recruitment screen
 			}
+
+			if = {
+				limit = {has_power_balance = GER_balance_of_power}
+				add_power_balance_value = {
+					id = GER_balance_of_power
+					value = 0.02
+				}
+			}
 		}
 
 		days_remove = 20
@@ -1438,6 +1550,14 @@ eliteformations_cat = { # German Elite Formations Decisions
 			hidden_effect = {
 				add_command_power = -5 # Deduct decision cost
 				load_oob = pzl_template # Adds the template to Germany's recruitment screen
+			}
+
+			if = {
+				limit = {has_power_balance = GER_balance_of_power}
+				add_power_balance_value = {
+					id = GER_balance_of_power
+					value = 0.02
+				}
 			}
 		}
 
@@ -1507,6 +1627,14 @@ eliteformations_cat = { # German Elite Formations Decisions
 				add_command_power = -5 # Deduct decision cost
 				load_oob = lad999_template # Adds the template to Germany's recruitment screen
 			}
+
+			if = {
+				limit = {has_power_balance = GER_balance_of_power}
+				add_power_balance_value = {
+					id = GER_balance_of_power
+					value = 0.02
+				}
+			}
 		}
 
 		days_remove = 20
@@ -1572,6 +1700,30 @@ eliteformations_cat = { # German Elite Formations Decisions
 				}
 
 				load_oob = fuhrerbegleit_template
+			}
+
+			if = {
+				limit = {has_power_balance = { id = GER_balance_of_power } }
+				if = {
+					limit = { power_balance_value = {id = GER_balance_of_power value > 0.02 } }
+					add_power_balance_value = {
+						id = GER_balance_of_power
+						value = -0.02
+					}
+				}
+				if = {
+					limit = { power_balance_value = { id = GER_balance_of_power value < -0.02} }
+					add_power_balance_value = {
+						id = GER_balance_of_power
+						value = 0.02
+					}
+				}
+				else = {
+					set_power_balance = {
+						id = GER_balance_of_power
+						set_value = 0
+					}
+				}
 			}
 		}
 
@@ -1707,6 +1859,30 @@ eliteformations_cat = { # German Elite Formations Decisions
 			hidden_effect = {
 				add_command_power = -5
 				load_oob = fuhrergrenadier_template
+			}
+
+			if = {
+				limit = {has_power_balance = { id = GER_balance_of_power } }
+				if = {
+					limit = { power_balance_value = {id = GER_balance_of_power value > 0.02 } }
+					add_power_balance_value = {
+						id = GER_balance_of_power
+						value = -0.02
+					}
+				}
+				if = {
+					limit = { power_balance_value = { id = GER_balance_of_power value < -0.02} }
+					add_power_balance_value = {
+						id = GER_balance_of_power
+						value = 0.02
+					}
+				}
+				else = {
+					set_power_balance = {
+						id = GER_balance_of_power
+						set_value = 0
+					}
+				}
 			}
 		}
 
