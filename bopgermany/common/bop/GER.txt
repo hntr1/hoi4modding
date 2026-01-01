@@ -16,15 +16,14 @@ GER_balance_of_power = {
 
 	side = {
 		id = GER_left_side
-		icon = GFX_bop_SWI_centralization_canton_side
+		icon = GFX_idea_german_advisors
 		
 		range = {
 			id = GER_left_half
-			min = -0.75
+			min = -0.5
 			max = -0.25
 			modifier = {
-				resistance_decay_on_our_occupied_states = 0.1
-				foreign_subversive_activities = -0.1
+				resistance_decay = 0.1
 
 				unit_upkeep_attrition_factor = 0.02
 				conscription_factor = -0.01
@@ -34,10 +33,10 @@ GER_balance_of_power = {
 		range = {
 			id = GER_left_full
 			min = -1
-			max = -0.75
+			max = -0.5
 			modifier = {
-				resistance_decay_on_our_occupied_states = 0.2
-				foreign_subversive_activities = -0.2
+				resistance_decay = 0.2
+				enemy_operative_detection_chance_factor = 0.1
 
 				unit_upkeep_attrition_factor = 0.04
 				conscription_factor = -0.02
@@ -47,18 +46,21 @@ GER_balance_of_power = {
 
 	side = {
 		id = GER_right_side
-		icon = GFX_bop_SWI_federalism_canton_side
+		icon = GFX_idea_GER_army
 		
 		range = {
 			id = GER_right_half
 			min = 0.25
-			max = 0.75
+			max = 0.5
 			modifier = {
-				experience_gain_army_factor = 0.1
-				experience_gain_navy_factor = 0.1
-				experience_gain_air_factor = 0.1
+				hidden_modifier = {
+					experience_gain_army_factor = 0.05
+					experience_gain_navy_factor = 0.05
+					experience_gain_air_factor = 0.05
+				}
+				custom_modifier_tooltip = all_xp_gain_factor_5_tt
 
-				resistance_growth_on_our_occupied_states = 0.1
+				resistance_growth = 0.1
 				forced_surrender_limit = -0.02
 
 			}
@@ -66,23 +68,33 @@ GER_balance_of_power = {
 
 		range = {
 			id = GER_right_full
-			min = 0.75
+			min = 0.5
 			max = 1
 			modifier = {
-				infantry_track_mastery_gain_factor = 0.05
-				armor_track_mastery_gain_factor = 0.05
-				combat_support_track_mastery_gain_factor = 0.05
-				operations_track_mastery_gain_factor = 0.05
-				screens_track_mastery_gain_factor = 0.05
-				submarines_track_mastery_gain_factor = 0.05
-				capital_ships_track_mastery_gain_factor = 0.05
-				carriers_track_mastery_gain_factor = 0.05
-				fighter_aircraft_track_mastery_gain_factor = 0.05
-				strike_aircraft_track_mastery_gain_factor = 0.05
-				medium_aircraft_track_mastery_gain_factor = 0.05
-				heavy_aircraft_track_mastery_gain_factor = 0.05
+				hidden_modifier = {
+					experience_gain_army_factor = 0.1
+					experience_gain_navy_factor = 0.1
+					experience_gain_air_factor = 0.1
+				}
+				custom_modifier_tooltip = all_xp_gain_factor_10_tt
 
-				resistance_growth_on_our_occupied_states = 0.2
+				hidden_modifier = {
+					infantry_track_mastery_gain_factor = 0.05
+					armor_track_mastery_gain_factor = 0.05
+					combat_support_track_mastery_gain_factor = 0.05
+					operations_track_mastery_gain_factor = 0.05
+					screens_track_mastery_gain_factor = 0.05
+					submarines_track_mastery_gain_factor = 0.05
+					capital_ships_track_mastery_gain_factor = 0.05
+					carriers_track_mastery_gain_factor = 0.05
+					fighter_aircraft_track_mastery_gain_factor = 0.05
+					strike_aircraft_track_mastery_gain_factor = 0.05
+					medium_aircraft_track_mastery_gain_factor = 0.05
+					heavy_aircraft_track_mastery_gain_factor = 0.05
+				}
+				custom_modifier_tooltip = all_mastery_modifier_tt
+
+				resistance_growth = 0.2
 				forced_surrender_limit = -0.04
 			}
 		}
