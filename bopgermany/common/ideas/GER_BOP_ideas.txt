@@ -1,0 +1,53 @@
+ideas = {
+	country = {
+		GER_bop_himmler_in_circle = {
+
+			picture = generic_fascism_drift_2
+
+			modifier = {
+				power_balance_weekly = -0.01
+			}
+		}
+	}
+
+	country = {
+		GER_bop_goring_in_circle = {
+
+			picture = generic_fascism_drift_2
+
+			modifier = {
+				power_balance_weekly = 0.01
+			}
+		}
+	}
+
+	country = {
+		GER_bop_himmler_command = {
+
+			picture = generic_supply_lines
+
+			modifier = {
+				supply_factor = -0.05
+			#	army_core_defence_factor = 0.1
+				resistance_target = -0.05
+				power_balance_weekly = -0.01
+			}
+		}
+	}
+
+	country = {
+		GER_bop_goring_command = {
+
+			picture = generic_air_research
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				experience_gain_air_factor = 0.025
+				experience_gain_army_factor = -0.025
+				experience_gain_navy_factor = -0.025
+				power_balance_weekly = 0.01
+				air_fuel_consumption_factor = 0.05
+			}
+		}
+	}
+}
