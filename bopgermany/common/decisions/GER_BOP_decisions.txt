@@ -1,3 +1,216 @@
 GER_bop_decisions_cat = {
-	
+	GER_bop_take_wehrmacht_advice = {
+		visible = {
+			always = yes
+		}
+
+		available = {
+			always = yes
+		}
+
+		cost = 10
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = GER_balance_of_power
+				value = 0.1
+			}
+		}
+
+		days_remove = 30
+	}
+
+	GER_bop_take_ss_advice = {
+		visible = {
+			always = yes
+		}
+
+		available = {
+			always = yes
+		}
+
+		cost = 10
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = GER_balance_of_power
+				value = -0.1
+			}
+		}
+
+		days_remove = 30
+	}
+
+	GER_bop_appoint_himmler_command = {
+		visible = {
+			NOT = {
+				has_idea = GER_bop_himmler_command
+			}
+		}
+
+		available = {
+			always = yes
+		}
+
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 15
+			}
+		}
+		custom_cost_text = decision_cost_CP_15
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -15
+			}
+			add_ideas = GER_bop_himmler_command
+			add_power_balance_value = {
+				id = GER_balance_of_power
+				value = -0.05
+			}
+		}
+	}
+
+	GER_bop_remove_himmler_command = {
+		visible = {
+			has_idea = GER_bop_himmler_command
+		}
+
+		available = {
+			has_idea = GER_bop_himmler_command
+		}
+
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 15
+			}
+		}
+		custom_cost_text = decision_cost_CP_15
+
+		complete_effect = {
+			remove_ideas = GER_bop_himmler_command
+			hidden_effect = {
+				add_command_power = -15
+			}
+			add_power_balance_value = {
+				id = GER_balance_of_power
+				value = 0.05
+			}
+		}
+	}
+
+	GER_bop_appoint_goring_command = {
+		visible = {
+			NOT = {
+				has_idea = GER_bop_goring_command
+			}
+		}
+
+		available = {
+			always = yes
+		}
+
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 15
+			}
+		}
+		custom_cost_text = decision_cost_CP_15
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -15
+			}
+			add_ideas = GER_bop_goring_command
+			add_power_balance_value = {
+				id = GER_balance_of_power
+				value = 0.05
+			}
+		}
+	}
+
+	GER_bop_remove_goring_command = {
+		visible = {
+			has_idea = GER_bop_goring_command
+		}
+
+		available = {
+			has_idea = GER_bop_goring_command
+		}
+
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 15
+			}
+		}
+		custom_cost_text = decision_cost_CP_15
+
+		complete_effect = {
+			remove_ideas = GER_bop_goring_command
+			hidden_effect = {
+				add_command_power = -15
+			}
+			add_power_balance_value = {
+				id = GER_balance_of_power
+				value = -0.05
+			}
+		}
+	}
+
+	GER_bop_form_division = {
+		visible = {
+			has_global_flag = EF_Installed
+		}
+
+		available = {
+			has_global_flag = EF_Installed
+			always = no
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = GER_bop_form_division_tt
+		}
+	}
+
+	GER_bop_himmler_inner_circle = {
+		visible = {
+			always = yes
+		}
+
+		available = {
+			always = no
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = GER_bop_himmler_inner_circle_tt
+		}
+	}
+
+	GER_bop_goring_inner_circle = {
+		visible = {
+			always = yes
+		}
+
+		available = {
+			always = no
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = GER_bop_goring_inner_circle_tt
+		}
+	}
+
+	GER_bop_promote_general = {
+		visible = {
+			always = yes
+		}
+
+		available = {
+			always = no
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = GER_bop_promote_general_tt
+		}
+	}
 }
