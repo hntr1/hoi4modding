@@ -4,4 +4,5 @@ tags={
 	"Historical"
 }
 name="Balace of Power for Germany"
-supported_version="1.17.3.0"
+picture="thumbnail.png"
+supported_version="1.17.*"
