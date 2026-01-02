@@ -15,7 +15,7 @@
   GER_bop_form_division: "Elite Division Formation (Hover for Info)"
   GER_bop_himmler_inner_circle: "Himmler in the Inner Circle (Hover for Info)"
   GER_bop_goring_inner_circle: "Göring in the Inner Circle (Hover for Info)"
-  GER_bop_promote_general: "Division Commander Promotions (Hover for Info)"
+  GER_bop_promote_general: "General and Division Commander Promotions (Hover for Info)"
 
 # Events
   germany_bop.1.t: "Power Struggle between the SS and the Wehrmacht"
@@ -72,8 +72,7 @@
   GER_bop_form_wehrmacht_division_tt: "Forming a Wehrmacht Division from the §Y\"Elite Formations\"§! Decision Category will move the Power Struggle £BoP_right_texticon §Y2%§! towards §YThe Wehrmacht§!"
   GER_bop_himmler_inner_circle_tt: "Appointing Himmler to the §YInner Circle§! will add a §Rweekly§! balance of power tick £BoP_left_texticon §Y1%§! towards §YThe SS§!"
   GER_bop_goring_inner_circle_tt: "Appointing Göring to the §YInner Circle§! will add a §Rweekly§! balance of power tick £BoP_right_texticon §Y1%§! towards §YThe Wehrmacht§!"
-  GER_bop_promote_general_tt_old: "Promoting a §YGeneral§! to §YField Marshall§! will move the Power Struggle £BoP_right_texticon §Y3%§! towards §YThe Wehrmacht§!\n\n Promoting a §YDivision Commander§! to §YGeneral§! will move the Power Struggle £BoP_right_texticon §Y1%§! towards §YThe Wehrmacht§!"
-  GER_bop_promote_general_tt: "Promoting a §YDivision Commander§! to §YGeneral§! will move the Power Struggle £BoP_right_texticon §Y1%§! towards §YThe Wehrmacht§!"
+  GER_bop_promote_general_tt: "Promoting a §YGeneral§! to §YField Marshall§! will move the Power Struggle £BoP_right_texticon §Y3%§! towards §YThe Wehrmacht§!\n\n Promoting a §YDivision Commander§! to §YGeneral§! will move the Power Struggle £BoP_right_texticon §Y1%§! towards §YThe Wehrmacht§!"
 
 # Flags
 
