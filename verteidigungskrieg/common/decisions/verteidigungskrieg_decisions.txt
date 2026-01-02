@@ -895,7 +895,7 @@ endsieg = {
 		}
 
 		available = {
-			casualties_k = 1000
+			casualties_k > 1000
 
 			has_tech = tech_signal_company
 			has_tech = tech_logistics_company
@@ -907,7 +907,7 @@ endsieg = {
 		cost = 0
 		custom_cost_trigger = {
 			NOT = {
-				army_experience < 20
+				has_army_experience < 20
 			}
 		}
 		custom_cost_text = decision_cost_ArmXP_20
