@@ -576,7 +576,7 @@ eliteformations_cat = { # German Elite Formations Decisions
 			}
 
 			if = {
-				limit = {has_power_balance = GER_balance_of_power}
+				limit = {has_power_balance = { id = GER_balance_of_power } }
 				add_power_balance_value = {
 					id = GER_balance_of_power
 					value = -0.02
@@ -722,7 +722,7 @@ eliteformations_cat = { # German Elite Formations Decisions
 				load_oob = ssnord_template # Adds the template to Germany's recruitment screen
 				
 				if = {
-					limit = { NOT = { has_tech winter_logistics_support_tech } }
+					limit = { NOT = { has_tech = winter_logistics_support_tech } }
 					set_technology = { # Add winter logistics company to Germany
 						winter_logistics_support_tech = 1
 						popup = no
@@ -730,7 +730,7 @@ eliteformations_cat = { # German Elite Formations Decisions
 				}
 
 				if = {
-				limit = {has_power_balance = GER_balance_of_power}
+				limit = {has_power_balance = { id = GER_balance_of_power } }
 				add_power_balance_value = {
 					id = GER_balance_of_power
 					value = -0.02
@@ -808,7 +808,7 @@ eliteformations_cat = { # German Elite Formations Decisions
 			}
 
 			if = {
-				limit = {has_power_balance = GER_balance_of_power}
+				limit = {has_power_balance = { id = GER_balance_of_power } }
 				add_power_balance_value = {
 					id = GER_balance_of_power
 					value = -0.02
@@ -933,7 +933,7 @@ eliteformations_cat = { # German Elite Formations Decisions
 			}
 
 			if = {
-				limit = {has_power_balance = GER_balance_of_power}
+				limit = {has_power_balance = { id = GER_balance_of_power } }
 				add_power_balance_value = {
 					id = GER_balance_of_power
 					value = -0.02
@@ -1061,7 +1061,7 @@ eliteformations_cat = { # German Elite Formations Decisions
 			}
 
 			if = {
-				limit = {has_power_balance = GER_balance_of_power}
+				limit = {has_power_balance = { id = GER_balance_of_power } }
 				add_power_balance_value = {
 					id = GER_balance_of_power
 					value = -0.02
@@ -1132,7 +1132,7 @@ eliteformations_cat = { # German Elite Formations Decisions
 			}
 
 			if = {
-				limit = {has_power_balance = GER_balance_of_power}
+				limit = {has_power_balance = { id = GER_balance_of_power } }
 				add_power_balance_value = {
 					id = GER_balance_of_power
 					value = -0.02
@@ -1207,7 +1207,7 @@ eliteformations_cat = { # German Elite Formations Decisions
 			}
 
 			if = {
-				limit = {has_power_balance = GER_balance_of_power}
+				limit = {has_power_balance = { id = GER_balance_of_power}}
 				add_power_balance_value = {
 					id = GER_balance_of_power
 					value = -0.02
@@ -1336,7 +1336,7 @@ eliteformations_cat = { # German Elite Formations Decisions
 			}
 
 			if = {
-				limit = {has_power_balance = GER_balance_of_power}
+				limit = {has_power_balance = { id = GER_balance_of_power}}
 				add_power_balance_value = {
 					id = GER_balance_of_power
 					value = -0.02
@@ -1409,7 +1409,7 @@ eliteformations_cat = { # German Elite Formations Decisions
 			}
 
 			if = {
-				limit = {has_power_balance = GER_balance_of_power}
+				limit = {has_power_balance = { id = GER_balance_of_power}}
 				add_power_balance_value = {
 					id = GER_balance_of_power
 					value = 0.02
@@ -1482,7 +1482,7 @@ eliteformations_cat = { # German Elite Formations Decisions
 			}
 
 			if = {
-				limit = {has_power_balance = GER_balance_of_power}
+				limit = {has_power_balance = { id = GER_balance_of_power}}
 				add_power_balance_value = {
 					id = GER_balance_of_power
 					value = 0.02
@@ -1553,7 +1553,7 @@ eliteformations_cat = { # German Elite Formations Decisions
 			}
 
 			if = {
-				limit = {has_power_balance = GER_balance_of_power}
+				limit = {has_power_balance = { id = GER_balance_of_power}}
 				add_power_balance_value = {
 					id = GER_balance_of_power
 					value = 0.02
@@ -1629,7 +1629,7 @@ eliteformations_cat = { # German Elite Formations Decisions
 			}
 
 			if = {
-				limit = {has_power_balance = GER_balance_of_power}
+				limit = {has_power_balance = { id = GER_balance_of_power}}
 				add_power_balance_value = {
 					id = GER_balance_of_power
 					value = 0.02
