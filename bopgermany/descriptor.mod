@@ -3,7 +3,7 @@ tags={
 	"Gameplay"
 	"Historical"
 }
-name="Balace of Power for Germany"
+name="Balance of Power for Germany"
 picture="thumbnail.png"
 supported_version="1.17.*"
 remote_file_id="3636393476"
