@@ -1,36 +1,40 @@
 on_actions = {
-#	on_army_leader_promoted = {
-#		effect = {
-#			limit = { 
-#				FROM = {
-#					tag = GER
-#					has_power_balance = { id = GER_balance_of_power }
-#				}
-			
-#			}
+	on_army_leader_promoted = {
+		effect = {
+			if = {
+				limit = { 
+					FROM = {
+						tag = GER
+						has_power_balance = { id = GER_balance_of_power }
+					}
+					
+				}
 
-#			FROM = {
-#				add_power_balance_value = {
-#					id = GER_balance_of_power
-#					value = 0.03
-#				}
-#			}
-#		}
-#	}
+				FROM = {
+					add_power_balance_value = {
+						id = GER_balance_of_power
+						value = 0.03
+					}
+				}
+			}
+		}
+	}
 
 	on_unit_leader_promote_from_ranks_veteran = {
 		effect = {
-			limit = { 
-				OWNER = {
-					tag = GER
-					has_power_balance = { id = GER_balance_of_power }
+			if ={
+				limit = { 
+					OWNER = {
+						tag = GER
+						has_power_balance = { id = GER_balance_of_power }
+					}
 				}
-			}
 
-			OWNER = {
-				add_power_balance_value = {
-					id = GER_balance_of_power
-					value = 0.01
+				OWNER = {
+					add_power_balance_value = {
+						id = GER_balance_of_power
+						value = 0.01
+					}
 				}
 			}
 		}
@@ -38,17 +42,19 @@ on_actions = {
 
 	on_unit_leader_promote_from_ranks_green = {
 		effect = {
-			limit = { 
-				OWNER = {
-					tag = GER
-					has_power_balance = { id = GER_balance_of_power }
+			if = {
+				limit = { 
+					OWNER = {
+						tag = GER
+						has_power_balance = { id = GER_balance_of_power }
+					}
 				}
-			}
 
-			OWNER = {
-				add_power_balance_value = {
-					id = GER_balance_of_power
-					value = 0.01
+				OWNER = {
+					add_power_balance_value = {
+						id = GER_balance_of_power
+						value = 0.01
+					}
 				}
 			}
 		}
