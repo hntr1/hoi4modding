@@ -40,18 +40,22 @@ country_event = {
 		tag = GER
 		GER_BOP_check_himmler_inner_circle = yes
 		has_country_flag = GER_BOP_flag
+		NOT = {has_country_flag = himmler_inner_circle_flag}
 	}
 
 	mean_time_to_happen = {
 		days = 1
 	}
 
-	fire_only_once = yes
+	fire_only_once = no
 
 	option = {
 		name = germany_bop.2.a
 		GER = {
 			add_ideas = GER_bop_himmler_in_circle
+		}
+		hidden_effect = {
+			set_country_flag = himmler_inner_circle_flag
 		}
 	}
 }
@@ -66,18 +70,22 @@ country_event = {
 		tag = GER
 		GER_BOP_check_goring_inner_circle = yes
 		has_country_flag = GER_BOP_flag
+		NOT = {has_country_flag = goring_inner_circle_flag}
 	}
 
 	mean_time_to_happen = {
 		days = 1
 	}
 
-	fire_only_once = yes
+	fire_only_once = no
 
 	option = {
 		name = germany_bop.3.a
 		GER = {
 			add_ideas = GER_bop_goring_in_circle
+		}
+		hidden_effect = {
+			set_country_flag = goring_inner_circle_flag
 		}
 	}
 }
@@ -92,18 +100,25 @@ country_event = {
 		tag = GER
 		has_country_flag = GER_BOP_flag
 		GER_BOP_check_himmler_inner_circle = no
+		has_country_flag = himmler_inner_circle_flag
 	}
 
 	mean_time_to_happen = {
 		days = 1
 	}
 
-	fire_only_once = yes
+	fire_only_once = no
 
 	option = {
 		name = germany_bop.4.a
 		GER = {
 			remove_ideas = GER_bop_himmler_in_circle
+		}
+		hidden_effect = {
+			set_country_flag = {
+				flag = himmler_inner_circle_flag
+				value = 0
+			}
 		}
 	}
 }
@@ -118,18 +133,25 @@ country_event = {
 		tag = GER
 		has_country_flag = GER_BOP_flag
 		GER_BOP_check_goring_inner_circle = no
+		has_country_flag = goring_inner_circle_flag
 	}
 
 	mean_time_to_happen = {
 		days = 1
 	}
 
-	fire_only_once = yes
+	fire_only_once = no
 
 	option = {
 		name = germany_bop.5.a
 		GER = {
 			remove_ideas = GER_bop_goring_in_circle
+		}
+		hidden_effect = {
+			set_country_flag = {
+				flag = goring_inner_circle_flag
+				value = 0
+			}
 		}
 	}
 }
