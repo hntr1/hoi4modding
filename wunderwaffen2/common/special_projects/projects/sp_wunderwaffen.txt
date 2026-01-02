@@ -26,7 +26,7 @@ sp_land_fliegerfaust = {
 		}
 	}
 
-	prototype_cost = {
+	resource_cost = {
 		resources = {
 			steel = 2
 			tungsten = 1
@@ -75,8 +75,11 @@ sp_land_fliegerfaust = {
 
 			option = {
 
+				token = ww2_ff_reward_1
+
+
 				iteration_output = {
-					country_effect = {
+					country_effects = {
 						add_tech_bonus = {
 							name = ff_aa_bonus_reward
 							bonus = 0.1
@@ -142,7 +145,7 @@ sp_land_fg42 = {
 
 	complexity = sp_complexity.small
 
-	prototype_cost = {
+	resource_cost = {
 		resources = {
 			steel = 1
 		}
@@ -175,6 +178,9 @@ sp_land_fg42 = {
 			}
 
 			option = {
+
+				token = ww2_fg42_reward_1
+
 				iteration_output = {
 					country_effects = {
 						add_tech_bonus = {
@@ -198,6 +204,9 @@ sp_land_fg42 = {
 			}
 
 			option = {
+
+				token = ww2_fg42_reward_2
+
 				iteration_output = {
 					country_effects = {
 						add_tech_bonus = {
