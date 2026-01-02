@@ -82,7 +82,7 @@ country_event = {
 	}
 }
 
-coutry_event = {
+country_event = {
 	id = germany_bop.4
 	title = germany_bop.4.t
 	desc = germany_bop.4.d
@@ -108,7 +108,7 @@ coutry_event = {
 	}
 }
 
-coutry_event = {
+country_event = {
 	id = germany_bop.5
 	title = germany_bop.5.t
 	desc = germany_bop.5.d
