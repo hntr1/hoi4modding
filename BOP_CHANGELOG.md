@@ -14,3 +14,7 @@ Temporarily disabled progressing the power struggle by promoting generals due to
 
 Bug Fix: Missing Events for removal of Goring and Himmler from Inner Circle
 Bug Fix: Power Struggle progresses when other countries promote generals
+
+<h4>1/1/26 9:37pm</h4>
+
+Bug Fix: Restored localization now that general promotion bug is fixed
