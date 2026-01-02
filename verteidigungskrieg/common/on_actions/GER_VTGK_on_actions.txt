@@ -201,7 +201,7 @@ on_actions = {
 						infantry = { x = 1 y = 1 }
 						infantry = { x = 2 y = 0 }
 						infantry = { x = 2 y = 1 }
-						artillery = { x = 3 y = 0 }		
+						artillery_brigade = { x = 3 y = 0 }		
 					}
 					support = {
 						engineer = { x = 0 y = 0 }
