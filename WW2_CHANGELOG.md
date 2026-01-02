@@ -34,3 +34,8 @@ Updated to Hoi4 Version 1.17
 <h4>12/14/25 1:19pm</h4>
 
 Changed name from Wunderwaffen 2.0 to Wunderwaffe 2.0 to match naming pattern of Wunderwaffe 1
+
+<h4>1/1/26 9:26pm</h4>
+
+Bug Fix: Missing tokens for unique prototype bonuses
+Bug Fix: Missing unique prototype bonus for Fliegerfaust Project

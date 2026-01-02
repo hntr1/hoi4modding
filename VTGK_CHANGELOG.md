@@ -98,3 +98,10 @@ Bug Fix: Scope error in Volksstrum disband decision
 Bug Fix: Missing brace in news event
 Bug Fix: National Spirit not applying from LW Field Division spawn
 Bug Fix: National Spirit for LW Field Divisions has no icon
+
+<h4>1/1/26 9:26pm</h4>
+
+Bug Fix: Decisions not checking for power balance
+Bug Fix: SS Nord Decision not checking for winter logistics tech
+Bug Fix: Volksgrenadier Decision not checking for casualties or correct amount of army xp
+Bug Fix: Missing artillery brigade in RAD template
