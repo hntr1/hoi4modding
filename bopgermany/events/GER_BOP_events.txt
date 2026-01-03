@@ -1,6 +1,6 @@
 add_namespace = germany_bop
 
-country_event = {
+country_event = { # Activates the balance of power after completing the Rhineland focus
 	id = germany_bop.1
 	title = germany_bop.1.t
 	desc = germany_bop.1.d
@@ -30,7 +30,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { # Applies the Himmler inner circle spirit after Himmler is appointed to the inner circle
 	id = germany_bop.2
 	title = germany_bop.2.t
 	desc = germany_bop.2.d
@@ -60,7 +60,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { # Applies the Goring inner circle spirit after Goring is appointed to the inner circle
 	id = germany_bop.3
 	title = germany_bop.3.t
 	desc = germany_bop.3.d
@@ -90,7 +90,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { # Removes the Himmler inner circle spirit if Himmler is replaced
 	id = germany_bop.4
 	title = germany_bop.4.t
 	desc = germany_bop.4.d
@@ -123,7 +123,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { # Removes the Goring inner circle spirit if Goring is replaced
 	id = germany_bop.5
 	title = germany_bop.5.t
 	desc = germany_bop.5.d

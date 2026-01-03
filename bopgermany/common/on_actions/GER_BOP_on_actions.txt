@@ -1,5 +1,5 @@
 on_actions = {
-	on_army_leader_promoted = {
+	on_army_leader_promoted = { # When Germany promotes a general to field marshall, add 3% towards Wehrmacht
 		effect = {
 			if = {
 				limit = { 
@@ -20,7 +20,7 @@ on_actions = {
 		}
 	}
 
-	on_unit_leader_promote_from_ranks_veteran = {
+	on_unit_leader_promote_from_ranks_veteran = { # When Germany promotes a veteran field commander to general, add 1% towards Wehrmacht
 		effect = {
 			if ={
 				limit = { 
@@ -40,7 +40,7 @@ on_actions = {
 		}
 	}
 
-	on_unit_leader_promote_from_ranks_green = {
+	on_unit_leader_promote_from_ranks_green = { # When Germany promotes a green field commander to general, add 1% towards Wehrmacht
 		effect = {
 			if = {
 				limit = { 

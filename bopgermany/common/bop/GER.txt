@@ -1,20 +1,20 @@
 GER_balance_of_power = {
-	initial_value = 0
+	initial_value = 0 # Start BOP in the center
 	left_side = GER_left_side
 	right_side = GER_right_side
 	decision_category = GER_bop_decisions_cat
 
-	range = {
+	range = { # Center Range
 		id = GER_center_range
 		min = -0.25
 		max = 0.25
-		modifier = {
+		modifier = { # Command power to represent more control over the army, political power to represent more control in general
 			command_power_gain_mult = 0.1
 			political_power_factor = 0.01
 		}
 	}
 
-	side = {
+	side = { # Partial SS Side
 		id = GER_left_side
 		icon = GFX_idea_german_advisors
 		
@@ -22,7 +22,7 @@ GER_balance_of_power = {
 			id = GER_left_half
 			min = -0.5
 			max = -0.25
-			modifier = {
+			modifier = { # Resistance decay due to better garrison, upkeep and lower conscription to represent men and material being transferred to the SS
 				resistance_decay = 0.1
 
 				unit_upkeep_attrition_factor = 0.02
@@ -30,11 +30,11 @@ GER_balance_of_power = {
 			}
 		}
 
-		range = {
+		range = { # Full SS Side
 			id = GER_left_full
 			min = -1
 			max = -0.5
-			modifier = {
+			modifier = { # Detection chance due to more efficient internal policing
 				resistance_decay = 0.2
 				enemy_operative_detection_chance_factor = 0.1
 
@@ -44,7 +44,7 @@ GER_balance_of_power = {
 		}
 	}
 
-	side = {
+	side = { # Partial Wehrmacht side
 		id = GER_right_side
 		icon = GFX_idea_GER_army
 		
@@ -52,8 +52,8 @@ GER_balance_of_power = {
 			id = GER_right_half
 			min = 0.25
 			max = 0.5
-			modifier = {
-				hidden_modifier = {
+			modifier = { # XP gain represents more power to the armed forces, resistance growth represents a lack of SS garrison power, surrender limit represents less fanaticism due to less SS influence
+				hidden_modifier = { 
 					experience_gain_army_factor = 0.05
 					experience_gain_navy_factor = 0.05
 					experience_gain_air_factor = 0.05
@@ -66,11 +66,11 @@ GER_balance_of_power = {
 			}
 		}
 
-		range = {
+		range = { # Full Wehrmacht side
 			id = GER_right_full
 			min = 0.5
 			max = 1
-			modifier = {
+			modifier = { # mastery gain factor represents more power to the armed forces
 				hidden_modifier = {
 					experience_gain_army_factor = 0.1
 					experience_gain_navy_factor = 0.1

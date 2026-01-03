@@ -44,10 +44,13 @@
 
   GER_bop_himmler_in_circle: "SS Influences the Inner Circle"
   GER_bop_himmler_in_circle_desc: "Heinrich Himmler's prescence in the Inner Circle allows him to increase the influence of the SS within Germany."
+
   GER_bop_goring_in_circle: "Wehrmacht Influences the Inner Circle"
   GER_bop_goring_in_circle_desc: "Hermann Göring's prescence in the Inner Circle allows him to increase the influence of the Wehrmacht within Germany."
+
   GER_bop_himmler_command: "Himmler appointed Commander of the Replacement Army"
   GER_bop_himmler_command_desc: "As Commander of the Replacement Army, Heinrich Himmler can siphon manpower and equipment from the Wehrmacht to bolster the SS."
+
   GER_bop_goring_command: "Göring appointed Reichsmarschall"
   GER_bop_goring_command_desc: "As Reichsmarschall, Hermann Göring can prioritize the needs of the Wehrmacht, specifically the Luftwaffe and his Four Year Plan, over the SS."
 

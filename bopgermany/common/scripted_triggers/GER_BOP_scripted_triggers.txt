@@ -1,4 +1,4 @@
-GER_BOP_check_himmler_inner_circle = {
+GER_BOP_check_himmler_inner_circle = { # Checks if Himmler is in the inner circle
 	OR = {
 		has_idea = GER_himmler_chief_of_german_police
 		has_idea = GER_himmler_director_reich_security
@@ -6,7 +6,7 @@ GER_BOP_check_himmler_inner_circle = {
 	}
 }
 
-GER_BOP_check_goring_inner_circle = {
+GER_BOP_check_goring_inner_circle = { # Checks if Goring is in the inner circle
 	OR = {
 		has_idea = GER_goring_overseer_four_year_plan
 		has_idea = GER_goring_four_year_plan_plenipotentiary

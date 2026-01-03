@@ -11,13 +11,13 @@ GER_bop_decisions_cat = {
 		cost = 10
 
 		complete_effect = {
-			add_power_balance_value = {
+			add_power_balance_value = { # Progress balance of power towards the Wehrmacht
 				id = GER_balance_of_power
 				value = 0.1
 			}
 		}
 
-		days_remove = 30
+		days_remove = 30 # 30 day cooldown
 	}
 
 	GER_bop_take_ss_advice = {
@@ -32,18 +32,18 @@ GER_bop_decisions_cat = {
 		cost = 10
 
 		complete_effect = {
-			add_power_balance_value = {
+			add_power_balance_value = { # Progress balance of power towards the SS
 				id = GER_balance_of_power
 				value = -0.1
 			}
 		}
 
-		days_remove = 30
+		days_remove = 30 # 30 day cooldown
 	}
 
 	GER_bop_appoint_himmler_command = {
 		visible = {
-			NOT = {
+			NOT = { # Check that Himmler isn't already commander 
 				has_idea = GER_bop_himmler_command
 			}
 		}
@@ -52,7 +52,7 @@ GER_bop_decisions_cat = {
 			always = yes
 		}
 
-		custom_cost_trigger = {
+		custom_cost_trigger = { # Costs 15 Command Power
 			NOT = {
 				command_power < 15
 			}
@@ -60,11 +60,11 @@ GER_bop_decisions_cat = {
 		custom_cost_text = decision_cost_CP_15
 
 		complete_effect = {
-			hidden_effect = {
+			hidden_effect = { # Deduct cost
 				add_command_power = -15
 			}
-			add_ideas = GER_bop_himmler_command
-			add_power_balance_value = {
+			add_ideas = GER_bop_himmler_command # Add pro SS national spirit
+			add_power_balance_value = { # Progress balance of power towards the SS
 				id = GER_balance_of_power
 				value = -0.05
 			}
@@ -72,15 +72,15 @@ GER_bop_decisions_cat = {
 	}
 
 	GER_bop_remove_himmler_command = {
-		visible = {
+		visible = { # Check that Himmler is commander
 			has_idea = GER_bop_himmler_command
 		}
 
-		available = {
+		available = { # Check that Himmler is commander
 			has_idea = GER_bop_himmler_command
 		}
 
-		custom_cost_trigger = {
+		custom_cost_trigger = { # Costs 15 Command Power
 			NOT = {
 				command_power < 15
 			}
@@ -88,11 +88,11 @@ GER_bop_decisions_cat = {
 		custom_cost_text = decision_cost_CP_15
 
 		complete_effect = {
-			remove_ideas = GER_bop_himmler_command
-			hidden_effect = {
+			remove_ideas = GER_bop_himmler_command # Remove pro SS national spirit
+			hidden_effect = { # Deduct cost
 				add_command_power = -15
 			}
-			add_power_balance_value = {
+			add_power_balance_value = { # Reverse balance of power effect
 				id = GER_balance_of_power
 				value = 0.05
 			}
@@ -101,7 +101,7 @@ GER_bop_decisions_cat = {
 
 	GER_bop_appoint_goring_command = {
 		visible = {
-			NOT = {
+			NOT = { # Check that Goring isn't in command
 				has_idea = GER_bop_goring_command
 			}
 		}
@@ -110,7 +110,7 @@ GER_bop_decisions_cat = {
 			always = yes
 		}
 
-		custom_cost_trigger = {
+		custom_cost_trigger = { # Costs 15 Command Power
 			NOT = {
 				command_power < 15
 			}
@@ -118,11 +118,11 @@ GER_bop_decisions_cat = {
 		custom_cost_text = decision_cost_CP_15
 
 		complete_effect = {
-			hidden_effect = {
+			hidden_effect = { # Deduct cost
 				add_command_power = -15
 			}
-			add_ideas = GER_bop_goring_command
-			add_power_balance_value = {
+			add_ideas = GER_bop_goring_command # Add pro Wehrmacht national spirit
+			add_power_balance_value = { # Progress balance of power towards the Wehrmacht
 				id = GER_balance_of_power
 				value = 0.05
 			}
@@ -130,15 +130,15 @@ GER_bop_decisions_cat = {
 	}
 
 	GER_bop_remove_goring_command = {
-		visible = {
+		visible = { # Check that Goring is in command
 			has_idea = GER_bop_goring_command
 		}
 
-		available = {
+		available = { # Check that Goring is in command
 			has_idea = GER_bop_goring_command
 		}
 
-		custom_cost_trigger = {
+		custom_cost_trigger = { # Costs 15 Command Power
 			NOT = {
 				command_power < 15
 			}
@@ -146,11 +146,11 @@ GER_bop_decisions_cat = {
 		custom_cost_text = decision_cost_CP_15
 
 		complete_effect = {
-			remove_ideas = GER_bop_goring_command
-			hidden_effect = {
+			remove_ideas = GER_bop_goring_command # Remove pro Wehrmacht national spirit
+			hidden_effect = { # Deduct cost
 				add_command_power = -15
 			}
-			add_power_balance_value = {
+			add_power_balance_value = { # Reverse balance of power effect
 				id = GER_balance_of_power
 				value = -0.05
 			}
@@ -158,17 +158,17 @@ GER_bop_decisions_cat = {
 	}
 
 	GER_bop_form_division = {
-		visible = {
+		visible = { # Check that Elite Forces is enabled in game
 			has_global_flag = EF_Installed
 		}
 
 		available = {
 			has_global_flag = EF_Installed
-			always = no
+			always = no # Decision is not meant to be taken
 		}
 
 		complete_effect = {
-			custom_effect_tooltip = GER_bop_form_division_tt
+			custom_effect_tooltip = GER_bop_form_division_tt # Explain to the player the bop effects of forming elite units
 		}
 	}
 
@@ -178,11 +178,11 @@ GER_bop_decisions_cat = {
 		}
 
 		available = {
-			always = no
+			always = no # Decision is not meant to be taken
 		}
 
 		complete_effect = {
-			custom_effect_tooltip = GER_bop_himmler_inner_circle_tt
+			custom_effect_tooltip = GER_bop_himmler_inner_circle_tt # Explain to the player the bop effects of putting Himmler in the inner circle
 		}
 	}
 
@@ -192,11 +192,11 @@ GER_bop_decisions_cat = {
 		}
 
 		available = {
-			always = no
+			always = no # Decision not meant to be taken
 		}
 
 		complete_effect = {
-			custom_effect_tooltip = GER_bop_goring_inner_circle_tt
+			custom_effect_tooltip = GER_bop_goring_inner_circle_tt # Explain to the player the bop effects of putting Goring in the inner circle
 		}
 	}
 
@@ -206,11 +206,11 @@ GER_bop_decisions_cat = {
 		}
 
 		available = {
-			always = no
+			always = no # Decision not meant to be taken
 		}
 
 		complete_effect = {
-			custom_effect_tooltip = GER_bop_promote_general_tt
+			custom_effect_tooltip = GER_bop_promote_general_tt # Explain to the player the bop effects of promoting generals and field commanders
 		}
 	}
 }
