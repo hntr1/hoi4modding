@@ -1718,7 +1718,19 @@ eliteformations_cat = { # German Elite Formations Decisions
 						value = 0.02
 					}
 				}
-				else = {
+				if = {
+					limit = { 
+						OR = { 
+							AND = { # Is between 0 and 0.02
+								power_balance_value = { id = GER_balance_of_power value < 0.02 } 
+								power_balance_value = { id = GER_balance_of_power value > 0 }
+							}
+							AND = { # Is between 0 and -0.02
+								power_balance_value = { id = GER_balance_of_power value > -0.02 }
+								power_balance_value = { id = GER_balance_of_power value < 0 }
+							}
+						}
+					}
 					set_power_balance = {
 						id = GER_balance_of_power
 						set_value = 0
@@ -1877,7 +1889,19 @@ eliteformations_cat = { # German Elite Formations Decisions
 						value = 0.02
 					}
 				}
-				else = {
+				if = {
+					limit = { 
+						OR = { 
+							AND = { # Is between 0 and 0.02
+								power_balance_value = { id = GER_balance_of_power value < 0.02 } 
+								power_balance_value = { id = GER_balance_of_power value > 0 }
+							}
+							AND = { # Is between 0 and -0.02
+								power_balance_value = { id = GER_balance_of_power value > -0.02 }
+								power_balance_value = { id = GER_balance_of_power value < 0 }
+							}
+						}
+					}
 					set_power_balance = {
 						id = GER_balance_of_power
 						set_value = 0
