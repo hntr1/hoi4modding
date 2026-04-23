@@ -30,3 +30,7 @@ Content: Added second industrial concern slot
 <h4>11/21/25 7:23pm</h4>
 
 Updated to Hoi4 Version 1.17
+
+<h4>04/23/26 6:22pm</h4>
+
+Updated to Hoi4 Version 1.18

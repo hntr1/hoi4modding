@@ -39,3 +39,7 @@ Changed name from Wunderwaffen 2.0 to Wunderwaffe 2.0 to match naming pattern of
 
 Bug Fix: Missing tokens for unique prototype bonuses
 Bug Fix: Missing unique prototype bonus for Fliegerfaust Project
+
+<h4>04/23/26 6:32pm</h4>
+
+Updated to Hoi4 Version 1.18

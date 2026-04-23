@@ -18,3 +18,7 @@ Bug Fix: Power Struggle progresses when other countries promote generals
 <h4>1/1/26 9:37pm</h4>
 
 Bug Fix: Restored localization now that general promotion bug is fixed
+
+<h4>04/23/26 6:32pm</h4>
+
+Updated to Hoi4 Version 1.18

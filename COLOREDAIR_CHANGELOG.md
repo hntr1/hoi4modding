@@ -17,3 +17,7 @@ Updated to Hoi4 Version 1.16
 <h4>11/20/25 8:21pm</h4>
 
 Updated to Hoi4 Version 1.17
+
+<h4>04/23/26 6:25pm</h4>
+
+Updated to Hoi4 Version 1.18

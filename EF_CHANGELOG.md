@@ -72,3 +72,9 @@ Bug Fix: Prinz Eugen missing its AA Battalion
 Bug Fix: Variable Errors in Heavy Tank stockpile calculations
 
 Other: Added trigger to allow the Power Balance for Germany Mod to tell when this mod is installed as well
+
+<h4>04/23/26 6:26pm</h4>
+
+Updated to Hoi4 Version 1.18
+
+Bug Fix: Certain decisions unintentionally reset the balance of power when using the Balance of Power for Germany mod

@@ -105,3 +105,7 @@ Bug Fix: Decisions not checking for power balance
 Bug Fix: SS Nord Decision not checking for winter logistics tech
 Bug Fix: Volksgrenadier Decision not checking for casualties or correct amount of army xp
 Bug Fix: Missing artillery brigade in RAD template
+
+<h4>04/23/26 6:26pm</h4>
+
+Updated to Hoi4 Version 1.18

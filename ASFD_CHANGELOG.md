@@ -31,3 +31,7 @@ Updated to Hoi4 Version 1.16
 Updated to Hoi4 Version 1.17
 
 Content: Added another decision to account for the addition of Rangers in NCNS
+
+<h4>04/23/26 6:23pm</h4>
+
+Updated to Hoi4 Version 1.18
