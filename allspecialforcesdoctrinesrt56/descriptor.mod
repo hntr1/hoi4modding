@@ -6,5 +6,5 @@ tags={
 }
 name="All Special Forces Doctrines [RT56 Version]"
 picture="thumbnail.png"
-supported_version="1.17.*"
+supported_version="1.18.*"
 remote_file_id="3174924761"

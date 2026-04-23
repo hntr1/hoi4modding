@@ -6,5 +6,5 @@ tags={
 }
 name="Elite Formations of the Wehrmacht"
 picture="thumbnail.PNG"
-supported_version="1.17.*"
+supported_version="1.18.*"
 remote_file_id="3482830306"
