@@ -1,0 +1,23 @@
+division_template = {
+    name = "SSCM"
+    is_locked = yes
+    force_allow_recruiting = yes
+    division_cap = 1
+    priority = 2
+
+    regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+        artillery_brigade = { x = 2 y = 0 }
+    }
+
+    support = {
+        engineer = { x = 0 y = 0 }
+        signal_company = { x = 0 y = 1 }
+        logistics_company = { x = 0 y = 2 }
+        anti_air = { x = 0 y = 3 }
+        anti_tank = { x = 0 y = 4 }
+    }
+}
