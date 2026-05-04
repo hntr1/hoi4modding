@@ -395,3 +395,531 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = eliteformations.19
+	title = eliteformations.19.t
+	desc = eliteformations.19.d
+
+	picture = GFX_Handschar_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.19.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = {has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"13. Waffen-Gebirgs 'Handschar' Division der SS [kroatische Nr. 1]\" division_template = \"HANDSCHAR\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.20
+	title = eliteformations.20.t
+	desc = eliteformations.20.d
+
+	picture = GFX_1_Skijager_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.20.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = {has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"1. Skijager-Division\" division_template = Skijaeger-Division start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.21
+	title = eliteformations.21.t
+	desc = eliteformations.21.d
+
+	picture = GFX_gal_1_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.21.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = {has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"14. SS-Grenadier-Division [galizische Nr. 1]\" division_template = \"GAL1\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.22
+	title = eliteformations.22.t
+	desc = eliteformations.22.d
+
+	picture = GFX_rfss_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.22.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = {has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"16. SS-Panzergrenadier-Division 'Reichsfuhrer-SS'\" division_template = \"RFSS\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.23
+	title = eliteformations.23.t
+	desc = eliteformations.23.d
+
+	picture = GFX_gvb_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.23.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = {has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"17. SS-Panzergrenadier-Division Gotz von Berlichingen\" division_template = \"GVB\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.24
+	title = eliteformations.24.t
+	desc = eliteformations.24.d
+
+	picture = GFX_sshw_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.24.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = {has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"18. SS-Freiwilligen-Panzergrenadier-Division 'Horst Wessel'\" division_template = \"SSHW\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.25
+	title = eliteformations.25.t
+	desc = eliteformations.25.d
+
+	picture = GFX_1_alb_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.25.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = {has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"21. SS-Freiwilligen-Gebirgs-Division 'Skanderbeg' [albanische Nr. 1]\" division_template = \"SSALB1\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.26
+	title = eliteformations.26.t
+	desc = eliteformations.26.d
+
+	picture = GFX_ssmt_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.26.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = {has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"22. SS-Freiwilligen-Kavallierie-Division 'Maria Theresa'\" division_template = \"SSMT\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.27
+	title = eliteformations.27.t
+	desc = eliteformations.27.d
+
+	picture = GFX_kama_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.27.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = {has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"23. SS-Freiwilligen-Gebirgs-Division 'Kama' [kroatische Nr. 2]\" division_template = \"KAMA\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.28
+	title = eliteformations.28.t
+	desc = eliteformations.28.d
+
+	picture = GFX_nederland_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.28.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = {has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"23. SS-Freiwilligen-Panzergrenadier-Division 'Nederland'\" division_template = \"NEDERLAND\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.29
+	title = eliteformations.29.t
+	desc = eliteformations.29.d
+
+	picture = GFX_sskj_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.29.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = {has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"24. Waffen-Gebirgs 'Karstjager' Division der SS\" division_template = \"SSKJ\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.30
+	title = eliteformations.30.t
+	desc = eliteformations.30.d
+
+	picture = GFX_ssu1_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.30.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = {has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"25. Waffen-Grenadier 'Hunyadi' Division der SS [ungarische Nr. 1]\" division_template = \"SSU1\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.31
+	title = eliteformations.31.t
+	desc = eliteformations.31.d
+
+	picture = GFX_sslm_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.31.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = {has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"27. SS-Freiwilligen-Panzergrenadier-Division 'Langemarck'\" division_template = \"SSLM\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.32
+	title = eliteformations.32.t
+	desc = eliteformations.32.d
+
+	picture = GFX_sswl_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.32.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = {has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"28. SS-Freiwilligen-Grenadier-Division 'Wallonien'\" division_template = \"SSWL\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.33
+	title = eliteformations.33.t
+	desc = eliteformations.33.d
+
+	picture = GFX_ssit_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.33.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = {has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"29. Waffen-Grenadier-Division der SS [italienische Nr. 1]\" division_template = \"SSIT\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.34
+	title = eliteformations.34.t
+	desc = eliteformations.34.d
+
+	picture = GFX_ssr2_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.34.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = {has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"30. Waffen-Grenadier-Division der SS [weissruth Nr. 1]\" division_template = \"SSR2\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.35
+	title = eliteformations.35.t
+	desc = eliteformations.35.d
+
+	picture = GFX_batschka_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.35.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = {has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"31. SS-Freiwilligen-Grenadier-Division 'Batschka'\" division_template = \"BATSCHKA\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.36
+	title = eliteformations.36.t
+	desc = eliteformations.36.d
+
+	picture = GFX_ssj30_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.36.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = {has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"32. SS-Freiwilligen-Grenadier-Division '30. Januar'\" division_template = \"SSJ30\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.37
+	title = eliteformations.37.t
+	desc = eliteformations.37.d
+
+	picture = GFX_sscm_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.37.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = {has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"33. SS-Grenadier-Division 'Charlemange' [franzosische Nr. 1]\" division_template = \"SSCM\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.38
+	title = eliteformations.38.t
+	desc = eliteformations.38.d
+
+	picture = GFX_lsnl_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.38.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = {has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"34. SS-Freiwilligen-Grenadier-Division 'Landsturm Nederland'\" division_template = \"LSNL\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.39
+	title = eliteformations.39.t
+	desc = eliteformations.39.d
+
+	picture = GFX_polgren_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.39.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = {has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"35. SS-Polizei-Grenadier-Division\" division_template = \"POLGREN\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.40
+	title = eliteformations.40.t
+	desc = eliteformations.40.d
+
+	picture = GFX_ssdw_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.40.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = {has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"36. SS-Grenadier-Division 'Dirlewanger'\" division_template = \"SSDW\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.41
+	title = eliteformations.41.t
+	desc = eliteformations.41.d
+
+	picture = GFX_lutzow_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.41.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = {has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"37. SS-Freiwilligen-Kavallerie-Division 'Lutzow'\" division_template = \"LUTZOW\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}
+
+country_event = {
+	id = eliteformations.42
+	title = eliteformations.42.t
+	desc = eliteformations.42.d
+
+	picture = GFX_fj3_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = eliteformations.42.a
+
+		random_owned_controlled_state = {
+			limit = { ROOT = {has_full_control_of = PREV } }
+			create_unit = {
+				division = "name = \"3. Fallschirmjager-Division\" division_template = \"FJ3\" start_experience_factor = 1.0 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	}
+}

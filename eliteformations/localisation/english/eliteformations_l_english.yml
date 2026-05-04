@@ -50,6 +50,52 @@
 
   fuhrergrenadier_1: "Form the Führergrenadierbrigade"
 
+  gal1_1: "Form SS-Division Galicia"
+
+  rfss_1: "Form SS-Division Reichsfuhrer-SS"
+
+  gvb_1: "Form SS-Division Gotz von Berlichingen"
+
+  sshw_1: "Form SS-Division Horst Wessel"
+
+  alb1_1: "Form SS-Division Skanderbeg"
+
+  ssmt_1: "Form SS-Division Maria Theresa"
+
+  kama_1: "Form SS-Division Kama"
+
+  nederland_1: "Form SS-Division Nederland"
+
+  sskj_1: "Form SS-Division Karstjager"
+
+  ssu1_1: "Form SS-Division Hunyadi"
+
+  sslm_1: "Form SS-Division Langemarck"
+
+  sswl_1: "Form SS-Division Wallonien"
+
+  SSIT_1: "Form SS-Division Italia"
+
+  ssr2_1: "Form SS-Division Weissruth Nr. 1"
+
+  batschka_1: "Form SS-Division Batschka"
+
+  ssj30_1: "Form SS-Division 30. Januar"
+
+  sscm_1: "Form SS-Division Charlemagne"
+
+  lsnl_1: "Form SS-Division Landsturm Nederland"
+
+  polgren_1: "Form SS-Division Polizei Grenadier"
+
+  ssdw_1: "Form SS-Division Dirlewanger"
+
+  lutzow_1: "Form SS-Division Lutzow"
+
+  fj3_1: "Form 3. Fallschirmjager-Division"
+
+  ski_1: "Form 1. Skijager-Division"
+
   guards2_1: "Form the 2nd Guards Motor Rifle Division"
 
 # Events
@@ -125,6 +171,102 @@
   eliteformations.18.d: "The Führergrenadierbrigade is a subunit of the Großdeutschland Division. It is to be deployed as a division of its own."
   eliteformations.18.a: "Approve the formation"
 
+  eliteformations.19.t: "The Creation of SS-Division Handschar"
+  eliteformations.19.d: ""
+  eliteformations.19.a: "Approve the formation"
+
+  eliteformations.20.t: "The Creation of 1. Skijager-Division"
+  eliteformations.20.d: ""
+  eliteformations.20.a: "Approve the formation"
+
+  eliteformations.21.t: "The Creation of SS-Division Galizische Nr. 1"
+  eliteformations.21.d: ""
+  eliteformations.21.a: "Approve the formation"
+
+  eliteformations.22.t: "The Creation of SS-Division Reichsfuhrer-SS"
+  eliteformations.22.d: ""
+  eliteformations.22.a: "Approve the formation"
+
+  eliteformations.23.t: "The Creation of SS-Division Gotz von Berlichingen"
+  eliteformations.23.d: ""
+  eliteformations.23.a: "Approve the formation"
+
+  eliteformations.24.t: "The Creation of SS-Division Horst Wessel"
+  eliteformations.24.d: ""
+  eliteformations.24.a: "Approve the formation"
+
+  eliteformations.25.t: "The Creation of SS-Division Skanderbeg"
+  eliteformations.25.d: ""
+  eliteformations.25.a: "Approve the formation"
+
+  eliteformations.26.t: "The Creation of SS-Division Maria Theresa"
+  eliteformations.26.d: ""
+  eliteformations.26.a: "Approve the formation"
+
+  eliteformations.27.t: "The Creation of SS-Division Kama"
+  eliteformations.27.d: ""
+  eliteformations.27.a: "Approve the formation"
+
+  eliteformations.28.t: "The Creation of SS-Division Nederland"
+  eliteformations.28.d: ""
+  eliteformations.28.a: "Approve the formation"
+
+  eliteformations.29.t: "The Creation of SS-Division Karstjager"
+  eliteformations.29.d: ""
+  eliteformations.29.a: "Approve the formation"
+
+  eliteformations.30.t: "The Creation of SS-Division Hunyadi"
+  eliteformations.30.d: ""
+  eliteformations.30.a: "Approve the formation"
+
+  eliteformations.31.t: "The Creation of SS-Division Langemarck"
+  eliteformations.31.d: ""
+  eliteformations.31.a: "Approve the formation"
+
+  eliteformations.32.t: "The Creation of SS-Division Wallonien"
+  eliteformations.32.d: ""
+  eliteformations.32.a: "Approve the formation"
+
+  eliteformations.33.t: "The Creation of SS-Division Italienische Nr. 1"
+  eliteformations.33.d: ""
+  eliteformations.33.a: "Approve the formation"
+
+  eliteformations.34.t: "The Creation of SS-Division Weissruthenische Nr. 1"
+  eliteformations.34.d: ""
+  eliteformations.34.a: "Approve the formation"
+
+  eliteformations.35.t: "The Creation of SS-Division Batschka"
+  eliteformations.35.d: ""
+  eliteformations.35.a: "Approve the formation"
+
+  eliteformations.36.t: "The Creation of SS-Division 30. Januar"
+  eliteformations.36.d: ""
+  eliteformations.36.a: "Approve the formation"
+
+  eliteformations.37.t: "The Creation of SS-Division Charlemagne"
+  eliteformations.37.d: ""
+  eliteformations.37.a: "Approve the formation"
+
+  eliteformations.38.t: "The Creation of SS-Division Landsturm Nederland"
+  eliteformations.38.d: ""
+  eliteformations.38.a: "Approve the formation"
+
+  eliteformations.39.t: "The Creation of SS-Division Polizei Grenadier"
+  eliteformations.39.d: ""
+  eliteformations.39.a: "Approve the formation"
+
+  eliteformations.40.t: "The Creation of SS-Division Dirlewanger"
+  eliteformations.40.d: ""
+  eliteformations.40.a: "Approve the formation"
+
+  eliteformations.41.t: "The Creation of SS-Division Lutzow"
+  eliteformations.41.d: ""
+  eliteformations.41.a: "Approve the formation"
+
+  eliteformations.42.t: "The Creation of 3. Fallschirmjager-Division"
+  eliteformations.42.d: ""
+  eliteformations.42.a: "Approve the formation"
+
   eliteformations_sov.1.t: "The Creation of the 2nd Guards Motor Rifle Division"
   eliteformations_sov.1.d: "The 2nd Guards Motor Rifle Division formed from the shattered 127th Rifle Division. Awarded Guards status for distinguished combat service."
   eliteformations_sov.1.a: "Approve the formation"
@@ -181,6 +323,54 @@
   fuhrergren_1_tt: "\nCreates §YFührergrenadierbrigade§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?frgr_inf_eq_total|=0+]\n Support Equipment: [?frgr_sup_eq_total|=0+]\n Half-Tracks: [?frgr_mech_eq_total|=0+]\n Armored Support Vehicles: [?frgr_asv_eq_total|=0+]\n Medium Tanks: [?frgr_mt_eq_total|=0+]\n Medium SPGs: [?frgr_mspg_eq_total|=0+]\n Medium Tank Destroyer: [?frgr_mtd_eq_total|=0+]\n Artillery: [?frgr_art_eq_total|=0+]\n Anti-Air: [?frgr_aa_eq_total|=0+]§!\n\n"
 
   guards2_1_tt: "\nCreates §Y2nd Guards Motor Rifle Division§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?g2_inf_eq_total|=0+]\n Support Equipment: [?g2_sup_eq_total|=0+]\n Trucks: [?g2_mot_eq_total|=0+]\n Artillery: [?g2_art_eq_total|=0+]\n Anti-Tank: [?g2_at_eq_total|=0+]\n Anti-Air: [?g2_aa_eq_total|=0+]§!\n\n"
+
+  handschar_1_tt:
+
+  gal1_1_tt:
+
+  rfss_1_tt:
+
+  gvb_1_tt:
+
+  sshw_1_tt:
+
+  alb1_1_tt:
+
+  ssmt_1_tt:
+
+  kama_1_tt:
+
+  nederland_1_tt:
+
+  sskj_1_tt:
+
+  ssu1_1_tt:
+
+  sslm_1_tt:
+
+  sswl_1_tt:
+
+  SSIT_1_tt:
+
+  ssr2_1_tt:
+
+  batschka_1_tt:
+
+  ssj30_1_tt:
+
+  sscm_1_tt:
+
+  lsnl_1_tt:
+
+  polgren_1_tt:
+
+  ssdw_1_tt:
+
+  lutzow_1_tt:
+
+  fj3_1_tt:
+
+  ski_1_tt: 
 
 
 # Flags

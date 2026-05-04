@@ -765,5 +765,21 @@ on_actions = {
 				subtract_from_variable = {GER.frgr_aa_eq_total = 20}
 			}
 		}
+
+		effect = { # 13. SS Handschar Stage 1 loc variables
+			if = {
+				limit = {
+					NOT = { has_country_flag = handschar_deployed}
+				}
+
+				set_variable = { GER.hand_inf_eq_total = num_equipment@infantry_equipment }
+				subtract_from_variable = {GER.hand_inf_eq_total = 200}
+
+				set_variable = { GER.hand_sup_eq_total = num_equipment@support_equipment }
+				subtract_from_variable = {GER.hand_sup_eq_total = 40 }
+
+		
+			}
+		}
 	}
 }
