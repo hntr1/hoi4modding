@@ -7,16 +7,16 @@ division_template = {
 
     regiments = {
         medium_armor = { x = 0 y = 0 }
-        mechanised_infantry = { x = 1 y = 0 }
-        mechanised_infantry = { x = 1 y = 1 }
-        mechanised_infantry = { x = 2 y = 0 }
-        mechanised_infantry = { x = 2 y = 1 }
+        mechanized = { x = 1 y = 0 }
+        mechanized = { x = 1 y = 1 }
+        mechanized = { x = 2 y = 0 }
+        mechanized = { x = 2 y = 1 }
         medium_sp_artillery_brigade = { x = 3 y = 0 }
     }
 
     support = {
         engineer = { x = 0 y = 0 }
-        armored_recon = { x = 0 y = 1 }
+        light_tank_recon = { x = 0 y = 1 }
         anti_tank = { x = 0 y = 2 }
         signal_company = { x = 0 y = 3 }
         anti_air =  { x = 0 y = 4 }
