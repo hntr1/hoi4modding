@@ -9,8 +9,10 @@ division_template = {
         medium_armor = { x = 0 y = 0 }
         mechanized = { x = 1 y = 0 }
         mechanized = { x = 1 y = 1 }
+        mechanized = { x = 1 y = 2 }
         mechanized = { x = 2 y = 0 }
         mechanized = { x = 2 y = 1 }
+        mechanized = { x = 2 y = 2 }
         medium_sp_artillery_brigade = { x = 3 y = 0 }
     }
 
