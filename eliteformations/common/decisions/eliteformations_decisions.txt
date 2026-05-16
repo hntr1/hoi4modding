@@ -1372,7 +1372,12 @@ eliteformations_cat = { # German Elite Formations Decisions
 
 		available = {
 			AND = {
-
+				GER = { has_war_with = YUG }
+				YUG = { has_capitulated = yes }
+				has_tech = interwar_antitank
+				has_tech = tech_signal_company
+				has_tech = tech_logistics_company
+				has_tech = tech_field_hospital
 			}
 		}
 
@@ -2000,7 +2005,17 @@ eliteformations_cat = { # German Elite Formations Decisions
 
 		available = {
 			AND = {
-
+				GER = {
+					AND = {
+						has_war_with = SOV
+						OR = {
+							controls_state = 91
+							any_allied_country = { controls_state = 91 }
+						}
+					}
+				}
+				has_tech = tech_signal_company
+				has_tech = interwar_antitank
 			}
 		}
 
@@ -2061,7 +2076,10 @@ eliteformations_cat = { # German Elite Formations Decisions
 
 		available = {
 			AND = {
-
+				has_tech = mechanised_infantry
+				has_design_based_on = medium_tank_chassis
+				has_design_based_on = medium_tank_artillery_chassis
+				has_tech = tech_signal_company
 			}
 		}
 
@@ -2122,7 +2140,11 @@ eliteformations_cat = { # German Elite Formations Decisions
 
 		available = {
 			AND = {
-
+				has_tech = mechanised_infantry
+				has_design_based_on = medium_tank_chassis
+				has_design_based_on = medium_tank_artillery_chassis
+				has_tech = tech_signal_company
+				has_tech = interwar_antitank
 			}
 		}
 
@@ -2183,7 +2205,16 @@ eliteformations_cat = { # German Elite Formations Decisions
 
 		available = {
 			AND = {
-
+				HUN = {
+					is_ally_with = GER
+					has_capitulated = no
+				}
+				has_tech = mechanised_infantry
+				has_design_based_on = medium_tank_chassis
+				has_design_based_on = medium_tank_artillery_chassis
+				has_design_based_on = medium_tank_destroyer_chassis
+				has_tech = tech_signal_company
+				has_tech = tech_logistics_company
 			}
 		}
 
@@ -2244,7 +2275,21 @@ eliteformations_cat = { # German Elite Formations Decisions
 
 		available = {
 			AND = {
-
+				has_country_flag = handschar_deployed
+				OR = {
+					GER = {
+						controls_state = 44
+						any_allied_country = { controls_state = 44}
+					}
+				}
+				has_tech = interwar_antitank
+				has_tech = tech_logistics_company
+				has_tech = tech_signal_company
+				OR = {
+					has_tech = special_forces_mountaineers
+					has_tech = special_forces_rangers
+				}
+				has_design_based_on = medium_tank_artillery_chassis
 			}
 		}
 
@@ -2305,7 +2350,14 @@ eliteformations_cat = { # German Elite Formations Decisions
 
 		available = {
 			AND = {
-
+				has_country_flag = fg_stage_2
+				HUN = {
+					is_ally_with = GER
+					has_capitulated = no
+				}
+				has_tech = interwar_antitank
+				has_tech = tech_logistics_company
+				has_tech = tech_signal_company
 			}
 		}
 
@@ -2366,7 +2418,13 @@ eliteformations_cat = { # German Elite Formations Decisions
 
 		available = {
 			AND = {
-
+				has_country_flag = handschar_deployed
+				GER = { has_war_with = YUG }
+				YUG = { has_capitulated = yes }
+				has_tech = interwar_antitank
+				has_tech = tech_logistics_company
+				has_tech = tech_signal_company
+				has_tech = special_forces_mountaineers
 			}
 		}
 
@@ -2403,7 +2461,7 @@ eliteformations_cat = { # German Elite Formations Decisions
 		days_remove = 20
 
 		remove_effect = {
-			custom_effect_tooltip = kqmq_1_tt
+			custom_effect_tooltip = kama_1_tt
 			country_event = eliteformations.27
 
 			hidden_effect = {
@@ -2427,7 +2485,17 @@ eliteformations_cat = { # German Elite Formations Decisions
 
 		available = {
 			AND = {
-
+				GER = { 
+					has_war_with = HOL 
+					OR = {
+						controls_state = 7
+						any_allied_country = { controls_state = 7 }
+					}
+				}
+				HOL = { has_capitulated = yes }
+				has_tech = interwar_antitank
+				has_tech = tech_logistics_company
+				has_tech = tech_signal_company
 			}
 		}
 
@@ -2488,7 +2556,11 @@ eliteformations_cat = { # German Elite Formations Decisions
 
 		available = {
 			AND = {
-
+				has_country_flag = kama_deployed
+				has_tech = interwar_antitank
+				has_tech = tech_logistics_company
+				has_tech = tech_signal_company
+				has_tech = special_forces_mountaineers
 			}
 		}
 
@@ -2549,7 +2621,13 @@ eliteformations_cat = { # German Elite Formations Decisions
 
 		available = {
 			AND = {
-
+				HUN = {
+					is_ally_with = GER
+					has_capitulated = no
+				}
+				has_tech = interwar_antitank
+				has_tech = tech_logistics_company
+				has_tech = tech_signal_company
 			}
 		}
 
@@ -2610,7 +2688,17 @@ eliteformations_cat = { # German Elite Formations Decisions
 
 		available = {
 			AND = {
-
+				GER = {
+					has_war_with = BEL
+					OR = {
+						controls_state = 6
+						any_allied_country = { controls_state = 6 }
+					}
+				}
+				BEL = { has_capitulated = yes }
+				has_tech = interwar_antitank
+				has_tech = tech_logistics_company
+				has_tech = tech_signal_company
 			}
 		}
 
@@ -2671,7 +2759,17 @@ eliteformations_cat = { # German Elite Formations Decisions
 
 		available = {
 			AND = {
-
+				GER = {
+					has_war_with = BEL
+					OR = {
+						controls_state = 34
+						any_allied_country = { controls_state = 34 }
+					}
+				}
+				BEL = { has_capitulated = yes }
+				has_tech = interwar_antitank
+				has_tech = tech_logistics_company
+				has_tech = tech_signal_company
 			}
 		}
 
@@ -2732,7 +2830,10 @@ eliteformations_cat = { # German Elite Formations Decisions
 
 		available = {
 			AND = {
-
+				ITA = { has_civil_war = yes }
+				has_tech = interwar_antitank
+				has_tech = tech_logistics_company
+				has_tech = tech_signal_company
 			}
 		}
 
@@ -2753,6 +2854,15 @@ eliteformations_cat = { # German Elite Formations Decisions
 		complete_effect = {
 			hidden_effect = {
 				add_command_power = -5
+				if = {
+					limit = { NOT = { GER =  { has_tech = militia_tech } } }
+					GER = {
+						set_technology = {
+							militia_tech = 1
+							popup = no
+						}
+					}
+				}
 				load_oob = SSIT_template
 			}
 
@@ -2774,7 +2884,7 @@ eliteformations_cat = { # German Elite Formations Decisions
 
 			hidden_effect = {
 				set_country_flag = {
-					flag = SSIT_deployed
+					flag = ssit_deployed
 					value = 1
 				}
 			}
@@ -2793,7 +2903,16 @@ eliteformations_cat = { # German Elite Formations Decisions
 
 		available = {
 			AND = {
-
+				GER = {
+					has_war_with = SOV
+					OR = {
+						controls_state = 206
+						any_allied_country = { controls_state = 206 }
+					}
+				}
+				has_tech = interwar_antitank
+				has_tech = tech_logistics_company
+				has_tech = tech_signal_company
 			}
 		}
 
@@ -2854,7 +2973,17 @@ eliteformations_cat = { # German Elite Formations Decisions
 
 		available = {
 			AND = {
-
+				HUN = {
+					is_ally_with = GER
+					has_capitulated = no
+					OR = {
+						controls_state = 45
+						any_allied_country = { controls_state = 45 }
+					}
+				}
+				has_tech = interwar_antitank
+				has_tech = tech_logistics_company
+				has_tech = tech_signal_company
 			}
 		}
 
@@ -2916,7 +3045,10 @@ eliteformations_cat = { # German Elite Formations Decisions
 
 		available = {
 			AND = {
-
+				GER = { has_war = yes }
+				has_tech = interwar_antitank
+				has_tech = tech_logistics_company
+				has_tech = tech_signal_company
 			}
 		}
 
@@ -2930,7 +3062,11 @@ eliteformations_cat = { # German Elite Formations Decisions
 
 		fire_only_once = yes
 		ai_will_do = {
-			factor = 5
+			factor = 1
+			modifier = {
+				factor = 10
+				date > 1945.1.1
+			}
 		}
 
 		complete_effect = {
@@ -2972,7 +3108,24 @@ eliteformations_cat = { # German Elite Formations Decisions
 
 		available = {
 			AND = {
-
+				GER = { has_war_with = FRA }
+				FRA = { has_capitulated = yes }
+				any_country_with_original_tag = {
+					original_tag_to_check = FRA
+					has_government = fascism
+					OR = {
+						is_subject_of = GER
+						has_focus_tree = vichy_french_focus
+					}
+					NOT = { has_war_with = GER }
+					OR = {
+						has_country_flag = case_anton
+						has_war = yes
+					}
+				}
+				has_tech = interwar_antitank
+				has_tech = tech_logistics_company
+				has_tech = tech_signal_company
 			}
 		}
 
@@ -3028,7 +3181,18 @@ eliteformations_cat = { # German Elite Formations Decisions
 
 		available = {
 			AND = {
-
+				GER = { has_war_with = HOL }
+				HOL = { has_capitulated = yes }
+				GER = {
+					OR = {
+						controls_state = 7
+						any_allied_country = { controls_state = 7 }
+					}
+				}
+				has_country_flag = nederland_deployed
+				has_tech = interwar_antitank
+				has_tech = tech_logistics_company
+				has_tech = tech_signal_company
 			}
 		}
 
@@ -3084,7 +3248,10 @@ eliteformations_cat = { # German Elite Formations Decisions
 
 		available = {
 			AND = {
-
+				GER = { has_war = yes }
+				has_tech = interwar_antitank
+				has_tech = tech_logistics_company
+				has_tech = tech_signal_company
 			}
 		}
 
@@ -3098,7 +3265,11 @@ eliteformations_cat = { # German Elite Formations Decisions
 
 		fire_only_once = yes
 		ai_will_do = {
-			factor = 5
+			factor = 1
+			modifier = {
+				factor = 10
+				date > 1945.1.1
+			}
 		}
 
 		complete_effect = {
@@ -3140,6 +3311,10 @@ eliteformations_cat = { # German Elite Formations Decisions
 
 		available = {
 			AND = {
+				GER = { has_war = yes }
+				has_tech = tech_signal_company
+				has_completed_focus = GER_strafbataillon
+				has_design_based_on = medium_tank_artillery_chassis
 
 			}
 		}
@@ -3154,7 +3329,11 @@ eliteformations_cat = { # German Elite Formations Decisions
 
 		fire_only_once = yes
 		ai_will_do = {
-			factor = 5
+			factor = 1
+			modifier = {
+				factor = 10
+				date > 1945.1.1
+			}
 		}
 
 		complete_effect = {
@@ -3196,7 +3375,12 @@ eliteformations_cat = { # German Elite Formations Decisions
 
 		available = {
 			AND = {
-
+				has_country_flag = fg_stage_2
+				has_country_flag = ssmt_deployed
+				GER = { has_war = yes }
+				has_tech = interwar_antitank
+				has_tech = tech_signal_company
+				has_tech = tech_field_hospital
 			}
 		}
 
@@ -3250,7 +3434,11 @@ eliteformations_cat = { # German Elite Formations Decisions
 
 		available = {
 			AND = {
-
+				has_tech = paratroopers
+				has_tech = interwar_antitank
+				has_tech = tech_signal_company
+				has_tech = tech_logistics_company
+				has_completed_focus = GER_fallschirmjager
 			}
 		}
 
@@ -3305,7 +3493,14 @@ eliteformations_cat = { # German Elite Formations Decisions
 
 		available = {
 			AND = {
-
+				GER = { has_war_with = SOV }
+				has_tech = motorized_rocket_unit
+				has_tech = interwar_antitank
+				has_tech = tech_signal_company
+				has_tech = special_forces_mountaineers
+				has_design_based_on = medium_tank_chassis
+				has_design_based_on = medium_tank_artillery_chassis
+				has_design_based_on = medium_tank_aa_chassis
 			}
 		}
 
@@ -3328,6 +3523,15 @@ eliteformations_cat = { # German Elite Formations Decisions
 				add_command_power = -5
 				load_oob = skijager_template
 			}
+
+			if = {
+				limit = { NOT = { has_tech = winter_logistics_support_tech } }
+				set_technology = { # Add winter logistics company to Germany
+					winter_logistics_support_tech = 1
+					popup = no
+				}
+			}
+
 			if = {
 				limit = { has_power_balance = { id = GER_balance_of_power } }
 				add_power_balance_value = 0.02
@@ -3341,7 +3545,7 @@ eliteformations_cat = { # German Elite Formations Decisions
 			custom_effect_tooltip = ski_1_tt
 			hidden_effect = {
 				set_country_flag = {
-					flag = ski_1_deployed
+					flag = ski1_deployed
 					value = 1
 				}
 			}
