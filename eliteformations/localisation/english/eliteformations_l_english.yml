@@ -50,6 +50,8 @@
 
   fuhrergrenadier_1: "Form the Führergrenadierbrigade"
 
+  handschar_1: "Form SS-Division Handschar"
+
   gal1_1: "Form SS-Division Galicia"
 
   rfss_1: "Form SS-Division Reichsfuhrer-SS"
@@ -420,3 +422,52 @@
   fuhrergren_deployed: "The §YFührergrenadierbrigade§! has been formed"
 
   guards_2_deployed: "The §Y2nd Guards Motor Rifle Division§! has been formed"
+
+  handschar_deployed: "The §YSS-Division Handschar§! has been formed"
+
+  gal1_deployed: "The §YSS-Division Galizische Nr. 1§! has been formed"
+
+  rfss_deployed: "The §YSS-Division Reichsfuhrer-SS§! has been formed"
+
+  gvb_deployed: "The §YSS-Division Gotz von Berlichingen§! has been formed"
+
+  sshw_deployed: "The §YSS-Division Horst Wessel§! has been formed"
+
+  alb1_deployed: "The §YSS-Division Skanderbeg§! has been formed"
+
+  ssmt_deployed: "The §YSS-Division Maria Theresa§! has been formed"
+
+  kama_deployed: "The §YSS-Division Kama§! has been formed"
+
+  nederland_deployed: "The §YSS-Division Nederland§! has been formed"
+
+  sskj_deployed: "The §YSS-Division Karstjager§! has been formed"
+
+  ssu1_deployed: "The §YSS-Division Hunyadi§! has been formed"
+
+  sslm_deployed: "The §YSS-Division Langemarck§! has been formed"
+
+  sswl_deployed: "The §YSS-Division Wallonien§! has been formed"
+
+  ssit_deployed: "The §YSS-Division Italienische Nr. 1§! has been formed"
+
+  ssr2_deployed: "The §YSS-Division Weissruthenische Nr. 1§! has been formed"
+
+  batschka_deployed: "The §YSS-Division Batschka§! has been formed"
+
+  ssj30_deployed: "The §YSS-Division 30. Januar§! has been formed"
+
+  sscm_deployed: "The §YSS-Division Charlemagne§! has been formed"
+
+  lsnl_deployed: "The §YSS-Division Landsturm Nederland§! has been formed"
+
+  polgren_deployed: "The §YPanzergrenadier-Division Polizei§! has been formed"
+
+  ssdw_deployed: "The §YSS-Division Dirlewanger§! has been formed"
+
+  lutzow_deployed: "The §YSS-Division Lutzow§! has been formed"
+
+  fj3_deployed: "The §Y3. Fallschirmjäger-Division§! has been formed"
+
+  ski1_deployed: "The §Y1. Skijäger-Division§! has been formed"
+
