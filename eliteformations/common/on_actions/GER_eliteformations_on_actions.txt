@@ -773,12 +773,154 @@ on_actions = {
 				}
 
 				set_variable = { GER.hand_inf_eq_total = num_equipment@infantry_equipment }
-				subtract_from_variable = {GER.hand_inf_eq_total = 200}
+				subtract_from_variable = {GER.hand_inf_eq_total = 890}
 
 				set_variable = { GER.hand_sup_eq_total = num_equipment@support_equipment }
-				subtract_from_variable = {GER.hand_sup_eq_total = 40 }
+				subtract_from_variable = {GER.hand_sup_eq_total = 110 }
+
+				set_variable = { GER.hand_mot_eq_total = num_equipment@motorized_equipment }
+				subtract_from_variable = { GER.hand_mot_eq_total = 40 }
+
+				set_variable = { GER.hand_aa_eq_total = num_equipment@anti_air_equipment }
+				subtract_from_variable = { GER.hand_aa_eq_total = 36 }
+
+				set_variable = { GER.hand_at_eq_total = num_equipment@anti_tank_equipment }
+				subtract_from_variable = { GER.hand_at_eq_total = 36 }
+
+				set_variable = { GER.hand_art_eq_total = num_equipment@artillery_equipment }
+				subtract_from_variable = { GER.hand_art_eq_total = 24 }
 
 		
+			}
+		}
+
+		effect = { # Gal 1 Stage 1 loc variables
+			if = {
+				limit = {
+					NOT = { has_country_flag = gal1_deployed}
+				}
+
+				set_variable = { GER.gal1_inf_eq_total = num_equipment@infantry_equipment }
+				subtract_from_variable = { GER.gal1_inf_eq_total = 650 }
+
+				set_variable = { GER.gal1_sup_eq_total = num_equipment@support_equipment }
+				subtract_from_variable = { GER.gal1_sup_eq_total = 60 }
+
+				set_variable = { GER.gal1_mot_eq_total = num_equipment@motorized_equipment }
+				subtract_from_variable = { GER.gal1_mot_eq_total = 10 }
+
+				set_variable = { GER.gal1_aa_eq_total = num_equipment@anti_air_equipment }
+				subtract_from_variable = { GER.gal1_aa_eq_total = 20 }
+
+				set_variable = { GER.gal1_at_eq_total = num_equipment@anti_tank_equipment }
+				subtract_from_variable = { GER.gal1_at_eq_total = 24 }
+
+				set_variable = { GER.gal1_art_eq_total = num_equipment@artillery_equipment }
+				subtract_from_variable = { GER.gal1_art_eq_total = 24 }
+			}
+		}
+
+		effect = { # rfss stage 1 loc variables
+			if = {
+				limit = {
+					NOT = { has_country_flag = rfss_deployed}
+				}
+
+				set_variable = { GER.rfss_inf_eq_total = num_equipment@infantry_equipment }
+				subtract_from_variable = { GER.rfss_inf_eq_total = 410 }
+
+				set_variable = { GER.rfss_sup_eq_total = num_equipment@support_equipment }
+				subtract_from_variable = { GER.rfss_sup_eq_total = 50 }
+
+				set_variable = { GER.rfss_mot_eq_total = num_equipment@motorized_equipment }
+				subtract_from_variable = { GER.rfss_mot_eq_total = 10 }
+
+				set_variable = { GER.rfss_lt_eq_total = num_equipment@light_tank_chassis }
+				subtract_from_variable = { GER.rfss_lt_eq_total = 24 }
+
+				set_variable = { GER.rfss_mt_eq_total = num_equipment@medium_tank_chassis }
+				subtract_from_variable = { GER.rfss_mt_eq_total = 50 }
+
+				set_variable = { GER.rfss_mspg_eq_total = num_equipment@medium_tank_artillery_chassis }
+				subtract_from_variable = { GER.rfss_mspg_eq_total = 40 }
+
+				set_variable = { GER.rfss_aa_eq_total = num_equipment@anti_air_equipment }
+				subtract_from_variable = { GER.rfss_aa_eq_total = 20 }
+
+				set_variable = { GER.rfss_mech_eq_total = num_equipment@mechanized_equipment }
+				subtract_from_variable = { GER.rfss_mech_eq_total = 160 }
+
+			}
+		}
+
+		effect = { # gvb stage 1 loc variables
+			if = {
+				limit = {
+					NOT = { has_country_flag = gvb_deployed}
+				}
+
+				set_variable = { GER.gvb_inf_eq_total = num_equipment@infantry_equipment }
+				subtract_from_variable = { GER.gvb_inf_eq_total = 410 }
+
+				set_variable = { GER.gvb_sup_eq_total = num_equipment@support_equipment }
+				subtract_from_variable = { GER.gvb_sup_eq_total = 50 }
+
+				set_variable = { GER.gvb_mt_eq_total = num_equipment@medium_tank_chassis }
+				subtract_from_variable = { GER.gvb_mt_eq_total = 50 }
+
+				set_variable = { GER.gvb_mech_eq_total = num_equipment@mechanized_equipment }
+				subtract_from_variable = { GER.gvb_mech_eq_total = 160 }
+
+				set_variable = { GER.gvb_mspg_eq_total = num_equipment@medium_tank_artillery_chassis }
+				subtract_from_variable = { GER.gvb_mspg_eq_total = 40 }
+
+				set_variable = { GER.gvb_aa_eq_total = num_equipment@anti_air_equipment }
+				subtract_from_variable = { GER.gvb_aa_eq_total = 20 }
+
+				set_variable = { GER.gvb_at_eq_total = num_equipment@anti_tank_equipment }
+				subtract_from_variable = { GER.gvb_at_eq_total = 24 }
+
+				set_variable = { GER.gvb_mot_eq_total = num_equipment@motorized_equipment }
+				subtract_from_variable = { GER.gvb_mot_eq_total = 10 }
+
+				set_variable = { GER.gvb_lt_eq_total = num_equipment@light_tank_chassis }
+				subtract_from_variable = { GER.gvb_lt_eq_total = 24 }
+			}
+		}
+
+		effect = { # sshw stage 1 loc variables
+			if = {
+				limit = {
+					NOT = { has_country_flag = sshw_deployed}
+				}
+
+				set_variable = { GER.sshw_inf_eq_total = num_equipment@infantry_equipment }
+				subtract_from_variable = { GER.sshw_inf_eq_total = 410 }
+
+				set_variable = { GER.sshw_sup_eq_total = num_equipment@support_equipment }
+				subtract_from_variable = { GER.sshw_sup_eq_total = 70 }
+
+				set_variable = { GER.sshw_mot_eq_total = num_equipment@motorized_equipment }
+				subtract_from_variable = { GER.sshw_mot_eq_total = 20 }
+
+				set_variable = { GER.sshw_lt_eq_total = num_equipment@light_tank_chassis }
+				subtract_from_variable = { GER.sshw_lt_eq_total = 24 }
+
+				set_variable = { GER.sshw_mt_eq_total = num_equipment@medium_tank_chassis }
+				subtract_from_variable = { GER.sshw_mt_eq_total = 50 }
+
+				set_variable = { GER.sshw_mspg_eq_total = num_equipment@medium_tank_artillery_chassis }
+				subtract_from_variable = { GER.sshw_mspg_eq_total = 40 }
+
+				set_variable = { GER.sshw_aa_eq_total = num_equipment@anti_air_equipment }
+				subtract_from_variable = { GER.sshw_aa_eq_total = 20 }
+
+				set_variable = { GER.sshw_mech_eq_total = num_equipment@mechanized_equipment }
+				subtract_from_variable = { GER.sshw_mech_eq_total = 160 }
+
+				set_variable = { GER.sshw_mtd_eq_total = num_equipment@medium_tank_destroyer_chassis }
+				subtract_from_variable = { GER.sshw_mtd_eq_total = 40 }
+
 			}
 		}
 	}
