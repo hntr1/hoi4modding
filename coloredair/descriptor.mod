@@ -5,5 +5,5 @@ tags={
 }
 name="Coloured Airforce - Standard - Unofficial Update for GDR"
 picture="thumbnail.PNG"
-supported_version="1.18.*"
+supported_version="1.19.*"
 remote_file_id="3368326228"
