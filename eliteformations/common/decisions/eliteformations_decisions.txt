@@ -690,15 +690,19 @@ eliteformations_cat = { # German Elite Formations Decisions
 		}
 
 		available = { # Must have all the equipment necessary for historical organization
-			AND = {
-				
-				has_tech = special_forces_mountaineers
+			AND = {	
 				has_tech = tech_signal_company
 				has_tech = interwar_antitank
 			}
 			AND = {
 				GER = { has_war_with = NOR}
 				NOR = { has_capitulated = yes }
+			}
+			OR = {
+				has_doctrine = mountaineers_1
+				has_doctrine = mountaineers_2
+				has_doctrine = rangers_1
+				has_doctrine = rangers_2
 			}
 		}
 
@@ -2285,11 +2289,13 @@ eliteformations_cat = { # German Elite Formations Decisions
 				has_tech = interwar_antitank
 				has_tech = tech_logistics_company
 				has_tech = tech_signal_company
-				OR = {
-					has_tech = special_forces_mountaineers
-					has_tech = special_forces_rangers
-				}
 				has_design_based_on = medium_tank_artillery_chassis
+				OR = {
+					has_doctrine = mountaineers_1
+					has_doctrine = mountaineers_2
+					has_doctrine = rangers_1
+					has_doctrine = rangers_2
+				}
 			}
 		}
 
@@ -2424,7 +2430,12 @@ eliteformations_cat = { # German Elite Formations Decisions
 				has_tech = interwar_antitank
 				has_tech = tech_logistics_company
 				has_tech = tech_signal_company
-				has_tech = special_forces_mountaineers
+				OR = {
+					has_doctrine = mountaineers_1
+					has_doctrine = mountaineers_2
+					has_doctrine = rangers_1
+					has_doctrine = rangers_2
+				}
 			}
 		}
 
@@ -2560,7 +2571,12 @@ eliteformations_cat = { # German Elite Formations Decisions
 				has_tech = interwar_antitank
 				has_tech = tech_logistics_company
 				has_tech = tech_signal_company
-				has_tech = special_forces_mountaineers
+				OR = {
+					has_doctrine = mountaineers_1
+					has_doctrine = mountaineers_2
+					has_doctrine = rangers_1
+					has_doctrine = rangers_2
+				}
 			}
 		}
 
@@ -3036,7 +3052,7 @@ eliteformations_cat = { # German Elite Formations Decisions
 		#icon = 
 
 		allowed = { 
-			always = yes
+			original_tag = GER
 		}
 
 		visible = {
@@ -3099,7 +3115,7 @@ eliteformations_cat = { # German Elite Formations Decisions
 		#icon = 
 
 		allowed = { 
-			always = yes
+			original_tag = GER
 		}
 
 		visible = {
@@ -3172,7 +3188,7 @@ eliteformations_cat = { # German Elite Formations Decisions
 		#icon = 
 
 		allowed = { 
-			always = yes
+			original_tag = GER
 		}
 
 		visible = {
@@ -3239,7 +3255,7 @@ eliteformations_cat = { # German Elite Formations Decisions
 		#icon = 
 
 		allowed = { 
-			always = yes
+			original_tag = GER
 		}
 
 		visible = {
@@ -3302,7 +3318,7 @@ eliteformations_cat = { # German Elite Formations Decisions
 		#icon = 
 
 		allowed = { 
-			always = yes
+			original_tag = GER
 		}
 
 		visible = {
@@ -3366,7 +3382,7 @@ eliteformations_cat = { # German Elite Formations Decisions
 		#icon = 
 
 		allowed = { 
-			always = yes
+			original_tag = GER
 		}
 
 		visible = {
@@ -3427,7 +3443,7 @@ eliteformations_cat = { # German Elite Formations Decisions
 		#icon = 
 
 		allowed = { 
-			always = yes
+			original_tag = GER
 		}
 
 		visible = {}
@@ -3486,7 +3502,7 @@ eliteformations_cat = { # German Elite Formations Decisions
 		#icon = 
 
 		allowed = {
-			always = yes
+			original_tag = GER
 		}
 
 		visible = {}
@@ -3497,10 +3513,15 @@ eliteformations_cat = { # German Elite Formations Decisions
 				has_tech = motorized_rocket_unit
 				has_tech = interwar_antitank
 				has_tech = tech_signal_company
-				has_tech = special_forces_mountaineers
 				has_design_based_on = medium_tank_chassis
 				has_design_based_on = medium_tank_artillery_chassis
 				has_design_based_on = medium_tank_aa_chassis
+				OR = {
+					has_doctrine = mountaineers_1
+					has_doctrine = mountaineers_2
+					has_doctrine = rangers_1
+					has_doctrine = rangers_2
+				}
 			}
 		}
 
@@ -3522,15 +3543,17 @@ eliteformations_cat = { # German Elite Formations Decisions
 			hidden_effect = {
 				add_command_power = -5
 				load_oob = skijager_template
-			}
 
-			if = {
-				limit = { NOT = { has_tech = winter_logistics_support_tech } }
-				set_technology = { # Add winter logistics company to Germany
-					winter_logistics_support_tech = 1
-					popup = no
+				if = {
+					limit = { NOT = { has_tech = winter_logistics_support_tech } }
+					set_technology = { # Add winter logistics company to Germany
+						winter_logistics_support_tech = 1
+						popup = no
+					}
 				}
 			}
+
+			
 
 			if = {
 				limit = { has_power_balance = { id = GER_balance_of_power } }
