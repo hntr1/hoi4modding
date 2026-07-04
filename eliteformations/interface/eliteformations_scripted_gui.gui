@@ -1,0 +1,581 @@
+guiTypes = {
+    containerWindowType = { # Elite Formations Window
+        name = "GER_eliteformations_scripted_gui"
+        position = { x = 0 y = 0 }
+        size = { width = 800 height = 650 }
+        orientation = center
+        origo = center
+        fade_time = 100
+        moveable = yes
+        fade_type = linear
+        click_to_front = no
+        clipping = no
+
+        background = { # Window background
+            name = "Background"
+            quadTextureSprite = "GFX_scripted_gui_window_background"
+        }
+
+        instantTextboxType = { # Window Header
+            name = "ef_window_title"
+            position = { x = 450 y = 20 }
+            borderSize = { x = 0 y = 0 }
+            text = "Elite Formations"
+            font = hoi_30header
+            maxWidth = 400
+            maxHeight = 20
+            fixedsize = yes
+
+        }
+
+        buttonType = { # Close Button
+            name = "close_button"
+            spriteType = "GFX_close_button"
+            position = { x = 260 y = 15 }
+            orientation = "UPPER_RIGHT"
+            scale = 1.25
+        }
+
+        buttonType = {
+            name = "lssah_button"
+            spriteType = "GFX_lssah_button"
+            position = { x = 35 y = 65 }
+            orientation = "UPPER_LEFT"
+            buttonText = lssah_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "lssah_button_tt"
+            pdx_tooltip_delayed = lssah_1_tt
+        }
+        buttonType = {
+            name = "dasreich_button"
+            spriteType = "GFX_dasreich_button"
+            position = { x = 35 y = 105 }
+            orientation = "UPPER_LEFT"
+            buttonText = dasreich_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "dasreich_button_tt"
+            pdx_tooltip_delayed = dasreich_1_tt
+        }
+        buttonType = {
+            name = "totenkopf_button"
+            spriteType = "GFX_totenkopf_button"
+            position = { x = 35 y = 145 }
+            orientation = "UPPER_LEFT"
+            buttonText = totenkopf_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "totenkopf_button_tt"
+            pdx_tooltip_delayed = totenkopf_1_tt
+        }
+        buttonType = {
+            name = "polizei_button"
+            spriteType = "GFX_polizei_button"
+            position = { x = 35 y = 185 }
+            orientation = "UPPER_LEFT"
+            buttonText = polizei_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "polizei_button_tt"
+            pdx_tooltip_delayed = polizei_1_tt
+        }
+        buttonType = {
+            name = "wiking_button"
+            spriteType = "GFX_wiking_button"
+            position = { x = 35 y = 225 }
+            orientation = "UPPER_LEFT"
+            buttonText = wiking_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "wiking_button_tt"
+            pdx_tooltip_delayed = wiking_1_tt
+        }
+        buttonType = {
+            name = "nord_button"
+            spriteType = "GFX_nord_button"
+            position = { x = 35 y = 265 }
+            orientation = "UPPER_LEFT"
+            buttonText = nord_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "nord_button_tt"
+            pdx_tooltip_delayed = nord_1_tt
+        }
+        buttonType = {
+            name = "pe_button"
+            spriteType = "GFX_pe_button"
+            position = { x = 35 y = 305 }
+            orientation = "UPPER_LEFT"
+            buttonText = pe_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "pe_button_tt"
+            pdx_tooltip_delayed = pe_1_tt
+        }
+        buttonType = {
+            name = "fg_button"
+            spriteType = "GFX_fg_button"
+            position = { x = 35 y = 345 }
+            orientation = "UPPER_LEFT"
+            buttonText = fg_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "fg_button_tt"
+            pdx_tooltip_delayed = fg_1_tt
+        }
+        buttonType = {
+            name = "hs_button"
+            spriteType = "GFX_hs_button"
+            position = { x = 35 y = 385 }
+            orientation = "UPPER_LEFT"
+            buttonText = hs_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "hs_button_tt"
+            pdx_tooltip_delayed = hs_1_tt
+        }
+        buttonType = {
+            name = "fb_button"
+            spriteType = "GFX_fb_button"
+            position = { x = 35 y = 425 }
+            orientation = "UPPER_LEFT"
+            buttonText = fb_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "fb_button_tt"
+            pdx_tooltip_delayed = fb_1_tt
+        }
+        buttonType = {
+            name = "nordl_button"
+            spriteType = "GFX_nordl_button"
+            position = { x = 35 y = 465 }
+            orientation = "UPPER_LEFT"
+            buttonText = nordl_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "nordl_button_tt"
+            pdx_tooltip_delayed = nordl_1_tt
+        }
+        buttonType = {
+            name = "hj_button"
+            spriteType = "GFX_hj_button"
+            position = { x = 35 y = 505 }
+            orientation = "UPPER_LEFT"
+            buttonText = hj_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "hj_button_tt"
+            pdx_tooltip_delayed = hj_1_tt
+        }
+        buttonType = {
+            name = "handschar_button"
+            spriteType = "GFX_handschar_button"
+            position = { x = 35 y = 545 }
+            orientation = "UPPER_LEFT"
+            buttonText = handschar_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "handschar_button_tt"
+            pdx_tooltip_delayed = handschar_1_tt
+        }
+        buttonType = {
+            name = "gal1_button"
+            spriteType = "GFX_gal1_button"
+            position = { x = 35 y = 585 }
+            orientation = "UPPER_LEFT"
+            buttonText = gal1_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "gal1_button_tt"
+            pdx_tooltip_delayed = gal1_1_tt
+        }
+        buttonType = {
+            name = "rfss_button"
+            spriteType = "GFX_rfss_button"
+            position = { x = 35 y = 625 }
+            orientation = "UPPER_LEFT"
+            buttonText = rfss_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "rfss_button_tt"
+            pdx_tooltip_delayed = rfss_1_tt
+        }
+        buttonType = {
+            name = "gvb_button"
+            spriteType = "GFX_gvb_button"
+            position = { x = 275 y = 65 }
+            orientation = "UPPER_LEFT"
+            buttonText = gvb_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "gvb_button_tt"
+            pdx_tooltip_delayed = gvb_1_tt
+        }
+        buttonType = {
+            name = "hw_button"
+            spriteType = "GFX_hw_button"
+            position = { x = 275 y = 105 }
+            orientation = "UPPER_LEFT"
+            buttonText = hw_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "hw_button_tt"
+            pdx_tooltip_delayed = hw_1_tt
+        }
+        buttonType = {
+            name = "alb1_button"
+            spriteType = "GFX_alb1_button"
+            position = { x = 275 y = 145 }
+            orientation = "UPPER_LEFT"
+            buttonText = alb1_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "alb1_button_tt"
+            pdx_tooltip_delayed = alb1_1_tt
+        }
+        buttonType = {
+            name = "mt_button"
+            spriteType = "GFX_mt_button"
+            position = { x = 275 y = 185 }
+            orientation = "UPPER_LEFT"
+            buttonText = mt_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "mt_button_tt"
+            pdx_tooltip_delayed = mt_1_tt
+        }
+        buttonType = {
+            name = "kama_button"
+            spriteType = "GFX_kama_button"
+            position = { x = 275 y = 225 }
+            orientation = "UPPER_LEFT"
+            buttonText = kama_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "kama_button_tt"
+            pdx_tooltip_delayed = kama_1_tt
+        }
+        buttonType = {
+            name = "nederl_button"
+            spriteType = "GFX_nederl_button"
+            position = { x = 275 y = 265 }
+            orientation = "UPPER_LEFT"
+            buttonText = nederl_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "nederl_button_tt"
+            pdx_tooltip_delayed = nederl_1_tt
+        }
+        buttonType = {
+            name = "kj_button"
+            spriteType = "GFX_kj_button"
+            position = { x = 275 y = 305 }
+            orientation = "UPPER_LEFT"
+            buttonText = kj_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "kj_button_tt"
+            pdx_tooltip_delayed = kj_1_tt
+        }
+        buttonType = {
+            name = "huny_button"
+            spriteType = "GFX_huny_button"
+            position = { x = 275 y = 345 }
+            orientation = "UPPER_LEFT"
+            buttonText = huny_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "huny_button_tt"
+            pdx_tooltip_delayed = huny_1_tt
+        }
+        buttonType = {
+            name = "lm_button"
+            spriteType = "GFX_lm_button"
+            position = { x = 275 y = 385 }
+            orientation = "UPPER_LEFT"
+            buttonText = lm_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "lm_button_tt"
+            pdx_tooltip_delayed = lm_1_tt
+        }
+        buttonType = {
+            name = "wal_button"
+            spriteType = "GFX_wal_button"
+            position = { x = 275 y = 425 }
+            orientation = "UPPER_LEFT"
+            buttonText = wal_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "wal_button_tt"
+            pdx_tooltip_delayed = wal_1_tt
+        }
+        buttonType = {
+            name = "ita1_button"
+            spriteType = "GFX_ita1_button"
+            position = { x = 275 y = 465 }
+            orientation = "UPPER_LEFT"
+            buttonText = ita1_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "ita1_button_tt"
+            pdx_tooltip_delayed = ita1_1_tt
+        }
+        buttonType = {
+            name = "wr1_button"
+            spriteType = "GFX_wr1_button"
+            position = { x = 275 y = 505 }
+            orientation = "UPPER_LEFT"
+            buttonText = wr1_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "wr1_button_tt"
+            pdx_tooltip_delayed = wr1_1_tt
+        }
+        buttonType = {
+            name = "bat_button"
+            spriteType = "GFX_bat_button"
+            position = { x = 275 y = 545 }
+            orientation = "UPPER_LEFT"
+            buttonText = bat_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "bat_button_tt"
+            pdx_tooltip_delayed = bat_1_tt
+        }
+        buttonType = {
+            name = "30j_button"
+            spriteType = "GFX_30j_button"
+            position = { x = 275 y = 585 }
+            orientation = "UPPER_LEFT"
+            buttonText = 30j_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "30j_button_tt"
+            pdx_tooltip_delayed = 30j_1_tt
+        }
+        buttonType = {
+            name = "cm_button"
+            spriteType = "GFX_cm_button"
+            position = { x = 275 y = 625 }
+            orientation = "UPPER_LEFT"
+            buttonText = cm_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "cm_button_tt"
+            pdx_tooltip_delayed = cm_1_tt
+        }
+        buttonType = {
+            name = "lsnl_button"
+            spriteType = "GFX_lsnl_button"
+            position = { x = 515 y = 65 }
+            orientation = "UPPER_LEFT"
+            buttonText = lsnl_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "lsnl_button_tt"
+            pdx_tooltip_delayed = lsnl_1_tt
+        }
+        buttonType = {
+            name = "polgren_button"
+            spriteType = "GFX_polgren_button"
+            position = { x = 515 y = 105 }
+            orientation = "UPPER_LEFT"
+            buttonText = polgren_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "polgren_button_tt"
+            pdx_tooltip_delayed = polgren_1_tt
+        }
+        buttonType = {
+            name = "dw_button"
+            spriteType = "GFX_dw_button"
+            position = { x = 515 y = 145 }
+            orientation = "UPPER_LEFT"
+            buttonText = dw_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "dw_button_tt"
+            pdx_tooltip_delayed = dw_1_tt
+        }
+        buttonType = {
+            name = "lutzow_button"
+            spriteType = "GFX_lutzow_button"
+            position = { x = 515 y = 185 }
+            orientation = "UPPER_LEFT"
+            buttonText = lutzow_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "lutzow_button_tt"
+            pdx_tooltip_delayed = lutzow_1_tt
+        }
+        buttonType = {
+            name = "pzgrengd_button"
+            spriteType = "GFX_pzgrengd_button"
+            position = { x = 515 y = 305 }
+            orientation = "UPPER_LEFT"
+            buttonText = pzgrengd_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "pzgrengd_button_tt"
+            pdx_tooltip_delayed = pzgrengd_1_tt
+        }
+        buttonType = {
+            name = "pzl_button"
+            spriteType = "GFX_pzl_button"
+            position = { x = 515 y = 345 }
+            orientation = "UPPER_LEFT"
+            buttonText = pzl_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "pzl_button_tt"
+            pdx_tooltip_delayed = pzl_1_tt
+        }
+        buttonType = {
+            name = "pzhg_button"
+            spriteType = "GFX_pzhg_button"
+            position = { x = 515 y = 385 }
+            orientation = "UPPER_LEFT"
+            buttonText = pzhg_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "pzhg_button_tt"
+            pdx_tooltip_delayed = pzhg_1_tt
+        }
+        buttonType = {
+            name = "lad999_button"
+            spriteType = "GFX_lad999_button"
+            position = { x = 515 y = 425 }
+            orientation = "UPPER_LEFT"
+            buttonText = lad999_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "lad999_button_tt"
+            pdx_tooltip_delayed = lad999_1_tt
+        }
+        buttonType = {
+            name = "3fj_button"
+            spriteType = "GFX_3fj_button"
+            position = { x = 515 y = 465 }
+            orientation = "UPPER_LEFT"
+            buttonText = 3fj_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "3fj_button_tt"
+            pdx_tooltip_delayed = 3fj_1_tt
+        }
+        buttonType = {
+            name = "1ski_button"
+            spriteType = "GFX_1ski_button"
+            position = { x = 515 y = 505 }
+            orientation = "UPPER_LEFT"
+            buttonText = 1ski_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "1ski_button_tt"
+            pdx_tooltip_delayed = 1ski_1_tt
+        }
+        buttonType = {
+            name = "fbb_button"
+            spriteType = "GFX_fbb_button"
+            position = { x = 515 y = 565 }
+            orientation = "UPPER_LEFT"
+            buttonText = fbb_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "fbb_button_tt"
+            pdx_tooltip_delayed = fbb_1_tt
+        }
+        buttonType = {
+            name = "fgb_button"
+            spriteType = "GFX_fgb_button"
+            position = { x = 515 y = 605 }
+            orientation = "UPPER_LEFT"
+            buttonText = fgb_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "fgb_button_tt"
+            pdx_tooltip_delayed = fgb_1_tt
+        }
+
+        buttonType = {
+            name = "lssah_2_button"
+            spriteType = "GFX_lssah_2_button"
+            position = { x = 855 y = 65 }
+            orientation = "UPPER_LEFT"
+            buttonText = lssah_2_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "lssah_2_button_tt"
+            pdx_tooltip_delayed = lssah_2_tt
+        }
+
+        buttonType = {
+            name = "lssah_3_button"
+            spriteType = "GFX_lssah_3_button"
+            position = { x = 855 y = 105 }
+            orientation = "UPPER_LEFT"
+            buttonText = lssah_3_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "lssah_3_button_tt"
+            pdx_tooltip_delayed = lssah_3_tt
+        }
+
+        buttonType = {
+            name = "totenkopf_2_button"
+            spriteType = "GFX_totenkopf_2_button"
+            position = { x = 855 y = 145 }
+            orientation = "UPPER_LEFT"
+            buttonText = totenkopf_2_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "totenkopf_2_button_tt"
+            pdx_tooltip_delayed = totenkopf_2_tt
+        }
+
+        buttonType = {
+            name = "polizei_2_button"
+            spriteType = "GFX_polizei_2_button"
+            position = { x = 855 y = 185 }
+            orientation = "UPPER_LEFT"
+            buttonText = polizei_2_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "polizei_2_button_tt"
+            pdx_tooltip_delayed = polizei_2_tt
+        }
+
+        buttonType = {
+            name = "wiking_2_button"
+            spriteType = "GFX_wiking_2_button"
+            position = { x = 855 y = 225 }
+            orientation = "UPPER_LEFT"
+            buttonText = wiking_2_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "wiking_2_button_tt"
+            pdx_tooltip_delayed = wiking_2_tt
+        }
+        buttonType = {
+            name = "pe_2_button"
+            spriteType = "GFX_pe_2_button"
+            position = { x = 855 y = 265 }
+            orientation = "UPPER_LEFT"
+            buttonText = pe_2_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "pe_2_button_tt"
+            pdx_tooltip_delayed = pe_2_tt
+        }
+
+        buttonType = {
+            name = "fg_2_button"
+            spriteType = "GFX_fg_2_button"
+            position = { x = 855 y = 305 }
+            orientation = "UPPER_LEFT"
+            buttonText = fg_2_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "fg_2_button_tt"
+            pdx_tooltip_delayed = fg_2_tt
+        }
+
+        buttonType = {
+            name = "nordl_2_button"
+            spriteType = "GFX_nordl_2_button"
+            position = { x = 855 y = 345 }
+            orientation = "UPPER_LEFT"
+            buttonText = nordl_2_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "nordl_2_button_tt"
+            pdx_tooltip_delayed = nordland_2_tt
+        }
+
+        buttonType = {
+            name = "fbb_2_button"
+            spriteType = "GFX_fbb_2_button"
+            position = { x = 855 y = 385 }
+            orientation = "UPPER_LEFT"
+            buttonText = fbb_2_button_text_0
+            buttonFont = hoi_16mbs
+            pdx_tooltip = "fbb_2_button_tt"
+            pdx_tooltip_delayed = fuhrerbegleit_2_tt
+        }
+    }
+
+    containerWindowType = { # Elite Formations Open Button on the Deployment Tab
+        name = "GER_eliteformations_open_scripted_gui"
+        position = { x = -60 y = -82 }
+        moveable = no
+
+
+        buttonType = {
+            name = "ef_open_button"
+            spriteType = "GFX_open_button"
+            position = { x = 400 y = 90 }
+        }
+
+        instantTextboxType = {
+            name = "open_textbox"
+            position = { x = 415 y = 98 }
+            borderSize = { x = 0 y = 0 }
+            text = "Elite Formations"
+            maxWidth = 400
+            maxHeight = 20
+            fixedsize = yes
+        }
+    }
+}

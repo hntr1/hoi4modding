@@ -279,106 +279,371 @@
   decision_cost_CP_5_tooltip: "It costs £command_power  §Y5§! to take the decision" 
 
 # Tooltips
+  lssah_button_tt: "Requirements:\n[!lssah_button_click_enabled]"
+  lssah_button_text_0: "SS-Regiment LSSAH £command_power §Y5§!"
+  lssah_1_allowed_tt: "The §YLSSAH Regiment§! has been formed"
+  lssah_1_allowed_tt_NOT: "The §YLSSAH Regiment§! has not been formed"
+
   lssah_1_tt: "\nCreates §YSS-Regiment Liebstandarte SS Adolf Hitler§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?lssah_inf_eq_total|=0+]\n Trucks: [?lssah_mot_eq_total|=0+]\n Support Equipment: [?lssah_sup_eq_total|=0+]\n Artillery: [?lssah_art_eq_total|=0+]\n Anti Tank: [?lssah_at_eq_total|=0+]§!\n\n§2There will be opportunities to expand this regiment into larger units later on.§!\n\n"
+  
+  lssah_2_button_tt: "Requirements:\n[!lssah_2_button_click_enabled]"
+  lssah_2_button_text_0: "Expand LSSAH to Brigade £command_power §Y5§!"
+  lssah_2_allowed_tt:  "The §YLSSAH Regiment§! has been expanded to a §YBrigade§!"
+  lssah_2_allowed_tt_NOT:  "The §YLSSAH Regiment§! has not been expanded to a §YBrigade§!"
+  
   lssah_2_tt: "\nExpands §YSS-Regiment Liebstandarte SS Adolf Hitler§! to Brigade size.\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?lssah_inf_eq_total|=0+]\n Trucks: [?lssah_mot_eq_total|=0+]\n Medium SPGs: [?lssah_spg_eq_total|=0+]\n Anti Air: [?lssah_aa_eq_total|=0+]§!\n\n§2You will be able to expand this brigade to a division later.§!\n\n§RYou will have to manually rename the unit to SS-Brigade Liebstandarte SS Adolf Hitler if you wish as the name cannot be automatically changed.§!\n\n"
+  
+  lssah_3_button_tt: "Requirements:\n[!lssah_3_button_click_enabled]"
+  lssah_3_button_text_0: "Expand LSSAH to Division £command_power §Y5§!"
+  lssah_3_allowed_tt:  "The §YLSSAH Brigade§! has been expanded to a §YDivision§!"
+  lssah_3_allowed_tt_NOT:  "The §YLSSAH Brigade§! has not been expanded to a §YDivision§!"
+
   lssah_3_tt: "\nExpands §YSS-Brigade Liebstandarte SS Adolf Hitler§! to Division size.\n\nYou will have the following equipment left in stockpile:\n\n §YTrucks: [?lssah_mot_eq_total|=0+]\n Artillery: [?lssah_art_eq_total|=0+]\n Rocket Artillery: [?lssah_roc_eq_total|=0+]\n Medium Tanks: [?lssah_mt_eq_total|=0+]\n Heavy Tanks: [?lssah_ht_eq_total|=0+]§!\n\n§RYou will have to manually rename the unit to 1. SS-Panzer-Division 'Liebstandarte SS Adolf Hitler' if you wish as the name cannot be automatically changed.§!\n\n"
+
+  dasreich_button_tt: "Requirements:\n[!dasreich_button_click_enabled]"
+  dasreich_button_text_0: "SS-Division Das Reich £command_power §Y5§!"
+  dasreich_allowed_tt: "The §YSS-Panzer-Division Das Reich§! has been formed"
+  dasreich_allowed_tt_NOT: "The §YSS-Panzer-Division Das Reich§! has not been formed"
 
   dasreich_1_tt: "\nCreates §YSS-Panzer-Division Das Reich§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?dasreich_inf_eq_total|=0+]\n Support Equipment: [?dasreich_sup_eq_total|=0+]\n Trucks: [?dasreich_mot_eq_total|=0+]\n Half-Tracks: [?dasreich_mech_eq_total|=0+]\n Rocket Artillery: [?dasreich_roc_eq_total|=0+]\n Armored Support Vehicles: [?dasreich_asv_eq_total|=0+]\n Light Tanks: [?dasreich_lt_eq_total|=0+]\n Medium Tanks: [?dasreich_mt_eq_total|=0+]\n Medium SPGs: [?dasreich_mspg_eq_total|=0+]\n Medium Tank Destroyers: [?dasreich_mtd_eq_total|=0+]\n Medium SPAA: [?dasreich_mspaa_eq_total|=0+]\n Heavy Tanks: [?dasreich_ht_eq_total|=0+]§!\n\n"
 
+  totenkopf_button_tt: "Requirements:\n[!totenkopf_button_click_enabled]"
+  totenkopf_button_text_0: "SS-Division Totenkopf £command_power §Y5§!"
+  totenkopf_allowed_tt: "The §YSS-Division Totenkopf§! has been formed"
+  totenkopf_allowed_tt_NOT: "The §YSS-Division Totenkopf§! has not been formed"
+
   totenkopf_1_tt: "\nCreates §YSS-Division Totenkopf§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?tk_inf_eq_total|=0+]\n Trucks: [?tk_mot_eq_total|=0+]\n Artillery: [?tk_art_eq_total|=0+]§!\n\n§2You will be able to expand this division later.§!\n\n"
-  totenkopf_2_tt: "\nReforms §YSS-Division Totenkopf into a Panzer-Division§!\n\nYou will have the following equipment left in stockpile:\n\n §YSupport Equipment: [?tk_sup_eq_total|=0+]\n Anti Air: [?tk_aa_eq_total|=0+]\n Armored Support Vehicles: [?tk_asv_eq_total|=0+]\n Medium Tanks: [?tk_mt_eq_total|=0+]\n Medium SPGs: [?tk_mspg_eq_total|=0+]\n Medium Tank Destroyers: [?tk_mtd_eq_total|=0+]§!\n\n"
+  
+  totenkopf_2_button_tt: "Requirements:\n[!totenkopf_2_button_click_enabled]"
+  totenkopf_2_button_text_0: "Reform Totenkopf to Pz.Div £command_power §Y5§!"
+  totenkopf_2_allowed_tt: "The §YSS-Division Totenkopf§! has been reformed into a §YPanzer-Division§!"
+  totenkopf_2_allowed_tt_NOT: "The §YSS-Division Totenkopf§! has not been reformed into a §YPanzer-Division§!"
+  
+  totenkopf_2_tt: "\nReforms §YSS-Division Totenkopf§! into a §YPanzer-Division§!\n\nYou will have the following equipment left in stockpile:\n\n §YSupport Equipment: [?tk_sup_eq_total|=0+]\n Anti Air: [?tk_aa_eq_total|=0+]\n Armored Support Vehicles: [?tk_asv_eq_total|=0+]\n Medium Tanks: [?tk_mt_eq_total|=0+]\n Medium SPGs: [?tk_mspg_eq_total|=0+]\n Medium Tank Destroyers: [?tk_mtd_eq_total|=0+]§!\n\n"
+
+  polizei_button_tt: "Requirements:\n[!polizei_button_click_enabled]"
+  polizei_button_text_0: "SS-Division Polizei £command_power §Y5§!"
+  polizei_allowed_tt: "The §YSS-Panzergrenadier-Division Polizei§! has been formed"
+  polizei_allowed_tt_NOT: "The §YSS-Panzergrenadier-Division Polizei§! has not been formed"
 
   polizei_1_tt: "\nCreates §YSS-Panzergrenadier-Division Polizei§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?pol_inf_eq_total|=0+]\n Anti-Tank: [?pol_at_eq_total|=0+]\n Artillery: [?pol_art_eq_total|=0+]\n Trucks: [?pol_mot_eq_total|=0+]\n Support Equipment: [?pol_sup_eq_total|=0+]§!\n\n§2You will be able to expand this division later.§!\n\n"
+  
+  polizei_2_button_tt: "Requirements:\n[!polizei_2_button_click_enabled]"
+  polizei_2_button_text_0: "Expand SS-Division Polizei £command_power §Y5§!"
+  polizei_2_allowed_tt: "The §YSS-Panzergrenadier-Division Polizei§! has been expanded"
+  polizei_2_allowed_tt_NOT: "The §YSS-Panzergrenadier-Division Polizei§! has not been expanded"
+
   polizei_2_tt: "\nExpands §YSS-Panzergrenadier-Division Polizei§!\n\nYou will have the following equipment left in stockpile:\n\n §YTrucks: [?pol_mot_eq_total|=0+]\n Anti-Air: [?pol_aa_eq_total|=0+]\n Medium SPGs: [?pol_mspg_eq_total|=0+]\n Medium Tanks: [?pol_mt_eq_total|=0+]\n Light Tanks: [?pol_lt_eq_total|=0+]§!\n\n"
 
+  wiking_button_tt: "Requirements:\n[!wiking_button_click_enabled]"
+  wiking_button_text_0: "SS-Division Wiking £command_power §Y5§!"
+  wiking_allowed_tt: "The §YSS-Division Wiking§! has been formed"
+  wiking_allowed_tt_NOT: "The §YSS-Division Wiking§! has not been formed"
+
   wiking_1_tt: "\nCreates §YSS-Division Wiking§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?wk_inf_eq_total|=0+]\n Artillery: [?wk_art_eq_total|=0+]\n Trucks: [?wk_mot_eq_total|=0+]§!\n\n§2You will be able to reform this division as a Panzer-Division later§!\n\n"
+  
+  wiking_2_button_tt: "Requirements:\n[!wiking_2_button_click_enabled]"
+  wiking_2_button_text_0: "Reform Wiking to Pz.Div £command_power §Y5§!"
+  wiking_2_allowed_tt: "The §YSS-Division Wiking§! has been reformed into a §YPanzer-Division§!"
+  wiking_2_allowed_tt_NOT: "The §YSS-Division Wiking§! has not been reformed into a §YPanzer-Division§!"
+  
   wiking_2_tt: "\nReforms §YSS-Division Wiking into a Panzer-Division§!\n\nYou will have the following equipment left in stockpile:\n\n §YTrucks: [?wk_mot_eq_total|=0+]\n Anti-Tank: [?wk_at_eq_total|=0+]\n Medium Tank Destroyers: [?wk_mtd_eq_total|=0+]\n Medium Tanks: [?wk_mt_eq_total|=0+]\n Infantry Equipment: [?wk_inf_eq_total|=0+]\n Support Equipment: [?wk_sup_eq_total|=0+]§!\n\n"
 
+  pe_button_tt: "Requirements:\n[!pe_button_click_enabled]"
+  pe_button_text_0: "SS-Division Prinz Eugen £command_power §Y5§!"
+  pe_allowed_tt: "The §YSS-Gebirgs-Division Prinz Eugen§! has been formed"
+  pe_allowed_tt_NOT: "The §YSS-Gebirgs-Division Prinz Eugen§! has not been formed"
+
   pe_1_tt: "\nCreates §YSS-Gebirgs-Division Prinz Eugen§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?pe_inf_eq_total|=0+]\n Support Equipment: [?pe_sup_eq_total|=0+]\n Artillery: [?pe_art_eq_total|=0+]\n Anti-Air: [?pe_aa_eq_total|=0+]\n Anti-Tank: [?pe_at_eq_total|=0+]\n Trucks: [?pe_mot_eq_total|=0+]\n Light Tanks: [?pe_lt_eq_total|=0+]§!\n\n§2You will be able to expand this division later§!\n\n"
+  
+  pe_2_button_tt: "Requirements:\n[!pe_2_button_click_enabled]"
+  pe_2_button_text_0: "Expand Prinz Eugen £command_power §Y5§!"
+  pe_2_allowed_tt: "The §YSS-Gebirgs-Division Prinz Eugen§! has been expanded"
+  pe_2_allowed_tt_NOT: "The §YSS-Gebirgs-Division Prinz Eugen§! has not been expanded"
+
   pe_2_tt: "\nAdds a §YStuG Batallion§! to §YSS-Gebirgs-Division Prinz Eugen§!\n\nYou will have the following equipment left in stockpile:\n\n §YMedium SPGs: [?pe_mspg_eq_total|=0+]§!\n\n"
 
+  fg_button_tt: "Requirements:\n[!fg_button_click_enabled]"
+  fg_button_text_0: "SS-Division Florian Geyer £command_power §Y5§!"
+  fg_allowed_tt: "The §YSS-Kavallerie-Division Florian Geyer§! has been formed"
+  fg_allowed_tt_NOT: "The §YSS-Kavallerie-Division Florian Geyer§! has not been formed"
+
   fg_1_tt: "\nCreates §YSS-Kavallerie-Division Florian Geyer§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?fg_inf_eq_total|=0+]\n Support Equipment: [?fg_sup_eq_total|=0+]\n Trucks: [?fg_sup_eq_total|=0+]\n Artillery: [?fg_art_eq_total|=0+]\n Anti-Tank: [?fg_at_eq_total|=0+]\n Anti-Air: [?fg_aa_eq_total|=0+]\n Medium Tank Destroyers: [?fg_mtd_eq_total|=0+]§!\n\n§2You will be able to expand this division later§!\n\n"
-  fg_2_tt: "\nAdds a §YMotorized Recon Company§ to §YSS-Kavallerie-Division Florian Geyer§!\n\nYou will have the following equipment left in stockpile:\n\n Support Equipment: [?fg_sup_eq_total|=0+]\n Trucks: [?fg_mot_eq_total|=0+]§!\n\n"
+  
+  fg_2_button_tt: "Requirements:\n[!fg_2_button_click_enabled]"
+  fg_2_button_text_0: "Expand Florian Geyer £command_power §Y5§!"
+  fg_2_allowed_tt: "The §YSS-Kavallerie-Division Florian Geyer§! has been expanded"
+  fg_2_allowed_tt_NOT: "The §YSS-Kavallerie-Division Florian Geyer§! has not been expanded"
+
+  fg_2_tt: "\nAdds a §YMotorized Recon Company§! to §YSS-Kavallerie-Division Florian Geyer§!\n\nYou will have the following equipment left in stockpile:\n\n Support Equipment: [?fg_sup_eq_total|=0+]\n Trucks: [?fg_mot_eq_total|=0+]§!\n\n"
+
+  hs_button_tt: "Requirements:\n[!hs_button_click_enabled]"
+  hs_button_text_0: "SS-Division Hohenstaufen £command_power §Y5§!"
+  hs_allowed_tt: "The §YSS-Panzer-Division Hohenstaufen§! has been formed"
+  hs_allowed_tt_NOT: "The §YSS-Panzer-Division Hohenstaufen§! has not been formed"
 
   hs_1_tt: "\nCreates §YSS-Panzer-Division Hohenstaufen§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?hs_inf_eq_total|=0+]\n Support Equipment: [?hs_sup_eq_total|=0+]\n Trucks: [?hs_mot_eq_total|=0+]\n Armored Support Vehicles: [?hs_asv_eq_total|=0+]\n Light Tanks: [?hs_lt_eq_total|=0+]\n Medium Tanks: [?hs_mt_eq_total|=0+]\n Medium SPGs:  [?hs_mspg_eq_total|=0+]\n Medium Tank Destroyers: [?hs_mtd_eq_total|=0+]\n Heavy Tanks: [?hs_ht_eq_total|=0+]\n Rocket Artillery: [?hs_roc_eq_total|=0+]\n Half-Tracks: [?hs_mech_eq_total|=0+]§!\n\n"
   
+  fb_button_tt: "Requirements:\n[!fb_button_click_enabled]"
+  fb_button_text_0: "SS-Division Frundsberg £command_power §Y5§!"
+  fb_allowed_tt: "The §YSS-Panzer-Division Frundsberg§! has been formed"
+  fb_allowed_tt_NOT: "The §YSS-Panzer-Division Frundsberg§! has not been formed"
+
   fb_1_tt: "\nCreates §YSS-Panzer-Division Frundsberg§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?fb_inf_eq_total|=0+]\n Support Equipment: [?fb_sup_eq_total|=0+]\n Trucks: [?fb_mot_eq_total|=0+]\n Armored Support Vehicles: [?fb_asv_eq_total|=0+]\n Light Tanks: [?fb_lt_eq_total|=0+]\n Medium Tanks: [?fb_mt_eq_total|=0+]\n Medium SPGs:  [?fb_mspg_eq_total|=0+]\n Medium Tank Destroyers: [?fb_mtd_eq_total|=0+]\n Heavy Tanks: [?fb_ht_eq_total|=0+]\n Half-Tracks: [?fb_mech_eq_total|=0+]§!\n\n"
 
+  nordl_button_tt: "Requirements:\n[!nordl_button_click_enabled]"
+  nordl_button_text_0: "SS-Division Nordland £command_power §Y5§!"
+  nordl_allowed_tt: "The §YSS-Panzergrenadier-Division Nordland§! has been formed"
+  nordl_allowed_tt_NOT: "The §YSS-Panzergrenadier-Division Nordland§! has not been formed"
+
   nordland_1_tt: "\nCreates §YSS-Panzergrenadier-Division Nordland§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?nordl_inf_eq_total|=0+]\n Support Equipment: [?nordl_sup_eq_total|=0+]\n Anti-Air: [?nordl_aa_eq_total|=0+]\n Trucks: [?nordl_mot_eq_total|=0+]\n Half-Tracks: [?nordl_mech_eq_total|=0+]\n Armored Support Vehicles: [?nordl_asv_eq_total|=0+]\n Medium Tanks: [?nordl_mt_eq_total|=0+]\n Medium SPGs: [?nordl_mspg_eq_total|=0+]\n Medium Tank Destroyers: [?nordl_mtd_eq_total|=0+]§!\n\n§2You will be able to expand this division later§!\n\n"
+ 
+  nordl_2_button_tt: "Requirements:\n[!nordl_2_button_click_enabled]"
+  nordl_2_button_text_0: "Expand Nordland £command_power §Y5§!"
+  nordl_2_allowed_tt: "The §YSS-Panzergrenadier-Division Nordland§! has been expanded"
+  nordl_2_allowed_tt_NOT: "The §YSS-Panzergrenadier-Division Nordland§! has not been expanded"
+
   nordland_2_tt: "\nAdds a §YHeavy Panzer Batallion§! to §YSS-Panzergrenadier-Division Nordland§!\nYou will have the following equipment left in stockpile:\n\n §YHeavy Tanks: [?nordl_ht_eq_total|=0+]§!\n\n"
+
+  hj_button_tt: "Requirements:\n[!hj_button_click_enabled]"
+  hj_button_text_0: "SS-Division Hitlerjugend £command_power §Y5§!"
+  hj_allowed_tt: "The §YSS-Panzer-Division Hitlerjugend§! has been formed"
+  hj_allowed_tt_NOT: "The §YSS-Panzer-Division Hitlerjugend§! has not been formed"
 
   hj_1_tt: "\nCreates §YSS-Panzer-Division Hitlerjugend§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?hj_inf_eq_total|=0+]\n Support Equipment: [?hj_sup_eq_total|=0+]\n Trucks: [?hj_mot_eq_total|=0+]\n Armored Support Vehicles: [?hj_asv_eq_total|=0+]\n Light Tanks: [?hj_lt_eq_total|=0+]\n Medium Tanks: [?hj_mt_eq_total|=0+]\n Medium SPGs:  [?hj_mspg_eq_total|=0+]\n Medium Tank Destroyers: [?hj_mtd_eq_total|=0+]\n Heavy Tanks: [?hj_ht_eq_total|=0+]\n Rocket Artillery: [?hj_roc_eq_total|=0+]\n Self-Propelled Anti-Air: [?hj_mspaa_eq_total|=0+]\n Half-Tracks: [?hj_mech_eq_total|=0+]§!\n\n"
 
+  pzgrengd_button_tt: "Requirements:\n[!pzgrengd_button_click_enabled]"
+  pzgrengd_button_text_0: "PzG.Division Großdeutschland £command_power §Y5§!"
+  pzgrengd_allowed_tt: "The §YPanzergrenadier Division Großdeutschland§! has been formed"
+  pzgrengd_allowed_tt_NOT: "The §YPanzergrenadier Division Großdeutschland§! has not been formed"
+
   pzgrengd_1_tt: "\nCreates §YPanzergrenadier-Division Großdeutschland§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?gd_inf_eq_total|=0+]\n Support Equipment: [?gd_sup_eq_total|=0+]\n Anti-Air: [?gd_aa_eq_total|=0+]\n Trucks: [?gd_mot_eq_total|=0+]\n Half-Tracks: [?gd_mech_eq_total|=0+]\n Medium Tanks: [?gd_mt_eq_total|=0+]\n Heavy Tanks: [?gd_ht_eq_total|=0+]\n Light SPGs: [?gd_lspg_eq_total|=0+]\n Light Tank Destroyers: [?gd_ltd_eq_total|=0+]\n Medium SPGs: [?gd_mspg_eq_total|=0+]§!\n\n"
+
+  pzhg_button_tt: "Requirements:\n[!pzhg_button_click_enabled]"
+  pzhg_button_text_0: "Pz.Division Hermann Göring £command_power §Y5§!"
+  pzhg_allowed_tt: "The §YPanzer Division Hermann Göring§! has been formed"
+  pzhg_allowed_tt_NOT: "The §YPanzer Division Hermann Göring§! has not been formed"
 
   pzhg_1_tt: "\nCreates §YFallschirm-Panzer-Division 1 Hermann Göring§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?hg_inf_eq_total|=0+]\n Trucks: [?hg_mot_eq_total|=0+]\n Support Equipment: [?hg_sup_eq_total|=0+]\n Anti-Air: [?hg_aa_eq_total|=0+]\n Half-Tracks: [?hg_mech_eq_total|=0+]\n Medium Tanks [?hg_mt_eq_total|=0+]\n Medium SPGs: [?hg_mspg_eq_total|=0+]\n Light Tanks: [?hg_lt_eq_total|=0+]\n Armored Support Vehicles: [?hg_asv_eq_total|=0+]§!\n\n"
 
+  pzl_button_tt: "Requirements:\n[!pzl_button_click_enabled]"
+  pzl_button_text_0: "Panzer-Lehr Division £command_power §Y5§!"
+  pzl_allowed_tt: "The §YPanzer-Lehr Division§! has been formed"
+  pzl_allowed_tt_NOT: "The §YPanzer-Lehr Division§! has not been formed"
+
   pzl_1_tt: "\nCreates §YPanzer-Lehr-Division§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?pzl_inf_eq_total|=0+]\n Trucks: [?pzl_mot_eq_total|=0+]\n Support Equipment: [?pzl_sup_eq_total|=0+]\n Anti-Air: [?pzl_aa_eq_total|=0+]\n Half-Tracks: [?pzl_mech_eq_total|=0+]\n Medium Tanks [?pzl_mt_eq_total|=0+]\n Medium SPGs: [?pzl_mspg_eq_total|=0+]\n Armored Support Vehicles: [?pzl_asv_eq_total|=0+]§!\n\n"
+
+  nord_button_tt: "Requirements:\n[!nord_button_click_enabled]"
+  nord_button_text_0: "SS-Division Nord £command_power §Y5§!"
+  nord_allowed_tt: "The §YSS-Gebirgs-Division Nord§! has been formed"
+  nord_allowed_tt_NOT: "The §YSS-Gebirgs-Division Nord§! has not been formed"
 
   ssnord_1_tt: "\nCreates §YSS-Gebirgs-Division Nord§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?nord_inf_eq_total|=0+]\n Support Equipment: [?nord_sup_eq_total|=0+]\n Artillery: [?nord_art_eq_total|=0+]\n Anti-Tank: [?nord_at_eq_total|=0+]\n Anti-Air [?nord_aa_eq_total|=0+]\n Trucks: [?nord_mot_eq_total|=0+]§!\n\n"
 
+  lad999_button_tt: "Requirements:\n[!lad999_button_click_enabled]"
+  lad999_button_text_0: "999. Leichte Afrika-Division £command_power §Y5§!"
+  lad999_allowed_tt: "The §Y999. Leichte Afrika-Division§! has been formed"
+  lad999_allowed_tt_NOT: "The §Y999. Leichte Afrika-Division§! has not been formed"
+
   lad999_1_tt: "\nCreates §Y999. leichte-Afrika_Division§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?lad_inf_eq_total|=0+]\n Support Equipment: [?lad_sup_eq_total|=0+]\n Artillery: [?lad_art_eq_total|=0+]\n Anti-Tank: [?lad_at_eq_total|=0+]\n Trucks: [?lad_mot_eq_total|=0+]§!\n\n"
 
+  fbb_button_tt: "Requirements:\n[!fbb_button_click_enabled]"
+  fbb_button_text_0: "Führerbegleitbrigade £command_power §Y5§!"
+  fbb_allowed_tt: "The §YFührerbegleitbrigade§! has been formed"
+  fbb_allowed_tt_NOT: "The §YFührerbegleitbrigade§! has not been formed"
+
   fuhrerbegleit_1_tt: "\nCreates §YFührerbegleitbrigade§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?frbg_inf_eq_total|=0+]\n Support Equipment: [?frbg_sup_eq_total|=0+]\n Half-Tracks: [?frbg_mech_eq_total|=0+]\n Medium Tanks: [?frbg_mt_eq_total|=0+]\n Medium SPGs: [?frbg_mspg_eq_total|=0+]\n Medium SPAA: [?frbg_mspaa_eq_total|=0+]\n Armored Cars: [?frbg_ac_eq_total|=0+]§!\n\n§2You will be able to expand this brigade to a division later.§!\n\n"
+  
+  fbb_2_button_tt: "Requirements:\n[!fbb_2_button_click_enabled]"
+  fbb_2_button_text_0: "Expand Führerbegleitbrigade £command_power §Y5§!"
+  fbb_2_allowed_tt: "The §YFührerbegleitbrigade§! has been expanded to §YDivision§!"
+  fbb_2_allowed_tt_NOT: "The §YFührerbegleitbrigade§! has not been expanded to §YDivision§!"
+
   fuhrerbegleit_2_tt: "\nExpands §YFührerbegleitbrigade§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?frbg_inf_eq_total|=0+]\n Support Equipment: [?frbg_sup_eq_total|=0+]\n Half-Tracks: [?frbg_mech_eq_total|=0+]\n Trucks: [?frbg_mot_eq_total|=0+]\n Medium Tanks: [?frbg_mt_eq_total|=0+]\n Medium Tank Destroyers: [?frbg_mtd_eq_total|=0+]\n Armored Support Vehicles: [?frbg_asv_eq_total|=0+]§!\n\n§RYou will have to manually rename the division to Führerbegleitdivision if you wish as the name cannot be automatically changed.§!\n\n"
   
+  fgb_button_tt: "Requirements:\n[!fgb_button_click_enabled]"
+  fgb_button_text_0: "Führergrenadierbrigade £command_power §Y5§!"
+  fgb_allowed_tt: "The §YFührergrenadierbrigade§! has been formed"
+  fgb_allowed_tt_NOT: "The §YFührergrenadierbrigade§! has not been formed"
+
   fuhrergren_1_tt: "\nCreates §YFührergrenadierbrigade§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?frgr_inf_eq_total|=0+]\n Support Equipment: [?frgr_sup_eq_total|=0+]\n Half-Tracks: [?frgr_mech_eq_total|=0+]\n Armored Support Vehicles: [?frgr_asv_eq_total|=0+]\n Medium Tanks: [?frgr_mt_eq_total|=0+]\n Medium SPGs: [?frgr_mspg_eq_total|=0+]\n Medium Tank Destroyer: [?frgr_mtd_eq_total|=0+]\n Artillery: [?frgr_art_eq_total|=0+]\n Anti-Air: [?frgr_aa_eq_total|=0+]§!\n\n"
 
   guards2_1_tt: "\nCreates §Y2nd Guards Motor Rifle Division§!\n\nYou will have the following equipment left in stockpile:\n\n §YInfantry Equipment: [?g2_inf_eq_total|=0+]\n Support Equipment: [?g2_sup_eq_total|=0+]\n Trucks: [?g2_mot_eq_total|=0+]\n Artillery: [?g2_art_eq_total|=0+]\n Anti-Tank: [?g2_at_eq_total|=0+]\n Anti-Air: [?g2_aa_eq_total|=0+]§!\n\n"
 
-  handschar_1_tt:
+  handschar_button_tt: "Requirements:\n[!handschar_button_click_enabled]"
+  handschar_button_text_0: "SS-Division Handschar £command_power §Y5§!"
+  handschar_allowed_tt: "The §YSS-Division Handschar§! has been formed"
+  handschar_allowed_tt_NOT: "The §YSS-Division Handschar§! has not been formed"
 
-  gal1_1_tt:
+  handschar_1_tt: ""
 
-  rfss_1_tt:
+  gal1_button_tt: "Requirements:\n[!gal1_button_click_enabled]"
+  gal1_button_text_0: "SS-Division Galizische Nr. 1 £command_power §Y5§!"
+  gal1_allowed_tt: "The §YSS-Division Galizische Nr. 1§! has been formed"
+  gal1_allowed_tt_NOT: "The §YSS-Division Galizische Nr. 1§! has not been formed"
 
-  gvb_1_tt:
+  gal1_1_tt: ""
 
-  sshw_1_tt:
+  rfss_button_tt: "Requirements:\n[!rfss_button_click_enabled]"
+  rfss_button_text_0: "SS-Division Reichsfuhrer-SS £command_power §Y5§!"
+  rfss_allowed_tt: "The §YSS-Division Reichsfuhrer-SS§! has been formed"
+  rfss_allowed_tt_NOT: "The §YSS-Division Reichsfuhrer-SS§! has not been formed"
 
-  alb1_1_tt:
+  rfss_1_tt: ""
 
-  ssmt_1_tt:
+  gvb_button_tt: "Requirements:\n[!gvb_button_click_enabled]"
+  gvb_button_text_0: "SS-Division Gotz von Berlichingen £command_power §Y5§!"
+  gvb_allowed_tt: "The §YSS-Division Gotz von Ber.§! has been formed"
+  gvb_allowed_tt_NOT: "The §YSS-Division Gotz von Berlichingen§! has not been formed"
 
-  kama_1_tt:
+  gvb_1_tt: ""
 
-  nederland_1_tt:
+  hw_button_tt: "Requirements:\n[!hw_button_click_enabled]"
+  hw_button_text_0: "SS-Division Horst Wessel £command_power §Y5§!"
+  sshw_allowed_tt: "The §YSS-Division Horst Wessel§! has been formed"
+  sshw_allowed_tt_NOT: "The §YSS-Division Horst Wessel§! has not been formed"
 
-  sskj_1_tt:
+  sshw_1_tt: ""
 
-  ssu1_1_tt:
+  alb1_button_tt: "Requirements:\n[!alb1_button_click_enabled]"
+  alb1_button_text_0: "SS-Division Skanderbeg £command_power §Y5§!"
+  alb1_allowed_tt: "The §YSS-Division Skanderbeg§! has been formed"
+  alb1_allowed_tt_NOT: "The §YSS-Division Skanderbeg§! has not been formed"
 
-  sslm_1_tt:
+  alb1_1_tt: ""
 
-  sswl_1_tt:
+  mt_button_tt: "Requirements:\n[!mt_button_click_enabled]"
+  mt_button_text_0: "SS-Division Maria Theresa £command_power §Y5§!"
+  mt_allowed_tt: "The §YSS-Division Maria Theresa§! has been formed"
+  mt_allowed_tt_NOT: "The §YSS-Division Maria Theresa§! has not been formed"
 
-  SSIT_1_tt:
+  ssmt_1_tt: ""
 
-  ssr2_1_tt:
+  kama_button_tt: "Requirements:\n[!kama_button_click_enabled]"
+  kama_button_text_0: "SS-Division Kama £command_power §Y5§!"
+  kama_allowed_tt: "The §YSS-Division Kama§! has been formed"
+  kama_allowed_tt_NOT: "The §YSS-Division Kama§! has not been formed"
 
-  batschka_1_tt:
+  kama_1_tt: ""
 
-  ssj30_1_tt:
+  nederl_button_tt: "Requirements:\n[!nederl_button_click_enabled]"
+  nederl_button_text_0: "SS-Division Nederland £command_power §Y5§!"
+  nederl_allowed_tt: "The §YSS-Division Nederland§! has been formed"
+  nederl_allowed_tt_NOT: "The §YSS-Division Nederland§! has not been formed"
 
-  sscm_1_tt:
+  nederland_1_tt: ""
 
-  lsnl_1_tt:
+  kj_button_tt: "Requirements:\n[!kj_button_click_enabled]"
+  kj_button_text_0: "SS-Division Karstjager £command_power §Y5§!"
+  kj_allowed_tt: "The §YSS-Division Karstjager§! has been formed"
+  kj_allowed_tt_NOT: "The §YSS-Division Karstjager§! has not been formed"
 
-  polgren_1_tt:
+  sskj_1_tt: ""
 
-  ssdw_1_tt:
+  huny_button_tt: "Requirements:\n[!huny_button_click_enabled]"
+  huny_button_text_0: "SS-Division Hunyadi £command_power §Y5§!"
+  huny_allowed_tt: "The §YSS-Division Hunyadi§! has been formed"
+  huny_allowed_tt_NOT: "The §YSS-Division Hunyadi§! has not been formed"
 
-  lutzow_1_tt:
+  ssu1_1_tt: ""
 
-  fj3_1_tt:
+  lm_button_tt: "Requirements:\n[!lm_button_click_enabled]"
+  lm_button_text_0: "SS-Division Langemarck £command_power §Y5§!"
+  lm_allowed_tt: "The §YSS-Division Langemarck§! has been formed"
+  lm_allowed_tt_NOT: "The §YSS-Division Langemarck§! has not been formed"
 
-  ski_1_tt: 
+  sslm_1_tt: ""
+
+  wal_button_tt: "Requirements:\n[!wal_button_click_enabled]"
+  wal_button_text_0: "SS-Division Wallonien £command_power §Y5§!"
+  wal_allowed_tt: "The §YSS-Division Wallonien§! has been formed"
+  wal_allowed_tt_NOT: "The §YSS-Division Wallonien§! has not been formed"
+
+  sswl_1_tt: ""
+
+  ita1_button_tt: "Requirements:\n[!ita1_button_click_enabled]"
+  ita1_button_text_0: "SS-Division Italienische Nr. 1 £command_power §Y5§!"
+  ita1_allowed_tt: "The §YSS-Division Italienische Nr. 1§! has been formed"
+  ita1_allowed_tt_NOT: "The §YSS-Division Italienische Nr. 1§! has not been formed"
+
+  SSIT_1_tt: ""
+
+  wr1_button_tt: "Requirements:\n[!wr1_button_click_enabled]"
+  wr1_button_text_0: "SS-Division Weissruth. Nr. 1 £command_power §Y5§!"
+  wr1_allowed_tt: "The §YSS-Division Weissruthenische. Nr. 1§! has been formed"
+  wr1_allowed_tt_NOT: "The §YSS-Division Weissruthenische Nr. 1§! has not been formed"
+
+  ssr2_1_tt: ""
+
+  bat_button_tt: "Requirements:\n[!bat_button_click_enabled]"
+  bat_button_text_0: "SS-Division Batschka £command_power §Y5§!"
+  bat_allowed_tt: "The §YSS-Division Batschka§! has been formed"
+  bat_allowed_tt_NOT: "The §YSS-Division Batschka§! has not been formed"
+
+  batschka_1_tt: ""
+
+  30j_button_tt: "Requirements:\n[!30j_button_click_enabled]"
+  30j_button_text_0: "SS-Division 30. Januar £command_power §Y5§!"
+  30j_allowed_tt: "The §YSS-Division 30. Januar§! has been formed"
+  30j_allowed_tt_NOT: "The §YSS-Division 30. Januar§! has not been formed"
+
+  ssj30_1_tt: ""
+
+  cm_button_tt: "Requirements:\n[!cm_button_click_enabled]"
+  cm_button_text_0: "SS-Division Charlemagne £command_power §Y5§!"
+  cm_allowed_tt: "The §YSS-Division Charlemagne§! has been formed"
+  cm_allowed_tt_NOT: "The §YSS-Division Charlemagne§! has not been formed"
+
+  sscm_1_tt: ""
+
+  lsnl_button_tt: "Requirements:\n[!lsnl_button_click_enabled]"
+  lsnl_button_text_0: "SS-Division L.S. Nederland £command_power §Y5§!"
+  lsnl_allowed_tt: "The §YSS-Division Landstorm Nederland§! has been formed"
+  lsnl_allowed_tt_NOT: "The §YSS-Division Landstorm Nederland§! has not been formed"
+
+  lsnl_1_tt: ""
+ 
+  polgren_button_tt: "Requirements:\n[!polgren_button_click_enabled]"
+  polgren_button_text_0: "SS-Division Polizei-Grenadier £command_power §Y5§!"
+  polgren_allowed_tt: "The §YSS-Division Polizei-Grenadier-Regiment 1§! has been formed"
+  polgren_allowed_tt_NOT: "The §YSS-Division Polizei-Grenadier-Regiment 1§! has not been formed"
+
+  polgren_1_tt: ""
+
+  dw_button_tt: "Requirements:\n[!dw_button_click_enabled]"
+  dw_button_text_0: "SS-Division Dirlewanger £command_power §Y5§!"
+  dw_allowed_tt: "The §YSS-Division Dirlewanger§! has been formed"
+  dw_allowed_tt_NOT: "The §YSS-Division Dirlewanger§! has not been formed"
+
+  ssdw_1_tt: ""
+
+  lutzow_button_tt: "Requirements:\n[!lutzow_button_click_enabled]"
+  lutzow_button_text_0: "SS-Division Lutzow £command_power §Y5§!"
+  lutzow_allowed_tt: "The §YSS-Division Lutzow§! has been formed"
+  lutzow_allowed_tt_NOT: "The §YSS-Division Lutzow§! has not been formed"
+
+  lutzow_1_tt: ""
+
+  3fj_button_tt: "Requirements:\n[!3fj_button_click_enabled]"
+  3fj_button_text_0: "3. Fallschirmjäger-Division £command_power §Y5§!"
+  3fj_allowed_tt: "The §Y3. Fallschirmjäger-Division§! has been formed"
+  3fj_allowed_tt_NOT: "The §Y3. Fallschirmjäger-Division§! has not been formed"
+
+  fj3_1_tt: ""
+
+  1ski_button_tt: "Requirements:\n[!1ski_button_click_enabled]"
+  1ski_button_text_0: "1. Skijäger-Division £command_power §Y5§!"
+  1ski_allowed_tt: "The §Y1. Skijäger-Division§! has been formed"
+  1ski_allowed_tt_NOT: "The §Y1. Skijäger-Division§! has not been formed"
+
+  ski_1_tt: ""
 
 
 # Flags
   lssah_stage_1: "The §YLSSAH Regiment§! has been formed"
   lssah_stage_2: "§YLSSAH§! has been expanded to brigade size"
   lssah_stage_3: "§YLSSAH§! has been expanded to division size"
+
 
   dasreich_deployed: "The §YSS-Panzer-Division Das Reich§! has been formed"
 
@@ -388,7 +653,7 @@
   polizei_stage_1: "The §YSS-Division Polizei§! has been formed"
   polizei_stage_2: "The §YSS-Division Polizei§! has been expanded"
 
-  wiking_stage_1: "The Y§SS-Division Wiking§! has been formed"
+  wiking_stage_1: "The §YSS-Division Wiking§! has been formed"
   wiking_stage_2: "The §YSS-Division Wiking§! has been reformed into a Panzer-Division"
 
   pe_stage_1: "The §YSS-Gebirgs_Division Prinz Eugen§! has been formed"

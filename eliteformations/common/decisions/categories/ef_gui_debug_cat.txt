@@ -1,0 +1,12 @@
+ef_gui_debug_cat = {
+	priority = 1000 
+
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		is_debug = yes
+	}
+
+}

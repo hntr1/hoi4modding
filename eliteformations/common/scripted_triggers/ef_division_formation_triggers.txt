@@ -1,0 +1,358 @@
+lssah_1_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = lssah_1_allowed_tt
+		has_country_flag = lssah_stage_1
+	}
+}
+
+dasreich_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = dasreich_allowed_tt
+		has_country_flag = dasreich_deployed
+	}
+}
+
+totenkopf_1_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = totenkopf_allowed_tt
+		has_country_flag = totenkopf_stage_1
+	}
+}
+
+polizei_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = polizei_allowed_tt
+		has_country_flag = polizei_stage_1
+	}
+}
+
+wiking_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = wiking_allowed_tt
+		has_country_flag = wiking_stage_1
+	}
+}
+
+nord_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = nord_allowed_tt
+		has_country_flag = ssnord_Deployed
+	}
+}
+
+pe_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = pe_allowed_tt
+		has_country_flag = pe_stage_1
+	}
+}
+
+
+fg_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = fg_allowed_tt
+		has_country_flag = fg_stage_1
+	}
+}
+
+hs_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = hs_allowed_tt
+		has_country_flag = hs_deployed
+	}
+}
+
+fb_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = fb_allowed_tt
+		has_country_flag = fb_deployed
+	}
+}
+
+nordl_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = nordl_allowed_tt
+		has_country_flag = nordland_stage_1
+	}
+}
+
+hj_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = hj_allowed_tt
+		has_country_flag = hj_deployed
+	}
+}
+
+handschar_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = handschar_allowed_tt
+		has_country_flag = handschar_deployed
+	}
+}
+
+gal1_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = gal1_allowed_tt
+		has_country_flag = gal1_deployed
+	}
+}
+
+rfss_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = rfss_allowed_tt
+		has_country_flag = rfss_deployed
+	}
+}
+
+gvb_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = gvb_allowed_tt
+		has_country_flag = gvb_deployed
+	}
+}
+
+hw_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = hw_allowed_tt
+		has_country_flag = sshw_deployed
+	}
+}
+
+alb1_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = alb1_allowed_tt
+		has_country_flag = alb1_deployed
+	}
+}
+
+mt_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = mt_allowed_tt
+		has_country_flag = ssmt_deployed
+	}
+}
+
+kama_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = kama_allowed_tt
+		has_country_flag = kama_deployed
+	}
+}
+
+nederl_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = nederl_allowed_tt
+		has_country_flag = nederland_deployed
+	}
+}
+
+kj_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = kj_allowed_tt
+		has_country_flag = sskj_deployed
+	}
+}
+
+huny_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = huny_allowed_tt
+		has_country_flag = ssu1_deployed
+	}
+}
+
+lm_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = lm_allowed_tt
+		has_country_flag = sslm_deployed
+	}
+}
+
+wal_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = wal_allowed_tt
+		has_country_flag = sswl_deployed
+	}
+}
+
+ita1_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = ita1_allowed_tt
+		has_country_flag = ssita1_deployed
+	}
+}
+
+wr1_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = wr1_allowed_tt
+		has_country_flag = ssr2_deployed
+	}
+}
+
+bat_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = bat_allowed_tt
+		has_country_flag = batschka_deployed
+	}
+}
+
+30j_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = 30j_allowed_tt
+		has_country_flag = ssj30_deployed
+	}
+}
+
+cm_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = cm_allowed_tt
+		has_country_flag = sscm_deployed
+	}
+}
+
+lsnl_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = lsnl_allowed_tt
+		has_country_flag = lsnl_deployed
+	}
+}
+
+polgren_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = polgren_allowed_tt
+		has_country_flag = polgren_deployed
+	}
+}
+
+dw_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = dw_allowed_tt
+		has_country_flag = ssdw_deployed
+	}
+}
+
+lutzow_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = lutzow_allowed_tt
+		has_country_flag = lutzow_deployed
+	}
+}
+
+pzgrengd_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = pzgrengd_allowed_tt
+		has_country_flag = GD_Deployed
+	}
+}
+
+pzl_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = pzl_allowed_tt
+		has_country_flag = Lehr_Deployed
+	}
+}
+
+pzhg_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = pzhg_allowed_tt
+		has_country_flag = HG_Deployed
+	}
+}
+
+lad999_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = lad999_allowed_tt
+		has_country_flag = lad999_deployed
+	}
+}
+
+3fj_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = 3fj_allowed_tt
+		has_country_flag = fj3_deployed
+	}
+}
+
+1ski_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = 1ski_allowed_tt
+		has_country_flag = ski1_deployed
+	}
+}
+
+fbb_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = fbb_allowed_tt
+		has_country_flag = fuhrerbegleit_stage_1
+	}
+}
+
+fgb_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = fgb_allowed_tt
+		has_country_flag = fuhrergren_deployed
+	}
+}
+
+lssah_2_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = lssah_2_allowed_tt
+		has_country_flag = lssah_stage_2
+	}
+}
+
+lssah_3_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = lssah_3_allowed_tt
+		has_country_flag = lssah_stage_3
+	}
+}
+
+totenkopf_2_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = totenkopf_2_allowed_tt
+		has_country_flag = totenkopf_stage_2
+	}
+}
+
+polizei_2_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = polizei_2_allowed_tt
+		has_country_flag = polizei_stage_2
+	}
+}
+
+wiking_2_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = wiking_2_allowed_tt
+		has_country_flag = wiking_stage_2
+	}
+}
+
+pe_2_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = pe_2_allowed_tt
+		has_country_flag = pe_stage_2
+	}
+}
+
+fg_2_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = fg_2_allowed_tt
+		has_country_flag = fg_stage_2
+	}
+}
+
+nordl_2_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = nordl_2_allowed_tt
+		has_country_flag = nordland_stage_2
+	}
+}
+
+fbb_2_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = fbb_2_allowed_tt
+		has_country_flag = fuhrerbegleit_stage_2
+	}
+}
+

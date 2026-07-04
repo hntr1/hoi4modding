@@ -1,0 +1,47 @@
+ef_gui_debug_cat = {
+	ef_open_gui_debug = {
+
+		available = {
+			is_ai = no
+		}
+
+		visible ={
+			is_debug = yes
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = GER_eliteformations_gui
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ef_close_gui_debug = {
+
+		available = {
+			is_ai = no
+		}
+
+		visible ={
+			is_debug = yes
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			clr_country_flag = GER_eliteformations_gui
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

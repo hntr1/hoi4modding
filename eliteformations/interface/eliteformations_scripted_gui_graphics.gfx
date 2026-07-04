@@ -1,0 +1,263 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_scripted_gui_window_background"
+        texturefile = "/gfx/interface/browser_bg.dds"
+    }
+
+    spriteType = {
+        name = "GFX_open_button"
+        texturefile = "/gfx/interface/button_148x34_light.dds"
+    }
+
+    spriteType = {
+        name = "GFX_close_button"
+        texturefile = "/gfx/interface/cancel_conversion_button.dds"
+    }
+
+    spriteType = {
+        name = "GFX_lssah_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_dasreich_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_totenkopf_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_polizei_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_wiking_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_nord_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_pe_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_fg_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_hs_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_fb_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_nordl_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_hj_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_handschar_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_gal1_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_rfss_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_gvb_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_hw_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_alb1_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_mt_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_kama_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_nederl_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_kj_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_huny_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_lm_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_wal_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_ita1_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_wr1_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_bat_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_30j_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_cm_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_lsnl_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_polgren_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_dw_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_lutzow_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+    spriteType = {
+        name = "GFX_pzgrengd_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+    spriteType = {
+        name = "GFX_pzl_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+    spriteType = {
+        name = "GFX_pzhg_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+    spriteType = {
+        name = "GFX_lad999_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+    spriteType = {
+        name = "GFX_3fj_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+    spriteType = {
+        name = "GFX_1ski_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+    spriteType = {
+        name = "GFX_fbb_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+    spriteType = {
+        name = "GFX_fgb_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_lssah_2_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_lssah_3_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_totenkopf_2_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_polizei_2_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_wiking_2_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_pe_2_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_fg_2_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_nordl_2_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+
+    spriteType = {
+        name = "GFX_fbb_2_button"
+        texturefile = "/gfx/interface/button_221x34.dds"
+    }
+}

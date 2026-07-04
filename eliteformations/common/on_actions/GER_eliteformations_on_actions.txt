@@ -24,19 +24,16 @@ on_actions = {
 				}
 
 				set_variable = { GER.lssah_inf_eq_total = num_equipment@infantry_equipment }
-				subtract_from_variable = { GER.lssah_inf_eq_total = 350}
-
-				set_variable = { GER.lssah_sup_eq_total = num_equipment@support_equipment}
-				subtract_from_variable = { GER.lssah_sup_eq_total = 60}
+				subtract_from_variable = { GER.lssah_inf_eq_total = 300}
 
 				set_variable = { GER.lssah_mot_eq_total = num_equipment@motorized_equipment}
-				subtract_from_variable = { GER.lssah_mot_eq_total = 135}
+				subtract_from_variable = { GER.lssah_mot_eq_total = 141}
 
 				set_variable = { GER.lssah_art_eq_total = num_equipment@artillery_equipment}
-				subtract_from_variable = { GER.lssah_art_eq_total = 12}
+				subtract_from_variable = { GER.lssah_art_eq_total = 24}
 
 				set_variable = { GER.lssah_at_eq_total = num_equipment@anti_tank_equipment}
-				subtract_from_variable = { GER.lssah_at_eq_total = 24}
+				subtract_from_variable = { GER.lssah_at_eq_total = 16}
 			}
 		}
 		effect = { # Stage 2 LSSAH loc variables
@@ -52,13 +49,19 @@ on_actions = {
 				subtract_from_variable = { GER.lssah_inf_eq_total = 300}
 
 				set_variable = { GER.lssah_mot_eq_total = num_equipment@motorized_equipment}
-				subtract_from_variable = { GER.lssah_mot_eq_total = 141}
+				subtract_from_variable = { GER.lssah_mot_eq_total = 115}
 
 				set_variable = { GER.lssah_aa_eq_total = num_equipment@anti_air_equipment}
-				subtract_from_variable = { GER.lssah_aa_eq_total = 36}
+				subtract_from_variable = { GER.lssah_aa_eq_total = 24}
 
 				set_variable = { GER.lssah_spg_eq_total = num_equipment@medium_tank_artillery_chassis}
 				subtract_from_variable = { GER.lssah_spg_eq_total = 40}
+
+				set_variable = { GER.lssah_lt_eq_total = num_equipment@light_tank_chassis}
+				subtract_from_variable = { GER.lssah_lt_eq_total = 24}
+
+				set_variable = { GER.lssah_asv_eq_total = num_equipment@armored_support_vehicle}
+				subtract_from_variable = { GER.lssah_asv_eq_total = 40}
 			}
 		}
 		effect = { # Stage 3 LSSAH loc variables

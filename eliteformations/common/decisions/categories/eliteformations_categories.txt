@@ -8,7 +8,7 @@ eliteformations_cat = {
 	}
 
 	visible = {
-		always = yes
+		is_ai = yes
 	}
 }
 

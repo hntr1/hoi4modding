@@ -12,9 +12,8 @@ eliteformations_cat = { # German Elite Formations Decisions
 		}
 
 		available = {
-			AND = { # LSSAH regiment had AT and signals
+			AND = {
 				has_tech = interwar_antitank
-				has_tech = tech_signal_company
 			}
 		}
 
@@ -77,6 +76,10 @@ eliteformations_cat = { # German Elite Formations Decisions
 
 		available = { # LSSAH brigade had stugs
 			has_design_based_on = medium_tank_artillery_chassis
+			has_tech = tech_logistics_company
+			has_tech = sp_armored_signal_tech
+			
+			ROOT = { is_special_project_completed = sp:sp_land_military_engineering_vehicles }
 		}
 
 		cost = 0
@@ -111,13 +114,21 @@ eliteformations_cat = { # German Elite Formations Decisions
 				}
 				add_units_to_division_template = {
 					template_name = "LSSAH"
-					regiments = { # Add 3 motorized to column 2, AA to column 3, and stugs to column 4
+					regiments = { # Add 3 motorized to column 2 and stugs to column 3
 						motorized = 1
 						motorized = 1
 						motorized = 1
-						mot_anti_air_brigade = 2
 						medium_sp_artillery_brigade = 3
 
+					}
+					support = {
+						assault_engineer = 0
+						light_tank_recon = 0
+						armored_signal = 0
+						logistics_company = 0
+					}
+					regimental_support = {
+						anti_air_battery = 1
 					}
 				}
 			}
@@ -140,6 +151,7 @@ eliteformations_cat = { # German Elite Formations Decisions
 		available = {
 			AND = { # LSSAH division had tanks and rocket arty
 				has_design_based_on = medium_tank_chassis
+				has_design_based_on = medium_tank_destroyer_chassis
 				has_tech = rocket_artillery
 			}
 		}
@@ -182,7 +194,14 @@ eliteformations_cat = { # German Elite Formations Decisions
 						medium_armor = 4
 						medium_armor = 4
 						heavy_armor = 4 # SS s.Pz.Abt. 101
+					}
+					support = {
+						rocket_artillery = 0
 					}	
+					regimental_support = {
+						anti_air_battery = 1
+						medium_tank_destroyer_support = 2
+					}
 				}
 			}
 		}
