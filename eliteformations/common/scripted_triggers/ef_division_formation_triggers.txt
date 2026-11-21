@@ -177,7 +177,7 @@ wal_allowed = {
 ita1_allowed = {
 	custom_trigger_tooltip = {
 		tooltip = ita1_allowed_tt
-		has_country_flag = ssita1_deployed
+		has_country_flag = ssit_deployed
 	}
 }
 
